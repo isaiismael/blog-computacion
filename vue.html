@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
     <title>Computacion</title>
     <link rel="shortcut icon" type="image/x-icon"
         href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
@@ -47,9 +55,9 @@
                                             class="fas fa-angle-down"></i></span></a>
                                 <ul class="slide">
                                     <li>
-                                    <a href="php.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                        <a href="php.html"><span><img style="width: 15px;margin-bottom: 0px;"
                                                     src="public/principal/img/php.svg" alt="">&nbsp;Php</span></a>
-                                    <!--<router-link to="/cursos/php"><span><img style="width: 15px;margin-bottom: 0px;"
+                                        <!--<router-link to="/cursos/php"><span><img style="width: 15px;margin-bottom: 0px;"
                                     src="public/principal/img/php.svg" alt="">&nbsp;Php</span></router-link>-->
                                     </li>
                                     <li><a href="laravel.html"><span><img style="width: 15px;margin-bottom: 0px;"
@@ -79,10 +87,12 @@
                                                 JS</span></a></li>
                                 </ul>
                             </li>
-                            <li><a class="slideContent" href="git.html"><span><img style="width: 15px;margin-bottom: 0px;"
-                                            src="public/principal/img/git.svg" alt="">&nbsp;Git-Github</span></a>
+                            <li><a class="slideContent" href="git.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;" src="public/principal/img/git.svg"
+                                            alt="">&nbsp;Git-Github</span></a>
                             </li>
-                            <li><a class="slideContent" href="plugin.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                            <li><a class="slideContent" href="plugin.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
                                             src="public/principal/img/plugin.svg" alt="">&nbsp;Plugin y Librerías
                                         JS</span></a>
                             </li>
@@ -134,8 +144,7 @@
                                             src="public/principal/img/excel.svg" alt="">&nbsp;Excel</span>
                                 </a>
                             </li>
-                            <li><a href="power.html"><span><img
-                                            style="width: 15px;margin-bottom: 0px;"
+                            <li><a href="power.html"><span><img style="width: 15px;margin-bottom: 0px;"
                                             src="public/principal/img/powerpoint.svg" alt="">&nbsp;Power
                                         Point</span>
                                 </a>
@@ -175,9 +184,9 @@
                                             alt="">&nbsp;Extensiones</span></a>
                             </li>
                             <li>
-                            <a href="paginas.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                <a href="paginas.html"><span><img style="width: 15px;margin-bottom: 0px;"
                                             src="public/principal/img/paginas.svg" alt="">&nbsp;Páginas</span></a>
-                                            
+
                             </li>
 
                         </ul>
@@ -188,7 +197,7 @@
             <h2 class="name"><a target="_blank" href="https://sandoval.ibx.lat/portafolio/">Isai Ismael Sandoval
                     Ccaccro</a>
             </h2>
-            <div class="div-dark-menu">                
+            <div class="div-dark-menu">
                 <a href="#"><img class="logo" src="public/principal/img/logo.jpg" alt=""></a>
                 <!--<router-link to="/"><img class="logo" src="public/principal/img/logo.jpg" alt=""></router-link>-->
                 <i id="menu-icon" class="fas fa-bars menu-icon"></i>
@@ -1113,7 +1122,9 @@
     <script src="public/principal/js/headroom.min.js"></script>
     <script src="public/principal/js/main.js"></script>
     <script src="public/principal/js/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
         </script>
@@ -1138,7 +1149,7 @@
             ]
         })
     </script>
-
+    <script src="loadSw.js"></script>
 
 </body>
 
