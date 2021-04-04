@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE JAVASCRIPT</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#crear-proyecto" class="class-items d-block" class="p-1">Qué es
+                                            JavaScript</a>
+                                    </li>
+                                    <li><a href="#sintaxis" class="class-items d-block" class="p-1">Diferencias entre
+                                            Java y
+                                            JavaScript</a></li>
+                                    <li><a href="#comentarios" class="class-items d-block" class="p-1">Caracteristicas
+                                            de
+                                            JavaScript</a></li>
+                                    <li><a href="#imprimir" class="class-items d-block" class="p-1">Palabras
+                                            reservadas</a></li>
+                                    <li><a href="#variables" class="class-items d-block" class="p-1">Variables</a></li>
+                                    <li><a href="#arreglos" class="class-items d-block" class="p-1">Arreglos</a></li>
+                                    <li><a href="#objetos" class="class-items d-block" class="p-1">Objetos</a></li>
+                                    <li><a href="#cambio-tipos" class="class-items d-block" class="p-1">Casting</a></li>
+                                    <li><a href="#var-let-const" class="class-items d-block"
+                                            class="p-1">VAR-LET-CONST</a></li>
+                                    <li><a href="#cadenas" class="class-items d-block" class="p-1">Cadenas</a></li>
+                                    <li><a href="#concatenacion" class="class-items d-block" class="p-1">Concatenación e
+                                            Interpolación</a></li>
+                                    <li><a href="#null" class="class-items d-block" class="p-1">UNDEFINED-NULL-NAN</a>
+                                    </li>
+                                    <li><a href="#operadores" class="class-items d-block" class="p-1">Operadores</a>
+                                    </li>
+                                    <li><a href="#funciones" class="class-items d-block" class="p-1">Funciones</a></li>
+                                    <li><a href="#condicionales" class="class-items d-block"
+                                            class="p-1">Condicionales</a></li>
+                                    <li><a href="#break-continue" class="class-items d-block" class="p-1">BREAK y
+                                            CONTINUE</a>
+                                    <li><a href="#estructuras" class="class-items d-block" class="p-1">Estructuras de
+                                            control</a>
+                                    </li>
+                                    <li><a href="#bucles" class="class-items d-block" class="p-1">Bucles y ciclos</a>
+                                    </li>
+                                    <li><a href="#try-catch" class="class-items d-block" class="p-1">TRY CATCH</a></li>
+                                    <li><a href="#math" class="class-items d-block" class="p-1">Objeto Math</a></li>
+                                    <li><a href="#date" class="class-items d-block" class="p-1">Objeto Date</a></li>
+                                    <li><a href="#alert" class="class-items d-block"
+                                            class="p-1">Alert-Confirm-Prompt</a></li>
+                                    <li><a href="#temporizador" class="class-items d-block"
+                                            class="p-1">Temporizadores</a></li>
+                                    <li><a href="#cookies" class="class-items d-block" class="p-1">Cookies</a></li>
+                                    <li><a href="#session-storage" class="class-items d-block"
+                                            class="p-1">SessionStorage</a></li>
+                                    <li><a href="#local-storage" class="class-items d-block"
+                                            class="p-1">LocalStorage</a></li>
+                                    <li><a href="#import" class="class-items d-block" class="p-1">Import y Export</a>
+                                    </li>
+                                    <li><a href="#this" class="class-items d-block" class="p-1">This</a>
+                                    </li>
+                                    <li><a href="#pwa" class="class-items d-block" class="p-1">PWA</a>
+                                    </li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            DOM<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#elementosdom" class="class-items d-block" class="p-1">Elementos del
+                                            Documento</a>
+                                    </li>
+                                    <li><a href="#nodosdom" class="class-items d-block" class="p-1">Nodos, Elementos y
+                                            Selectores</a></li>
+                                    <li><a href="#atributosdom" class="class-items d-block" class="p-1">Atributos y
+                                            Data-Attributes</a>
+                                    </li>
+                                    <li><a href="#estilosdom" class="class-items d-block" class="p-1">Estilos y
+                                            Variables CSS</a>
+                                    </li>
+                                    <li><a href="#clasesdom" class="class-items d-block" class="p-1">Clases CSS</a></li>
+                                    <li><a href="#textodom" class="class-items d-block" class="p-1">Texto y HTML</a>
+                                    </li>
+                                    <li><a href="#dom-traversing" class="class-items d-block" class="p-1">DOM Traversing
+                                            -
+                                            Recorriendo el
+                                            DOM</a></li>
+                                    <li><a href="#fragmentosdom" class="class-items d-block" class="p-1">Creando
+                                            Elementos y
+                                            Fragmentos</a></li>
+                                    <li><a href="#eventosdom" class="class-items d-block" class="p-1">Eventos</a></li>
+                                    <li><a href="#preventdom" class="class-items d-block" class="p-1">preventDefault</a>
+                                    </li>
+                                    <li><a href="#expresionesdom" class="class-items d-block" class="p-1">Expresiones
+                                            regulares</a>
+                                    </li>
+
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            BOM<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#propiedadesbom" class="class-items d-block" class="p-1">Propiedades y
+                                            Eventos del
+                                            BOM</a></li>
+                                    <li><a href="#metodobom" class="class-items d-block" class="p-1">Métodos del BOM</a>
+                                    </li>
+                                    <li><a href="#otrosC" class="class-items d-block" class="p-1">OTROS</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
+                                        <span>
+                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
+                                            programa por
+                                            que es más ligero y tiene mas opciones a diferencia de otros
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Conocimiento en Html</span>
+                                    </li>
+                                    <li class="p-1"><span>Conocimiento en Css</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    JavaScript, es un lenguaje de programación interpretado en el navegador. JavaScript
+                                    es el único
+                                    lenguaje de programación que funciona en los navegadores de forma nativa (lenguaje
+                                    interpretado
+                                    sin necesidad de compilación).
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    JavaScript, es el único lenguaje capaz de ejecutarse en las 3 capas de una
+                                    aplicación:
+                                </span>
+                                <ol>
+                                    <li class="p-1"><span>Frontend (con JavaScript).</span>
+                                    </li>
+                                    <li class="p-1"><span>Backend (con Node.js).</span>
+                                    </li>
+                                    <li class="p-1"><span>Persistencia de Datos (con MongoDB, Couch DB, Firebase,
+                                            etc).</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol>Con JavaScript puedes:
+                                    <li class="p-1"><span>Diseño y Desarrollo Web.</span>
+                                    </li>
+                                    <li class="p-1"><span>Hacer Videojuegos.</span>
+                                    </li>
+                                    <li>Etc.</li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- QUE ES JAVASCRIPT -->
+                    <section id="crear-proyecto" class="mb-2">
+                        <h5 class="programas">QUE ES JAVASCRIPT</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Javascript es un lenguaje de programación utilizado para crear comportamientos
+                                    dinámicos en las
+                                    páginas web. Con Javascript, al menos en un primer paso, podrás crear pequeños
+                                    programas
+                                    encargados de realizar acciones dentro del ámbito de una página web, que
+                                    generalmente incluye
+                                    efectos especiales en las páginas e implementar interacción con el usuario.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- DIFERENCIAS ENTRE JAVA Y JAVASCRIPT -->
+                    <section id="sintaxis" class="mb-2">
+                        <h5 class="programas">DIFERENCIAS ENTRE JAVA Y JAVASCRIPT</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="!="
+                                    href="https://www.electronicproducts.com/wp-content/uploads/programming-software-java-vs-javascript.png"
+                                    data-fancybox="gallery" data-caption="Java y JavaScript son DIFERENTES">
+                                    <img loading="lazy"
+                                        src="https://www.electronicproducts.com/wp-content/uploads/programming-software-java-vs-javascript.png"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>JavaScript</strong> es un lenguaje interpretado, en otras palabras, se lee y
+                                    traduce
+                                    línea a línea al mismo tiempo que se ejecuta el programa. Por otro lado,
+                                    <strong>Java</strong>
+                                    es un lenguaje compilado: pasa por una JVM (Java Virtual Machine) para ser
+                                    interpretado y
+                                    traducido al lenguaje de la «máquina».
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- CARACTERISTICAS -->
+                    <section id="comentarios" class="mb-2">
+                        <h5 class="programas">CARACTERISTICAS DE JAVASCRIPT</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1">Lenguaje de Alto Nivel.</li>
+                                    <li class="p-1">Interpretado.</li>
+                                    <li class="p-1">Dinámico.</li>
+                                    <li class="p-1">Débilmente Tipado.</li>
+                                    <li class="p-1">Multi paradigma.</li>
+                                    <li class="p-1">Sensible a MAYÚSCULAS y minúsculas.</li>
+                                    <li class="p-1">No necesitas los puntos y comas al final de cada línea.</li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- PALABRAS RESERVADAS -->
+                    <section id="imprimir" class="mb-2">
+                        <h5 class="programas">PALABRAS RESERVADAS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Las palabras reservadas son palabras que ya estan definidas en el
+                                    propio
+                                    lenguaje, por lo que debes tener CUIDADO. <strong>Por ejem: Evitar crear nombre de
+                                        variables con
+                                        esas palabras reservadas</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                &lt;script>
+                    A: abstract
+                    B: boolean, break, byte
+                    C: case, catch, char, class, const, continue
+                    D: debugger, default, delete, do, double
+                    E: else, enum, export, extends
+                    F: false, final, finally, float, for, function
+                    G: goto
+                    I: if, implements, import, in, instanceof, int, interface
+                    L: let, long
+                    N: native, new, null
+                    P: package, private, protected, public
+                    R: return
+                    S: short, static, super, switch, synchronized
+                    T: this, throw, throws, transient, true, try, typeof
+                    V: var, volatile, void
+                    W: while, with
+                &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- variables -->
+                    <section id="variables" class="mb-2">
+                        <h5 class="programas">VARIABLES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Las variables son un espacio en memoria que almacena un valor. Existen varios
+                                    tipos de
+                                    variables.</span>
+                            </div>
+                            <div class="texto">
+                                <ul>
+                                    <li>string</li>
+                                    <li>number</li>
+                                    <li>boolean</li>
+                                </ul>
+                            </div>
+                            <div class="texto">
+                                <span>En JavaScript las variables se declaran de forma simple y sencilla; para crear una
+                                    variable se
+                                    anteponer el símbolo o caracter de <strong>var o let o const</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>                            
+                        var nombre="juanito";
+                        let edad=10;
+                        const PI = 3.1416;
+                    &lt;/script> 
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>Tambien existen otro tipo de datos que son los <strong>Arrays(arreglos) y
+                                        Objetos</strong></span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- ARREGLOS -->
+                    <section id="arreglos" class="mb-2">
+                        <h5 class="programas">ARRAY O ARREGLOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Un arreglo es una estructura, es decir es un conjunto de variables que pueden ser
+                                    almacenados,
+                                    y para acceder a ello debes utilizar la posicion.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        var amigos = ["juan", "maria", "pedro", 25, true, 100.50];
+                        console.log(amigos);
+                        amigos.forEach(function (el, index) {
+                            console.log(el)
+                        })
+                        //PROPIEDADES
+                        console.log(amigos.length); //muestra el total de valores
+                        //METODOS
+                        amigos.push("sandoval")     //agregar un nuevo valor al array
+                        amigos.pop()                //elimina el ultimo valor del array
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un arreglo con los nombres de los estudiantes y mostrar en
+                                    pantalla</strong></span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un arreglo que contenga numeros de 1-50 y mostrar en
+                                    pantalla</strong></span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- OBJETOS -->
+                    <section id="objetos" class="mb-2">
+                        <h5 class="programas">OBJETOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Un objeto es otro tipo de dato que almacena valores, a diferencia de un array los
+                                    objetos
+                                    estan compuestos por <strong>atributos(caracteristicas) y valores</strong>.</span>
+                            </div>
+                            <div class="texto">
+                                <span>Un objeto tiene atributos y valores.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        var carro = {
+                            color: "rojo",
+                            placa: "12-ABC-55",
+                            marca: "SRV",
+                            tamanio: "mediano"
+                        }
+                        console.log(carro.color)
+                        console.log(carro["placa"])
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un objeto llamado persona y mostrar en persona</span>
+                            </div>
+                        </section>
+                    </section>
+
+
+                    <!-- CAMBIO DE TIPO DE LAS VARIABLES -->
+                    <section id="cambio-tipos" class="mb-2">
+                        <h5 class="programas">CASTING</h5>
+                        <section>
+                            <div class="texto">
+                                <span>En algunos casos es muy importante realizar estos cambios de tipo de las
+                                    variables.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        var numero=10;
+                        parseInt(numero)    //CONVERTIR A ENTERO
+                        numero.toString()   //CONVERTIR A CADENA
+                        parseFloat(numero)  //CONVERTIR A DECIMAL   
+                    &lt;/script>                 
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- VAR - LET - CONST -->
+                    <section id="var-let-const" class="mb-2">
+                        <h5 class="programas">VAR - LET - CONST</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Un operador nos permite realizar una operación entre uno o más valores.</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>VAR</strong> crea variables globales(en el objeto window)</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>LET</strong> crea variables locales</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>CONST</strong> crea variables ùnicos(no puedes reasignar valores)</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        var musica = "rock";
+                        console.log(musica)         // ROCK
+                        {
+                            var musica = "cumbia";
+                            console.log(musica)     // CUMBIA
+                        }
+                        console.log(musica)         // CUMBIA
+
+
+                        let musica2 = "rock";
+                        console.log(musica2)         // ROCK
+                        {
+                            let musica2 = "cumbia";
+                            console.log(musica2)     // CUMBIA
+                        }
+                        console.log(musica2)         // ROCK
+
+
+                        const PI = 3.1416;
+                        PI=10;                       // ERROR NO PUEDES REASIGNAR
+                    &lt;/script>                       
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- CADENAS -->
+                    <section id="cadenas" class="mb-2">
+                        <h5 class="programas">CADENAS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los string es un tipo de dato en Javascript y son muy utilizados, por ello te
+                                    muestro algunos
+                                    de las propiedades y metodos mas utilizados</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let amigo = "juanito  xxx";
+                        let lorem = `Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's 
+                                    standard dummy text ever since the 1500s`;
+                    
+                        //PROPIEDADES
+                        console.log(amigo.length)//devuelve la cantidda de CARACTERES
+                    
+                        //METODOS
+                        console.log(amigo.trim())// borra los espacios en blanco de ambos extremos(R-L)
+                        console.log(lorem.split(" "))// convierte el array y corta a partir del caracter INDICADO
+                        console.log(amigo.toUpperCase())//devuelve el texto en MAYUSCULA
+                        console.log(amigo.toLowerCase())//devuelve el texto en MINUSCULA
+                        console.log(lorem.includes("Lorem"))//devuelve TRUE(si encuentra el texto) o FALSE(si no encuentra)-> diferencia las mayusculas y minusculas
+                        console.log(amigo.indexOf("o"))//devuelve la posicion del caracter buscado Y si no encuentra devuelve -1
+                        console.log(amigo.charAt(5))//Devuelve el carácter que hay en la posición indicada
+                        console.log(amigo.replace("xxx", "yyy"))//reemplaza el texto buscado por otro VALOR
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- CONCATENACION E INTERPOLACION -->
+                    <section id="concatenacion" class="mb-2">
+                        <h5 class="programas">CONCATENACION E INTERPOLACION</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Las concatenaciones e interpolaciones nos permiten unir, combinar valores de una
+                                    variables,
+                                    array u objeto.</span><br>
+                                <span>Son bastante usados en Javascript aunque yo prefiero utilizar la
+                                    <strong>interpolacion</strong> porque me es más facil trabajar con ello.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let nombre = "juanito"
+                        let edad = 21;
+                    
+                        let mensaje = "HOLA ME LLAMO " + nombre + " Y TENGO " + edad + " ANIOS" //CONCATENACION
+                        let mensaje2 = `HOLA ME LLAMO ${nombre} Y TENGO ${edad} ANIOS`;         //INTERPOLACION
+                    
+                        console.log(mensaje)
+                        console.log(mensaje2)
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- UNDEFINED - NULL - NaN -->
+                    <section id="null" class="mb-2">
+                        <h5 class="programas">UNDEFINED - NULL - NaN</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Tambien se les conoce como casos especiales, porque en algún momento tambien te
+                                    encrontarás
+                                    con
+                                    ello</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>undefined</strong> muestra cuando una variable tiene un valor <strong>no
+                                        definido</strong></span>
+                                <br>
+                                <span><strong>null</strong> es un valor nulo. Es un valor que es asignado
+                                    intencionalmente por
+                                    el propio programador</span><br>
+                                <span><strong>NaN</strong> es un aviso que hace referencia a que el valor asignado no es
+                                    un
+                                    numero. Suele pasar al momento de realizar operaciones no válidas como por ejem.
+                                    ("hola" *
+                                    10)</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let a;
+                        console.log(a)//undefined
+                    
+                        let b = null;
+                        console.log(b)//null
+                    
+                        let c = "hola" * 10;
+                        console.log(c)//NaN
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+
+                    <!-- OPERADORES -->
+                    <section id="operadores" class="mb-2">
+                        <h5 class="programas">OPERADORES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Un operador nos permite realizar una operación entre uno o más valores.</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>OPERADORES ARITMÉTICOS</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        //  + Suma
+                        //  - Resta
+                        //  * Multiplicación
+                        //  / División
+                        //  % Módulo (resto de la división)
+                        //  ** Exponenciación (2 ** 3, elevar 2 a la tercera potencia)
+                        let a = 10;
+                        let b = 20;
+                        console.log(a + b)//30;                    
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE COMPARACIÓN</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        //  == Comprueba si son iguales
+                        //  != Comprueba si son distintos
+                        //  === Comprueba si son iguales y de exactamente el mismo tipo
+                        //  !== Comprueba si son distintos o de distinto tipo
+                        //  < Menor qué, comprueba si un valor es menor que otro
+                        //  > Mayór qué
+                        //  <= Menor o igual
+                        //  >= Mayor o igual
+                        let a = 20;
+                        let b = 30; 
+                        if (a == b) {
+                            console("son iguales");
+                        }                    
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES LÓGICOS</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        &&      //Operación lógica "y"
+                        ||      //Operación lógica "o"
+                        if (a === b && a === c) {
+                            console.log("")
+                        }
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE INCREMENTO Y DECREMENTO</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                    /*    INCREMENTO      */
+                        let a = 10;
+                        a++
+                        a=a+1;      
+                        ++a         //PRE-INCREMENTO
+                        a+=1
+                        a-=-1
+                        console.log(a)
+                        
+                        /*    DECREMENTO      */
+                        let b=20;
+                        b--
+                        b=b-1;      
+                        --b         //PRE-DECREMENTO
+                        b-=1
+                        b+=-1
+                        console.log(b)
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE CADENA O CONCATENACIÓN</strong></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        let saludo = "Hola";
+                        let nombre = "como estas";
+                        let saludoCompleto = saludo + " " + nombre;
+                        console.log(saludoCompleto)    
+                    &lt;/script>                      
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- FUNCIONES -->
+                    <section id="funciones" class="mb-2">
+                        <h5 class="programas">FUNCIONES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Las funciones son bloques de codigo que se ejecutan al ser invocados(llamados). Lo
+                                    bueno de
+                                    las funciones es que pueden ser utilizadas infinitas veces.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        //FUNCIONES NORMALES
+                        function mensaje() {
+                            console.log("hola mundo")
+                        }
+                        mensaje()
+
+                        //FUNCIONES TIPO FLECHA(ARROW FUNTIONS)
+                        let mensaje2 = () => {
+                            console.log("hola mundo2")
+                        }
+                        mensaje2()
+                        
+                        //FUNCIONES CON RETURN
+                        function mensaje3() {
+                            return "hola mundo3"
+                        }
+                        console.log(mensaje3())
+
+                        //FUNCIONES CON PARAMETROS
+                        function mensaje4(nombre = "", edad = 0) {
+                            console.log("hola me llamo " + nombre + " y tengo " + edad + " años")
+                        }
+                        mensaje4("isai", 21)
+                    &lt;/script>                       
+                </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear una función que sume dos números.</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear una función que cuando envie mi edad me imprima si soy MAYOR O MENOR de
+                                    edad.</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- condicionales -->
+                    <section id="condicionales" class="mb-2">
+                        <h5 class="programas">CONDICIONALES</h5>
+                        <section>
+                            <span>Las condicionales son utilizadas para tomar decisiones en función de que se cumpla o
+                                no una
+                                determinada condición.</span><br>
+                            <pre rel="JS">
+                    <code class="language-markup line-numbers">
+                        &lt;script>
+                            let a = 10;
+                            let b = 5;
+
+                            if (a===b) {
+                                console.log("son iguales")
+                            }else{
+                                console.log("NO son iguales")
+                            }
+                        &lt;/script>
+                    </code>
+                </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que verifique si una persona es MAYOR o MENOR de edad
+                                    >=18->MAYOR
+                                    &lt;18->MENOR</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que verifique si una persona es HOMBRE o MUJER</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- estructuras de control -->
+                    <section id="break-continue" class="mb-2">
+                        <h5 class="programas">BREAK Y CONTINUE</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Break rompe el flujo de iteración. Termina la iteración.</span>
+                            </div>
+                            <div class="texto">
+                                <span>Continue salta y continua con la siguiente iteración, no ejecuta las operaciones
+                                    que estan por
+                                    debajo.</span>
+                            </div>
+                            <pre rel="JS">
+                    <code class="language-markup line-numbers">
+                        &lt;script>
+                            let dias = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+
+                            for (let i = 0; i < dias.length; i++) {
+                                if (i == 2) {
+                                    break;
+                                }
+                                console.log(dias[i])    // LUNES, MARTES
+                            }
+
+                            for (let i = 0; i < dias.length; i++) {
+                                if (i == 2) {
+                                    continue;
+                                }
+                                console.log(dias[i])    // LUNES, MARTES, JUEVES, VIERNES
+                            }
+                        &lt;/script>
+                    </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- estructuras de control -->
+                    <section id="estructuras" class="mb-2">
+                        <h5 class="programas">ESTRUCTURAS DE CONTROL</h5>
+                        <section>
+                            <span>Usar switch ayuda a simplificar el código y evita confusiones, ya que organiza en
+                                varias ramas el
+                                código que va a ser ejecutado.</span><br>
+                            <pre rel="JS">
+                    <code class="language-markup line-numbers">
+                        &lt;script>
+                            let dia = 5;
+                            switch (dia) {
+                                case 1: console.log("lunes")
+                                    break
+                                case 2: console.log("martes")
+                                    break
+                                case 3: console.log("miercoles")
+                                    break
+                                case 4: console.log("jueves")
+                                    break
+                                case 5: console.log("viernes")
+                                    break
+                                case 6: console.log("sabado")
+                                    break
+                                case 7: console.log("domingo")
+                                    break
+                                default: console.log("error ingresa un dia válido");
+                                    break
+                            }
+                        &lt;/script>
+                    </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que muestre el MES segun el numero ingresado. 1->enero</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que muestre el DIA DE LA SEMANA segun el numero ingresado.
+                                    1->lunes</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- bucles y ciclos -->
+                    <section id="bucles" class="mb-2">
+                        <h5 class="programas">BUCLES Y CICLOS</h5>
+                        <section>
+                            <span>Los bucles o ciclos son secuencias de bloques de codigo que se ejecutarán repetidas
+                                veces hasta
+                                que la condicion deje de cumplirse.</span><br>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        for (let i = 0; i <= 10; i++) {
+                        console.log(i)
+                        }
+                    
+                        let numero = 0;
+                        while (numero <= 10) {
+                            console.log(numero)
+                            numero++
+                        }
+                    
+                        let numero2 = 11;
+                        do {
+                            console.log(numero2)
+                            numero2++
+                        } while (numero2 <= 10);
+                    &lt;/script>
+                </code>                    
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que muestre los numeros de 1-100. incrementado en 2</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que los numeros pares de 1-100</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- TRY CATCH -->
+                    <section id="try-catch" class="mb-2">
+                        <h5 class="programas">TRY CATCH</h5>
+                        <section>
+                            <div class="texto">
+                                <span>*Los Try Catch se utilizan para poder prevenir los errores.
+                                    <br>
+                                    *Para mayoria de los casos el try catch se utiliza:
+                                </span>
+                            </div>
+                            <ol>
+                                <li>Para recibir información de formularios</li>
+                                <li>Para realizaciones acciones hacia la BD</li>
+                            </ol>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let numero = 10;
+                        try {
+                            console.lo(numero)  //aqui esta el error
+                        } catch (e) {
+                            console.log("error en " + e)  // solo se muestra si hay un error
+                        } finally {
+                            console.log("este mensaje siempre se muestra al finalizar el tryCatch")
+                        }
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- OBJETOS MATH -->
+                    <section id="math" class="mb-2">
+                        <h5 class="programas">OBJETOS MATH</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los objetos Math nos permiten realizar operaciones con numeros. Este objeto es muy
+                                    importante
+                                    utilizar
+                                    a la hora de trabajar con números en JavaScript</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let numero = -20;
+                        let numero2 = 25.80
+                    
+                        console.log(Math)
+                        console.log(Math.PI)//muestra el valor de PI -> 3.1416
+                        console.log(Math.round(numero2))//redonde el valor segun los decimales
+                        console.log(Math.abs(numero))//devuelve el numero en positivo
+                        console.log(Math.ceil(numero2))//siempre redondea al numero siguiente
+                        console.log(Math.floor(numero2))//siempre redondea al numero anterior
+                        console.log(Math.sqrt(100))//devuelve la raiz cuadrada
+                        console.log(Math.pow(3, 2))//devuelve la potencia
+                        console.log(Math.sign(10))//devuelve 1 0 -1
+                        console.log(Math.random())//devuelve un numero aleatorio entre 0-1
+                        console.log(Math.round(Math.random() * 100))//devuelve un numero aleatorio entre 0-100
+                        console.log(Math.round(Math.random() * (100 - 10) + 10))//devuelve un numero aleatorio entre 10-100
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- OBJETOS DATE -->
+                    <section id="date" class="mb-2">
+                        <h5 class="programas">OBJETOS DATE</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los objetos Date nos permiten trabajar con fechas en JavaScript. Si deseas
+                                    trabajar con fechas
+                                    mas
+                                    avanzadas te recomendamos la libreria <a href="https://momentjs.com/"
+                                        target="_blank">Moment.js</a></span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let fecha = new Date()
+                        console.log(fecha)
+                        console.log(fecha.toLocaleString())//fecha y hora
+                        console.log(fecha.toLocaleDateString())//solo fecha-completo
+                        console.log(fecha.toLocaleTimeString())//solo hora-completo
+                    
+                        console.log(fecha.getFullYear())//solo año
+                        console.log(fecha.getMonth() + 1)//solo mes
+                        console.log(fecha.getDate())//solo dia
+                    
+                        console.log(fecha.getHours())//solo hora
+                        console.log(fecha.getMinutes())//solo minutos
+                        console.log(fecha.getSeconds())//solo segundos
+                        console.log(fecha.getMilliseconds())//solo milisegundos
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- ALERT - CONFIRM - PROMPT -->
+                    <section id="alert" class="mb-2">
+                        <h5 class="programas">ALERT - CONFIRM - PROMPT</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Son funciones nativas de Javascript que provienen del objeto
+                                    <strong>window</strong>.</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>alert</strong> nos muestra un aviso de alerta en el navegador</span>
+                                <br>
+                                <span><strong>confirm</strong> nos muestra una ventana de confirmacion con las opciones
+                                    de ACEPTAR Y
+                                    CANCELAR</span><br>
+                                <span><strong>prompt</strong> nos muestra una ventana donde podemos ingresar un
+                                    valor</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let alerta = alert("esto es un alerta")
+                        console.log(alerta)//las alertas siempre devuelven UNDEFINED
+                    
+                        let confir = confirm("Estas seguro que deseas salir")
+                        console.log(confir)//devuelve TRUE(aceptas) o FALSE(cancelas)
+                    
+                        let prom = prompt("cuantos años tienes")
+                        console.log(prom)//devuelve el VALOR(si ingresas un valor) o NULL(si cancelas)
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- TEMPORIZADORES -->
+                    <section id="temporizador" class="mb-2">
+                        <h5 class="programas">TEMPORIZADORES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los temporizadores son funciones que se ejecutan en un tiempo determinado.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        /* SE EJECUTA UNA SOLA VEZ */
+                        setTimeout(() => {
+                            console.log("hola")
+                        }, 2000);
+                    
+                        /* SE EJECUTA INFINITAS VECES */
+                        setInterval(() => {
+                            console.log("hola como estas")
+                        }, 5000);
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+
+                    <!-- COOKIES -->
+                    <section id="cookies" class="mb-2">
+                        <h5 class="programas">COOKIES</h5>
+                        <div class="texto">
+                            <span>Las cookies son unas informaciones almacenadas por un sitio web en el
+                                disco duro del usuario. Esta información es almacenada en un archivo tipo texto que se
+                                guarda cuando
+                                el
+                                navegador accede al sitio web.
+                            </span>
+                        </div>
+                        <div class="texto">
+                            <span>Las cookies se pueden eliminar al poner una MAX-TIEMPO(fecha-máxima) anterior.
+                            </span>
+                        </div>
+                        <div class="texto img-conexion wrapper">
+                            <a rel="diferencias" href="public/cursos/js/CSL.png" data-fancybox="gallery"
+                                data-caption="diferencias">
+                                <img loading="lazy" src="public/cursos/js/CSL.png" alt="">
+                            </a>
+                        </div>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        function crear() {
+                            //  https://www.thetimezoneconverter.com/
+                            document.cookie = "usuario=juan; expires=Tue, 26 Jan 2021 18:25:30 UTC; path=/";//max-age=60*60 => 1 hora
+                        }
+                        function mostrar() {
+                            alert(document.cookie)
+                        }
+                        function actualizar() {
+                            document.cookie = "usuario=juan12345; expires=Tue, 26 Jan 2021 18:25:30 UTC; path=/";//max-age=60*60 => 1 hora
+                        }
+                        function eliminar() {
+                            document.cookie = "usuario=juan12345; expires=Tue, 26 Jan 2000 18:25:30 UTC; path=/";//max-age=60*60 => 1 hora
+                        }                    
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- SESSION STORAGE -->
+                    <section id="session-storage" class="mb-2">
+                        <h5 class="programas">SESSION STORAGE</h5>
+                        <div class="texto">
+                            <span>Session Storage nos permite almacenar datos de manera local en el navegador.
+                            </span>
+                        </div>
+                        <div class="texto">
+                            <span><strong>sessionStorage almacena información mientras la pestaña donde se esté
+                                    utilizando siga
+                                    abierta, una
+                                    vez cerrada, la información se elimina</strong>.
+                            </span>
+                        </div>
+                        <div class="texto img-conexion wrapper">
+                            <a rel="diferencias" href="public/cursos/js/CSL.png" data-fancybox="gallery"
+                                data-caption="diferencias">
+                                <img loading="lazy" src="public/cursos/js/CSL.png" alt="">
+                            </a>
+                        </div>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        /* SOLO STRING */
+                        function crear() {
+                            sessionStorage.setItem("nombre", "juan")
+                        }
+                        function mostrar() {
+                            alert(sessionStorage.getItem("nombre"))
+                        }
+                        function actualizar() {
+                            sessionStorage.setItem("nombre", "juan12345")
+                        }
+                        function eliminar() {
+                            sessionStorage.removeItem("nombre")
+                        }
+                
+                        /* CON ARREGLOS */
+                        let amigos = [
+                            "juan", "maria", "marko", "diana"
+                        ]
+                        function crear2() {
+                            sessionStorage.setItem("amigo", JSON.stringify(amigos))
+                        }
+                        function mostrar2() {
+                            console.log(JSON.parse(sessionStorage.getItem("amigo")))
+                        }
+                        function actualizar2() {
+                            // en este caso tendrías que modificar el arreglo AMIGOS
+                        }
+                        function eliminar2() {
+                            sessionStorage.removeItem("amigo")
+                        }
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- LOCAL STORAGE -->
+                    <section id="local-storage" class="mb-2">
+                        <h5 class="programas">LOCAL STORAGE</h5>
+                        <div class="texto">
+                            <span>Local Storage nos permite almacenar datos de manera local en el navegador.
+                            </span>
+                        </div>
+                        <div class="texto">
+                            <span><strong>localStorage almacena la información de forma indefinida o hasta que se decida
+                                    limpiar los
+                                    datos del navegador</strong>.
+                            </span>
+                        </div>
+                        <div class="texto img-conexion wrapper">
+                            <a rel="diferencias" href="public/cursos/js/CSL.png" data-fancybox="gallery"
+                                data-caption="diferencias">
+                                <img loading="lazy" src="public/cursos/js/CSL.png" alt="">
+                            </a>
+                        </div>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        /* SOLO STRING */
+                        function crear() {
+                            localStorage.setItem("nombre", "juan")
+                        }
+                        function mostrar() {
+                            alert(localStorage.getItem("nombre"))
+                        }
+                        function actualizar() {
+                            localStorage.setItem("nombre", "juan12345")
+                        }
+                        function eliminar() {
+                            localStorage.removeItem("nombre")
+                        }
+                
+                        /* CON ARREGLOS */
+                        let amigos = [
+                            "juan", "maria", "marko", "diana"
+                        ]
+                        function crear2() {
+                            localStorage.setItem("amigo", JSON.stringify(amigos))
+                        }
+                        function mostrar2() {
+                            console.log(JSON.parse(localStorage.getItem("amigo")))
+                        }
+                        function actualizar2() {
+                            // en este caso tendrías que modificar el arreglo AMIGOS
+                        }
+                        function eliminar2() {
+                            localStorage.removeItem("amigo")
+                        }                
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- IMPORT Y EXPORT -->
+                    <section id="import" class="mb-2">
+                        <h5 class="programas">IMPORT Y EXPORT</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="import" href="public/cursos/js/import.svg" data-fancybox="gallery"
+                                    data-caption="import">
+                                    <img loading="lazy" src="public/cursos/js/import.svg" alt="">
+                                </a>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script src="js/main2.js" type="module">&lt;/script>
+                    &lt;script src="js/main.js" type="module">&lt;/script>
+
+                    &lt;script>
+                    // main2.js
+                        export const PI = Math.PI;
+                        export function saludo(nombre) {
+                            console.log("Hola " + nombre)
+                        }
+                    // main.js
+                        import { PI, saludo } from "./main2.js";
+                        //import { saludo as mensaje } from "./main2.js";
+                        console.log(PI)
+                        saludo("isai")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- THIS -->
+                    <section id="this" class="mb-2">
+                        <h5 class="programas">THIS</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="this" href="public/cursos/js/this.svg" data-fancybox="gallery"
+                                    data-caption="import">
+                                    <img loading="lazy" src="public/cursos/js/this.svg" alt="">
+                                </a>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                   
+                    &lt;script>
+                        const persona = {
+                            nombre: "isai",
+                            edad: 20,
+                            saludo() {
+                                let nombre = "juan"
+                                console.log("hola " + nombre)
+                                console.log("hola " + this.nombre)
+                            }
+                        }
+                        persona.saludo(
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- PWA -->
+                    <section id="pwa" class="mb-2">
+                        <h5 class="programas">PWA</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    OJO: la página debe estar publicado en un protocolo seguro HTTPS <br>
+                                    OJO: es importante que los archivos estén ubicados al mismo que el index.html o al
+                                    archivo que se
+                                    ejecuta primero.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                   
+                   &lt;head>
+                        &lt;meta name="theme-color" content="#F0DB4F">
+                        &lt;meta name="MobileOptimized" content="width">
+                        &lt;meta name="HandheldFriendly" content="true">
+                        &lt;meta name="apple-mobile-web-app-capable" content="yes">
+                        &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+                        &lt;link rel="shortcut icon" type="image/png" href="./img/ProgramadorFitness.png">
+                        &lt;link rel="apple-touch-icon" href="./ProgramadorFitness.png">
+                        &lt;link rel="apple-touch-startup-image" href="./ProgramadorFitness.png">
+                        &lt;link rel="manifest" href="./manifest.json"> &lt!-- importante -->
+
+                        &lt!-- PARA RECORTAR LAS IMAGENES -->
+                        https://onlinepngtools.com/resize-png
+                   &lt;/head>
+                    &lt;body>
+                        &lt;script src="./LOADSW.js">&lt;/script>
+                    &lt;/body>
+                   
+                   &lt!-- EN EL MANIFEST.JSON --> &lt!-- importante -->
+                   &lt;script>
+                    {
+                        "name": "#ProgramadorFitness",
+                        "short_name": "#ProgramadorFitness",
+                        "description": "Bienvenid@s a #ProgramadorFitness, serie de videos, donde te daré consejos para llevar una vida saludable y evitar el sedentarismo. Recuerda... mente sana en cuerpo sano :)",
+                        "background_color": "#2B2B2B",
+                        "theme_color": "#F0DB4F",
+                        "orientation": "portrait",
+                        "display": "standalone",
+                        "start_url": "./?utm_source=web_app_manifest",
+                        o //"start_url": "./index.html?utm_source=web_app_manifest",
+                        "scope": "./",
+                        "lang": "es-MX",
+                        "icons": [
+                        {
+                            "src": "./img/icon_1024.png",
+                            "sizes": "1024x1024",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_512.png",
+                            "sizes": "512x512",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_384.png",
+                            "sizes": "384x384",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_256.png",
+                            "sizes": "256x256",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_192.png",
+                            "sizes": "192x192",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_128.png",
+                            "sizes": "128x128",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_96.png",
+                            "sizes": "96x96",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_64.png",
+                            "sizes": "64x64",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/icon_32.png",
+                            "sizes": "32x32",
+                            "type": "image/png"
+                        },
+                        {
+                            "src": "./img/favicon.png",
+                            "sizes": "16x16",
+                            "type": "image/png"
+                        }
+                        ]
+                    }
+                   &lt;/script>
+
+                   &lt!-- EN EL LOADSW.JS -->
+                    &lt;script>
+                        if ('serviceWorker' in navigator) {
+                            navigator.serviceWorker.register('./sw.js')
+                            .then(reg => console.log('Registro de SW exitoso', reg))
+                            .catch(err => console.warn('Error al tratar de registrar el sw', err))
+                        }
+                    &lt;/script>
+
+                    &lt!-- EN EL SW.JS -->
+                    &lt;script>
+                        //asignar un nombre y versión al cache
+                        const CACHE_NAME = 'v1_cache_programador_fitness',
+                        urlsToCache = [
+                            './',
+                            'https://fonts.googleapis.com/css?family=Raleway:400,700',
+                            'https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2',
+                            'https://use.fontawesome.com/releases/v5.0.7/css/all.css',
+                            'https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2',
+                            './style.css',
+                            './script.js',
+                            './img/ProgramadorFitness.png',
+                            './img/favicon.png'
+                        ]
+
+                        //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
+                        self.addEventListener('install', e => {
+                        e.waitUntil(
+                            caches.open(CACHE_NAME)
+                            .then(cache => {
+                                return cache.addAll(urlsToCache)
+                                .then(() => self.skipWaiting())
+                            })
+                            .catch(err => console.log('Falló registro de cache', err))
+                        )
+                        })
+
+                        //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
+                        self.addEventListener('activate', e => {
+                        const cacheWhitelist = [CACHE_NAME]
+
+                        e.waitUntil(
+                            caches.keys()
+                            .then(cacheNames => {
+                                return Promise.all(
+                                cacheNames.map(cacheName => {
+                                    //Eliminamos lo que ya no se necesita en cache
+                                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                                    return caches.delete(cacheName)
+                                    }
+                                })
+                                )
+                            })
+                            // Le indica al SW activar el cache actual
+                            .then(() => self.clients.claim())
+                        )
+                        })
+
+                        //cuando el navegador recupera una url
+                        self.addEventListener('fetch', e => {
+                        //Responder ya sea con el objeto en caché o continuar y buscar la url real
+                        e.respondWith(
+                            caches.match(e.request)
+                            .then(res => {
+                                if (res) {
+                                //recuperar del cache
+                                return res
+                                }
+                                //recuperar de la petición a la url
+                                return fetch(e.request)
+                            })
+                        )
+                        })
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">DOM
+                        (Document Object
+                        Model)</button>
+                    <!-- ELEMENTOS DEL DOCUMENTO -->
+                    <section id="elementosdom" class="mb-2">
+                        <h5 class="programas">ELEMENTOS DEL DOCUMENTO</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        console.log(document)//muestra el documento completo
+                        console.log(document.head)//muestra el encabezado del documento
+                        console.log(document.body)//muestra el cuerpo del documento
+                        console.log(document.documentElement)//muestra el HTML completo
+                        console.log(document.doctype)//muestra el tipo de documento
+                        console.log(document.charset)//muestra el formato de codificacion
+                        console.log(document.title)//muestra el titulo del documento
+                        console.log(document.links)//muestra los vinculos o links (etiqueta "a")
+                        console.log(document.images)//muestra las images del documento
+                        console.log(document.forms)//muestra los formularios del documento
+                        console.log(document.styleSheets)//muestra los estilos css
+                        console.log(document.scripts)//muestra los scripts
+                        setTimeout(() => {
+                            console.log(document.getSelection().toString());
+                          }, 2000);
+                          document.write("&lt;h2>Hola Mundo desde el DOM&lt;/h2>");//muestra el texto seleccionado
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- NODOS, ELEMENTOS Y SELECTORES -->
+                    <section id="nodosdom" class="mb-2">
+                        <h5 class="programas">NODOS, ELEMENTOS Y SELECTORES</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let a=document.getElementById("id")//obtiene el elemento por su ID
+                        let b=document.querySelector(".class")//obtiene el elemento por   #id - .class - tag
+                        let b=document.querySelectorAll("#id")//obtiene elementos por     #id - .class - tag
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- ATRIBUTOS Y DATA-ATTRIBUTES -->
+                    <section id="atributosdom" class="mb-2">
+                        <h5 class="programas">ATRIBUTOS Y DATA-ATTRIBUTES</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let h1 = document.querySelector("h1")
+                        /* ATRIBUTOS */
+                        console.log(h1.getAttribute("id"))// obtener el valor del attributo
+                        console.log(h1.setAttribute("id", "nuevoValor"))// coloca nuevo valor del attributo
+                        console.log(h1.removeAttribute("id"))// elimina el valor del attributo
+                        console.log(h1.hasAttribute("id"))// devuelve TRUE si encuentra al ATRIBUTO del lo contrario FALSE
+                
+                        /* DATA ATTRIBUTES */
+                        console.log(h1.dataset.descripcion)// obtener el valor del data-attribute
+                        console.log(h1.getAttribute("data-descripcion"))// obtener el valor del data-attribute
+                        console.log(h1.setAttribute("data-descripcion", "nuevo valor"))// coloca nuevo valor del data-attribute
+                        console.log(h1.removeAttribute("data-descripcion"))// elimina el valor del data-attribute
+                        console.log(h1.hasAttribute("data-descripcion"))// devuelve TRUE si encuentra al ATRIBUTO del lo contrario FALSE
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- ESTILOS Y VARIABLES CSS -->
+                    <section id="estilosdom" class="mb-2">
+                        <h5 class="programas">ESTILOS Y VARIABLES CSS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;style>
+                        :root { --claro: yellow; --oscuro: #222; }
+                    &lt;/style>
+                
+                    &lt;h1 id="titulo">Hola Mundo&lt;/h1>
+                
+                    &lt;script>
+                        let h1 = document.querySelector("h1")
+                
+                        /* FORMAS DE AGREGAR ESTILOS CSS */
+                        h1.style.color = "red";
+                        h1.style.backgroundColor = "green";
+                        console.log(h1.style.color)
+                        h1.style.setProperty("padding", "20px");
+                        h1.setAttribute("style", "color:red;padding:20px;background:green")
+                
+                        /* FORMAS DE ELIMINAR ESTILOS CSS */
+                        h1.removeAttribute("style")
+                        h1.style.removeProperty("padding")
+                        h1.style.color = ""
+                
+                        /* CON VARIABLES CSS */
+                        let html = document.documentElement;
+                        let body = document.body;
+                        const claro = getComputedStyle(html).getPropertyValue("--claro")//OBTENGO EL VALOR DE LA VARIABLE DEL CSS
+                        const oscuro = getComputedStyle(html).getPropertyValue("--oscuro")//OBTENGO EL VALOR DE LA VARIABLE DEL CSS
+                        body.style.background = claro                    
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- CLASES CSS -->
+                    <section id="clasesdom" class="mb-2">
+                        <h5 class="programas">CLASES CSS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let h1 = document.querySelector("h1")
+                        console.log(h1.className)// obtiene el nombre de la clase
+                        h1.classList.add("titulo")//agrega //add("active", "isai", "is");
+                        console.log(h1.classList.contains("titulo"))// mira si contiene o no
+                        h1.classList.remove("titulo")//elimina //remove("active", "acti", "ac");
+                        h1.classList.replace("titulo", "nuevoTitulo")// reemplaza
+                        h1.classList.toggle("verdad")// AGREGAR Y ELIMINAR O VICEVERSA
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- TEXTOS Y HTML -->
+                    <section id="textodom" class="mb-2">
+                        <h5 class="programas">TEXTOS Y HTML</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let h1 = document.querySelector("h1")
+                        let texto = `
+                        &lt;div>
+                            &lt;h2>ESTO ES UN TITULO&lt;/h2>
+                            &lt;div>
+                                &lt;p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem reiciendis cupiditate blanditiis
+                                    quae magni labore alias dolor ipsam rem!&lt;/p>
+                            &lt;/div>
+                        &lt;/div>
+                        `
+                        h1.textContent=texto// NO reconoce las etiquetas de HTML
+                        h1.innerHTML=texto// SI reconoce las etiquetas de HTML                
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- RECORRIENDO EL DOM -->
+                    <section id="dom-traversing" class="mb-2">
+                        <h5 class="programas">RECORRIENDO EL DOM</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        let div = document.querySelector(".contenedor")
+                        let h2 = document.querySelector(".texto2")
+                
+                        console.log(div.children)//muestra los hijos
+                        console.log(div.children[1])//muestra el hijo de la posic 1
+                        console.log(h2.parentElement)//muestra el padre
+                        console.log(div.firstElementChild)//muestra el primer hijo
+                        console.log(div.lastElementChild)//muestra el ultimo hijo
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- CREANDO ELEMENTOS Y FRAGMENTOS -->
+                    <section id="fragmentosdom" class="mb-2">
+                        <h5 class="programas">CREANDO ELEMENTOS Y FRAGMENTOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Los fragmentos se utilizan especialmente cuando deseas agregar una
+                                    gran cantidad
+                                    de elementos al DOM.</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>
+                        /* CREANDO ELEMENTOS */
+                        let semana = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+                        let bodi = document.body;
+                        const ol = document.createElement("ol");
+                        semana.forEach(function (item, index) {
+                            const li = document.createElement("li");
+                            li.textContent = item;
+                            ol.appendChild(li)
+                        })
+                
+                        bodi.appendChild(ol)//agregar al inicio del body
+                        bodi.prepend(ol)//agregar al final del body
+                
+                
+                        /* CREANDO FRAGMENTOS */
+                        let semana = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+                        let fragmento = document.createDocumentFragment();// DIFERENCIA
+                        let bodi = document.body;
+                        const ol = document.createElement("ol");
+                        semana.forEach(function (item, index) {
+                            const li = document.createElement("li");
+                            li.textContent = item;
+                            fragmento.appendChild(li)//DIFERENCIA
+                        })
+                        ol.appendChild(fragmento)//DIFERENCIA
+                
+                        bodi.appendChild(ol)//agregar al inicio del body
+                        bodi.prepend(ol)//agregar al final del body
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- EVENTOS -->
+                    <section id="eventosdom" class="mb-2">
+                        <h5 class="programas">EVENTOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Los eventos en JS son como los metodos, <strong>son acciones que se
+                                        ejecutan al
+                                        realizar
+                                        una acción en la página</strong></span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="EVENTOS" href="public/cursos/js/event1.png" data-fancybox="gallery"
+                                    data-caption="Eventos de JavaScript">
+                                    <img loading="lazy" src="public/cursos/js/event1.png" alt="">
+                                </a>
+                                <a rel="EVENTOS" href="public/cursos/js/event2.png" data-fancybox="gallery"
+                                    data-caption="Eventos de JavaScript">
+                                    <img loading="lazy" src="public/cursos/js/event2.png" alt="">
+                                </a>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">  
+                    &lt;!-- METODO 1 -->
+                    &lt;button onclick="saludo()">PRESIONAME&lt;/button>
+                    &lt;script>
+                        function saludo() {
+                            alert("Hola como estas")
+                        }
+                    &lt;/script>
+
+                    &lt;!-- METODO 2 -->
+                    &lt;button id="boton">PRESIONAME&lt;/button>
+                    &lt;script>
+                        let boton = document.getElementById("boton")
+                        boton.addEventListener("click", mensaje)
+
+                        function mensaje(e) {
+                            console.log(e)
+                            // GRACIAS E ESTE PARAMETRO "E" PODRAS RECUPERAR MUCHOS ELEMENTOS DEL EVENTO
+                            console.log(e.target) // MUESTRA LA ETIQUETA
+                            console.log(e.type) // MUESTRA LA ETIQUETA
+                        }
+
+                        /* ELIMINAR UN EVENTO */
+                        boton.removeEventListener("click", mensaje)
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- PREVENT DEFAULT -->
+                    <section id="preventdom" class="mb-2">
+                        <h5 class="programas">PREVENT DEFAULT</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">  
+                    &lt;form action="index.php">
+                        &lt;button type="submit" id="boton">PRESIONAME&lt;/button>
+                    &lt;/form>
+                    &lt;a id="link" href="https://www.youtube.com">Ir a YouTube&lt;/a>
+                    &lt;script>
+                        let boton = document.getElementById("boton")
+                        boton.addEventListener("click", mensaje)
+                        function mensaje(e) {
+                            e.preventDefault();
+                        }
+                
+                        let a = document.getElementById("link")
+                        a.addEventListener("click", mensaje2)
+                        function mensaje2(e) {
+                            e.preventDefault();
+                        }
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- EXPRESIONES REGULARES -->
+                    <section id="expresionesdom" class="mb-2">
+                        <h5 class="programas">EXPRESIONES REGULARES</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        let expresiones = {
+                            usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+                            nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+                            password: /^.{4,12}$/, // 4 a 12 digitos.
+                            correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                            telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+                        }
+
+
+                        Coincidencias Basicas
+                        .       - Cualquier Caracter, excepto nueva linea
+                        \d      - Cualquier Digitos (0-9)
+                        \D      - No es un Digito (0-9)
+                        \w      - Caracter de Palabra (a-z, A-Z, 0-9, _)
+                        \W      - No es un Caracter de Palabra.
+                        \s      - Espacios de cualquier tipo. (espacio, tab, nueva linea)
+                        \S      - No es un Espacio, Tab o nueva linea.
+
+                        Limites
+                        \b      - Limite de Palabra
+                        \B      - No es un Limite de Palabra
+                        ^       - Inicio de una cadena de texto
+                        $       - Final de una cadena de texto
+
+                        Cuantificadores:
+                        *       - 0 o Más
+                        +       - 1 o Más
+                        ?       - 0 o Uno
+                        {3}     - Numero Exacto
+                        {3,4}   - Rango de Numeros (Minimo, Maximo)
+
+                        Conjuntos de Caracteres
+                        []      - Caracteres dentro de los brackets
+                        [^ ]    - Caracteres que NO ESTAN dentro de los brackets
+
+                        Grupos
+                        ( )     - Grupo
+                        |       - Uno u otro
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+
+
+
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">BOM
+                        (Browser Object
+                        Model)</button>
+
+                    <!-- PROPIEDADES Y EVENTOS DEL BOM -->
+                    <section id="propiedadesbom" class="mb-2">
+                        <h5 class="programas">PROPIEDADES Y EVENTOS DEL BOM</h5>
+                        <section>
+                            <pre rel="JS">
+                    <code class="language-markup line-numbers">
+                        &lt;script>
+                            window.addEventListener("resize", function (e) {
+                                console.clear()
+                                console.log(window.innerHeight)//indica el alto de la pagina
+                                console.log(window.innerWidth)//indica el ancho de la pagina
+                            })
+                    
+                            window.addEventListener("scroll", function (e) {
+                                console.clear()
+                                console.log(window.scrollX)//indica la posicion del scroll
+                                console.log(window.scrollY)//indica la posicion del scroll
+                            })
+                    
+                            window.addEventListener("mousemove", function (e) {
+                                console.clear()
+                                console.log(e.clientX)//indica la posicion del puntero del mouse
+                                console.log(e.clientY)//indica la posicion del puntero del mouse
+                            })
+                        &lt;/script>
+                    </code>
+                </pre>
+                        </section>
+                    </section>
+                    <!-- METODOS DEL BOM -->
+                    <section id="metodobom" class="mb-2">
+                        <h5 class="programas">METODOS DEL BOM</h5>
+                        <section>
+                            <pre rel="JS">
+                    <code class="language-markup line-numbers">
+                        &lt;script>
+                            function imprimir() {
+                                window.print()
+                            }
+                    
+                            let nuevo;
+                            function abrirPestania() {
+                                nuevo=window.open("https://google.com")
+                            }
+                    
+                            function cerrarPestania() {
+                                nuevo.close();
+                            }
+                        &lt;/script>
+                    </code>
+                </pre>
+                        </section>
+                    </section>
+
+                    <!-- OTROS -->
+                    <section id="otrosC" class="mb-2">
+                        <h5 class="programas">OTROS</h5>
+                        <section>
+                            <pre rel="JS">
+                    <code class="language-markup line-numbers">
+                        &lt;script>
+                            /* JQUERY SLIDETOGGLE */
+                            $(".slide A").click(function () {
+                                var target = $(this).parent().children(".slideContent UL");
+                                $(target).slideToggle();
+                            });
+
+
+                            
+                            /* SUBIR ARRIBA JQUERY */
+                            $(document).ready(function () {
+                                $(".top").click(function () {
+                                    $("body, html").animate({
+                                        scrollTop: 0
+                                    }, 1000)
+                                })
+                            })
+                        
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 0) {
+                                    $(".top").slideDown(300)
+                                } else {
+                                    $(".top").slideUp(300)
+                                }
+                            })
+                        &lt;/script>
+                    </code>
+                </pre>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+
+
+</body>
+
+</html>

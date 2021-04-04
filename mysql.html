@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE MYSQL</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#tipo-datos" class="class-items d-block" class="p-1">Tipo de datos</a>
+                                    </li>
+                                    <li><a href="#comentarios" class="class-items d-block" class="p-1">Comentarios</a>
+                                    </li>
+                                    <li><a href="#linea-comandos" class="class-items d-block" class="p-1">Línea de
+                                            comandos</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#select" class="class-items d-block" class="p-1">SELECT - DISTINCT -
+                                            ORDER BY</a>
+                                    </li>
+                                    <li><a href="#where" class="class-items d-block" class="p-1">WHERE</a></li>
+                                    <li><a href="#and-or-not" class="class-items d-block" class="p-1">AND - OR - NOT</a>
+                                    </li>
+                                    <li><a href="#in" class="class-items d-block" class="p-1">IN</a></li>
+                                    <li><a href="#between" class="class-items d-block" class="p-1">BETWEEN</a></li>
+                                    <li><a href="#like" class="class-items d-block" class="p-1">LIKE</a></li>
+                                    <li><a href="#join" class="class-items d-block" class="p-1">INNER - LEFT - RIGHT -
+                                            FULL JOIN</a>
+                                    </li>
+                                    <li><a href="#max-min" class="class-items d-block" class="p-1">COUNT - AVG - SUM -
+                                            MAX - MIN</a>
+                                    </li>
+                                    <li><a href="#group-by" class="class-items d-block" class="p-1">GROUP BY</a></li>
+                                    <li><a href="#having" class="class-items d-block" class="p-1">HAVING</a></li>
+                                    <li><a href="#where-having" class="class-items d-block" class="p-1">DIFERENCIA ENTRE
+                                            WHERE Y
+                                            HAVING</a></li>
+
+                                    <li><a href="#consultas" class="class-items d-block" class="p-1">Consultas SQL</a>
+                                    </li>
+                                    <li><a href="#procedimientos-almacenados" class="class-items d-block"
+                                            class="p-1">Procedimientos
+                                            almacenados</a></li>
+                                    <li><a href="#importar-exportar" class="class-items d-block" class="p-1">Importar y
+                                            Exportar
+                                            SQL</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://downloads.mysql.com/archives/query/">Mysql Query Browser</a>
+                                        <span>
+                                            (My Structured Query Language->Lenguaje de Consulta) es un gestor de base de
+                                            datos, lo
+                                            cual
+                                            nos
+                                            permite almacenar y administrar información.
+                                        </span>
+                                    </li>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://dev.mysql.com/downloads/workbench/">Mysql workbench</a>
+                                        <span>
+                                            (My Structured Query Language->Lenguaje de Consulta) es un gestor de base de
+                                            datos, lo
+                                            cual
+                                            nos
+                                            permite almacenar y administrar información.
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <!-- <li class="p-1"><span></span>
+                    </li> -->
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <strong>¿ Qué es mysql ?</strong>
+                            </div>
+                            <div class="texto">
+                                <span style="margin-bottom: 10px">
+                                    MySQL es el sistema gestor de bases de datos más popular de Internet. Es un proyecto
+                                    open source
+                                    que se encuentra disponible en la mayoría de los servidores y proyectos.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span>
+                                    MYSQL sirve para almacenar y administrar datos en bases de datos relacionales.
+                                    MySQL es un sistema gestor de bases de datos relacionales potente y versátil, capaz
+                                    de
+                                    satisfacer la mayoría de los proyectos en la web.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <strong>¿ Qué es una base de datos ?</strong>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Una base de datos es el lugar o espacio donde se almacenan un conjunto de datos y
+                                    pueden ser
+                                    utilizados en cualquier momento, cuando el usuario lo solicite.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Una base de datos esta conformado por <strong>tablas</strong> que estan relacionadas
+                                    entre sí, y
+                                    cada tabla esta conformado por <strong>filas y columnas</strong>.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="tablas" href="public/cursos/mysql/quees.png" data-fancybox="gallery"
+                                    data-caption="tablas">
+                                    <img loading="lazy" src="public/cursos/mysql/quees.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- tipo de datos -->
+                    <section id="tipo-datos" class="mb-2">
+                        <h5 class="programas">TIPO DE DATOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">En mysql para poder almacenar datos en una tabla, primero debemos
+                                    fijarnos en el
+                                    tipo de
+                                    datos que es; ya sea
+                                    (NUMERO-CADENA)</span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">Existen varios tipos de datos para almacenar un valor pero los mas
+                                    principales son
+                                    <strong>char varchar int tinyint float double date longblob</strong></span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="todos" href="public/cursos/mysql/tipos.png" data-fancybox="gallery"
+                                    data-caption="todos">
+                                    <img loading="lazy" src="public/cursos/mysql/tipos.png" alt="">
+                                </a>
+                                <a rel="numericos" href="public/cursos/mysql/tipos-numericos.png"
+                                    data-fancybox="gallery" data-caption="numericos">
+                                    <img loading="lazy" src="public/cursos/mysql/tipos-numericos.png" alt="">
+                                </a>
+                                <a rel="cadenas" href="public/cursos/mysql/tipos-cadena.png"
+                                    data-fancybox="gallery" data-caption="cadenas">
+                                    <img loading="lazy" src="public/cursos/mysql/tipos-cadena.png" alt="">
+                                </a>
+                                <a rel="fecha" href="public/cursos/mysql/tipos-fecha.png" data-fancybox="gallery"
+                                    data-caption="fecha">
+                                    <img loading="lazy" src="public/cursos/mysql/tipos-fecha.png" alt="">
+                                </a>
+                                <a rel="espaciales" href="public/cursos/mysql/tipos-especiales.png"
+                                    data-fancybox="gallery" data-caption="espaciales">
+                                    <img loading="lazy" src="public/cursos/mysql/tipos-especiales.png" alt="">
+                                </a>
+                            </div>
+
+                        </section>
+                    </section>
+                    <!-- comentarios -->
+                    <section id="comentarios" class="mb-2">
+                        <h5 class="programas">COMENTARIOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Los comentarios son bloques de codigo que no son interpretados al
+                                    ejecutar el
+                                    programa</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    /*
+                    comentario
+                    de varios
+                    bloques de linea
+                    */
+
+                    #comentario de una linea
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- LÍNEA DE COMANDOS -->
+                    <section id="linea-comandos" class="mb-2">
+                        <h5 class="programas">LÍNEA DE COMANDOS</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="DDL-DML" href="https://i.stack.imgur.com/2y9AY.png" data-fancybox="gallery"
+                                    data-caption="DDL-DML">
+                                    <img loading="lazy" src="https://i.stack.imgur.com/2y9AY.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CREAR UNA NUEVA BASE DE DATOS</strong>
+                                </span><br>
+                                <span class="def">Para empezar a guardar datos en una BD primero necesitamos crear una
+                                    base de
+                                    datos.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    create database blog;
+                    use blog;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>ELIMINAR UNA BASE DE DATOS</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    DROP database blog;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CREAR UNA NUEVA TABLA</strong>
+                                </span><br>
+                                <span class="def">Como sabemos que los datos son almacenados en una tabla y por ello
+                                    también se debe
+                                    crear una tabla.</span>
+                            </div>
+
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    create table curso(
+                    codigo char(3) not null,
+                    nombre varchar(100) not null,
+                    cantidad int not null
+                    );
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAMBIAR NOMBRE DE UNA TABLA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table curso rename to nuevoCurso;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>ELIMINAR UNA TABLA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    drop table curso;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>AGREGAR LLAVE PRIMARIA(primary key)</strong>
+                                </span><br>
+                                <span class="def">
+                                    Una llave primaria es como una identificación. En mysql, las PK(primary key) se
+                                    utilizan para
+                                    asignar a un <strong>campo o columna</strong> de la tabla.
+                                </span><br>
+                                <span class="def">
+                                    Al asignar una PK(primary key) a la columna, <strong>validamos que los datos no
+                                        puedan repetirse
+                                        en dicha columna; esto puede ser muy importante para poder evitar duplicidad de
+                                        datos.</strong>
+                                </span><br>
+                                <span class="def">
+                                    Otras de las ventajas de asignar una PK(primary key) a un campo es que podemos
+                                    relacionar
+                                    nuestra tablas con otras de la <strong>misma.</strong>
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="PK" href="public/cursos/mysql/pk.png" data-fancybox="gallery"
+                                    data-caption="PK">
+                                    <img loading="lazy" src="public/cursos/mysql/pk.png" alt="">
+                                </a>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table curso
+                    add constraint pk1 primary key(codigo);
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>AGREGAR LLAVE FORÁNEA(foreign key)</strong>
+                                </span>
+                            </div>
+                            <span class="def">
+                                Una llave foránea se usa para unir dos o más tablas de la <strong>misma.</strong>
+                            </span><br>
+                            <span class="def">
+                                Para unir dos o mas tablas debemos tener en cuenta que <strong>las columnas de cada
+                                    tabla deben ser
+                                    del mismo de tipo de dato.</strong>
+                            </span>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="FK" href="public/cursos/mysql/fk.png" data-fancybox="gallery"
+                                    data-caption="FK">
+                                    <img loading="lazy" src="public/cursos/mysql/fk.png" alt="">
+                                </a>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table cursoDetalle
+                    add constraint fk1 foreign key(curso) references curso(codigo);
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAMBIAR NOMBRE DE UNA COLUMNA</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Se recomienda no cambiar el <strong>nombre</strong> de la columna que contenga una
+                                    de las
+                                    llaves(PRIMARIA O FORÁNEA)
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table curso
+                    change column codigo codigoNuevo char(3) not null;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAMBIAR TIPO DE DATO DE UNA COLUMNA</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Se recomienda no cambiar el <strong>tipo de dato</strong> de la columna que contenga
+                                    una de las
+                                    llaves(PRIMARIA O FORÁNEA)
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table curso
+                    modify nombre varchar(200)not null;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>AGREGAR UNA NUEVA COLUMNA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table curso
+                    add column nuevaColumna int not null;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>ELIMINAR UNA COLUMNA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    alter table curso
+                    drop column nuevaColumna,drop column nuevaColumna2;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>INSERTAR DATOS EN UNA TABLA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    insert into curso(codigo, nombre, cantidad)values('007','redes',20);
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>ACTUALIZAR DATOS DE UNA TABLA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    update curso set nombre='diseño web', cantidad=50 where codigo='007';
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>ELIMINAR DATOS DE UNA TABLA</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    delete from curso where codigo='007';
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">AVANZADO</button>
+                    <!-- SELECT - DISTINCT - ORDER BY -->
+                    <section id="select" class="mb-2">
+                        <h5 class="programas">SELECT - DISTINCT - ORDER BY</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    El comando <strong>select</strong> se utiliza para hacer consultas(<strong>mostrar
+                                        datos de
+                                        nuestra tabla</strong>).
+                                </span>
+                                <br>
+                                <span class="def">
+                                    El comando <strong>distinct</strong> se utiliza para hacer mostrar <strong>valores
+                                        unicos sin
+                                        duplicados</strong>.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    El comando <strong>order by</strong> se utiliza para mostrar datos <strong>de forma
+                                        ascendente o
+                                        descendente</strong>.
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    #SELECT
+                    select nombre from curso;   #una columna
+                    select * from curso;        #todas las columnas
+
+                    #DISTINCT
+                    select  distinct nombre from alumno;
+                    select  distinct nombre,dni from alumno;
+
+                    #ORDER BY
+                    select * from alumno order by nombre asc;
+                    select * from alumno order by nombre desc;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- WHERE -->
+                    <section id="where" class="mb-2">
+                        <h5 class="programas">WHERE</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>where(donde)</strong> se utiliza prácticamente para
+                                    dar
+                                    <strong>condiciones</strong> a nuestra consulta</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select * from alumno  where nombre="juan";
+                    select * from alumno  where edad>=18;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- AND - OR - NOT -->
+                    <section id="and-or-not" class="mb-2">
+                        <h5 class="programas">AND - OR - NOT</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>and</strong> se utiliza para poner <strong>2 a más
+                                        condiciones</strong>. Ejecuta si se todas las condiciones son verdaderas</span>
+                                <br>
+                                <span class="def">El comando <strong>or</strong> es similar al comando
+                                    <strong>and</strong>. Con la
+                                    unica diferencia de que este se ejecutará si uno de ellos cumple con la
+                                    condición</span>
+                                <br>
+                                <span class="def">El comando <strong>not</strong> se usa para <strong>negar</strong> una
+                                    condición.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    #AND
+                    select * from alumno  where nombre="juan" and edad>18;
+
+                    #OR
+                    select * from alumno  where nombre="juan" or edad>18;
+
+                    #NOT
+                    select * from alumno  where not edad<=18;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- IN -->
+                    <section id="in" class="mb-2">
+                        <h5 class="programas">IN</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>in</strong> se utiliza para determinar que los
+                                    datos se
+                                    encuentren entre los valores indicados</span>
+
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select * from alumno  where edad in(18, 20, 21);
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- BETWEEN -->
+                    <section id="between" class="mb-2">
+                        <h5 class="programas">BETWEEN</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>between</strong> se utiliza para determinar que los
+                                    datos se
+                                    encuentren <strong>entre un rango de valores</strong></span>
+
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select * from alumno  where edad between 10 and 20;
+                    select * from alumno  where carrera between "admin" and "computacion";
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- LIKE -->
+                    <section id="like" class="mb-2">
+                        <h5 class="programas">LIKE</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>like</strong> se utiliza para poner
+                                    <strong>comodines</strong>
+                                    en una busqueda de datos</span>
+                                <br>
+                                <span class="def">Por ejemplo necesito una consulta donde los nombres empiecen con la
+                                    letra
+                                    'M'</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select * from alumno  where carrera like'c%';    #comienza con 'c'
+                    select * from alumno  where carrera like'%n';    #termina  con 'n'
+                    select * from alumno  where carrera like'%a%';   #contiene con 'a'
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- INNER-LEFT-RIGHT JOIN -->
+                    <section id="join" class="mb-2">
+                        <h5 class="programas">INNER - LEFT - RIGHT - FULL JOIN</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>join nos permite asociar(unir) 2 o más tablas, en
+                                        base a una
+                                        columna </strong>que tengan en común</span>
+                                <br>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="joins" href="public/cursos/mysql/joins.png" data-fancybox="gallery"
+                                    data-caption="joins">
+                                    <img loading="lazy" src="public/cursos/mysql/joins.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span>
+                                    <strong>INNER JOIN</strong>
+                                </span>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="inner join" href="public/cursos/mysql/inner.png"
+                                        data-fancybox="gallery" data-caption="inner join">
+                                        <img loading="lazy" src="public/cursos/mysql/inner.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span>
+                                        Esta comando busca coincidencias entre 2 tablas, en función a una columna que
+                                        tienen en
+                                        común. De tal modo que <strong>sólo la intersección se mostrará en los
+                                            resultados</strong>.
+                                    </span>
+                                </div>
+                                <pre rel="MYSQL">
+                    <code class="language-sql line-numbers">
+                        SELECT
+                        articulo.nombre as 'producto',
+                        fabricante.nombre as 'fabricante'
+                        FROM
+                        articulo
+                        INNER JOIN fabricante ON articulo.cod_fab = fabricante.codigo
+                    </code>
+                </pre>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span>
+                                    <strong>LEFT JOIN</strong>
+                                </span>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="left join" href="public/cursos/mysql/left.png" data-fancybox="gallery"
+                                        data-caption="left join">
+                                        <img loading="lazy" src="public/cursos/mysql/left.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span>
+                                        A diferencia de un <strong>INNER JOIN</strong>, donde se busca una intersección
+                                        respetada
+                                        por ambas tablas,
+                                        con <strong>LEFT JOIN</strong> damos prioridad(ventaja) a la tabla de la
+                                        izquierda, y
+                                        buscamos en la tabla derecha.
+                                    </span>
+                                    <br>
+                                    <span>
+                                        Si no existe ninguna coincidencia para alguna de las filas de la tabla de la
+                                        izquierda, de
+                                        igual forma <strong>todos los resultados de la primera(IZQUIERDA) tabla se
+                                            muestran</strong>.
+                                    </span>
+                                </div>
+                                <pre rel="MYSQL">
+                    <code class="language-sql line-numbers">
+                        SELECT
+                        articulo.nombre as 'producto',
+                        fabricante.nombre as 'fabricante'
+                        FROM
+                        articulo
+                        LEFT JOIN fabricante ON articulo.cod_fab = fabricante.codigo
+                    </code>
+                </pre>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span>
+                                    <strong>RIGHT JOIN</strong>
+                                </span>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="right join" href="public/cursos/mysql/right.png"
+                                        data-fancybox="gallery" data-caption="right join">
+                                        <img loading="lazy" src="public/cursos/mysql/right.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span>
+                                        Es similar a <strong>LEFT JOIN </strong>,pero aquí se da <strong>prioridad a la
+                                            tabla de la
+                                            derecha.</strong>.
+                                    </span>
+                                </div>
+                                <pre rel="MYSQL">
+                    <code class="language-sql line-numbers">
+                        SELECT
+                        articulo.nombre as 'producto',
+                        fabricante.nombre as 'fabricante'
+                        FROM
+                        articulo
+                        RIGHT JOIN fabricante ON articulo.cod_fab = fabricante.codigo
+                    </code>
+                </pre>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- COUNT - AVG - SUM - MAX - MIN -->
+                    <section id="max-min" class="mb-2">
+                        <h5 class="programas">COUNT - AVG - SUM - MAX - MIN</h5>
+                        <section>
+                            <div class="texto">
+                                <strong>COUNT : </strong>
+                                <span class="def">El comando <strong>count</strong> se utiliza para <strong>contar
+                                        la cantidad de datos existentes en la tabla</strong>.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT count(*) as total from articulo
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <strong>AVG : </strong>
+                                <span class="def">El comando <strong>avg</strong> se utiliza para <strong>calcular
+                                        el promedio de los valores numéricos</strong>.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT avg(precio) as total from articulo
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <strong>SUM : </strong>
+                                <span class="def">El comando <strong>sum</strong> se utiliza para <strong>calcular
+                                        la suma total de los valores numéricos</strong>.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT sum(precio) as total from articulo
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <strong>MAX : </strong>
+                                <span class="def">El comando <strong>max</strong> se utiliza para <strong>calcular
+                                        el valor máximo de los valores numéricos</strong>.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT max(precio) as total from articulo
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <strong>MIN : </strong>
+                                <span class="def">El comando <strong>min</strong> se utiliza para <strong>calcular
+                                        el valor mínimo de los valores numéricos</strong>.</span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT min(precio) as total from articulo
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- GROUP BY -->
+                    <section id="group-by" class="mb-2">
+                        <h5 class="programas">GROUP BY</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>group by</strong> se utiliza para <strong>agrupar
+                                        las filas que
+                                        tienen los mismos valores</strong>.</span>
+                                <br>
+                                <span class="def">También son llamados <strong>consultas agrupadas</strong></span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT * from articulo GROUP BY nombre
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- HAVING -->
+                    <section id="having" class="mb-2">
+                        <h5 class="programas">HAVING</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">El comando <strong>having</strong>se puede/suele usar junto con GROUP
+                                    BY cuando
+                                    necesitamos que <strong>los resultados agrupados deban cumplir ciertas
+                                        condiciones</strong> que
+                                    veremos en los
+                                    ejemplos posteriores.</span>
+                                <br>
+                                <span class="def">
+                                    <strong>No se puede usar la cláusula WHERE con la columna agrupada por
+                                        GROUP BY, se tiene que hacer con HAVING</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    SELECT * from articulo GROUP BY precio HAVING precio>100
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- DIFERENCIA ENTRE WHERE Y HAVING -->
+                    <section id="where-having" class="mb-2">
+                        <h5 class="programas">DIFERENCIA ENTRE WHERE Y HAVING</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">La clausula <strong>WHERE</strong> permite una condición para usar
+                                    cualquier
+                                    columna de una tabla
+                                    pero no permite usar alias o funciones agregadas. La clausula
+                                    <strong>HAVING</strong> permite
+                                    hacer condiciones
+                                    para usar una columna, alias o una funcion agregada.</span>
+                                <br>
+                                <span class="def">
+                                    <strong>Esto se debe a que la clausula <strong>WHERE</strong> filtra la data antes
+                                        de ejecutar
+                                        el select pero <strong>HAVING</strong> filtra los resultados despues de hacer el
+                                        select</strong>
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+
+                    <!-- Consultas SQL -->
+                    <section id="consultas" class="mb-2">
+                        <h5 class="programas">CONSULTAS SQL</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Consultas de una tabla</strong>
+                                </span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select nombre from curso;   #una columna
+                    select * from curso;        #todas las columnas
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Consultas de muchas tabla(consulta MULTITABLA)</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Consulta donde necesito ver el nombre y precio del curso
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="consulta" href="public/cursos/mysql/consulta01.png"
+                                    data-fancybox="gallery" data-caption="consulta">
+                                    <img loading="lazy" src="public/cursos/mysql/consulta01.png" alt="">
+                                </a>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select nombre, precio from curso
+                    inner join cursoDetalle ON
+                    curso.codigo=cursoDetalle.curso;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Consulta dentro de una consulta(SUBCONSULTAS)</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Consulta donde necesito ver el nombre y precio del curso, pero donde el precio >
+                                    min(precio)
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="consulta" href="public/cursos/mysql/consulta01.png"
+                                    data-fancybox="gallery" data-caption="consulta">
+                                    <img loading="lazy" src="public/cursos/mysql/consulta01.png" alt="">
+                                </a>
+                                <a rel="tabla curso" href="public/cursos/mysql/consulta02.png"
+                                    data-fancybox="gallery" data-caption="tabla curso">
+                                    <img loading="lazy" src="public/cursos/mysql/consulta02.png" alt="">
+                                </a>
+                                <a rel="tabla curso detalle" href="public/cursos/mysql/consulta03.png"
+                                    data-fancybox="gallery" data-caption="tabla curso detalle">
+                                    <img loading="lazy" src="public/cursos/mysql/consulta03.png" alt="">
+                                </a>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    select nombre, precio from curso
+                    inner join cursoDetalle ON
+                    curso.codigo=cursoDetalle.curso
+                    where precio>(select min(precio)from cursoDetalle );
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- procedimientos-almacenados -->
+                    <section id="procedimientos-almacenados" class="mb-2">
+                        <h5 class="programas">PROCEDIMIENTOS ALMACENADOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Los procedimientos alcenados son como las funciones; Son bloques de comandos que
+                                    ejecutan
+                                    una
+                                    acción y pueden ser reutilizados infinitas veces.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Para ejecutar un procedimiento alcenado primero debe ser invocado(LLAMADO). Para
+                                    llamar un
+                                    PA se
+                                    utiliza la palabra reservada <strong>call()</strong>
+                                </span>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><strong>Registrar curso</strong></span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    delimiter $$
+                    create procedure reCurso(in cod char(3),in nom varchar(200), in cant int )
+                    begin
+                    insert into curso(codigo, nombre, cantidad)values(cod,nom,cant);
+                    end $$
+
+                    call reCurso('003','programacion',150);
+
+                    # eliminar un procedimiento
+                    drop procedure reCurso;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><strong>Actualizar curso</strong></span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    delimiter $$
+                    create procedure acCurso(in cod char(3),in nom varchar(200), in cant int )
+                    begin
+                    update curso set nombre=nom, cantidad=cant where codigo=cod;
+                    end $$
+
+                    call acCurso('003','ofimatica',150);
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><strong>Eliminar curso</strong></span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    delimiter $$
+                    create procedure elCurso(in cod char(3))
+                    begin
+                    delete from curso where codigo=cod;
+                    end $$
+
+                    call elCurso('003');
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><strong>Listar cursos</strong></span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    delimiter $$
+                    create procedure coCurso()
+                    begin
+                    select * from curso;
+                    end $$
+
+                    call coCurso;
+                </code>
+            </pre>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><strong>Listar cursos segun el codigo</strong></span>
+                            </div>
+                            <div class="texto">
+                                <span class="def"><strong>Procedimiento almacenado con parametros</strong></span>
+                            </div>
+                            <pre rel="MYSQL">
+                <code class="language-sql line-numbers">
+                    delimiter $$
+                    create procedure coCliente2(in cod char(3))
+                    begin
+                    select * from curso where codigo=cod;
+                    end $$
+
+                    call coCliente2('004');
+
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- procedimientos-almacenados -->
+                    <section id="importar-exportar" class="mb-2">
+                        <h5 class="programas">IMPORTAR Y EXPORTAR SQL</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Importar desde Mysql Workbench</strong>
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="importar" href="public/cursos/mysql/importarWor-1.png"
+                                    data-fancybox="gallery" data-caption="importar">
+                                    <img loading="lazy" src="public/cursos/mysql/importarWor-1.png" alt="">
+                                </a>
+                                <a rel="exportar" href="public/cursos/mysql/exportarWor-1.png"
+                                    data-fancybox="gallery" data-caption="exportar">
+                                    <img loading="lazy" src="public/cursos/mysql/exportarWor-1.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Exportar desde Navicat</strong>
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="paso 1" href="public/cursos/mysql/exportarNav-1.png"
+                                    data-fancybox="gallery" data-caption="paso 1">
+                                    <img loading="lazy" src="public/cursos/mysql/exportarNav-1.png" alt="">
+                                </a>
+                                <a rel="paso 2" href="public/cursos/mysql/exportarNav-2.png"
+                                    data-fancybox="gallery" data-caption="paso 2">
+                                    <img loading="lazy" src="public/cursos/mysql/exportarNav-2.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+
+
+</body>
+
+</html>

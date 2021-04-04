@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE JAVA</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion java-escritorio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#nuevo-proyecto" class="class-items d-block" class="p-1">Crear nuevo
+                                            proyecto</a>
+                                    </li>
+                                    <li><a href="#sout" class="class-items d-block" class="p-1">SOUT - JOP - SCANNER</a>
+                                    </li>
+                                    <li><a href="#variables" class="class-items d-block" class="p-1">Variables</a></li>
+                                    <li><a href="#arreglos" class="class-items d-block" class="p-1">Arreglos</a></li>
+                                    <li><a href="#comentarios" class="class-items d-block" class="p-1">Comentarios</a>
+                                    </li>
+                                    <li><a href="#condicionales" class="class-items d-block"
+                                            class="p-1">Condicionales</a></li>
+                                    <li><a href="#estructuras" class="class-items d-block" class="p-1">Estructuras de
+                                            control</a>
+                                    </li>
+                                    <li><a href="#bucles" class="class-items d-block" class="p-1">Bucles y ciclos</a>
+                                    </li>
+                                    <li><a href="#casting" class="class-items d-block" class="p-1">Casting o conversion
+                                            de tipos de
+                                            dato</a></li>
+                                    <li><a href="#clases" class="class-items d-block" class="p-1">Clases</a></li>
+                                    <li><a href="#instancias" class="class-items d-block" class="p-1">Instancias</a>
+                                    </li>
+                                    <li><a href="#metodos" class="class-items d-block" class="p-1">Métodos</a></li>
+                                    <li><a href="#try-catch-escritorio" class="class-items d-block" class="p-1">TRY
+                                            CATCH</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#frames" class="class-items d-block" class="p-1">Frames</a></li>
+                                    <li><a href="#conexion" class="class-items d-block" class="p-1">Conexión BD</a></li>
+                                    <li><a href="#consultas" class="class-items d-block" class="p-1">Métodos y consultas
+                                            SQL</a>
+                                    </li>
+                                    <li><a href="#listar" class="class-items d-block" class="p-1">Listar datos en
+                                            Tabla</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Introduccion a java-web<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#concepto-java-web" class="class-items d-block"
+                                            class="p-1">Conceptos</a>
+                                    </li>
+                                    <li><a href="#sintaxis-java-web" class="class-items d-block"
+                                            class="p-1">Sintaxis</a>
+                                    <li><a href="#import-java-web" class="class-items d-block" class="p-1">Import</a>
+                                    <li><a href="#beans-java-web" class="class-items d-block" class="p-1">Use Beans</a>
+                                    <li><a href="#imprimir-java-web" class="class-items d-block" class="p-1">Imprimir en
+                                            pantalla</a>
+                                    <li><a href="#request-java-web" class="class-items d-block" class="p-1">Request</a>
+                                    <li><a href="#metodos-java-web" class="class-items d-block" class="p-1">Metodos GET
+                                            POST</a>
+                                    <li><a href="#validaciones-java-web" class="class-items d-block"
+                                            class="p-1">Validaciones</a>
+                                    <li><a href="#try-catch-java-web" class="class-items d-block" class="p-1">TRY
+                                            CATCH</a>
+                                    <li><a href="#jsp" class="class-items d-block" class="p-1">JSP</a>
+                                    </li>
+                                    <li><a href="#javaBeans" class="class-items d-block" class="p-1">JavaBeans
+                                            Component</a>
+                                    </li>
+                                    <li><a href="#conexionBD" class="class-items d-block" class="p-1">Conexión BD</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION JAVA
+                        ESCRITORIO</button>
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section class="desc">
+                            <ol class="pl-4">
+                                <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                        href="https://netbeans.org/downloads/8.2/rc/">Netbeans</a>
+                                    <span class="def">
+                                        Es un IDE(Integrated Development Environment->Entorno de Desarrollo Integrado), es un
+                                        programa o
+                                        entorno el cual nos permite crear o desarrollar aplicaciones(Web, Escritorio, Móviles, etc).
+                                    </span>
+                                </li>
+                                <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                        href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html">Jdk</a>
+                                    <span class="def">
+                                        Java Development Kit(Kit de Desarrollo de Java) son herramientas para poder crear
+                                        aplicaciones en java.<br>
+                                        <span>*JRE (Java Runtime Environment) -> Entorno de Ejecución de Java. Nos permite la
+                                            ejecución de nuestras aplicaciones java</span>
+                                    </span>
+                                </li>
+                                <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                        href="https://dev.mysql.com/downloads/workbench/">Mysql</a>
+                                    <span class="def">
+                                        (My Structured Query Language->Lenguaje de Consulta) es un gestor de base de datos, lo cual
+                                        nos
+                                        permite almacenar y administrar información.
+                                    </span>
+                                </li>
+                            </ol>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section class="px-1">
+                            <span class="def">
+                                * Java es un lenguaje de programacion orientado a objetos que nos permite crear aplicaciones
+                                tanto para web o escritorio.
+                            </span><br>
+                            <span>¿QUE ES POO (Programacion Orientada a Objetos)?</span><br>
+                            <span>*Es una PARADIGMA DE PROGRAMACION, es decir un modelo o un estilo de programación que nos da unas
+                                guías sobre cómo trabajar con él.</span><br>
+                            <span>*Se dice que JAVA POO porque practicamente en la programacion todo es un OBJETO(toda cosa de
+                                nuestro al rededor). En java todo objeto se denomina CLASE y toda clase tiene solo dos
+                                cosas(ATRIBUTOS Y METODOS)</span><br>
+                            <span>*ATRIBUTOS(son las varibles donde se almacenan las caracteristicas o propiedades de nuestra clase
+                                u objeto)</span><br>
+                            <span>*METODOS(son las funciones o acciones que realizar nuestra clase u objeto)</span><br>
+                        </section>
+                    </section>
+                    
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- nuevo proyecto -->
+                    <section id="nuevo-proyecto" class="mb-2">
+                        <h5 class="programas">CREAR NUEVO PROYECTO</h5>
+                        <section class="px-1">
+                            <div class="texto img-conexion wrapper">
+                                <a rel="NUEVO PROYECTO" href="public/cursos/nuevoJavaEscritorio.jpg" data-fancybox="gallery"
+                                    data-caption="NUEVO PROYECTO">
+                                    <img loading="lazy" src="public/cursos/nuevoJavaEscritorio.jpg" alt="">
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- sout and jop -->
+                    <section id="sout" class="mb-2">
+                        <h5 class="programas">SOUT - JOP - SCANNER</h5>
+                        <section class="px-1">
+                            <span>*Son clases que nos permiten ingresar o mostrar información en pantalla</span> <br>
+                            <pre rel="JAVA">
+                                                <code class="language-java line-numbers">
+                                                    /* SOUT */                            
+                                                    System.out.println("Hola Mundo");
+                                                    /* JOP */
+                                                    JOptionPane.showInputDialog("ingrese su nombre");
+                                                    JOptionPane.showMessageDialog(null, "Hola Mundo");
+                                                    /* SCANNER */
+                                                    Scanner co=new Scanner(System.in);
+                                                    String mensaje=co.next();
+                                                    System.out.println(mensaje);                            
+                                                </code>
+                                            </pre>
+                        </section>
+                    </section>
+                    <!-- variables -->
+                    <section id="variables" class="mb-2">
+                        <h5 class="programas">VARIABLES</h5>
+                        <span>Las variables son un espacio en memoria y que pueden almacenar un valor.</span><br>
+                        <section class="px-1">
+                            <span>TIPOS DE DATO</span><br>
+                            <pre rel="JAVA">
+                                                <code class="language-java line-numbers">
+                                                    int a = 10; /* ENTEROS */
+                                                    String b = "Isai"; /* CADENA */
+                                                    Float(clase)
+                                                    float c = 10.50; /* DECIMALES CORTOS */
+                                                    Double(clase)
+                                                    double d = 10.500000000; /* DECIMALES LARGOS */
+                                                    char e = '*'; /* CARACTERES */
+                                                    boolean f = true; /* VERDADERO O FALSO */
+                                                </code>
+                                            </pre>
+                        </section>
+                    </section>
+                    <!-- arreglos -->
+                    <section id="arreglos" class="mb-2">
+                        <h5 class="programas">ARREGLOS</h5>
+                        <span>Los arreglos tambien es un tipo de dato, puede almacenar un conjunto de datos.</span><br>
+                        <section class="px-1">
+                            <pre rel="JAVA">
+                                                <code class="language-java line-numbers">
+                                                    int numero[]=new int[10]
+                                                    numero[0]=20
+                                                    /* ASIGNANDO VALORES */
+                                                    for (int i = 0; i < 10; i++) {
+                                                        numero[i]=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su
+                                                        edad"));
+                                                    }
+                                                    /* IMPRIMIENDO VALORES */
+                                                    for (int i = 0; i < 10; i++) {
+                                                        System.out.println(numero[i]);
+                                                    }
+                                                    for (int items : numero) {
+                                                        System.out.println(items);
+                                                    }                            
+                                                </code>
+                                            </pre>
+                        </section>
+                    </section>
+                    <!-- comentarios -->
+                    <section id="comentarios" class="mb-2">
+                        <h5 class="programas">COMENTARIOS</h5>
+                        <span>Los comentarios son lineas de codigos que no son interpratadas en la ejecución.</span><br>
+                        <section class="px-1">
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                // Comentarios de una sola linea
+                                                /*
+                                                Comentarios de varios bloques de linea
+                                                */
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    
+                    <!-- condicionales -->
+                    <section id="condicionales" class="mb-2">
+                        <h5 class="programas">CONDICIONALES</h5>
+                        <section class="px-1">
+                            <span>*Las condicionales son utilizadas para tomar decisiones en función de que se cumpla o no una
+                                determinada condición..</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                if (condicion) {
+                                                ...instrucciones...
+                                                } else {
+                                                ...instrucciones...
+                                                }
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    <!-- estructuras de control -->
+                    <section id="estructuras" class="mb-2">
+                        <h5 class="programas">ESTRUCTURAS DE CONTROL</h5>
+                        <section class="px-1">
+                            <span>Usar switch ayuda a simplificar el código y evita confusiones, ya que organiza en varias ramas el
+                                código que va a ser ejecutado.</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                switch (sem) {
+                                                &nbsp;&nbsp;&nbsp;case 1: ...instruccion1...
+                                                &nbsp;&nbsp;&nbsp;break;
+                                                &nbsp;&nbsp;&nbsp;case 2: ...instruccion2...
+                                                &nbsp;&nbsp;&nbsp;break;
+                                                &nbsp;&nbsp;&nbsp;default: ...instruccion3...
+                                                &nbsp;&nbsp;&nbsp;break;
+                                                }
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    <!-- bucles y ciclos -->
+                    <section id="bucles" class="mb-2">
+                        <h5 class="programas">BUCLES Y CICLOS</h5>
+                        <section class="px-1">
+                            <span>Los bucles o ciclos son secuencias de bloques de codigo que se ejecutarán repetidas veces hasta
+                                que la condicion deje de cumplirse.</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                for (int i = 0; i <= 10; i++) {
+                                                    ...instrucciones...
+                                                }
+                    
+                                                for (int items : numero) {
+                                                    ...instrucciones...
+                                                }
+                    
+                                                while (condicion){
+                                                    ...instrucciones...
+                                                }
+                    
+                                                do{
+                                                    ...instrucciones...
+                                                }
+                                                }while(condicion)
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    <!-- conversiones o casting -->
+                    <section id="casting" class="mb-2">
+                        <h5 class="programas">CASTING O CONVERSIONES DE TIPOS DE DATO</h5>
+                        <section class="px-1">
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                /* STRING-INTEGER */                
+                                                    Integer entero = Integer.valueOf(cadena);
+                                                    int entero = Integer.parseInt(cadena);                        
+                                                /* INTEGER-STRING */                
+                                                    String cadena = Integer.toString(entero);
+                                                    String cadena = String.valueOf(entero);                        
+                                                /* CHAR-STRING */                
+                                                    String cadena = Character.toString(char);                        
+                                                /* STRING-CHAR */                
+                                                    char caracter = cadena.charAt(0); //Solo primer caracter                        
+                                                /* STRING-DOUBLE */                
+                                                    double doble = Double.parseDouble(cadena);                        
+                                                /* DOUBLE-STRING */                
+                                                    String cadena = String.valueOf(doble);                        
+                                                /* STRING-FLOAT */                
+                                                    float flotante = Float.parseFloat(cadena);                        
+                                                /* FLOAT-STRING */                
+                                                    String cadena = Float.toString(flotante);                        
+                                                /* STRING-BOOLEAN */                
+                                                    Boolean boolean = Boolean.valueOf(cadena);
+                                                    boolean boolean = Boolean.parseBoolean(cadena);                        
+                                                /* BOOLEAN-STRING */                
+                                                    String cadena = String.valueOf(b);
+                                                    String cadena = Boolean.toString(b);
+                                            </code>
+                                        </pre>
+                    
+                        </section>
+                    </section>
+                    <!-- clases -->
+                    <section id="clases" class="mb-2">
+                        <h5 class="programas">CLASES</h5>
+                        <section class="px-1">
+                            <span>*Las clases en java son como una plantilla. Existen dos tipos de clase(CLASE NORMAL Y CLASE
+                                PRINCIPAL)</span><br>
+                            <span>*Las clases solo contienen atributos y metodos. Solo las clases principales son las que se pueden
+                                ejecutar, mas no lo demás</span><br>
+                            <span>*Para utilizar una clase normal en una clase principal debe hacer la importacion.</span>
+                        </section>
+                    </section>
+                    <!-- instancias -->
+                    <section id="instancias" class="mb-2">
+                        <h5 class="programas">INSTANCIAS</h5>
+                        <section class="px-1">
+                            <span>*Las instancias son llamadas hacia un archivo(CLASE) para hacer uso de ello.</span><br>
+                            <span>*Para instanciar una clase, primero se debe importar.</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                import cursosjava.Persona;
+                                                Persona pe=new Persona();
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    <!-- metodos -->
+                    <section id="metodos" class="mb-2">
+                        <h5 class="programas">MÉTODOS</h5>
+                        <section class="px-1">
+                            <span>*Un método en Java es un conjunto de instrucciones definidas dentro de una clase, que realizan una
+                                determinada tarea y a las que podemos invocar mediante un nombre</span><br>
+                            <span>MÉTODOS SIN PARAMETROS</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                public int suma(){
+                                                    return a+b;
+                                                }
+                                                pe.suma();
+                                            </code>
+                                        </pre>
+                            <span>MÉTODOS CON PARAMETROS</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                public int suma(int a, int b){
+                                                    return a+b;
+                                                }
+                                                pe.suma(10,50);<br>
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    <!-- TRY CATCH -->
+                    <section id="try-catch-escritorio" class="mb-2">
+                        <h5 class="programas">TRY CATCH</h5>
+                        <span>*Los Try Catch se utilizan para poder prevenir los errores.
+                            <br>
+                            *Para mayoria de los casos el try catch se utiliza:
+                        </span>
+                        <ol>
+                            <li>Para recibir información de formularios</li>
+                            <li>Para realizaciones acciones hacia la BD</li>
+                        </ol>
+                    </section>
+                    
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">AVANZADO</button>
+                    
+                    <!-- frames -->
+                    <section id="frames" class="mb-2">
+                        <h5 class="programas">FRAMES</h5>
+                        <span>*Los frames es un area o marco de trabajo de java, que nos permite diseñar nuestra interfaz</span><br>
+                        <span>*Los frames esta compuesto por dos áreas(CODIGO-DISEÑO). En el área de código es la parte donde se
+                            programa la LÓGICA de nuestra aplicación. El area de diseño es la parte donde se muestra la interfaz de
+                            nuestro aplicación</span><br>
+                        <section class="px-1">
+                            <div class="texto img-conexion wrapper">
+                                <a rel="frames" href="public/cursos/frame.jpg" data-fancybox="gallery" data-caption="frames">
+                                    <img loading="lazy" src="public/cursos/frame.jpg" alt="">
+                                </a>
+                            </div>
+                    
+                            <span>getText() y setText()</span><br>
+                            <code>
+                                    <span>*getText() nos permite obtener el valor de nuestro input.</span><br>
+                                    <span>*setText() nos permite colocar el valor a un componente(LABEL-BUTTON-INPUT-ETC).</span>
+                                </code>
+                            <pre rel="JAVA">
+                                    <code class="language-java line-numbers">
+                                        String codigo = txtcodigo.getText();
+                                        lblres.setText("Hola Mundo");
+                                    </code>
+                                </pre>
+                            <span>COMPONENTES FRAMES</span>
+                            <pre rel="JAVA COMPONENTES-FRAMES">
+                                    <code class="language-java">
+                                        /* COMBO BOX */
+                                        -> Cambiar la propiedad MODEL
+                                        cbnum.getSelectedIndex()    //recibe la posicion
+                                        cbnum.getSelectedItem()     //recibe el valor
+                                        /* CHECK BOX */
+                                        if (mujer.isSelected()) {
+                                            txtnombre.setText(mujer.getText());
+                                        }
+                                        /* RADIO BUTTON */
+                                        -> Arrastrar el componente BUTTON GROUP
+                                        -> Cambiar la propiedad BUTTON GROUP
+                                        if (f.isSelected()) {
+                                            txtnombre.setText(f.getText());
+                                        }
+                                        /* POPUP MENU */
+                                        -> Arrastrar el componente popup menu
+                                        -> Ir a las propiedades del componente que contiene el popup menu
+                                        -> Cambiar la propiedad componentPopupMenu
+                                        -> Ir a navigator->other components->JPopupMenu->Agregar->menu-item
+                                        -> Cambiar la propiedad text del menu-item
+                    
+                                        int filas=tabla1.getSelectedRow();
+                                        if (filas>=0) {
+                                            txtcod.setText(tabla1.getValueAt(filas, 0).toString());
+                                            txtnom.setText(tabla1.getValueAt(filas, 1).toString());
+                                            txtcod.setEditable(false);
+                                            btneliminar.setEnabled(false);
+                                            btnregistrar.setEnabled(false);
+                                        }
+                                        /* J-CALENDAR */
+                                        -> Click derecho en la paleta de componentes
+                                        -> Palette Manager
+                                        -> Add from Jar
+                                        -> Selecciona el J-Calendar
+                                        -> Selecciona todos los componentes
+                                        -> Selecciona AWT
+                                        -> Finalizar
+                    
+                                        -> Arrastrar el componente JDateChooser
+                                        
+                                        int anio = calendario.getCalendar().get(Calendar.YEAR);
+                                        int mes = calendario.getCalendar().get(Calendar.MONTH)+1;
+                                        int dia = calendario.getCalendar().get(Calendar.DAY_OF_MONTH);                        
+                                        fecha.setText(dia + "/" + mes + "/" + anio);
+                                    </code>
+                                </pre>
+                        </section>
+                    
+                    
+                    </section>
+                    <!-- conexion -->
+                    <section id="conexion" class="mb-2">
+                        <h5 class="programas">CONEXIÓN BD</h5>
+                        <section class="px-1">
+                            <span>Para conectar nuestra aplicacion a una Base de datos se debe tener en cuenta lo
+                                siguiente.</span><br>
+                            <ol>
+                                <li>Tener los drivers</li>
+                            </ol>
+                            <span>Agregar los drivers desde:</span><br>
+                            <ol>
+                                <li>Click derecho en Libraries</li>
+                                <li>Add Library</li>
+                                <li>Elegir el driver adecuado para cada GESTOR DE BD que estemos utilizando</li>
+                                <li>Nos dirigimos a Services.</li>
+                                <li>Click derecho en databases</li>
+                                <li>New Connection</li>
+                                <li>Configurar los pasos. OJO: tenga cuidado en configurar el NOMBRE, USUARIO, CLAVE de acceso a
+                                    nuestra BD</li>
+                                <li>Test Connection</li>
+                                <li>Click derecho y CONECTAR en MYSQL SERVER at localhost:</li>
+                            </ol>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="paso 1" href="public/cursos/conexion.jpg" data-fancybox="gallery" data-caption="paso 1">
+                                    <img loading="lazy" src="public/cursos/conexion.jpg" alt="">
+                                </a>
+                            </div>
+                    
+                            <ol>
+                                <li>Seleccionar tu BD</li>
+                                <li>Click derecho conectar</li>
+                                <li>Se te creará un archivo que debes configurarlo</li>
+                            </ol>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="paso 2" href="public/cursos/conexion2.jpg" data-fancybox="gallery" data-caption="paso 2">
+                                    <img loading="lazy" src="public/cursos/conexion2.jpg" alt="">
+                                </a>
+                            </div>
+                            <ol>
+                                <li>Click derecho propiedades</li>
+                                <li>Ahi encontrarás información necesaria</li>
+                            </ol>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="paso 3" href="public/cursos/conexion3.jpg" data-fancybox="gallery" data-caption="paso 3">
+                                    <img loading="lazy" src="public/cursos/conexion3.jpg" alt="">
+                                </a>
+                            </div>
+                            <ol>
+                                <li>Crear una clase para la CONEXIÓN</li>
+                                <li>Importar los siguientes clases</li>
+                                <li>
+                                    <code>
+                                                import java.sql.*;<br>
+                                            </code>
+                                </li>
+                            </ol>
+                            <span>CONEXION</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                package formularios;
+                                                import java.sql.*;
+                                                public class Conexion {
+                                                    Connection cn;
+                                                    PreparedStatement ps;
+                                                    CallableStatement cst;
+                                                    ResultSet rs;
+                    
+                                                    public Conexion() {
+                                                        try {
+                                                            Class.forName("com.mysql.jdbc.Driver");
+                                                            cn = DriverManager.getConnection("jdbc:mysql://localhost:3309/practica6", "root", "root");
+                                                            System.out.println("CONECTADO BD");
+                                                        } catch (Exception e) {
+                                                            System.out.println("ERROR CONEXION BD");
+                                                        }
+                                                    }
+                                                }
+                                            </code>
+                                        </pre>
+                    
+                        </section>
+                    </section>
+                    <!-- consultas -->
+                    <section id="consultas" class="mb-2">
+                        <h5 class="programas">METODOS Y CONSULTAS SQL</h5>
+                        <section class="px-1">
+                            <span>*Un método es similar a una función son bloques de código que se pueden ejecutar y además pueden
+                                ser
+                                reutilizados.</span><br>
+                            <span>*En java veremos 4 clases muy importantes que nos brinda a la hora de trabajar con una BASE
+                                DE DATOS.</span><br>
+                            <pre rel="JAVA">
+                                                <code class="language-java line-numbers">                        
+                                                    Connection cn /* NOS PERMITE REALIZAR LA CONEXION */
+                                                    PreparedStatement ps /* NOS PERMITE REALIZAR CONSULTAS A LA BD */
+                                                    CallableStatement cst /* NOS PERMITE LLAMAR UN PROCEDIMIENTO ALMACENADO DE NUESTRA BD */
+                                                    ResultSet rs /* NOS PERMITE ALMACENAR DATOS QUE SON OBTENIDOS DE LA BD */
+                                                </code>
+                                </pre>
+                            <span>METODOS CON PreparedStatement</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                public int registrarProducto(String nombre, double pre) {
+                                                    int res = 0;
+                                                    try {
+                                                        ps = cn.prepareStatement("insert into producto(nombre,precio)values(?,?)");
+                                                        ps.setString(1, nombre);                                
+                                                        ps.setDouble(2, pre);
+                                                        res = ps.executeUpdate();
+                                                        System.out.println("Registrado correctamente");
+                                                    } catch (Exception e) {
+                                                        System.out.println("error al registrar " + e);
+                                                    }
+                                                    return res;
+                                                }
+                                            </code>
+                                        </pre>
+                            <span>METODOS CON CallableStatement</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                public int registrarProducto(String nombre, double pre) {
+                                                    int res = 0;
+                                                    try {
+                                                        cst=cn.prepareCall("{call reproducto(?,?)}");
+                                                        cst.setString(1, nombre);
+                                                        cst.setDouble(2, pre);
+                                                        res=cst.executeUpdate();
+                                                    } catch (Exception e) {
+                                                        System.out.println("error al registrar " + e);
+                                                    }
+                                                    return res;
+                                                }
+                                            </code>
+                                        </pre>
+                            <span>ResultSet</span><br>
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                public ArrayList&lt;MetodoGetSet> coautor(){
+                                                    ArrayList&lt;MetodoGetSet> res=new ArrayList&lt;MetodoGetSet>();
+                                                        try {
+                                                            cst=cn.prepareCall("{call coautor()}");
+                                                            rs=cst.executeQuery();
+                                                            while (rs.next()) {                
+                                                            MetodoGetSet me=new MetodoGetSet();
+                                                            me.setCod_autor(rs.getString(1));
+                                                            me.setNom_autor(rs.getString(2));
+                                                            me.setNacion_autor(rs.getString(3));
+                                                            res.add(me);
+                                                            }
+                                                        } catch (Exception e) {
+                                                        }
+                                                    return res;
+                                                }
+                                            </code>
+                                        </pre>
+                    
+                        </section>
+                    </section>
+                    <!-- listar datos en tablas -->
+                    <section id="listar" class="mb-2">
+                        <h5 class="programas">LISTAR DATOS EN TABLA</h5>
+                        <section class="px-1">
+                            <pre rel="JAVA">
+                                            <code class="language-java line-numbers">                        
+                                                public class Autor extends javax.swing.JFrame {    
+                                                    public Autor() {
+                                                        initComponents();
+                                                        mostrartabla();
+                                                    }
+                                                    public void mostrartabla(){
+                                                        Registro re=new Registro();
+                                                        DefaultTableModel modelo=new DefaultTableModel();
+                                                        modelo.addColumn("CODIGO");
+                                                        modelo.addColumn("NOMBRE");
+                                                        modelo.addColumn("NACIONALIDAD");
+                                                        tabla1.setModel(modelo);
+                                                        
+                                                        ArrayList&lt;MetodoGetSet> tabla=re.coautor();
+                                                        String datos[]=new String[3];
+                                                        for (MetodoGetSet m : tabla) {
+                                                            datos[0]=m.getCod_autor();
+                                                            datos[1]=m.getNom_autor();
+                                                            datos[2]=m.getNacion_autor();
+                                                            modelo.addRow(datos);
+                                                        }
+                                                        tabla1.setModel(modelo);                              
+                                                    }
+                                                }   
+                                            </code>
+                                        </pre>
+                        </section>
+                    </section>
+                    
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTRODUCCION JAVA
+                        WEB</button>
+                    
+                    <!-- conceptos java web -->
+                    <section id="concepto-java-web" class="mb-2">
+                        <h5 class="programas">CONCEPTO</h5>
+                        <section class="px-1">
+                            <span>A diferencia de java-escritorio, Java Web es un lenguaje que nos permite crear aplicaciones que se
+                                ejecutan en la WEB</span>
+                        </section>
+                    </section>
+                    <!-- sintaxis java web -->
+                    <section id="sintaxis-java-web" class="mb-2">
+                        <h5 class="programas">SINTAXIS</h5>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        <%
+                                        ..............
+                                        %>
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- import -->
+                    <section id="import-java-web" class="mb-2">
+                        <h5 class="programas">IMPORT</h5>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        <%@
+                                        page import="controlador.Datos_empresa"
+                                        %>
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- use beans -->
+                    <section id="beans-java-web" class="mb-2">
+                        <h5 class="programas">USE-BEANS</h5>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        &lt;jsp:useBean id="fi" scope="page" class="controlador.Filtro" />
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- IMPRIMIR -->
+                    <section id="imprimir-java-web" class="mb-2">
+                        <h5 class="programas">IMPRIMIR EN PANTALLA</h5>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        <%= "Hola mundo" %>
+                                        <%= "&lt;h1>Hola mundo&lt;/h1>" %>
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- request -->
+                    <section id="request-java-web" class="mb-2">
+                        <h5 class="programas">REQUEST</h5>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        <%
+                                        String usuario = request.getParameter("txtusuario");
+                                        Part foto = request.getPart("txtfoto"); /* PARA RECIBIR ARCHIVOS */
+                                        %>
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- VALIDACIONES -->
+                    <section id="validaciones-java-web" class="mb-2">
+                        <h5 class="programas">VALIDACIONES</h5>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        <%
+                                        if (usuario != null && clave != null) {
+                                        ..............
+                                        }
+                                        %>
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- TRY CATCH -->
+                    <section id="try-catch-java-web" class="mb-2">
+                        <h5 class="programas">TRY CATCH</h5>
+                        <span>*Los Try Catch se utilizan para poder prevenir los errores.
+                            <br>
+                            *Para mayoria de los casos el try catch se utiliza:
+                        </span>
+                        <ol>
+                            <li>Para recibir información de formularios</li>
+                            <li>Para realizaciones acciones hacia la BD</li>
+                        </ol>
+                        <section class="px-1">
+                            <pre rel="JSP">
+                                    <code class="language-java line-numbers">                        
+                                        <%
+                                        try {
+                                            String usuario = request.getParameter("txtusuario");
+                                            Part foto = request.getPart("txtfoto"); /* PARA RECIBIR ARCHIVOS */
+                                        } catch (Exception e) {
+                                        }
+                                        %>
+                                    </code>
+                                </pre>
+                        </section>
+                    </section>
+                    <!-- JSP -->
+                    <section id="jsp" class="mb-2">
+                        <h5 class="programas">JSP</h5>
+                        <section class="px-1">
+                            <span>*JSP(JavaServer Pages o Páginas de Servidor Java). Es una tecnología que ayuda a los
+                                desarrolladores de software a crear páginas web dinámicas basadas en HTML y XML, entre otros tipos
+                                de documentos.
+                                <br>
+                                *JSP es similar a PHP( Dentro de un JSP se puede incluir otros elementos como HTML, CSS y
+                                JAVASCRIPT).
+                                <br>
+                                *Para desplegar y correr JavaServer Pages, se requiere un servidor web compatible con contenedores
+                                servlet como Glassfish, Apache Tomcat o Jetty.</span>
+                        </section>
+                    </section>
+                    <!-- JAVA BEANS -->
+                    <section id="javaBeans" class="mb-2">
+                        <h5 class="programas">JAVA BEANS</h5>
+                        <section class="px-1">
+                            <span>*Los JavaBeans es una clase de java que se va utilizar como filtro(para evitar introducir errores
+                                a la BD).</span>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+
+
+</body>
+
+</html>

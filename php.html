@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE PHP</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#crear-proyecto" class="class-items d-block" class="p-1">Crear nuevo
+                                            proyecto</a>
+                                    </li>
+                                    <li><a href="#sintaxis" class="class-items d-block" class="p-1">Sintaxis</a></li>
+                                    <li><a href="#comentarios" class="class-items d-block" class="p-1">Comentarios</a>
+                                    </li>
+                                    <li><a href="#imprimir" class="class-items d-block" class="p-1">Imprimir</a></li>
+                                    <li><a href="#variables" class="class-items d-block" class="p-1">Variables</a></li>
+                                    <li><a href="#arreglos" class="class-items d-block" class="p-1">Arreglos</a></li>
+                                    <li><a href="#cambio-tipos" class="class-items d-block" class="p-1">Cambio del tipo
+                                            de las
+                                            variables</a></li>
+                                    <li><a href="#operadores" class="class-items d-block" class="p-1">Operadores</a>
+                                    </li>
+                                    <li><a href="#funciones" class="class-items d-block" class="p-1">Funciones</a></li>
+                                    <li><a href="#condicionales" class="class-items d-block"
+                                            class="p-1">Condicionales</a></li>
+                                    <li><a href="#break-continue" class="class-items d-block" class="p-1">BREAK y
+                                            CONTINUE</a>
+                                    <li><a href="#estructuras" class="class-items d-block" class="p-1">Estructuras de
+                                            control</a>
+                                    </li>
+                                    <li><a href="#bucles" class="class-items d-block" class="p-1">Bucles y ciclos</a>
+                                    </li>
+                                    <li><a href="#try-catch" class="class-items d-block" class="p-1">TRY CATCH</a></li>
+                                    <li><a href="#cookies" class="class-items d-block" class="p-1">Cookies</a></li>
+                                    <li><a href="#metodos-usados" class="class-items d-block" class="p-1">Funciones o
+                                            métodos más
+                                            usados</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#conexion" class="class-items d-block" class="p-1">Conexion BD</a></li>
+                                    <li><a href="#validaciones" class="class-items d-block" class="p-1">Validaciones</a>
+                                    </li>
+                                    <li><a href="#consultas" class="class-items d-block" class="p-1">Consultas SQL</a>
+                                    </li>
+                                    <li><a href="#metodos" class="class-items d-block" class="p-1">Metodos GET y
+                                            POST</a></li>
+                                    <li><a href="#imagenBD" class="class-items d-block" class="p-1">Enviar imagen a la
+                                            BD desde un
+                                            formulario</a>
+                                    </li>
+                                    <li><a href="#ajax" class="class-items d-block" class="p-1">Ajax en php</a>
+                                    <li><a href="#sesiones" class="class-items d-block" class="p-1">Sesiones</a>
+                                    </li>
+                                    <li><a href="#headers" class="class-items d-block" class="p-1">Headers</a>
+                                    </li>
+                                    <li><a href="#includes" class="class-items d-block" class="p-1">Include y
+                                            Require</a>
+                                    </li>
+                                    <li><a href="#otros" class="class-items d-block" class="p-1">Otros comandos</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://netbeans.org/downloads/8.2/rc/">Netbeans</a>
+                                        <span>
+                                            Es un IDE(Integrated Development Environment->Entorno de Desarrollo
+                                            Integrado), es un
+                                            programa o
+                                            entorno el cual nos permite crear o desarrollar aplicaciones(Web,
+                                            Escritorio, Móviles,
+                                            etc).
+                                        </span>
+                                    </li>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://dev.mysql.com/downloads/workbench/">Mysql</a>
+                                        <span>
+                                            (My Structured Query Language->Lenguaje de Consulta) es un gestor de base de
+                                            datos, lo
+                                            cual
+                                            nos
+                                            permite almacenar y administrar información.
+                                        </span>
+                                    </li>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.apachefriends.org/es/download.html">Xampp</a>
+                                        <span>
+                                            es un acrónimo, sus siglas significan: X: para cualquier sistema operativo.
+                                            A: Apache,
+                                            MariaDB/MySQL, PHP, Perl, es un
+                                            servidor HTTP en software libre para cualquier plataforma.
+                                        </span>
+                                    </li>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.navicat.com/es/download/navicat-premium">Navicat</a>
+                                        <span>
+                                            Es un programa lo cual nos facilita la administracion de nuestra base de
+                                            datos
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Conocimiento en Html</span>
+                                    </li>
+                                    <li class="p-1"><span>Conocimiento en Css</span>
+                                    </li>
+                                    <li class="p-1"><span>Conocimiento en JavaScript básico</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>PHP->(Personal Home Page).</span>
+                                    </li>
+                                    <li class="p-1"><span>PHP->(Hypertext Preprocessor).</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <span style="margin-bottom: 10px">
+                                    Php es un lenguaje de programación simple, rapido y dinamico; Es dinámico por que
+                                    dentro de un
+                                    documento PHP se puede incluir otros elementos como HTML, CSS y JAVASCRIPT.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span>
+                                    PHP es el lenguaje de lado servidor más extendido en la web. Nacido en 1994, se
+                                    trata de un
+                                    lenguaje
+                                    de creación relativamente reciente, aunque con la rapidez con la que evoluciona
+                                    Internet parezca
+                                    que
+                                    ha existido toda la vida. Es un lenguaje que ha tenido una gran aceptación en la
+                                    comunidad de
+                                    desarrolladores, debido a la potencia y simplicidad que lo caracterizan, así como al
+                                    soporte
+                                    generalizado en la mayoría de los servidores de hosting, hasta los más simples y
+                                    económicos.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- crear proyecto -->
+                    <section id="crear-proyecto" class="mb-2">
+                        <h5 class="programas">CREAR PROYECTO</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="paso 1" href="public/cursos/php/crear-proyecto.png"
+                                    data-fancybox="gallery"
+                                    data-caption="paso 1: Buscamos el lenguaje PHP y seleccionamos PHP aplication">
+                                    <img loading="lazy" src="public/cursos/php/crear-proyecto.png" alt="">
+                                </a>
+                                <a rel="paso 2" href="public/cursos/php/crear-proyecto2.png"
+                                    data-fancybox="gallery"
+                                    data-caption="paso 2: En esta ventana nos muestra las opciones de Nombre del proyecto, Ubicación del proyecto, Version de PHP, Formato de codificación de caracteres. * Es muy importante que nuestro proyecto guardemos en la ruta xampp->htdocs">
+                                    <img loading="lazy" src="public/cursos/php/crear-proyecto2.png" alt="">
+                                </a>
+                                <a rel="paso 3" href="public/cursos/php/crear-proyecto3.png"
+                                    data-fancybox="gallery"
+                                    data-caption="paso 3: En esta ventana nos muestra las opciones de Donde se va a ejecutar nuestra aplicación(servidor local), URL de nuestro proyecto">
+                                    <img loading="lazy" src="public/cursos/php/crear-proyecto3.png" alt="">
+                                </a>
+                                <a rel="paso 4" href="public/cursos/php/crear-proyecto4.png"
+                                    data-fancybox="gallery"
+                                    data-caption="paso 4: En esta ventana nos muestra algunos frameworks con los que trabaja PHP">
+                                    <img loading="lazy" src="public/cursos/php/crear-proyecto4.png" alt="">
+                                </a>
+                                <a rel="paso 5" href="public/cursos/php/crear-proyecto5.png"
+                                    data-fancybox="gallery"
+                                    data-caption="paso 5: En esta ventana nos ofrece si queremos utilizar un token(acceder a un proyecto mediante un codigo de seguridad)">
+                                    <img loading="lazy" src="public/cursos/php/crear-proyecto5.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- sintaxis -->
+                    <section id="sintaxis" class="mb-2">
+                        <h5 class="programas">SINTAXIS</h5>
+                        <section>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                .....................
+                ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>
+                                    Ejemplo completo de una página PHP
+                                </span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;! doctype html>
+                    &lt;html lang="es">
+                    &lt;head>
+                        &lt;meta charset="UTF-8">
+                        &lt;title>Primera página PHP&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;h1>Esto es HTML&lt;/h1>
+                        &lt;?php
+                        echo '&lt;p>Esto viene de PHP&lt;/p>';
+                        ?>
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- comentario -->
+                    <section id="comentarios" class="mb-2">
+                        <h5 class="programas">COMENTARIOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los comentarios son bloques de codigo que no son interpretados al ejecutar el
+                                    programa</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                #Comentario de una sola linea
+                //Comentario de una sola linea
+                /*
+                Comentario de varios 
+                bloques de linea
+                */
+                ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- imprimir -->
+                    <section id="imprimir" class="mb-2">
+                        <h5 class="programas">IMPRIMIR</h5>
+                        <section>
+                            <div class="texto">
+                                <span>En php se pueden imprimir de dos formas:</span><br>
+                                <span>Echo: podemos imprimir varias cadenas</span><br>
+                                <span>Print: podemos imprimir una sola cadena</span><br>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    echo 'Hola Mundo','Hello World';
+                    print 'Hola Mundo';
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- variables -->
+                    <section id="variables" class="mb-2">
+                        <h5 class="programas">VARIABLES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Las variables son un espacio en memoria que almacena un valor. Existen varios
+                                    tipos de
+                                    variables.</span>
+                            </div>
+                            <div class="texto">
+                                <ul>
+                                    <li>NUMERICOS</li>
+                                    <li>CADENA</li>
+                                </ul>
+                            </div>
+                            <div class="texto">
+                                <span>En php las variables se declaran de forma simple y sencilla; para crear una
+                                    variable se
+                                    anteponer el símbolo o caracter de <strong>$</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php                            
+                    $nombre="juanito";
+                    $edad=10;
+                    $verdadero = true;
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>Tambien existen otro tipo de datos que son los <strong>Matrices, tablas o
+                                        arrays</strong></span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- ARREGLOS -->
+                    <section id="arreglos" class="mb-2">
+                        <h5 class="programas">ARRAY O ARREGLOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Un arreglo es una estructura, es decir es un conjunto de variables que se citan y
+                                    manejan con
+                                    un mismo nombre, y que permite además la utilización individual de sus elementos. Un
+                                    arreglo es
+                                    en resumen un conjunto de datos finito y del mismo tipo.</span>
+                            </div>
+                            <div class="texto">
+                                <ul>
+                                    <li>ARRAY COMUNES</li>
+                                    <li>ASOCIATIVOS</li>
+                                    <li>MULTIDIMENCIONALES</li>
+                                </ul>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    /* ARREGLOS COMUNES */
+                    $semana = ["lunes", "martes", "miercoles", "jueves", "viernes"];
+                    $semana2 = array("lunes", "martes", "miercoles", "jueves", "viernes");
+                    echo $semana[0];
+                    foreach ($semana as $value) {
+                        echo $value;
+                    }
+                    /* ARREGLOS ASOCIATIVOS */
+                    $amigo = array("nombre" => "juan", "edad" => 20, "correo" => "juan@gmail.com");
+                    echo $amigo["edad"]
+                    /* ARREGLOS MULTIDIMENCIONALES */
+                    $amigos=array(array("juan",21), array("maria",18),array("pedro",20));
+                    echo $amigos[1][0];
+                    /* METODOS */
+                    count($amigo)//contar valores;
+                    $fruits = array("limón", "naranja", "plátano", "manzana");
+                    sort($fruits)//ordena A-Z y 1-...;
+                    rsort($fruits)//ordena Z-A y ...-1;
+                    foreach ($fruits as $key => $val) {
+                        echo "$key = $val\n";
+                    }
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un arreglo con los nombres de los estudiantes y mostrar en forma descendente
+                                    Z-A</strong></span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un arreglo que contenga numeros de 1-50 y mostrar en forma descendente
+                                    50-1</strong></span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- CAMBIO DE TIPO DE LAS VARIABLES -->
+                    <section id="cambio-tipos" class="mb-2">
+                        <h5 class="programas">Cambio del tipo de las variables</h5>
+                        <section>
+                            <div class="texto">
+                                <span>En algunos casos es muy importante realizar estos cambios de tipo de las
+                                    variables.</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    /* METODO 1 */
+                    $num=10;
+                    echo gettype($num);
+                    $num="10";
+                    echo gettype($num);
+                    /* METODO 2 SETTYPE() */
+                    //valores permitidos "integer" "double" "string" "array" "object"
+                    $num = 10;
+                    echo gettype($num);
+                    settype($num, "string");
+                    echo gettype($num);
+                    /* METODO 3 CASTING */
+                    $num = 10;
+                    echo gettype($num);
+                    $num = (string) $num;
+                    echo gettype($num);
+                    //valores permitidos
+                    //(int), (integer) - fuerza a entero (integer)
+                    //(real), (double), (float) - fuerza a número con decimales (coma flotante)
+                    //(string) - fuerza a cadena (string)
+                    //(array) - fuerza a array (array)
+                    //(object) - fuerza a objeto (object)
+                    //(unser) - fuerza a null
+                    //(binary) - fuerza a "binary string"
+                    ?&gt;                        
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- OPERADORES -->
+                    <section id="operadores" class="mb-2">
+                        <h5 class="programas">OPERADORES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Un operador nos permite realizar una operación entre uno o más valores.</span>
+                            </div>
+                            <div class="texto">
+                                <span><strong>OPERADORES ARITMÉTICOS</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    //  + Suma
+                    //  - Resta
+                    //  * Multiplicación
+                    //  / División
+                    //  % Módulo (resto de la división)
+                    //  ** Exponenciación (2 ** 3, elevar 2 a la tercera potencia)
+                    $a = 10;
+                    $b = 20;
+                    echo ($a + $b)//30;
+                    ?&gt;                        
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE ASIGNACIÓN</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    //  += Suma y asignación
+                    //  -= Resta y asignación
+                    //  *= Multiplicación y asignación
+                    //  /= División y asignación
+                    //  %= Módulo y asignación
+                    //  .= Concatenación y asignación
+                    $a = 10;
+                    $a += $a;
+                    echo $a;//20
+
+                    $cadena = "Hola ";
+                    echo $cadena .= "mundo"; //"hola mundo"
+                    ?&gt;                        
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE COMPARACIÓN</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    //  == Comprueba si son iguales
+                    //  != Comprueba si son distintos
+                    //  === Comprueba si son iguales y de exactamente el mismo tipo
+                    //  !== Comprueba si son distintos o de distinto tipo
+                    //  <> Diferente (igual que !=)
+                    //  < Menor qué, comprueba si un valor es menor que otro
+                    //  > Mayór qué
+                    //  <= Menor o igual
+                    //  >= Mayor o igual
+                    //  <=> Comparador de orden. (PHP 7)
+                    //  ?? uno o el otro (PHP 7)
+                    $a = 20;
+                    $b = 30;
+                    if($a < $b) {
+                        echo "$a es menor que $b";
+                    }
+                    ?&gt;                        
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES LÓGICOS</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    //  and ->Operación lógica "y", será verdadero si ambos son verdaderos.
+                    //  or  ->Operación lógica "o", será verdadero si uno de ellos es verdadero
+                    //  xor ->Operación lógica "xor", será verdadero si uno de ellos es verdadero, pero no ambos.
+                    //  !   ->Operación de negación, si era verdadero pasa a falso y viceversa.
+                    //  &&  ->Operación lógica "y"
+                    //  ||  ->Operación lógica "o"
+                    $a = true;
+                    $b = false;
+                    if ($a && $b == true) {
+                        echo "$a y $b son los dos verdaderos";
+                    } else {
+                        echo "o uno de $a o $b son falsos, o los dos son falsos";
+                    }
+                    ?&gt;                        
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE INCREMENTO</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    //  ++$a Pre-incremento
+                    //  $a++ Post-incremento
+                    //  --$a Pre-decremento
+                    //  $a-- Post-decremento
+                    $a = 3;
+                    $b = ++$a;
+                    echo "\$a vale $a y \$b vale $b"; //$a vale 4 y $b vale 4
+
+                    $a = 3;
+                    $b = $a++;
+                    echo "\$a vale $a y \$b vale $b"; //$a vale 4 y $b vale 3
+                    ?&gt;                        
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span><strong>OPERADORES DE CADENA O CONCATENACIÓN</strong></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    $saludo = "Hola";
+                    $nombre = "como estas";
+                    $saludoCompleto = $saludo ." ". $nombre;
+                    echo $saludoCompleto
+                    ?&gt;                        
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- FUNCIONES -->
+                    <section id="funciones" class="mb-2">
+                        <h5 class="programas">FUNCIONES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Las funciones son bloques de codigo que se ejecutan al ser invocados(llamados). Lo
+                                    bueno de
+                                    las funciones es que pueden ser utilizadas infinitas veces.</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    /* CON RETORNO */
+                    function mensaje($mensaje = "") {
+                        $res = "$mensaje";
+                        echo $res//Hola como estas;
+                    }                
+                    $titulo = "Hola como estas";
+                    mensaje($titulo);
+
+                    /* SIN RETORNO */
+                    function mensaje($mensaje = "") {
+                        $res = "$mensaje";
+                        return $res;
+                    }                
+                    $titulo = "Hola como estas";
+                    echo mensaje($titulo)//Hola como estas;
+                    ?&gt;                        
+                </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear una función que sume dos números.</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear una función que cuando envie mi edad me imprima si soy MAYOR O MENOR de
+                                    edad.</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- condicionales -->
+                    <section id="condicionales" class="mb-2">
+                        <h5 class="programas">CONDICIONALES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Las condicionales son utilizadas para tomar decisiones en función de que se cumpla
+                                    o no una
+                                    determinada condición.</span>
+                            </div>
+                            <pre rel="PHP">
+                    <code class="language-php line-numbers">
+                        &lt;?php
+                        if (condicion) {
+                        ...instrucciones...
+                        } else {
+                        ...instrucciones...
+                        }
+                        ?&gt;
+                    </code>
+                </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que verifique si una persona es MAYOR o MENOR de edad
+                                    >=18->MAYOR
+                                    &lt;18->MENOR</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que verifique si una persona es HOMBRE o MUJER</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- estructuras de control -->
+                    <section id="break-continue" class="mb-2">
+                        <h5 class="programas">BREAK Y CONTINUE</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Break rompe el flujo de iteración. Termina la iteración.</span>
+                            </div>
+                            <div class="texto">
+                                <span>Continue salta y continua con la siguiente iteración, no ejecuta las operaciones
+                                    que estan por
+                                    debajo.</span>
+                            </div>
+                            <pre rel="PHP">
+                    <code class="language-php line-numbers">
+                        &lt;?php
+                        $semana = array("lunes", "martes", "miercoles", "jueves", "viernes");
+                        foreach ($semana as $key => $value) {
+                            if ($value == "martes") {
+                                break;
+                            }
+                            echo $value;
+                        }
+                        
+                        $semana = array("lunes", "martes", "miercoles", "jueves", "viernes");
+                        foreach ($semana as $key => $value) {
+                            if ($value == "martes") {
+                                continue;
+                            }
+                            echo $value;
+                        }
+                        ?&gt;
+                    </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- estructuras de control -->
+                    <section id="estructuras" class="mb-2">
+                        <h5 class="programas">ESTRUCTURAS DE CONTROL</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Usar switch ayuda a simplificar el código y evita confusiones, ya que organiza en
+                                    varias ramas el
+                                    código que va a ser ejecutado.</span>
+                            </div>
+                            <pre rel="PHP">
+                    <code class="language-php line-numbers">
+                        &lt;?php
+                        $sem = 1;
+                        switch ($sem) {
+                            case 1: ...instruccion1...
+                            break;
+                            case 2: ...instruccion2...
+                            break;
+                            default: ...instruccion3...
+                            break;
+                        }
+                        ?&gt;
+                    </code>
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que muestre el MES segun el numero ingresado. 1->enero</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que muestre el DIA DE LA SEMANA segun el numero ingresado.
+                                    1->lunes</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- bucles y ciclos -->
+                    <section id="bucles" class="mb-2">
+                        <h5 class="programas">BUCLES Y CICLOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los bucles o ciclos son secuencias de bloques de codigo que se ejecutarán
+                                    repetidas veces hasta
+                                    que la condicion deje de cumplirse.</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                        &lt;?php
+                        for ($i = 0; $i <= 10; $i++) {
+                        ...instrucciones...
+                        }
+                        
+                        foreach ($variable as $value) {
+                        ...instrucciones...
+                        }
+                        
+                        while (condicion){
+                        ...instrucciones...
+                        }
+                        
+                        do{
+                        ...instrucciones...
+                        }
+                        }while(condicion)
+                        ?&gt;
+                </code>                    
+            </pre>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que muestre los numeros de 1-100. incrementado en 2</span>
+                            </div>
+                            <div class="texto ejercicio">
+                                <span>Crear un programa que los numeros pares de 1-100</span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- TRY CATCH -->
+                    <section id="try-catch" class="mb-2">
+                        <h5 class="programas">TRY CATCH</h5>
+                        <section>
+                            <div class="texto">
+                                <span>*Los Try Catch se utilizan para poder prevenir los errores.
+                                    <br>
+                                    *Para mayoria de los casos el try catch se utiliza:
+                                </span>
+                                <ol>
+                                    <li>Para recibir información de formularios</li>
+                                    <li>Para realizaciones acciones hacia la BD</li>
+                                </ol>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-PHP line-numbers">                        
+                    &lt;?php
+                    try {
+                        $cliente = $_POST['txtcliente'];
+                        $consulta = $conexion->query(" insert into alquiler(cliente) values('$cliente') ");
+                        //$consulta devuelve TRUE o FALSE
+                    } catch (Exception $e) {
+                        //los errores se almacenan en $e.
+                    }                        
+                    ?>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- COOKIES -->
+                    <section id="cookies" class="mb-2">
+                        <h5 class="programas">COOKIES</h5>
+                        <div class="texto">
+                            <span>Las cookies son unas informaciones almacenadas por un sitio web en el
+                                disco duro del usuario. Esta información es almacenada en un archivo tipo texto que se
+                                guarda cuando
+                                el
+                                navegador accede al sitio web.
+                            </span>
+                        </div>
+                        <div class="texto">
+                            <span>Las cookies se pueden eliminar al poner una MAX-TIEMPO(fecha-máxima) anterior.
+                            </span>
+                        </div>
+                        <section>
+                            <pre rel="PHP">
+                <code class="language-PHP line-numbers">                        
+                    &lt;?php
+                    /* CREANDO UNA COOKIE NUEVA */
+                    setcookie("persona", "Juan", time() + 60 * 60 * 24 * 365, "/");
+                    /* ELIMINADO UNA COOKIE */
+                    setcookie("persona", "Juan", time() + -1, "/");
+                    //time() + (60 * 60 * 24 * 365) => DURA UN AÑO
+                    /* OBTENER UNA COOKIE */
+                    echo $_COOKIE["persona"]                      
+                    ?>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- FUNCIONES O METODOS MAS USADOS -->
+                    <section id="metodos-usados" class="mb-2">
+                        <h5 class="programas">FUNCIONES O MÉTODOS MAS USADOS</h5>
+                        <div class="texto">
+                            <span>En este apartado se muestra algunos funciones o métodos mas utilizados en PHP.
+                            </span>
+                        </div>
+                        <section>
+                            <pre rel="PHP">
+                <code class="language-PHP line-numbers">                        
+                    &lt;?php
+                    $numero=10.555;        
+                    echo round($numero);//redondear un número
+                    echo rand(10, 50);//número aleatorio
+                    echo ceil($numero);//siempre redondea al numero siguiente(solo si tiene decimal > 0)
+                    echo M_PI;//valor de PI
+                    echo date("yy-m-d h:i:s");//fecha y hora actual
+                    header("https://www.google.com")//redirigir a google
+                    error_reporting(0);//no mostrar errores
+                    ?>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">AVANZADO</button>
+                    <!-- conexion BD -->
+                    <section id="conexion" class="mb-2">
+                        <h5 class="programas">CONEXION BD</h5>
+                        <section>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    $conexion=new mysqli('localhost','usuario','clave','bd_nombre','puerto');
+                    $conexion->set_charset("utf8");
+                    date_default_timezone_set('America/Lima');
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- VALIDACIONES -->
+                    <section id="validaciones" class="mb-2">
+                        <h5 class="programas">VALIDACIONES</h5>
+                        <section>
+                            <pre rel="PHP">
+                <code class="language-PHP line-numbers">                        
+                    &lt;?php
+                    if (!empty($_POST['txthabitacion']) and !empty($_POST['txtcliente'])) {
+                        ..........
+                    }else{
+                        ..........
+                    }
+                    ?>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- consultas SQL -->
+                    <section id="consultas" class="mb-2">
+                        <h5 class="programas">CONSULTAS SQL</h5>
+                        <section>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    include './Recurso_conexion_bd.php';
+                    $sql = $conexion->query("select * from usuario");
+                    while ($datos = $sql->fetch_object()) {
+                    ......$datos->id.......
+                    }
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- metodos GET y POST -->
+                    <section id="metodos" class="mb-2">
+                        <h5 class="programas">METODOS GET Y POST</h5>
+                        <section>
+                            <div class="texto">
+                                <span>GET-> Los datos enviados se muestran en la URL.</span><br>
+                                <span>POST-> Los datos enviados NO se muestran en la URL. Son enviados de forma oculta
+                                    en el cuerpo de
+                                    la
+                                    pagina.</span>
+                            </div>
+                        </section>
+                        <pre rel="PHP">
+            <code class="language-PHP line-numbers">                    
+                &lt;?php
+                /* POST */
+                if (!empty($_POST['btnalquilar'])) {
+                    ............
+                }else{
+                    ............
+                }
+
+                /* GET */
+                if (!empty($_GET['btnalquilar'])) {
+                    ............
+                }else{
+                    ............
+                }
+                ?>
+            </code>
+        </pre>
+                    </section>
+                    <!-- enviar imagen a la BD desde un formulario -->
+                    <section id="imagenBD" class="mb-2">
+                        <h5 class="programas">ENVIAR IMAGEN A LA BD DESDE UN FORMULARIO</h5>
+                        <section>
+                            <div class="texto">
+                                <span>PASO 01: el formulario debe debe llevar el atributo <b>enctype</b></span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    &lt;form method="POST" enctype="multipart/form-data">
+                    &lt;/form>
+                    ?&gt;
+                </code>
+            </pre>
+
+                            <div class="texto">
+                                <span>PASO 02: Recibir la imagen enviada del formulario para registrar en la BD</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    $foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+                    ?&gt;
+                </code>
+            </pre>
+
+                            <div class="texto">
+                                <span>PASO 03: Mostrar en pantalla la imagen</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    &lt;img src="data:image/jpg;base64,&lt;?= base64_encode($datos->foto) ?>"/>
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- ajax en php -->
+                    <section id="ajax" class="mb-2">
+                        <h5 class="programas">AJAX EN PHP</h5>
+                        <section>
+                            <div class="texto">
+                                <span>REQUISITOS</span><br>
+                                <a target="_blank" href="https://code.jquery.com/jquery-3.5.1.min.js">JQUERY</a><br>
+                                <span>RELLENAR SELECT A PARTIR DE OTRO SELECT</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script type="text/javascript">
+                        $('#val').change(function() {
+                        recargarLista();
+                        });
+                    &lt;/script>
+                    &lt;script type="text/javascript">
+                        function recargarLista() {
+                            $.ajax({
+                                type: "POST",
+                                url: "ajax/Datos.php",
+                                data: "cod=" + $('#tipo').val(),
+                                success: function(q) {
+                                    $('#habi').html(q);
+                                }
+                            });
+                        }        
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>ENVIAR DATOS DE UN FORMULARIO</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script type="text/javascript">
+                        $('#val').change(function() {
+                            recargarForm();
+                        });
+                    &lt;/script>
+                    &lt;script type="text/javascript">
+                        function recargarForm() {
+                            var fecha_i = document.getElementById('txtfecha_i').value;
+                            var fecha_s = document.getElementById('txtfecha_s').value;
+                            var precio = document.getElementById('txtprecio_i').value;
+                            var tipo = document.getElementById('tipo').value;
+                            var valor = 'fecha_i=' + fecha_i + '&fecha_s=' + fecha_s +
+                            '&precio=' + precio + '&tipo=' + tipo;
+                            $.ajax({
+                                type: "POST",
+                                url: "ajax/Datos.php",
+                                data: valor,
+                                success: function(q) {
+                                    $('#res').html(q);
+                                }
+                            });
+                        }    
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- sesiones -->
+                    <section id="sesiones" class="mb-2">
+                        <h5 class="programas">SESIONES</h5>
+                        <section>
+                            <div class="texto">
+                                <span>GUARDAR DATOS EN SESION</span>
+                            </div>
+                            <div class="texto">
+                                <span><b>OJO : </b> es muy importante que los <b>session_start();</b> estén al inicio
+                                    del documento</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    session_start();
+                    $_SESSION['id'] = $datos->id_usuario;
+                    $_SESSION['tipo'] = $datos->tipo_usuario;
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>VER DATOS DE LA SESION</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    session_start();
+                    $codigo = $_SESSION['id'];
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>ELIMINAR SESION</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    session_destroy();
+                    header('location:../login2/Login.php');
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- headers -->
+                    <section id="headers" class="mb-2">
+                        <h5 class="programas">HEADERS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Los header se utiliza para redireccionar</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    header('location:Inicio.php');                        
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- includes y requires -->
+                    <section id="includes" class="mb-2">
+                        <h5 class="programas">INCLUDE Y REQUIRE</h5>
+                        <section>
+                            <div class="texto">
+                                <span>Si el archivo llamado no existe, INCLUDE sólo da un warning, y sigue
+                                    ejecutando</span><br>
+                                <span>Si el archivo llamado no existe, REQUIRE produce un error e interrumpe el flujo de
+                                    ejecución.</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    include './general/Topbar.php';
+                    require './general/Topbar.php';                                               
+                    ?&gt;
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- otros comandos -->
+                    <section id="otros" class="mb-2">
+                        <h5 class="programas">OTROS COMANDOS PHP</h5>
+                        <section>
+                            <div class="texto">
+                                <span>FILTRAR EL REPORTE DE ERRORES</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    error_reporting(0);
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>FECHA</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    $date = date('d/m/Y');
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>SELECT AUTOMATICO</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;select>
+                        &lt;option &lt;?= $datos7->sexo == 'm' ? 'selected' : '' ?> value="m">Varon&lt;/option>
+                        &lt;option &lt;?= $datos7->sexo == 'f' ? 'selected' : '' ?> value="f">Mujer&lt;/option>
+                    &lt;/select>
+                </code>
+            </pre>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;select>
+                        &lt;option &lt;?= $datos->id_tipo == $datos7->tipo ? 'selected' : '' ?> value="&lt;?= $datos->id_tipo ?>">&lt;?= $datos->nombre ?>&lt;/option>
+                    &lt;/select>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>BOTON EDITAR Y ELIMINAR</span>
+                            </div>
+                            <pre rel="PHP">
+                <code class="language-php line-numbers">
+                    &lt;?php
+                    &lt;a href="#editar&lt;?= $datos7->usuario ?>">EDITAR&lt;/a>
+                    &lt;a href="Usuario.php?elimin=&lt;?= $datos7->id_usuario ?>" onclick="return confirmar_eliminar()">ELIMINAR&lt;/a>
+                    MODAL-EDITAR ->
+                    &lt;div id="editar&lt;?= $datos7->usuario ?>">
+                    ?&gt;
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>NOTIFICACIONES TOAST</span>
+                                <span>
+                                    <a target="_blank" href="https://cdnjs.com/libraries/toastr.js">RECURSOS</a><br>
+                                    <a target="_blank"
+                                        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">CSS</a><br>
+                                    <a target="_blank" href="https://code.jquery.com/jquery-3.5.1.min.js">JQUERY</a><br>
+                                    <a target="_blank"
+                                        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js">JS</a><br>
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                        
+                    &lt;script>                            
+                        //success-warning-info-error
+                        toastr.error('Error al modificar foto', 'ERROR');
+                    &lt;/script>
+                </code>
+            </pre>
+                            <div class="texto">
+                                <span>ACTUALIZAR LA URL PARA EVITAR INYECCION DE DATOS</span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        (function () {
+                            var not = function () {
+                                window.history.replaceState(null, null, window.location.pathname);
+                            //CON PARAMETROS//
+                                window.history.replaceState(null, null, window.location.pathname+"?cod=&lt;?= $codigo ?>");
+                            };
+                            setTimeout(not, 0);
+                        }());
+                    &lt;/script>                        
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+
+
+</body>
+
+</html>

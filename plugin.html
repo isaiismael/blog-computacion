@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">PLUGINS Y LIBRERIAS JS</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#plugin" class="class-items d-block" class="p-1">Qué es un plugin</a>
+                                    </li>
+                                    <li><a href="#libreria" class="class-items d-block" class="p-1">Qué es una
+                                            librería</a></li>
+                                    <li><a href="#framework" class="class-items d-block" class="p-1">Qué es una
+                                            framework</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Plugins<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#pushbar" class="class-items d-block" class="p-1">Pushbar.js</a>
+                                    </li>
+                                    <li><a href="#datatables" class="class-items d-block" class="p-1">Datatables</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Librerías<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#moment" class="class-items d-block" class="p-1">Moment.js</a>
+                                    </li>
+                                    <li><a href="#prism" class="class-items d-block" class="p-1">Prism.js</a>
+                                    </li>
+                                    <li><a href="#headroom" class="class-items d-block" class="p-1">Headroom.js</a>
+                                    </li>
+                                    <li><a href="#particles" class="class-items d-block" class="p-1">Particles.js</a>
+                                    </li>
+                                    <li><a href="#glider" class="class-items d-block" class="p-1">Glider.js</a>
+                                    </li>
+                                    <li><a href="#typed" class="class-items d-block" class="p-1">Typed.js</a>
+                                    </li>
+                                    <li><a href="#fullpage" class="class-items d-block" class="p-1">FullPage.js</a>
+                                    </li>
+                                    <li><a href="#simply" class="class-items d-block" class="p-1">SimplyCountdown.js</a>
+                                    </li>
+                                    <li><a href="#sweet" class="class-items d-block" class="p-1">SweetAlert2.js</a>
+                                    </li>
+                                    <li><a href="#fancybox" class="class-items d-block" class="p-1">Fancybox</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- QUÉ ES UN PLUGIN -->
+                    <section id="plugin" class="mb-2">
+                        <h5 class="programas">QUÉ ES UN PLUGIN</h5>
+                        <section>
+                            <div class="texto">
+                                <span style="margin-bottom: 10px">
+                                    <strong>Un plugin es una complemento</strong>
+                                    que nos permite agregar una nueva función a nuestro proyecto de forma facil y
+                                    sencilla.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- QUÉ ES UNA LIBRERIA -->
+                    <section id="libreria" class="mb-2">
+                        <h5 class="programas">QUÉ ES UNA LIBRERIA</h5>
+                        <section>
+                            <div class="texto">
+                                <span style="margin-bottom: 10px">
+                                    <strong>Una librería(biblioteca) es una herramienta.</strong> que a diferencia de un
+                                    plugin este
+                                    puede contener un conjunto de funciones.
+                                </span><br>
+                                <span style="margin-bottom: 10px">
+                                    Al utilizar una libreria tenemos la opcion de modificar algunas configuraciones.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- QUÉ ES UNA FRAMEWORK -->
+                    <section id="framework" class="mb-2">
+                        <h5 class="programas">QUÉ ES UNA FRAMEWORK</h5>
+                        <section>
+                            <div class="texto">
+                                <span style="margin-bottom: 10px">
+                                    <strong>Un framework es un conjunto de herramienta.</strong> que nos facilitan
+                                    agregar
+                                    funcionalidades a nuestro proyecto.
+                                </span><br>
+                                <span style="margin-bottom: 10px">
+                                    Al utilizar un framework <strong>NO</strong> tenemos la opcion de modificar algunas
+                                    configuraciones.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">PLUGINS</button>
+                    <!-- PUSHBAR JS -->
+                    <section id="pushbar" class="mb-2">
+                        <h5 class="programas">PUSHBAR JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://oncebot.github.io/pushbar.js/" target="_blank">Pushbar.js</a> es un
+                                    pequeño
+                                    complemento de JavaScript para crear cajones deslizantes en
+                                    aplicaciones web.
+                                </span><br>
+                                <span class="def">
+                                    Es totalmente personalizable y libre de dependencias. Puede usarlo como menús de
+                                    barra lateral o
+                                    cajones de opciones.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://github.com/oncebot/pushbar.js/tree/master/src"
+                                        target="_blank">Descargar
+                                        archivos útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;head>
+                        &lt;link rel="stylesheet" href="css/pushbar.css">
+                    &lt;/head>
+                    &lt;body>
+
+                        &lt;button id="boton" data-pushbar-target="contenido">VER EFECTO PUSHBAR&lt;/button>
+                        &lt;div data-pushbar-id="contenido" data-pushbar-direction="left">
+                            &lt;button data-pushbar-close>Cerrar&lt;/button>
+                            &lt;h1>Esto es pushbar&lt;/h1>
+                        &lt;/div>
+
+                        &lt;script src="js/pushbar.js">&lt;/script>
+                        &lt;script>
+                            const pushbar = new Pushbar({
+                                blur: true,
+                                overlay: true,
+                            });
+                        &lt;/script>
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                    <!-- DATATABLES -->
+                    <section id="datatables" class="mb-2">
+                        <h5 class="programas">DATATABLES</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://github.com/isaiismael/datatables/tree/master"
+                                        target="_blank">Datatables</a> es
+                                    una
+                                    herramienta de JavaScript altamente flexible que nos permite trabajar con tablas en
+                                    HTML.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">LIBRERÍAS</button>
+                    <!-- MOMENT JS -->
+                    <section id="moment" class="mb-2">
+                        <h5 class="programas">MOMENT JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://momentjs.com/" target="_blank">Moment.js</a> es una libreria
+                                    que nos permite trabajar con fechas.
+                                </span><br>
+                                <span class="def">
+                                    Lo bueno de este libreria es que podemos realizar operaciones complejas con las
+                                    fechas.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://momentjs.com/downloads/moment.js" target="_blank">Descargar
+                                        archivos útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;script>
+                        const ayer = moment('1999-02-02 14:00:00.000');
+                        const hoy = moment('2021-01-20 08:40:00.000');
+                        //          DD-MD-Y    d-m-y
+                        //          HH:MM:SS   hh-mm-ss
+                
+                        console.log("**********restas de fechas**********");
+                        console.log(hoy.diff(ayer, 'days')+" dias")
+                        console.log(hoy.diff(ayer, 'months')+" meses");
+                        console.log(hoy.diff(ayer, 'years')+" años");
+                        console.log(hoy.diff(ayer, 'hours')+" horas");
+                        console.log(hoy.diff(ayer, 'minutes')+" minutos");
+                        console.log(hoy.diff(ayer, 'seconds')+" segundos");
+                        console.log(hoy.diff(ayer, 'milliseconds')+" mili segundos");
+                
+                        console.log("*********sumas de fechas*********");
+                        console.log(moment(hoy.add(7, 'days')._d).format('DD-MM-YYYY hh:mm:ss'))
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- PRISM JS -->
+                    <section id="prism" class="mb-2">
+                        <h5 class="programas">PRISM JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://prismjs.com/" target="_blank">Prism.js</a> es una librería que nos
+                                    permite
+                                    poder compartir nuestro codigo en la web de una manera elegante.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://prismjs.com/download.html" target="_blank">Descargar
+                                        archivos útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;head>
+                        &lt;link rel="stylesheet" href="css/prism.css">
+                    &lt;/head>
+                    &lt;body>
+
+                    &lt;pre rel="HTML">
+                        &lt;code class="language-markup line-numbers">
+                            &lt;html lang="en">
+                            &lt;head>
+                                &lt;title>Document&lt;/title>
+                            &lt;/head>
+                            &lt;body>                    
+                            &lt;/body>
+                            &lt;/html>
+                        &lt;/code>
+                    &lt;/pre>
+
+                    &lt;script src="js/prism.js">&lt;/script>                            
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- HEADROOM JS -->
+                    <section id="headroom" class="mb-2">
+                        <h5 class="programas">HEADROOM JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://wicky.nillia.ms/headroom.js/" target="_blank">Headroom.js</a> es
+                                    una librería
+                                    que nos permite
+                                    ejecutar una funcion cuando el usuario hace <strong>scroll</strong> en la pagina.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    Se desliza fuera de la vista cuando se desplaza hacia abajo y se desliza hacia
+                                    adentro cuando se
+                                    desplaza hacia arriba.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"
+                                        target="_blank">Descargar
+                                        archivos útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;head>
+                        &lt;link rel="stylesheet" href="css/estilos.css">
+                        &lt;style>                                
+                            header {
+                                width: 100%;
+                                height: 80px;
+                                background: rgb(0, 157, 248);
+                                position: fixed;
+                            }
+                            section             { padding-top: 90px; }
+                            .headroom           { transition: all .3s ease; }
+                            .headroom--pinned   { transform: translateY(0%); }
+                            .headroom--unpinned { transform: translateY(-100%); }
+                        &lt;/style>
+                    &lt;/head>
+                    &lt;body>
+
+                        &lt;header id="header">&lt;/header>
+                        &lt;section>
+                            &lt;p>Lorem 2000&lt;/p>
+                        &lt;/section>
+                        &lt;script src="js/headroom.min.js">&lt;/script>
+                        &lt;script>
+                            (function () {
+                                let header = document.getElementById("header");
+                                let headroom = new Headroom(header);
+                                headroom.init();
+                            }())
+                        &lt;/script>
+                        
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- PARTICLES JS -->
+                    <section id="particles" class="mb-2">
+                        <h5 class="programas">PARTICLES JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://vincentgarreau.com/particles.js/" target="_blank">Particles.js</a>
+                                    es una
+                                    librería que nos permite
+                                    mostrar particulas en movimiento en nuestra página.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <ol>
+                                        <li class="p-1"><span>Ingresa a la página</span>
+                                        </li>
+                                        <li class="p-1"><span>Configura según tus necesidades</span>
+                                        </li>
+                                        <li class="p-1"><span>Descarga el archivo JSON y pegar dentro de
+                                                <strong>particlesJS()</strong></span>
+                                        </li>
+                                    </ol>
+                                </span>
+                                <span class="def">
+                                    <a href="https://github.com/VincentGarreau/particles.js/blob/master/particles.min.js"
+                                        target="_blank">Descargar
+                                        archivos útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;head>
+                        &lt;style>
+                            * { margin: 0; }                        
+                            #particles-js { width: 100%; height: 100vh; background: rgb(0, 0, 0); }
+                        &lt;/style>
+                    &lt;/head>                        
+                    &lt;body>
+
+                        &lt;div id="particles-js">&lt;/div>                        
+                        &lt;script src="js/particles.min.js">&lt;/script>
+                        &lt;script>
+                            particlesJS( //AQUI VA EL ARCHIVO JSON )
+                        &lt;/script>
+
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- GLIDER JS -->
+                    <section id="glider" class="mb-2">
+                        <h5 class="programas">GLIDER JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://nickpiscitelli.github.io/Glider.js/" target="_blank">Glider.js</a>
+                                    es una
+                                    librería que nos permite
+                                    mostrar imagenes(contenidos) de forma elegante; Además es responsivo.
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;link rel="stylesheet" href="css/glider.min.css">
+                    &lt;style>
+                        body{ padding: 50px; }
+                    &lt;/style>
+                    &lt;body>
+
+                    &lt;div class="glider-contain">
+                        &lt;div class="glider">
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/animals" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/arch" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/nature" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/people" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/animals" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/arch" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/nature" alt="">&lt;/div>
+                            &lt;div>&lt;img src="https://placeimg.com/640/480/people" alt="">&lt;/div>
+                        &lt;/div>
+                
+                        &lt;button aria-label="Previous" class="glider-prev">«&lt;/button>
+                        &lt;button aria-label="Next" class="glider-next">»&lt;/button>
+                        &lt;div role="tablist" class="dots">&lt;/div>
+                    &lt;/div>                    
+                
+                    &lt;script src="js/glider.min.js">&lt;/script>
+                    &lt;script>
+                        new Glider(document.querySelector('.glider'), {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            draggable: true,
+                            dots: '.dots',
+                            arrows: {
+                                prev: '.glider-prev',
+                                next: '.glider-next'
+                            }
+                        });
+                    &lt;/script>
+
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- TYPED JS -->
+                    <section id="typed" class="mb-2">
+                        <h5 class="programas">TYPED JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://github.com/mattboldt/typed.js/" target="_blank">Typed.js</a> es una
+                                    librería que nos permite
+                                    un <strong>efecto de escritura</strong> bastante elegante.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" target="_blank">Descargar
+                                        CDN</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                &lt;!DOCTYPE html>
+                &lt;html lang="en">
+                &lt;body>
+                    &lt;main>
+                        &lt;h1>Reparación de &lt;br>&lt;span class="typed">&lt;/span>&lt;/h1>
+                    &lt;/main>
+
+                    &lt;script src="js/typed.js">&lt;/script>
+                    &lt;script>
+                        const typed = new Typed('.typed', {
+                            strings: [
+                                '&lt;i class="mascota">Computadoras&lt;/i>',
+                                '&lt;i class="mascota">Laptops&lt;/i>',
+                                '&lt;i class="mascota">Celulares&lt;/i>'
+                            ],
+
+                            //stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+                            typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+                            startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+                            backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+                            smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+                            shuffle: false, // Alterar el orden en el que escribe las palabras.
+                            backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+                            loop: true, // Repetir el array de strings
+                            loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+                            showCursor: true, // Mostrar cursor palpitanto
+                            cursorChar: '|', // Caracter para el cursor
+                            contentType: 'html', // 'html' o 'null' para texto sin formato
+                        });
+
+                    &lt;/script>
+                &lt;/body>
+
+                &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- FULLPAGE JS -->
+                    <section id="fullpage" class="mb-2">
+                        <h5 class="programas">FULLPAGE JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://alvarotrigo.com/fullPage/es/" target="_blank">FullPage.js</a> es
+                                    una
+                                    librería que nos permite
+                                    crear paginas web de <strong>pantallas completas</strong>.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://cdnjs.com/libraries/fullPage.js" target="_blank">Descargar .CSS y
+                                        .JS</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                &lt;!DOCTYPE html>
+                &lt;html lang="en">
+                &lt;head>
+                    &lt;link rel="stylesheet" href="css/fullpage.min.css">
+                &lt;/head>
+                &lt;body>
+
+                    &lt;div id="fullpage">
+                        &lt;div class="section uno">Sección 1&lt;/div>
+                        &lt;div class="section dos">Sección 2&lt;/div>
+                        &lt;div class="section tres">Sección 3&lt;/div>
+                    &lt;/div>
+
+                    &lt;script src="js/fullpage.min.js">&lt;/script>
+                    &lt;script>
+                        new fullpage('#fullpage', {
+                            autoScrolling: true, // Se activa el scroll.
+                            fitToSection: false, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
+                            fitToSectionDelay: 300, // Delay antes de acomodar la seccion automaticamente.
+                            easing: 'easeInOutCubic', // Funcion de tiempo de la animacion.
+                            scrollingSpeed: 700, // Velocidad del scroll. Valores: en milisegundos.
+                            css3: true, // Si usara CSS3 o javascript.
+                            easingcss3: 'ease-out', // Curva de velocidad del efecto.
+                            loopBottom: false, // Regresa a la primera seccion siempre y cuando se ya haya llegado a la ultima sección y el ususario siga scrolleando.
+
+                            navigation: true, // Muesta la barra de navegación.
+                            menu: '#menu', // Menu de navegación.
+                            anchors: ['inicio', 'productos', 'contacto'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+                            navigationTooltips: ['Inicio', 'Productos', 'Contacto'], // Tooltips que mostrara por cada boton.
+                            showActiveTooltip: false, // Mostrar tooltip activa.
+
+                            sectionsColor: ['#E74C3C', '#3498DB', '#2ECC71'], // Color de fondo de cada seccion.
+                            verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
+                        });
+                    &lt;/script>
+
+                &lt;/body>
+                &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- SIMPLYCOUNTDOWN JS -->
+                    <section id="simply" class="mb-2">
+                        <h5 class="programas">SIMPLYCOUNTDOWN JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://vincentloy.github.io/simplyCountdown.js/"
+                                        target="_blank">SimplyCountDown.js</a> es
+                                    una
+                                    librería que nos permite
+                                    crear una <strong>cuenta regresiva</strong>.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://raw.githubusercontent.com/VincentLoy/simplyCountdown.js/develop/dist/simplyCountdown.min.js"
+                                        target="_blank">Descargar archivos útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                &lt;!DOCTYPE html>
+                &lt;html lang="en">
+                &lt;body>
+
+                    &lt;div id="contador">&lt;/div>
+                    &lt;section class="contenido">
+                        &lt;p>lorem 1000&lt;/p>
+                    &lt;/section>
+
+                    &lt;script src="js/simplyCountdown.min.js">&lt;/script>
+                    &lt;script>
+                        simplyCountdown('#contador', {
+                            year: 2021, // required
+                            month: 1, // required
+                            day: 21, // required
+                            hours: 1, // Default is 0 [0-23] integer
+                            minutes: 12, // Default is 0 [0-59] integer
+                            seconds: 30, // Default is 0 [0-59] integer
+                            words: { //words displayed into the countdown
+                                days: 'dia',
+                                hours: 'hora',
+                                minutes: 'minuto',
+                                seconds: 'segundo',
+                                pluralLetter: 's'
+                            },
+                            plural: true, //use plurals
+                            inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+                            inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
+                            // in case of inline set to false
+                            enableUtc: false,
+                            onEnd: function () {
+                                /* function cuando finalize */
+                                let con = document.querySelector(".contenido");
+                                con.style.display = "block";
+                                return;
+                            },
+                            refresh: 1000, //default refresh every 1s
+                            sectionClass: 'simply-section', //section css class
+                            amountClass: 'simply-amount', // amount css class
+                            wordClass: 'simply-word', // word css class
+                            zeroPad: false,
+                            countUp: false, // enable count up if set to true
+                        });
+                    &lt;/script>
+                &lt;/body>
+                &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- SWEETALERT2 JS -->
+                    <section id="sweet" class="mb-2">
+                        <h5 class="programas">SWEETALERT2 JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="https://sweetalert2.github.io/" target="_blank">SweetAlter2.js</a> es una
+                                    librería que nos permite
+                                    crear <strong>notificaciones de alertas</strong> totalmente hermosos y editables.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://cdn.jsdelivr.net/npm/sweetalert2@10" target="_blank">Descargar
+                                        archivos
+                                        útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">                       
+                    &lt;body>
+
+                        &lt;script src="js/sweetalert2.js">&lt;/script>
+                        &lt;script>
+                            Swal.fire({
+                                title: 'Puedes ver mas ejemplos en la página oficial'
+                            })
+                        &lt;/script>
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- FANCYBOX JS -->
+                    <section id="fancybox" class="mb-2">
+                        <h5 class="programas">FANCYBOX JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a href="http://fancyapps.com/fancybox/3/" target="_blank">FancyBox.js</a> es una
+                                    librería que nos permite
+                                    mostrar imágenes, contenido html y multimedia en una "caja de luz" estilo Mac que
+                                    flota sobre la
+                                    página web.
+                                </span>
+                                <br>
+                                <span class="def">
+                                    <a href="https://jquery.com/" target="_blank">Jquery</a><br>
+                                    <a href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+                                        target="_blank">Descargar archivos
+                                        útiles</a>
+                                </span>
+                            </div>
+                            <pre rel="HTML">
+                <code class="language-markup line-numbers">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;head>
+                        &lt;link rel="stylesheet" href="css/jquery.fancybox.min.css">
+                    &lt;/head>
+                    &lt;body>
+
+                        &lt;div class="texto img-conexion wrapper">
+                            &lt;a rel="hover" href="https://placeimg.com/640/480/animals" data-fancybox="gallery" data-caption="descripcion">
+                                &lt;img src="https://placeimg.com/640/480/animals" alt="">
+                            &lt;/a>
+                            &lt;a rel="hover" href="https://placeimg.com/640/480/arch" data-fancybox="gallery" data-caption="descripcion">
+                                &lt;img src="https://placeimg.com/640/480/arch" alt="">
+                            &lt;/a>                                
+                        &lt;/div>
+
+                        &lt;script src="js/jquery.min.js">&lt;/script>
+                        &lt;script src="js/jquery.fancybox.min.js">&lt;/script>
+                        &lt;script>
+                            $("[data-fancybox]").fancybox({
+                                animationEffect: "slide",
+                                transitionEffect: "circular",
+                                loop: true,
+                                buttons: [
+                                    "zoom",
+                                    "share",
+                                    "slideShow",
+                                    "fullScreen",
+                                    "download",
+                                    "thumbs",
+                                    "close"
+                                ]
+                            })
+                        &lt;/script>
+                        
+                    &lt;/body>
+                    &lt;/html>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+
+
+</body>
+
+</html>
