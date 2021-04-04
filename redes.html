@@ -30,7 +30,7 @@
     <div id="app">
         <encabezado></encabezado>
         <section class="content">
-            <h4 class="nombre-curso">CURSO DE CSS</h4>
+            <h4 class="nombre-curso">CURSO DE REDES</h4>
             <section class="proceso">
                 <div class="accordion" id="accordionExample">
                     <h5 class="tabla-contenido">Contenido</h5>
@@ -66,17 +66,70 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ol class="d-flex flex-column">
-                                    <li><a href="#crear-proyecto" class="class-items d-block" class="p-1">Qué es Css</a>
+                                    <li><a href="#que-es-red" class="class-items d-block" class="p-1">Qué es una red</a>
                                     </li>
-                                    <li><a href="#estilos" class="class-items d-block" class="p-1">Estilos avanzados</a>
+                                    <li><a href="#tipos-red" class="class-items d-block" class="p-1">Tipos de redes</a>
                                     </li>
-                                    <li><a href="#media" class="class-items d-block" class="p-1">Media query css</a>
+                                    <li><a href="#que-es-isp" class="class-items d-block" class="p-1">Qué es ISP</a>
                                     </li>
-                                    <li><a href="#transiciones" class="class-items d-block" class="p-1">Transiciones</a>
+                                    <li><a href="#internet" class="class-items d-block" class="p-1">Qué es internet</a>
                                     </li>
-                                    <li><a href="#animaciones" class="class-items d-block" class="p-1">Animaciones</a>
+                                    <li><a href="#historia-internet" class="class-items d-block" class="p-1">Historia de
+                                            internet</a></li>
+                                    <li><a href="#intranet-extranet" class="class-items d-block" class="p-1">Intranet y
+                                            extranet</a></li>
+                                    <li><a href="#topologias" class="class-items d-block" class="p-1">Topologias de
+                                            red</a></li>
+                                    <li><a href="#ancho-banda" class="class-items d-block" class="p-1">Qué es ancho de
+                                            banda - velocidad -
+                                            latencia - transmision</a></li>
+                                    <li><a href="#red-convergente" class="class-items d-block" class="p-1">Qué es red
+                                            convergente</a></li>
+                                    <li><a href="#sistema-operativo" class="class-items d-block" class="p-1">Sistema
+                                            operativo</a></li>
+                                    <li><a href="#kernel" class="class-items d-block" class="p-1">Qué es kernel</a></li>
+                                    <li><a href="#switch-modem-router" class="class-items d-block" class="p-1">Switch
+                                            Router y Modem</a>
                                     </li>
-                                    <li><a href="#sombras" class="class-items d-block" class="p-1">Sombras</a></li>
+                                    <li><a href="#protocolo" class="class-items d-block" class="p-1">Qué es un
+                                            protocolo</a></li>
+                                    <li><a href="#osi-tcp" class="class-items d-block" class="p-1">Comparación de
+                                            protocolos OSI vs
+                                            TCP/IP</a></li>
+                                    <li><a href="#osi" class="class-items d-block" class="p-1">Modelo de referencia
+                                            OSI</a></li>
+                                    <li><a href="#tcp" class="class-items d-block" class="p-1">Protocolo TCP/IP</a></li>
+                                    <li><a href="#medios-transmision" class="class-items d-block" class="p-1">Medios de
+                                            transmisión</a>
+                                    </li>
+                                    <li><a href="#cableado-utp" class="class-items d-block" class="p-1">Cableado UTP</a>
+                                    </li>
+                                    <li><a href="#ip" class="class-items d-block" class="p-1">Qué es dirección lógica o
+                                            IP</a>
+                                    </li>
+                                    <li><a href="#mac" class="class-items d-block" class="p-1">Qué es dirección lógica o
+                                            MAC</a>
+                                    </li>
+                                    <li><a href="#clases-ip" class="class-items d-block" class="p-1">Clases de
+                                            direcciones IP</a></li>
+                                    <li><a href="#mascaras" class="class-items d-block" class="p-1">Máscaras</a></li>
+                                    <li><a href="#vpn" class="class-items d-block" class="p-1">Qué es una VPN</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#mails" class="class-items d-block" class="p-1">Enviar Mails</a></li>
                                 </ol>
                             </div>
                         </div>
@@ -85,248 +138,1532 @@
                 <div class="descripcion">
                     <button style="font-size: 16px"
                         class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
-
                     <!-- programas a utilizar -->
                     <section id="programas" class="mb-2">
                         <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
-                        <section>
-                            <div class="texto">
-                                <ol>
-                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
-                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
-                                        <span>
-                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
-                                            programa por
-                                            que es más ligero y tiene mas opciones a diferencia de otros
-                                        </span>
-                                    </li>
-                                </ol>
-                            </div>
+                        <section class="desc">
+                            <ol class="pl-4">
+                                <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                        href="https://drive.google.com/drive/folders/1ADm6z7-zHKQ8i9kGZAMV0pKt-hL_mpx4?usp=sharing">Packet
+                                        Tracer</a>
+                                    <span class="def">
+                                        Es un programa que nos permite hacer simulaciones en redes. Con esta herramienta
+                                        se pueden testear
+                                        el funcionamiento de
+                                        redes, ciberseguridad y el internet de las cosas (IoT).
+                                    </span>
+                                </li>
+                            </ol>
                         </section>
                     </section>
                     <!-- requisitos basicos -->
                     <section id="requisitos" class="mb-2">
                         <h5 class="programas">REQUISITOS BÁSICOS</h5>
-                        <section>
-                            <div class="texto">
-
-                            </div>
+                        <section class="px-1">
+                            <ol>
+                            </ol>
                         </section>
                     </section>
                     <!-- conceptos basicos -->
                     <section id="conceptos" class="mb-2">
                         <h5 class="programas">CONCEPTOS BÁSICOS</h5>
-                        <section>
+                        <section class="px-1">
                             <div class="texto">
                                 <span class="def">
-                                    CSS (Cascading Style Sheets => Hojas de estilos en cascada). Es un lenguaje de
-                                    estilos que es utilizado
-                                    en el diseño web.
-                                </span>
-                            </div>
-                            <div class="texto">
+                                    Red es un conjunto de dispositivos que están conectados entre sí.</span><br>
                                 <span class="def">
-                                    CSS se utiliza para la apariencia de una pagina web. Gracias a este lenguaje podemos
-                                    dar un mejor diseño
-                                    a nuestra pagina.
-                                </span>
+                                    El objetivo de una red es transportar un
+                                    elemento de un lugar a otro.</span>
                             </div>
-                            <div class="texto">
-                                <span class="def">
-                                    OJO CSS NO ES UN LENGUAJE DE PROGRAMACION
-                                </span>
-                            </div>
-
                         </section>
                     </section>
 
                     <button style="font-size: 16px"
-                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
-                    <!-- QUE ES CSS -->
-                    <section id="crear-proyecto" class="mb-2">
-                        <h5 class="programas">QUE ES CSS</h5>
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTERMEDIO</button>
+
+
+                    <!-- QUE ES UNA RED -->
+                    <section id="que-es-red" class="mb-2">
+                        <h5 class="programas">QUE ES UNA RED</h5>
+
                         <section>
                             <div class="texto">
                                 <span class="def">
-                                    CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas de
-                                    estilo en cascada y se
-                                    usa para estilizar elementos escritos en un lenguaje de marcado como HTML. CSS
-                                    separa el contenido de la
-                                    representación visual del sitio.
+                                    Red es la union de 2 o más dispositivos(pc, movil, laptop, tv, etc) que estan
+                                    conectados entre sí con la
+                                    finalidad de compartir datos.
                                 </span>
                             </div>
                             <div class="texto">
-                                <span class="def">CSS fue desarrollado por W3C (World Wide Web Consortium) en 1996 por
-                                    una razón muy
-                                    sencilla. HTML no fue
-                                    diseñado para tener etiquetas que ayuden a formatear la página. Está hecho solo para
-                                    escribir el marcado
-                                    para el sitio.</span>
+                                <span class="def">
+                                    El objetivo de una red es transportar un elemento de un lugar a otro.
+
+                                    Siempre tenemos un punto de partida y un punto de llegada. Una red informática es un
+                                    conjunto de equipos
+                                    conectados entre sí por medio de dispositivos físicos o inalámbricos que envían y
+                                    reciben impulsos
+                                    eléctricos, ondas electromagnéticas, o cualquier otro medio para el transporte de
+                                    datos.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="red"
+                                    href="https://sites.google.com/site/redesdecomputadoras603b/_/rsrc/1467885960895/home/8-seguridad-en-redes-alambricas-e-inalambricas/imgres.jpg"
+                                    data-fancybox="gallery" data-caption="red">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/redesdecomputadoras603b/_/rsrc/1467885960895/home/8-seguridad-en-redes-alambricas-e-inalambricas/imgres.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Los dispositivos en una red pueden estar conectados ya sea mediante cable(fisico) o
+                                    inalámbrico(no
+                                    fisico).
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Conexion fisica :</strong>
+                                    dispositivos que entan conectados a traves de un cable
+                                </span><br>
+                                <span class="def">
+                                    Recomendado para trabajar con computadores de escritorio y consolas de video juego.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>VENTAJAS</strong>
+                                    <li class="p-1">Mejor velocidad de trasmisión</li>
+                                    <li class="p-1">Seguridad de trasmisión de datos porque necesita una conexión física
+                                    </li>
+                                    <li class="p-1">Baja interferencia del medio ambiente</li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>DESVENTAJAS</strong>
+                                    <li class="p-1">Necesita ser instalada físicamente a través de postes, paredes, etc
+                                    </li>
+                                    <li class="p-1">Dificultad para mover los puntos de red</li>
+                                    <li class="p-1">No es muy estético(aspecto de belleza)</li>
+                                    <li class="p-1">Está limitado por el número de puertos en el router, si queremos mas
+                                        puertos tenemos que
+                                        añadir un
+                                        switch.</li>
+                                </ol>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="red fisica" href="https://lignux.com/wp-content/uploads/2020/04/red-local.jpg"
+                                    data-fancybox="gallery" data-caption="red fisica">
+                                    <img loading="lazy"
+                                        src="https://lignux.com/wp-content/uploads/2020/04/red-local.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>Conexion no fisica :</strong>
+                                    dispositivos que entan conectados a traves de wifi, bluetooth, etc. y que comparten
+                                    datos a traves de
+                                    las ondas electromágneticas
+                                </span>
+                                <br>
+                                <span class="def">
+                                    Recomendado para trabajar con computadores portátiles y celulares.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>VENTAJAS</strong>
+                                    <li class="p-1">Fácil instalación</li>
+                                    <li class="p-1">Buena estética(aspecto de belleza)</li>
+                                    <li class="p-1">Facilidad de movimiento de los dispositivos electrónicos</li>
+                                    <li class="p-1">Conexión de varios dispositivos a la vez</li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>DESVENTAJAS</strong>
+                                    <li class="p-1">Poca velocidad de trasmisión de datos</li>
+                                    <li class="p-1">Sujeta a interferencias de otras señales, de paredes y medio
+                                        ambiente</li>
+                                    <li class="p-1">Menor seguridad, puede ser víctima de hackers</li>
+                                </ol>
+                            </div>
+
+                            <div class="texto img-conexion wrapper">
+                                <a rel="red no fisica"
+                                    href="https://tecnologia-informatica.com/wp-content/uploads/2018/06/wifi-redes-inalambricas-1.jpeg"
+                                    data-fancybox="gallery" data-caption="red no fisica">
+                                    <img loading="lazy"
+                                        src="https://tecnologia-informatica.com/wp-content/uploads/2018/06/wifi-redes-inalambricas-1.jpeg"
+                                        alt="">
+                                </a>
+                            </div>
+
+                        </section>
+                    </section>
+
+                    <!-- TIPOS DE RED -->
+                    <section id="tipos-red" class="mb-2">
+                        <h5 class="programas">TIPOS DE RED</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Hay diferentes tipos de redes informáticas que podemos utilizar. Cada una de ellas
+                                    puede estar orientada
+                                    a un tipo de usuario, a una necesidad concreta para conectar equipos.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>TIPOS</strong>
+                                    <li class="p-1">LAN</li>
+                                    <li class="p-1">WAN</li>
+                                    <li class="p-1">MAN</li>
+                                </ol>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="tipos"
+                                    href="https://www.profesionalreview.com/wp-content/uploads/2018/12/redes-LAM-MAN-y-WAN-1280x720.png"
+                                    data-fancybox="gallery" data-caption="tipos">
+                                    <img loading="lazy"
+                                        src="https://www.profesionalreview.com/wp-content/uploads/2018/12/redes-LAM-MAN-y-WAN-1280x720.png"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>LAN</strong> (Local Area Network-Red de area local) Es una red que conecta
+                                    ordenadores o
+                                    dispositivos en un área relativamente pequeña con el fin de compartir recursos,
+                                    datos o apps.
+                                </span>
+                                <br>
+                                <span class="def">La red LAN es una red pequeña como las que tenemos en la casa, o en
+                                    una oficina
+                                    pequeña.</span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="LAN"
+                                    href="http://3.bp.blogspot.com/_vS1CBdO8bLo/S9cbq7MGs0I/AAAAAAAAAEA/Tpl3pB3wuIE/s200/DSC03756.JPG"
+                                    data-fancybox="gallery" data-caption="LAN">
+                                    <img loading="lazy"
+                                        src="http://3.bp.blogspot.com/_vS1CBdO8bLo/S9cbq7MGs0I/AAAAAAAAAEA/Tpl3pB3wuIE/s200/DSC03756.JPG"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>WAN</strong> (Wide Area Network-Red de area amplia) Este tipo de red
+                                    generalmente sirve para
+                                    conectar dispositivos que se encuentran separados por un área geográfica extensa, es
+                                    decir, si las redes
+                                    LAN conectan computadores o dispositivos en un area “pequeña”, las redes WAN
+                                    conectaran “sucursales” con
+                                    sedes centrales.
+                                </span>
+                                <br>
+                                <span class="def">son redes que interconectan países o ciudades.</span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="WAN" href="https://gpcinc.mx/wp-content/uploads/2017/03/img-5.jpg"
+                                    data-fancybox="gallery" data-caption="WAN">
+                                    <img loading="lazy" src="https://gpcinc.mx/wp-content/uploads/2017/03/img-5.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>MAN</strong> (Metropolitan Area Network-Red de área metropoltana) Es una
+                                    infraestructura de red
+                                    que abarca un area mayor a una LAN pero menor que una WAN.
+                                </span>
+                                <br>
+                                <span class="def">conecta como un barrio, esto quiere decir que es mucho más
+                                    pequeña.</span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="MAN" href="https://gpcinc.mx/wp-content/uploads/2017/03/img-4.jpg"
+                                    data-fancybox="gallery" data-caption="MAN">
+                                    <img loading="lazy" src="https://gpcinc.mx/wp-content/uploads/2017/03/img-4.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+
+
+                        </section>
+                    </section>
+
+                    <!-- QUE ES ISP -->
+                    <section id="que-es-isp" class="mb-2">
+                        <h5 class="programas">QUE ES ISP</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    ISP (Internet Service Provider-Proveedor de servicios de Internet): Es la empresa
+                                    que te brinda la
+                                    conexión a Internet y te permite navegar por la red.
+                                </span>
+                            </div>
+
+                        </section>
+                    </section>
+
+                    <!-- QUE ES INTERNET -->
+                    <section id="internet" class="mb-2">
+                        <h5 class="programas">QUE ES INTERNET</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    El internet es una red de redes interconectadas mundialmente.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    El internet es un conjunto de redes que engloba a todo el mundo, gracias internet
+                                    podemos comunicarnos
+                                    con personas de cualquier parte del mundo.
+                                </span>
                             </div>
                         </section>
                     </section>
 
-                    <!-- ESTILOS AVANZADOS -->
-                    <section id="estilos" class="mb-2">
-                        <h5 class="programas">ESTILOS AVANZADOS</h5>
+                    <!-- HISTORIA DE INTERNET -->
+                    <section id="historia-internet" class="mb-2">
+                        <h5 class="programas">HISTORIA DE INTERNET</h5>
+
                         <section>
-                            <pre rel="JS">
-                <code class="language-css line-numbers">
-                    /* variables */
-                    :root {
-                        --fondo-texto-negro: rgb(9, 51, 85);
-                        --fondo-texto-blanco: #eff3f5;                       
-                    }
-
-                    /* sirve para dar el efecto de desplazamiento del scroll */
-                    html{
-                        scroll-behavior: smooth;
-                    }
-
-                    /* impedir la seleccion del contenido */
-                    .icono_menu {
-                        user-select: none;
-                    }
-
-                    /* para posicionar una imagen fill|contain|cover|none|scale-down */
-                    img{
-                        object-fit: cover;
-                    }
-
-                    /* ayudar a mejorar los espacios(M-P) cuando tenemos link al mismo documento */
-                    .contacto {
-                        scroll-margin-top: 8ex;
-                    }
-
-                    /* modificar scroll */
-                    .parrafo::-webkit-scrollbar {
-                        width: 10px;
-                    }
-                    .parrafo::-webkit-scrollbar-thumb {
-                        background: rgb(1, 70, 97, 0.1);
-                        border-radius: 20px;
-                    }
-                    .parrafo::-webkit-scrollbar-thumb:hover {
-                        background: rgb(1, 70, 97,0.7);
-                    }
-                </code>
-            </pre>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="internet" href="public/cursos/redes/internet.png" data-fancybox="gallery"
+                                    data-caption="internet">
+                                    <img loading="lazy" src="public/cursos/redes/internet.png" alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Aunque se pueda pensar que Internet es algo que ha surgido en estos últimos tiempos,
+                                    no es
+                                    así: Internet ya lleva con nosotros unas cuantas décadas.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Los inicio de Internet nos remontan a los años 60. En plena guerra fría, Estados
+                                    Unidos crea
+                                    una red exclusivamente militar, con el objetivo de que, en el hipotético caso de un
+                                    ataque ruso,
+                                    se pudiera tener acceso a la información militar desde cualquier punto del país.
+                                    Este red se
+                                    creó en 1969 y se llamó ARPANET.
+                                </span>
+                            </div><br>
+                            <!-- <div class="texto">
+                                <span class="def">
+                                    Internet surgió en los Estados Unidos en la década de 1970, pero no se hizo visible
+                                    para el público en
+                                    general hasta principios de la década de 1990.
+                                    <br>
+                                    El inicio de la historia de internet se puede remontar a la década de los sesenta
+                                    cuando la Guerra fría
+                                    con la Unión Soviética fuerza a los Estados Unidos a crear un proyecto para la
+                                    protección de
+                                    información.
+                                    <br>
+                                    Para esto la Agencia de Proyectos de Investigación Avanzada (ARPA por sus siglas en
+                                    inglés) del
+                                    Departamento de Defensa de los EE. UU promovió los proyectos con este objetivo.
+                                    <br>
+                                    En 1962, Paul Baran, un investigador del Gobierno de los Estados Unidos, presentó un
+                                    sistema de
+                                    comunicaciones que, mediante computadoras conectadas a una red descentralizada,
+                                    resultaba inmune a
+                                    ataques externos porque si uno era destruido, los demás se podrían seguir
+                                    comunicándose entre sí.
+                                    <br>
+                                    En 1965 se conectó un ordenador TX2 en Massachusetts con un Q-32 en California
+                                    mediante una línea
+                                    telefónica conmutada, aunque de baja velocidad y aún limitada. Esto Funcionó y
+                                    comprobó que se podía
+                                    trabajar de de forma conectada.
+                                    <br>
+                                    En 1969 se consigue conectar la computadora de la UCLA (universidad de California)
+                                    con otra del SRI
+                                    (Instituto de Investigación de Stanford). Poco después, ya eran cuatro las
+                                    universidades americanas
+                                    interconectadas.
+                                    <br>
+                                    Esta red apoyada por el gobierno se denominó ARPANET.
+                                    <br>
+                                    Para lograr comunicaciones interactivas rentables entre computadoras, que
+                                    generalmente se comunican en
+                                    breves ráfagas de datos, ARPANET empleó la nueva tecnología de conmutación por
+                                    paquetes.
+                                    <br>
+                                    Se siguió trabajando para establecer una red a la que se pudiera acceder desde
+                                    cualquier lugar del
+                                    mundo, a la que la nombraron «red galáctica».
+                                    <br>
+                                    Por lo tanto, a diferencia de las comunicaciones de voz tradicionales, la
+                                    conmutación de paquetes no
+                                    requiere un solo circuito dedicado entre cada par de usuarios.
+                                    <br>
+                                    En 1970 ARPANET se consolida cuando se establecen las bases para lo que actualmente
+                                    se conoce como
+                                    correo electrónico. La red pasó de las agencias militares a las universidades y
+                                    proyectos de defensa del
+                                    país cada vez con mayor fuerza.
+                                    <br>
+                                    En 1972 ya integraba 50 universidades y centros de investigación que estaban
+                                    distribuidos por Estados
+                                    Unidos.
+                                    <br>
+                                    En 1973, ARPANET ya estableció conexiones con otros países como Inglaterra, Alemania
+                                    y Noruega.
+                                    <br>
+                                    DARPA, apoyado por el gobierno, dio un paso más utilizando los satélites para
+                                    conectar los Estados
+                                    Unidos con terminales en Europa.
+                                    <br>
+                                    En 1974, se describió el protocolo de control de transmisión (TCP), que permitió
+                                    diferentes tipos de
+                                    máquinas en redes de todo el mundo para enrutar y ensamblar paquetes de datos.
+                                    <br>
+                                    A partir del 1980, junto con el auge de la comercialización de computadoras,
+                                    aparecieron otras redes lo
+                                    que provocó el caos por la gran variedad de formatos de los computadores conectados.
+                                    <br>
+                                    Internet es más una abreviatura de los términos Network (red, en inglés) e
+                                    Interconnect (de
+                                    interconexión).
+                                    <br>
+                                    El 12 de marzo de 1989 Tim Berners describió por primera vez el protocolo de
+                                    transferencias de
+                                    hipertextos que daría lugar a la primera web utilizando tres nuevos recursos: HTML,
+                                    HTTP y un programa
+                                    llamado Web Browser.
+                                    <br>
+                                    En 1993, la legislación federal permitió abrir la red troncal a usuarios
+                                    comerciales. Antes de ese
+                                    momento, el uso de la red troncal estaba sujeto a una política de "uso aceptable",
+                                    establecida y
+                                    administrada por NSF (limitándola a la comunidad investigadora).
+                                    <br>
+                                    Los Sitios de Red Mundial (WWW por las siglas en inglés de World Wide Web Sites)
+                                    crecieron rápidamente.
+                                    En 1993 sólo había 100 páginas y ya en 1997 habían más de 200.000.
+                                    <br>
+                                    Los servicios de redes sociales como Facebook, Twitter e Instagram se convirtieron
+                                    en algunos de los
+                                    sitios de Internet más populares al permitir a los usuarios compartir su propio
+                                    contenido con sus amigos
+                                    y el resto del mundo.
+                                    <br>
+                                    Otro aporte vino por la incorporación de los teléfonos móviles inteligentes que
+                                    aumentó el número de
+                                    usuarios de Internet en todo el mundo.
+                                    <br>
+                                    La “Sociedad de Internet” sin fines de lucro, un organismo internacional con sede en
+                                    Virginia, Estados
+                                    Unidos, es la que mantiene actualmente los estándares de Internet.
+                                    <br>
+                                    Actualmente más de la mitad de la población mundial tiene acceso a internet y sólo
+                                    entre enero del 2019
+                                    y enero del 2020 el número de usuarios de internet se incrementó en 298 millones (7%
+                                    más que el año
+                                    anterior).
+                                </span>
+                            </div> -->
                         </section>
                     </section>
 
-                    <!-- MEDIA QUERY CSS -->
-                    <section id="media" class="mb-2">
-                        <h5 class="programas">MEDIA QUERY CSS</h5>
+                    <!-- INTRANET Y EXTRANET -->
+                    <section id="intranet-extranet" class="mb-2">
+                        <h5 class="programas">INTRANET Y EXTRANET</h5>
+
                         <section>
-                            <pre rel="JS">
-            <code class="language-css line-numbers">
-                &commat;media screen and (max-width:767px){    
-                    /*
-                
-                    */
-                }
-            </code>
-        </pre>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="intranet-extranet"
+                                    href="https://static.platzi.com/media/user_upload/Presentation1-73e76752-189b-449c-b8b6-ade38cb4e61b.jpg"
+                                    data-fancybox="gallery" data-caption="intranet-extranet">
+                                    <img loading="lazy"
+                                        src="https://static.platzi.com/media/user_upload/Presentation1-73e76752-189b-449c-b8b6-ade38cb4e61b.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>LA INTRANET</strong> Es una red privada dentro de una organización que
+                                    utiliza tecnología muy
+                                    similar a la de Internet la cual permite a sus usuarios buscar, utilizar y compartir
+                                    documentos.
+                                    <strong>las empresas utilizan la intranet para la comunicacion con sus
+                                        empleados</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>LA EXTRANET</strong> Es una red que tiene acceso limitado y que está
+                                    disponible únicamente a
+                                    usuarios específicos tales como clientes o proveedores.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="intranet-extranet" href="public/cursos/redes/intra-extra.png"
+                                    data-fancybox="gallery" data-caption="intranet-extranet">
+                                    <img loading="lazy" src="public/cursos/redes/intra-extra.png" alt="">
+                                </a>
+                            </div>
                         </section>
                     </section>
 
-                    <!-- TRANSICIONES -->
-                    <section id="transiciones" class="mb-2">
-                        <h5 class="programas">TRANSICIONES</h5>
+                    <!-- TOPOLOGÍAS DE RED -->
+                    <section id="topologias" class="mb-2">
+                        <h5 class="programas">TOPOLOGÍAS DE RED</h5>
                         <section>
-                            <pre rel="JS">
-            <code class="language-css line-numbers">
-                /* ESPECIFICO */
-                .hijo:hover{
-                    background: skyblue;
-                    width: 500px;
-                }
-                .hijo{
-                    height: 100px;
-                    width: 150px;
-                    background: red;
-                
-                    /* SECUENCIA DE TRANSICIONES */
-                    transition-property: background,width;
-                    transition-duration: 2s;
-                    /* LINEAR EASE EASE-IN EASE-OUT EASE-IN-OUT */
-                    transition-timing-function: linear;
-                    transition-delay: 3s;/*DEMORA*/
-                                
-                }
-
-                /* NO ESPECIFICO */
-                .hijo2{
-                    height: 100px;
-                    width: 150px;
-                    background: yellowgreen;
-                    /* transition: width ease 2s; */
-                    transition: all 2s ease 1s;
-                }
-                .hijo2:hover{
-                    color:white;
-                    background: black;
-                    width: 500px;                
-                    border-radius: 20px;
-                }  
-            </code>
-        </pre>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        La topología de red nos permite identificar la forma en que los nodos están
+                                        conectados. La
+                                        información
+                                        se envía a través de los medios y de los nodos para viajar de un lugar a otro.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def"><strong>Topología de bus</strong></span>
+                                </div>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="bus"
+                                        href="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2010.50.19%20PM-7e83a908-8087-4dbd-b103-9d1088ee4448.jpg"
+                                        data-fancybox="gallery" data-caption="bus">
+                                        <img loading="lazy"
+                                            src="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2010.50.19%20PM-7e83a908-8087-4dbd-b103-9d1088ee4448.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Este tipo de topología es el mas usado en redes de tipo LAN. En esta topología
+                                        los nodos están
+                                        conectados a un mismo medio que transporta la información.
+                                        La ventaja de este tipo de red es que es fácil de implementar y puede crecer
+                                        rápidamente sin tener
+                                        que
+                                        hacer cambios bruscos a la red.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><strong>Topología de anillo</strong></span>
+                                </div>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="anillo"
+                                        href="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2010.57.05%20PM-331fa313-8523-491d-b9d5-f0636bf99739.jpg"
+                                        data-fancybox="gallery" data-caption="anillo">
+                                        <img loading="lazy"
+                                            src="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2010.57.05%20PM-331fa313-8523-491d-b9d5-f0636bf99739.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Este tipo de topología consiste en que cada nodo tiene una única conexión de
+                                        entrada y una conexión
+                                        de
+                                        salida. Un token de confirmación viaja a través de cada nodo avisando que se
+                                        envió y fue recibida
+                                        correctamente.
+                                        Este tipo de topología aunque garantiza el envío de la información puede llegar
+                                        a ser un poco lenta
+                                        ya
+                                        que ésta debe pasar por cada nodo intermedio antes de alcanzar su objetivo. En
+                                        el caso de que uno de
+                                        los
+                                        nodos fallé esto puede afectar el funcionamiento de la red.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><strong>Topología de estrella</strong></span>
+                                </div>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="estrella"
+                                        href="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2011.06.54%20PM-b5edc22a-98ee-43ac-af74-d9d912319cd5.jpg"
+                                        data-fancybox="gallery" data-caption="estrella">
+                                        <img loading="lazy"
+                                            src="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2011.06.54%20PM-b5edc22a-98ee-43ac-af74-d9d912319cd5.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        En esta topología todos los nodos están conectados a un punto central, esta
+                                        implementación permite
+                                        garantizar el funcionamiento de la red, de forma que si alguno de los nodos
+                                        falla esto no va a
+                                        afectar para nada el funcionamiento ni el rendimiento de la red.
+                                        Esta topología se usa mucho en redes LAN, por ejemplo en oficinas en las que hay
+                                        un switch al que
+                                        llegan todas las conexiones de los dispositivos a través de cable.
+                                        Es una topología que permite agregar nodos nuevos siempre que el dispositivo
+                                        central lo permita, sin
+                                        embargo en caso en que el nodo central falle toda la red dejará de funcionar.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><strong>Topología de malla</strong></span>
+                                </div>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="malla"
+                                        href="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2011.13.45%20PM-33668345-2450-4338-bc07-9e1a7aede74e.jpg"
+                                        data-fancybox="gallery" data-caption="malla">
+                                        <img loading="lazy"
+                                            src="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2011.13.45%20PM-33668345-2450-4338-bc07-9e1a7aede74e.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        En las topologías de tipo malla todos los nodos están conectados entre sí, este
+                                        tipo de conexión
+                                        permite que cada nodo pueda actuar como servidor y como cliente.
+                                        Esta es una forma óptima de mantener la conexión entre dispositivos en una red,
+                                        ya que se reduce a
+                                        uno la cantidad de dispositivos por los que debe viajar la información y en caso
+                                        de que un nodo de
+                                        la red falle los datos pueden ser enviados por otro camino, lo que asegura
+                                        disponibilidad.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><strong>Topología de arbol</strong></span>
+                                </div>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="arbol"
+                                        href="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2011.15.33%20PM-576aaa0f-3dc8-4c56-ac77-0452f3c9f109.jpg"
+                                        data-fancybox="gallery" data-caption="arbol">
+                                        <img loading="lazy"
+                                            src="https://static.platzi.com/media/user_upload/Screen%20Shot%202018-05-06%20at%2011.15.33%20PM-576aaa0f-3dc8-4c56-ac77-0452f3c9f109.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        En esta topología contamos con varios dispositivos intermedios que permiten que
+                                        otros nodos se
+                                        conecten. Por ejemplo, podemos tener un punto inicial que recibe la conexión a
+                                        Internet desde el
+                                        ISP, de allí viaja por el medio a un switch que distribuye a otros dispositivos
+                                        que pueden ser nodos
+                                        u otros dispositivos intermedios, switches, routers etc. quienes a su vez envían
+                                        los datos a otros
+                                        dispositivos iguales.
+                                    </span>
+                                </div>
+                            </section>
                         </section>
                     </section>
 
-                    <!-- ANIMACIONES -->
-                    <section id="animaciones" class="mb-2">
-                        <h5 class="programas">ANIMACIONES</h5>
+                    <!-- QUE ES ANCHO DE BANDA - VELOCIDAD - LATENCIA - TRANSMISION -->
+                    <section id="ancho-banda" class="mb-2">
+                        <h5 class="programas">QUE ES ANCHO DE BANDA - VELOCIDAD - LATENCIA - TRANSMISION</h5>
+
                         <section>
-                            <pre rel="JS">
-            <code class="language-css line-numbers">
-                .padre5{
-                    height: 100px;
-                    width: 150px;
-                    background: blue;
-                    color:white;
-                    animation-name: ejemplo;
-                    animation-duration: 5s;
-                    animation-delay: 0.5s;/*TARDAR*/
-                    animation-iteration-count: 3;/*REPETIR*/
-                }
-                &commat;keyframes ejemplo{
-                    0%{background: green;}
-                    25%{background: red;}
-                    50%{background: yellow;}
-                    75%{width: 100%;font-size:50px;}
-                    100%{background: black;}
-                }
-            </code>
-        </pre>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>ANCHO DE BANDA</strong> Es la máxima cantidad de datos transmitidos a
+                                        través de una conexión
+                                        a
+                                        Internet en cierta cantidad de
+                                        tiempo.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>ANCHO DE BANDA VS VELOCIDAD</strong>
+                                        El ancho de banda es la cantidad de información que recibes cada segundo,
+                                        mientras que la
+                                        velocidad es
+                                        cuán rápido esa información se recibe o descarga.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>LATENCIA</strong>
+                                        La latencia a veces se refiere a una demora o tasa de ping. Es la demora que
+                                        experimentas mientras
+                                        esperas que algo se cargue.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>TRANSMISION</strong>
+                                        Hace referencia a cuántos de esos datos llegan a su destino
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>OJO **</strong>
+                                        Tu proveedor de servicios de internet te ofrece paquetes de internet con “50
+                                        Megas” pero nadie
+                                        te dice que esos son megabits (Mb) y los archivos que se transportan mediante
+                                        estas vías se
+                                        manejan en tamaños de Bytes, en este caso, la tasa de transferencia debemos
+                                        medirla en
+                                        Megabytes(MB).
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><strong>TABLA DE CONVERSION</strong></span>
+                                </div>
+                                <div class="texto"><span class="def">bit => 0-1</span></div>
+                                <div class="texto img-conexion wrapper">
+                                    <a rel="tabla" href="public/cursos/redes/bit.png" data-fancybox="gallery"
+                                        data-caption="tabla">
+                                        <img loading="lazy" src="public/cursos/redes/bit.png" alt="">
+                                    </a>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><strong>QUE ES UN BIT</strong></span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Bit es la abreviación de Binary Digit (dígito binario), la cual en términos
+                                        técnicos es la menor
+                                        unidad de información de una computadora. Un bit tiene solamente un valor (que
+                                        puede ser 0 o 1).
+                                        Varios bits combinados entre sí dan origen a otras unidades, como “byte”,
+                                        “mega”, “giga” y “tera”.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Toda la información procesada por una computadora es medida y codificada en
+                                        bits. El tamaño de los
+                                        archivos son medidos en bits, las tasas de transferencia son medidas en bit,
+                                        toda la información en
+                                        el lenguaje del usuario es convertida a bits para que la computadora la
+                                        «entienda».
+                                    </span>
+                                </div>
+                            </section>
                         </section>
                     </section>
 
-                    <!-- SOMBRAS -->
-                    <section id="sombras" class="mb-2">
-                        <h5 class="programas">SOMBRAS</h5>
+                    <!-- QUE ES RED CONVERGENTE -->
+                    <section id="red-convergente" class="mb-2">
+                        <h5 class="programas">QUE ES RED CONVERGENTE</h5>
+
                         <section>
-                            <pre rel="JS">
-            <code class="language-css line-numbers">
-                /* SOMBRAS DE CAJAS */
-                .hijo3{
-                    background: rgba(0,100,200,0.8);
-                    /* R B OPACIDAD COLOR */
-                    box-shadow: 0px 0px 2px blue,
-                                4px 4px 2px green,
-                                10px 10px 5px black;
-                    }
-
-
-                /* SOMBRAS DE TEXTO */
-                .hijo4{
-                    text-shadow: 0 0 2px #B0A501,
-                    1px 1px 2px #093B35,
-                    3px 3px 4px #07A774;
-                }
-            </code>
-        </pre>
+                            <div class="texto">
+                                <span class="def">
+                                    Las redes convergentes o redes de multiservicio hacen referencia a la integración de
+                                    los servicios de
+                                    voz, datos y video sobre una sola red basada en IP como protocolo de nivel de red.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Red convergente: como su palabra lo indica convergen, en la que podemos trasmitir
+                                    tanto la voz, los
+                                    datos y video, por el mismo medio y ser utilizadas consecutivamente sin necesidad de
+                                    una infraestructura
+                                    para cada una de ellas, como era antes, además del menor coste de mantenimiento de
+                                    las infraestructura.
+                                </span>
+                            </div>
                         </section>
+                    </section>
+
+                    <!-- SISTEMA OPERATIVO -->
+                    <section id="sistema-operativo" class="mb-2">
+                        <h5 class="programas">SISTEMA OPERATIVO</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Un sistema operativo es el software o programa más importante que se ejecuta en un
+                                    computador, nos
+                                    permite usarlo y darle órdenes para que haga lo que necesitamos.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Cuando oprimes el botón de encendido de tu computador el realiza pruebas para
+                                    asegurarse de que todo
+                                    funciona correctamente, comprueba sus componentes físicos o hardware y da inicio al
+                                    sistema operativo.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- QUE ES KERNEL -->
+                    <section id="kernel" class="mb-2">
+                        <h5 class="programas">QUE ES KERNEL</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    El Kernel o núcleo, es una parte fundamental del sistema operativo que se encarga de
+                                    conceder el acceso
+                                    al hardware de forma segura para todo el software que lo solicita, el Kernel es una
+                                    pequeña e invisible
+                                    parte del sistema operativo, pero la más importante, ya que sin esta no podría
+                                    funcionar.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- SWITCH ROUTER Y MODEM -->
+                    <section id="switch-modem-router" class="mb-2">
+                        <h5 class="programas">SWITCH ROUTER Y MODEM</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    " El <strong>módem</strong> se encarga de modular la señal de Internet para pasarla
+                                    a un
+                                    <strong>router</strong> que lleva la conexión
+                                    inalámbrica a dispositivos conectados o por cable a un <strong>switch</strong> para
+                                    que este la
+                                    distribuya a otros
+                                    equipos locales ".
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="funcion"
+                                    href="http://2.bp.blogspot.com/-jvhYrBcDPxs/VBB6dKHgfCI/AAAAAAAAABs/n_44DnNEIVQ/s1600/Switch-or-Router-4.gif"
+                                    data-fancybox="gallery" data-caption="funcion">
+                                    <img loading="lazy"
+                                        src="http://2.bp.blogspot.com/-jvhYrBcDPxs/VBB6dKHgfCI/AAAAAAAAABs/n_44DnNEIVQ/s1600/Switch-or-Router-4.gif"
+                                        alt="">
+                                </a>
+                            </div>
+                            <br>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>SWITCH</strong> es un aparato que se encarga de interconectar equipos dentro
+                                    de una misma red
+                                    local (LAN, siglas en inglés).
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>ROUTER</strong> es un aparato diseñado para enrutar o canalizar la señal de
+                                    Internet que recibe
+                                    de un módem, a otros dispositivos, bien sea por cableado o inalámbrico.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>MODEM</strong> es un aparato diseñado para interpretar la señal de internet
+                                    que se recibe de la
+                                    línea telefónica, a través de un cable RJ11, y mediante un cable RJ45 (de red) lo
+                                    lleva a un dispositivo
+                                    como un ordenador o un portátil para que se pueda conectar..
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="switch"
+                                    href="https://www.adslzone.net/app/uploads-adslzone.net/2019/01/D-Link-DGS-105-e1547727056504.jpg"
+                                    data-fancybox="gallery" data-caption="switch">
+                                    <img loading="lazy"
+                                        src="https://www.adslzone.net/app/uploads-adslzone.net/2019/01/D-Link-DGS-105-e1547727056504.jpg"
+                                        alt="">
+                                </a>
+                                <a rel="router"
+                                    href="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/HNKN2_AV1?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591028069000"
+                                    data-fancybox="gallery" data-caption="router">
+                                    <img loading="lazy"
+                                        src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/HNKN2_AV1?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591028069000"
+                                        alt="">
+                                </a>
+                                <a rel="modem"
+                                    href="https://www.profesionalreview.com/wp-content/uploads/2019/11/qu%C3%A9-es-y-para-qu%C3%A9-sive-un-m%C3%B3dem-4G-00.jpg"
+                                    data-fancybox="gallery" data-caption="modem">
+                                    <img loading="lazy"
+                                        src="https://www.profesionalreview.com/wp-content/uploads/2019/11/qu%C3%A9-es-y-para-qu%C3%A9-sive-un-m%C3%B3dem-4G-00.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- QUE ES UN PROTOCOLO -->
+                    <section id="protocolo" class="mb-2">
+                        <h5 class="programas">QUE ES UN PROTOCOLO</h5>
+
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>PROTOCOLO</strong> son reglas, normas que permiten que dos o mas equipos se
+                                    comuniquen entre si
+                                    de manera correcta.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- COMPARACION DE PROTOCOLOS OSI vs TCP/IP -->
+                    <section id="osi-tcp" class="mb-2">
+                        <h5 class="programas">COMPARACION DE PROTOCOLOS OSI vs TCP/IP</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Estas son las comparaciones entre el Modelo de referencia OSI y el protocolo TCP/IP,
+                                    más adelante
+                                    veremos
+                                    a detalle las distintas capas por las que estan compuesto.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="osi-tcp/ip" href="public/cursos/redes/osi-tcp.png" data-fancybox="gallery"
+                                    data-caption="osi-tcp/ip">
+                                    <img loading="lazy" src="public/cursos/redes/osi-tcp.png" alt="">
+                                </a>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- MODELO DE REFERENCIA OSI -->
+                    <section id="osi" class="mb-2">
+                        <h5 class="programas">MODELO DE REFERENCIA OSI</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    A principios de 1980 las redes estaban creciendo sin control, las
+                                    empresas(fabricantes) tenian sus
+                                    propios métodos de comunicacion entre computadoras.
+                                </span>
+                                <span class="def">
+                                    Ejemplo: digamos que yo soy IBM y UD eres otra empresa, yo fabricaba mis
+                                    computadoras a mi manera y UD a
+                                    su manera.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Entonces aqui surge el problema, cuando los usuarios que me compraron a mi querian
+                                    comunicarse con los
+                                    usuarios que te compraron a ti, pues NO podían debido a que cada computador estaba
+                                    fabricado por
+                                    diferentes empresas y cada uno con sus respectivos protocolos.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Ahi en ese momento es que surgió el modelo OSI(Open System Interconnection - Modelo
+                                    de interconexión de
+                                    sistemas abiertos) que fue creado por la ISO(nternational Organization for
+                                    Standardization -
+                                    Organización Internacional de Normalización); Es ahi donde la ISO propone las reglas
+                                    que deben seguir
+                                    las empresas(fabricantes) a la hora de fabricar un computadora, y que estas PUEDAN
+                                    COMUNICARSE ENTRE
+                                    TODAS.
+                                </span>
+                            </div>
+
+                            <div class="texto img-conexion wrapper">
+                                <a rel="osi"
+                                    href="https://image.slidesharecdn.com/capasdelmodeloosi-151219014346/95/capas-del-modelo-osi-1-638.jpg?cb=1450489467"
+                                    data-fancybox="gallery" data-caption="osi">
+                                    <img loading="lazy"
+                                        src="https://image.slidesharecdn.com/capasdelmodeloosi-151219014346/95/capas-del-modelo-osi-1-638.jpg?cb=1450489467"
+                                        alt="">
+                                </a>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Se lee desde ARRIBA-ABAJO => cuando el mensaje sale <br>
+                                    Se lee desde ABAJO-ARRIBA => cuando el mensaje llega
+                                </span>
+                            </div><br>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA APLICACION</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Es la capa que todo el mundo visualiza, ejem: (youtube-whatsapp). Es la
+                                        aplicacion o programa con el
+                                        que
+                                        UD
+                                        interactúa para comunicarse con alguien.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA PRESENTACION</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Es la capa que que se encarga de dar formato a los datos del dispositivo de
+                                        origen, o presentarlos,
+                                        en
+                                        una forma compatible para que lo reciba el dispositivo de destino.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Define si los datos enviados es un texto, audio, video, imagen, etc.
+                                        <br>
+                                        Ejem: si yo envio una imagen, esta capa lo traduce esta imagen en un formato de
+                                        imagen, para que el
+                                        receptor tambien pueda verlo como imagen.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA SESION</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        La comunicacion depende de esta capa, porque esta capa es el que se encarga de
+                                        abrir la comunicacion
+                                        con
+                                        el servidor, pidiendole una autorización; y si el servidor NO responde NO habrá
+                                        una comunicacion.
+                                        <br>
+                                        Ejem: una llamada teléfonica.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA TRANSPORTE</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Esta capa se encarga de que la comunicacion de extremo a extremo sea
+                                        perfecta(sin errores). <br>
+                                        Particiona o divide en pequeños trozos y en un orden adecuado.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Existen dos metodos de envió de los datos TCP-UDP.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        TCP es la que permite que cuando se pierda un paquete, la capa de transporte lo
+                                        detecte y solicite
+                                        el REENVIO de ese paquete.
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        UDP a diferencia de la TCP este NO REEENVIA los paquetes perdidos. <br>
+                                        Ejem: Un video en directo.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA RED</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Recibe los pequeños trozos y los asigna una etiqueta con su IP de ORIGEN y su IP
+                                        de DESTINO
+                                        Esta capa se encarga de determinar la <strong>mejor ruta</strong> para que el
+                                        mensaje llegue a su
+                                        destino. <br>
+                                        Aqui trabajan los routers, porque son los únicos dispositivos que trabajan con
+                                        direcciones IP.
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA ENLACE</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Esta capa se encarga de convertir toda esa informacion en BINARIOS(porque la
+                                        maquina solo entiende
+                                        binarios(0-1)).
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <strong>CAPA FISICA</strong>
+                                    </span>
+                                </div>
+                                <div class="texto">
+                                    <span class="def">
+                                        Esta capa es el medio por el cual se transmite el mensaje, ya sea mediante un
+                                        cable u ondas
+                                        electromagnéticas
+                                    </span>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- PROTOCOLO TCP/IP -->
+                    <section id="tcp" class="mb-2">
+                        <h5 class="programas">PROTOCOLO TCP/IP</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Actualmente la mayoría de ordenadores están conectados a alguna red (internet,
+                                    intranet, etc.) y casi
+                                    todos lo hacen utilizando el modelo TCP/IP. Este modelo es un protocolo para
+                                    comunicación en redes que
+                                    permite que un equipo pueda comunicarse dentro de una red.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    El protocolo TCP/IP surgió de un proyecto de defensa llamado DARPA en 1969. En 1983
+                                    el nuevo conjunto de
+                                    protocolos TCP/IP fue adoptado como estándar y finalmente se convirtió en el más
+                                    usado en redes y el
+                                    protocolo estándar de internet.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="tcp/ip"
+                                    href="https://aprendiendoarduino.files.wordpress.com/2014/11/cbca1-clip_image032.jpg?w=625"
+                                    data-fancybox="gallery" data-caption="tcp/ip">
+                                    <img loading="lazy"
+                                        src="https://aprendiendoarduino.files.wordpress.com/2014/11/cbca1-clip_image032.jpg?w=625"
+                                        alt="">
+                                </a>
+                            </div>
+
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAPA ACCESO A LA RED</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    es la primera capa del modelo y ofrece la posibilidad de acceso físico a la red (que
+                                    bien puede ser en
+                                    anillo, ethernet, etc.), especificando el modo en que los datos deben enrutarse
+                                    independientemente del
+                                    tipo de red utilizado.
+                                </span>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAPA INTERNET</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    proporciona el paquete de datos o datagramas y administra las direcciones IP. (Los
+                                    datagramas son
+                                    paquetes de datos que constituyen el mínimo de información en una red). Esta capa es
+                                    considerada la más
+                                    simportante y engloba protocolos como IP,ARP, ICMP, IGMP y RARP.
+                                </span>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAPA TRANSPORTE</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    permiten conocer el estado de la transmisión así como los datos de enrutamiento y
+                                    utilizan los puertos
+                                    para asociar un tipo de aplicación con un tipo de dato.
+                                </span>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CAPA APLICACION</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    es la parte superior del protocolo TCP/IP y suministra las aplicaciones de red tip
+                                    Telnet, FTP o SMTP,
+                                    que se comunican con las capas anteriores (con protocolos TCP o UDP).
+                                </span>
+                            </div>
+                        </section>
+
+                    </section>
+
+                    <!-- MEDIOS DE TRANSMISION -->
+                    <section id="medios-transmision" class="mb-2">
+                        <h5 class="programas">MEDIOS DE TRANSMISION</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Los medios de transmisión son las vías por las cuales se comunican los datos.
+                                    Dependiendo de la forma de
+                                    conducir la señal a través del medio o soporte físico, se pueden clasificar en dos
+                                    grandes grupos:
+                                </span>
+                            </div>
+
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>MEDIOS DE TRANSMISION GUIADOS</strong>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <span class="def">Los medios de transmisión guiados están constituidos por cables que se
+                                    encargan de la
+                                    conducción (o guiado) de las señales desde un extremo al otro.</span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <strong>CABLE DE PAR TRENZADO</strong>
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Cable de par trenzado sin blindaje (UTP):</b>
+                                    es el tipo más frecuente de medio de comunicación. Está formado por dos conductores,
+                                    habitualmente de
+                                    cobre, cada uno con su aislamiento de plástico de color, el aislamiento tiene un
+                                    color asignado para su
+                                    identificación, tanto para identificar los hilos específicos de un cable como para
+                                    indicar qué cables
+                                    pertenecen a un par dentro de un manojo.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="utp"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084285376/unidad1/1-3-medios-de-transmision/sinblindaje.jpg?height=149&width=200"
+                                    data-fancybox="gallery" data-caption="utp">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084285376/unidad1/1-3-medios-de-transmision/sinblindaje.jpg?height=149&width=200"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Cable de par trenzado blindaje (STP):</b>
+                                    tiene una funda de metal o un recubrimiento de malla entrelazada que rodea cada par
+                                    de conductores
+                                    aislados.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="stp"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084591189/unidad1/1-3-medios-de-transmision/stp.jpg"
+                                    data-fancybox="gallery" data-caption="stp">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084591189/unidad1/1-3-medios-de-transmision/stp.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Cable coaxial:</b>
+                                    El cable coaxial transporta señales con rango de frecuencias más altos que los
+                                    cables de pares
+                                    trenzados. El cable coaxial tiene un núcleo conductor central formado por un hilo
+                                    sólido o enfilado,
+                                    habitualmente de cobre, recubierto por un aislante e material dieléctrico que, a su
+                                    vez, está recubierto
+                                    de una hoja exterior de metal conductor, malla o una combinación de ambos, también
+                                    habitualmente de
+                                    cobre.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="coaxial"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084579648/unidad1/1-3-medios-de-transmision/COAXIAL.jpg"
+                                    data-fancybox="gallery" data-caption="coaxial">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084579648/unidad1/1-3-medios-de-transmision/COAXIAL.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Fibra óptica:</b>
+                                    La fibra óptica es un enlace hecho con un hilo muy fino de material transparente de
+                                    pequeño diámetro y
+                                    recubierto de un material opaco que evita que la luz se disipe. Por el núcleo,
+                                    generalmente de vidrio o
+                                    plásticos, se envían pulsos de luz, no eléctricos.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="fibra optica"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084586583/unidad1/1-3-medios-de-transmision/optica.jpg"
+                                    data-fancybox="gallery" data-caption="fibra optica">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479084586583/unidad1/1-3-medios-de-transmision/optica.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>MEDIOS DE TRANSMISION NO GUIADOS</strong>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <span class="def">Los medios no guiados o comunicación sin cable transportan ondas
+                                    electromagnéticas sin
+                                    usar un conductor físico, sino que se radian a través del aire, por lo que están
+                                    disponibles para
+                                    cualquiera que tenga un dispositivo capaz de aceptarlas. En este tipo de medios
+                                    tanto la transmisión
+                                    como la recepción de información se lleva a cabo mediante antenas.</span>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>ONDAS DE RADIO</b> Las ondas de radio utilizan cinco tipo de propagación:
+                                    superficie, troposférica,
+                                    ionosférica, línea
+                                    de visión y espacio.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="ondas radio"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479092635100/unidad1/1-3-medios-de-transmision/stock-illustration-1071337-cellular-tower-illustration-picture.jpg?height=200&width=162"
+                                    data-fancybox="gallery" data-caption="ondas radio">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479092635100/unidad1/1-3-medios-de-transmision/stock-illustration-1071337-cellular-tower-illustration-picture.jpg?height=200&width=162"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>MICROONDAS</b>
+                                    En un sistema de microondas se usa el espacio aéreo como medio físico de
+                                    transmisión. La información se
+                                    transmite en forma digital a través de ondas de radio de muy corta longitud (unos
+                                    pocos centímetros).
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="microondas"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479093941214/unidad1/1-3-medios-de-transmision/cropped-Telecomunicaciones.jpg?height=96&width=200"
+                                    data-fancybox="gallery" data-caption="microondas">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479093941214/unidad1/1-3-medios-de-transmision/cropped-Telecomunicaciones.jpg?height=96&width=200"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>INFRARROJO</b>
+                                    Las redes por infrarrojos nos permiten la comunicación entre dos modos, usando una
+                                    serie de leds
+                                    infrarrojos para ello. Se trata de emisores/receptores de las ondas infrarrojas
+                                    entre ambos
+                                    dispositivos, cada dispositivo necesita al otro para realizar la comunicación por
+                                    ello es escasa su
+                                    utilización a gran escala.
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="infrarrolo"
+                                    href="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479095782102/unidad1/1-3-medios-de-transmision/descarga.jpg?height=161&width=200"
+                                    data-fancybox="gallery" data-caption="infrarrolo">
+                                    <img loading="lazy"
+                                        src="https://sites.google.com/site/sabyrodriguezgamez/_/rsrc/1479095782102/unidad1/1-3-medios-de-transmision/descarga.jpg?height=161&width=200"
+                                        alt="">
+                                </a>
+                            </div>
+                        </section>
+
+                    </section>
+
+                    <!-- CABLEADO UTP -->
+                    <section id="cableado-utp" class="mb-2">
+                        <h5 class="programas">CABLEADO UTP</h5>
+                        <section>
+                            <div class="texto">
+                                <ol class="pl-4">
+                                    <strong>HERRAMIENTAS</strong>
+                                    <li class="p-1">CRIMPEADOR</li>
+                                    <li class="p-1">CABLE UTP</li>
+                                    <li class="p-1">CONECTOR RJ45</li>
+                                </ol>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="cableado"
+                                    href="http://3.bp.blogspot.com/_rIzKE9PKHBQ/SSoJqDX6kaI/AAAAAAAAALo/WeuYAusECxI/s1600/standar+de+conexiones+para+UTP.jpg"
+                                    data-fancybox="gallery" data-caption="cableado">
+                                    <img loading="lazy"
+                                        src="http://3.bp.blogspot.com/_rIzKE9PKHBQ/SSoJqDX6kaI/AAAAAAAAALo/WeuYAusECxI/s1600/standar+de+conexiones+para+UTP.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>CABLEADO DIRECTO</b>
+                                </span>
+                                <span class="def">
+                                    Se usa para conectar dispositivos del mismo tipo o caracteristica(switch=switch
+                                    router=router)
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="directo"
+                                    href="https://ccnadesdecero.es/wp-content/uploads/2018/07/TIA-EIA-T568A-para-Cable-directo.jpg"
+                                    data-fancybox="gallery" data-caption="directo">
+                                    <img loading="lazy"
+                                        src="https://ccnadesdecero.es/wp-content/uploads/2018/07/TIA-EIA-T568A-para-Cable-directo.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="texto">
+                                <span class="def">
+                                    <b>CABLEADO CRUZADO</b>
+                                </span>
+                                <span class="def">
+                                    Se usa para conectar dispositivos de caracteristicas diferentes(switch=pc router=pc)
+                                </span>
+                            </div>
+
+                            <div class="texto img-conexion wrapper">
+                                <a rel="cruzado"
+                                    href="https://administradorderedes.blogia.com/upload/20070627204214-cables2.jpg"
+                                    data-fancybox="gallery" data-caption="cruzado">
+                                    <img loading="lazy"
+                                        src="https://administradorderedes.blogia.com/upload/20070627204214-cables2.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>CABLEADO ROLL-OVER</b>
+                                </span>
+                                <span class="def">
+                                    Se usa para conectar una terminal de computadora a un router
+                                </span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="roll-over"
+                                    href="https://image.slidesharecdn.com/cabledirectocruzadoyrollover-150101225505-conversion-gate01/95/cable-directocruzado-y-rollover-6-638.jpg?cb=1420152990"
+                                    data-fancybox="gallery" data-caption="roll-over">
+                                    <img loading="lazy"
+                                        src="https://image.slidesharecdn.com/cabledirectocruzadoyrollover-150101225505-conversion-gate01/95/cable-directocruzado-y-rollover-6-638.jpg?cb=1420152990"
+                                        alt="">
+                                </a>
+                            </div>
+
+
+                        </section>
+
+
+                    </section>
+
+                    <!-- QUE ES LA DIRECCION LOGICA O IP -->
+                    <section id="cableado-utp" class="mb-2">
+                        <h5 class="programas">QUE ES LA DIRECCION LOGICA O IP</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="IP"
+                                    href="https://edteam-media.s3.amazonaws.com/community/original/13a19200-a860-4d28-b02f-6202e61dbed1.jpg"
+                                    data-fancybox="gallery" data-caption="IP">
+                                    <img loading="lazy"
+                                        src="https://edteam-media.s3.amazonaws.com/community/original/13a19200-a860-4d28-b02f-6202e61dbed1.jpg"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>IP </b>(Internet Protocol=Protocolon de internet)
+                                    Una dirección IP es un conjunto único de números que identifica un dispositivo
+                                    conectado a Internet.
+                                    Para entender de dónde viene esta dirección, debemos entender un poco cómo funciona
+                                    Internet.
+                                </span>
+                            </div>
+                        </section>
+
+
+                    </section>
+
+                    <!-- QUE ES LA DIRECCION FISICA O MAC -->
+                    <section id="cableado-utp" class="mb-2">
+                        <h5 class="programas">QUE ES LA DIRECCION FISICA O MAC</h5>
+                        <section>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="MAC"
+                                    href="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/10/que-es-direccion-mac-tu-ordenador-movil-que-sirve.jpg?itok=ETUmeZ6u"
+                                    data-fancybox="gallery" data-caption="MAC">
+                                    <img loading="lazy"
+                                        src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/10/que-es-direccion-mac-tu-ordenador-movil-que-sirve.jpg?itok=ETUmeZ6u"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>MAC </b>Media Access Control (Control de acceso a medios)
+                                    Una dirección MAC identifica una “interfaz de red” única en un dispositivo. Mientras
+                                    que las direcciones
+                                    IP son asignadas por los ISP y se pueden reasignar a medida que los dispositivos se
+                                    conectan y
+                                    desconectan, las direcciones MAC se vinculan a un adaptador físico y son asignadas
+                                    por los fabricantes.
+                                </span>
+                            </div>
+                        </section>
+
+
                     </section>
                 </div>
             </section>
@@ -365,7 +1702,9 @@
     <script src="public/principal/js/headroom.min.js"></script>
     <script src="public/principal/js/main.js"></script>
     <script src="public/principal/js/prism.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
         </script>
