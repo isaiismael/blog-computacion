@@ -163,7 +163,7 @@ app.component("encabezado", {
 
                 </ul>
             </nav>
-            <h2 class="name"><a target="_blank" href="https://sandoval.ibx.lat/portafolio/">Isai Ismael Sandoval
+            <h2 class="name"><a target="_blank" href="https://isaiismael.github.io/portafolio/">Isai Ismael Sandoval
                     Ccaccro</a>
             </h2>
             <div class="div-dark-menu">                
