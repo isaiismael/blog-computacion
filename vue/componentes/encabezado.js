@@ -1,11 +1,6 @@
 app.component("encabezado", {
     template: /* html */
-        `
-
-
-
-
-        
+        `        
     <header id="header" class="encabezado">
             <div class="logo-group">
                 <i id="mode" class="fas fa-toggle-on off"></i>
@@ -52,6 +47,9 @@ app.component("encabezado", {
                                     <li><a href="js.html"><span><img style="width: 15px;margin-bottom: 0px;"
                                                     src="public/principal/img/javascript.svg"
                                                     alt="">&nbsp;JavaScript</span></a></li>
+                                    <li><a href="sass.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/sass.svg" alt="">&nbsp;Sass
+                                                </span></a></li>
                                     <li><a href="vue.html"><span><img style="width: 15px;margin-bottom: 0px;"
                                                     src="public/principal/img/vue.svg" alt="">&nbsp;Vue
                                                 JS</span></a></li>
@@ -174,3 +172,8 @@ app.component("encabezado", {
         </header>
     `
 })
+
+/*
+laravel
+vue
+*/
