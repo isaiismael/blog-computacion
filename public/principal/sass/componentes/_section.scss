@@ -60,6 +60,9 @@ table tbody tr {
 table tbody tr td {
     padding-left: 30px !important;
 }
+table tbody tr td:first-child {
+    font-size: 14px!important;
+}
 table tbody tr:hover {
     /* background: rgb(255, 255, 255); */
     color: rgb(0, 0, 0);

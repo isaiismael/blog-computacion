@@ -130,6 +130,8 @@ table tbody tr { line-height: 40px; }
 
 table tbody tr td { padding-left: 30px !important; }
 
+table tbody tr td:first-child { font-size: 14px !important; }
+
 table tbody tr:hover { /* background: rgb(255, 255, 255); */ color: black; font-weight: 600; }
 
 .texto { margin-bottom: 10px; padding: 0 0px 0 20px; overflow: hidden; }
