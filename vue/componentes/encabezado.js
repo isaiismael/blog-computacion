@@ -155,6 +155,11 @@ app.component("encabezado", {
                                             src="public/principal/img/paginas.svg" alt="">&nbsp;Páginas</span></a>
                                             
                             </li>
+                            <li>
+                            <a href="mas.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/mas.png" alt="">&nbsp;Más</span></a>
+                                            
+                            </li>
 
                         </ul>
                     </li>
