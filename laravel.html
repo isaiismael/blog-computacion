@@ -955,7 +955,7 @@
                                 <li class="p-1"><span class="def"><strong>POR OBLIGACION LA TABLA DEBE CONTENER UN CAMPO
                                             "PASSWORD"</strong></span></li>
                                 <li class="p-1"><span class="def">Tenga mucho cuidado en el nuevo modelo class
-                                    Usuario <strong>"extends Authenticatable"</strong></span></li>
+                                        Usuario <strong>"extends Authenticatable"</strong></span></li>
                             </ol>
                             <div class="texto">
                                 <span class="def">
@@ -1706,6 +1706,17 @@
                                         &lt;/option>
                                         &commat;endforeach
                                     &lt;/select>
+                                </code>
+                            </pre>
+                        </section>
+                        <section class="px-1">
+                            <div class="texto">
+                                <span>DAR FORMATO A MENUS DE NAVEGACION</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-markup line-numbers">
+                                    &lt;li class="treeview {{ Request::is('usuarios*', 'estudiantes*', 'docentes*', 'directors*', 'tipo-usuarios*') ? 'menu-open' : '' }}">&lt;/li>
+                                    &lt;a style="{{ Request::is('usuarios*', 'estudiantes*', 'docentes*', 'directors*', 'tipo-usuarios*') ? 'border-left:solid 2px #00C4FD!important' : '' }}">&lt;/a>
                                 </code>
                             </pre>
                         </section>
