@@ -805,8 +805,8 @@
                                     <code class="language-php line-numbers">
                                         &lt;?php
                                         GET-POST-PUT-DELETE-PATCH
-                                        Route::get('curso-de-php',[PhpController::class,'index'])->name('php.index');
-                                        Route::get('curso-de-php-{id}',[PhpController::class,'index'])->name('php.index');
+                                        Route::get('curso-de-php',[PhpController::class,'index'])->name('php.index')->middleware('verified');
+                                        Route::get('curso-de-php-{id}',[PhpController::class,'index'])->name('php.index')->middleware('verified');
                                         ?&gt;
                                     </code>
                                 </pre>
