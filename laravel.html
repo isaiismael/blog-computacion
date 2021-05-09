@@ -761,10 +761,10 @@
                                             17-> integer    // numero entero
                                             18-> size   // debe ser de 10 caracteres
                                             19-> string     // cadena de cualquier caracter
-                                            20-> exists     // app/models/producto,nombre
-                                            INGRESAR SOLO VALORES QUE ESTEN REGISTRADOS EN LA BD DEL CAMPO NOMBRE
-                                            21-> unique     // app/models/producto,correo
-                                            INGRESAR VALORES QUE NO ESTEN REGISTRADOS EN LA BD DEL CAMPO CORREO
+                                            20 INGRESAR SOLO VALORES QUE ESTEN REGISTRADOS EN LA BD DEL CAMPO NOMBRE
+                                            20-> exists     // App/Models/producto,nombre
+                                            21 INGRESAR SOLO VALORES UNICOS
+                                            21-> unique     // App/Models/producto,correo
                                             22-> mimes:jpg,png  // el archivo debe ser tipo "jpg" o "png"
                                             23-> starts_with:A-,COM     // el campo debe comenzar con "A-" o "COM"
                                         </code>
