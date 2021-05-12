@@ -1419,6 +1419,39 @@
                             .then(reg => console.log('Registro de SW exitoso', reg))
                             .catch(err => console.warn('Error al tratar de registrar el sw', err))
                         }
+
+                        /* ESTILOS SEGUN EL MODO DE VISUALIZACION */
+                        @media all and (display-mode: standalone) {
+                            .alerta__pwa {
+                                display: none;
+                            }
+                        }
+
+                        /* ALERTA ANTES DE LA INSTALACION DE PWA */
+                        &lt;button id="buttonAdd">instalar&lt;/button>
+
+                        window.onload = (e) => {
+                            const buttonAdd = document.querySelector('#buttonAdd');
+
+                            let deferredPrompt;
+                            window.addEventListener('beforeinstallprompt', (e) => {
+                                e.preventDefault();
+                                deferredPrompt = e;
+                            });
+
+                            buttonAdd.addEventListener('click', (e) => {
+                                deferredPrompt.prompt();
+                                deferredPrompt.userChoice
+                                    .then((choiceResult) => {
+                                        if (choiceResult.outcome === 'accepted') {
+                                            console.log('Aceptó su inslación');
+                                        } else {
+                                            console.log('Rechazó su inslación');
+                                        }
+                                        deferredPrompt = null;
+                                    });
+                            });
+                        }
                     &lt;/script>
 
                     &lt!-- EN EL SW.JS -->
