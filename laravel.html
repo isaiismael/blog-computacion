@@ -683,18 +683,30 @@
                                     </code>
                                 </pre>
                             <div class="texto">
-                                <span>REQUEST EN EL MISMO CONTROLADOR</span>
+                                <span>EL METODO</span>
                             </div>
                             <pre rel="PHP">
                                     <code class="language-php line-numbers">                            
                                         &lt;?php
-                                        $request->validate([
-                                        'title' => 'required',
-                                        'content' => 'required',
-                                        ]);
+                                        public function store(RegistrarUsuarioRequest $request)
+                                        {                                            
+                                        }
                                         ?&gt;
                                     </code>
                                 </pre>
+                            <div class="texto">
+                                <span>REQUEST EN EL MISMO CONTROLADOR</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">                            
+                                    &lt;?php
+                                    $request->validate([
+                                    'title' => 'required',
+                                    'content' => 'required',
+                                    ]);
+                                    ?&gt;
+                                </code>
+                            </pre>
                             <div class="texto">
                                 <span>CONFIGURACION</span>
                             </div>
@@ -762,9 +774,9 @@
                                             18-> size   // debe ser de 10 caracteres
                                             19-> string     // cadena de cualquier caracter
                                             20 INGRESAR SOLO VALORES QUE ESTEN REGISTRADOS EN LA BD DEL CAMPO NOMBRE
-                                            20-> exists     // App/Models/producto,nombre
+                                            20-> exists     // App\Models\producto,nombre
                                             21 INGRESAR SOLO VALORES UNICOS
-                                            21-> unique     // App/Models/producto,correo
+                                            21-> unique     // App\Models\producto,correo
                                             22-> mimes:jpg,png  // el archivo debe ser tipo "jpg" o "png"
                                             23-> starts_with:A-,COM     // el campo debe comenzar con "A-" o "COM"
                                         </code>
@@ -788,6 +800,12 @@
                                         &lt;form>
                                             &lt;input name="title" value="&lcub;{ old('title') }}">
                                             &lt;textarea name="content">&lcub;{ old('content',$valor) }}&lt;/textarea>  &lt;!-- es utilizado en una actualizacion-->
+                                            &lt;select class="input input__select" name="tipo">
+                                                &lt;option value="">Seleccionar tipo de usuario...&lt;/option>
+                                                @foreach ($sql as $item)
+                                                &lt;option {{old('tipo') == $item->id_tipo ? 'selected' : ''}} value="{{$item->id_tipo}}">{{$item->tipo}}&lt;/option>
+                                                @endforeach
+                                            &lt;/select>
                                         &lt;/form>
                                     </code>
                                 </pre>
