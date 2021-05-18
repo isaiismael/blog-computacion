@@ -275,6 +275,9 @@
                                             vistas</a></li>
                                     <li><a href="#login" class="class-items d-block" class="p-1">Personalizar LOGIN</a>
                                     </li>
+                                    <li><a href="#redireccion-login" class="class-items d-block"
+                                            class="p-1">Personalizar redireccion LOGIN</a>
+                                    </li>
                                 </ol>
                             </div>
                         </div>
@@ -1148,6 +1151,34 @@
                                         strict=>false //LINEA 59
                                     </code>
                                 </pre>
+                        </section>
+                    </section>
+
+                    <!-- PERSONALIZAR REDIRECCION LOGIN -->
+                    <section id="redireccion-login" class="mb-2">
+                        <h5 class="programas">PERSONALIZAR REDIRECCION LOGIN</h5>
+                        <section class="px-1">
+                            <div class="texto">
+                                <span class="def"><strong>EDITAR </strong>APP /HTTP /CONTROLLERS /HOMECONTROLLER</span>
+                            </div>
+                            <pre rel="PHP">
+                                        <code class="language-php line-numbers">
+                                            
+                                            public function index()
+                                            {
+                                                //return view('home');
+                                                $estado = Auth::user()->estado;
+                                                if ($estado == 1) {
+                                                    $sql = DB::select('select count(*) as total from usuario where tipo=1');
+                                                    return view('home')->with('sql', $sql);
+                                                } else {
+                                                    session()->invalidate();
+                                                    session()->regenerateToken();
+                                                    return back()->with('mensaje', 'USUARIO SUSPENDIDO, consulte con el Administrador');
+                                                }
+                                            }
+                                        </code>
+                                    </pre>
                         </section>
                     </section>
 

@@ -45,6 +45,38 @@
                     <div class="accordion-item">
                         <button style="outline: none!important;color: var(--fondo-texto-blanco);"
                             class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false"
+                            aria-controls="collapseOne1">
+                            Temario<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Instalacion de
+                                            programas</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Tipo de datos</a>
+                                    </li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Operadores</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Sentencias de control
+                                            IF ELSE SWITCH</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Bucles WHILE DOWHILE
+                                            FOR</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Arreglos</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Entrada y salida de
+                                            datos</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Clases metodos y
+                                            atributos</a></li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Constructores</a>
+                                    </li>
+                                    <li><a href="#-------" class="class-items d-block" class="p-1">Excepciones</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
                             data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                             aria-controls="collapseOne">
                             Introduccion java-escritorio<i class="fas fa-angle-down ml-3"></i>
@@ -209,23 +241,46 @@
                     <section id="conceptos" class="mb-2">
                         <h5 class="programas">CONCEPTOS BÁSICOS</h5>
                         <section class="px-1">
-                            <span class="def">
-                                * Java es un lenguaje de programacion orientado a objetos que nos permite crear
-                                aplicaciones
-                                tanto para web o escritorio.
-                            </span><br>
-                            <span>¿QUE ES POO (Programacion Orientada a Objetos)?</span><br>
-                            <span>*Es una PARADIGMA DE PROGRAMACION, es decir un modelo o un estilo de programación que
-                                nos da unas
-                                guías sobre cómo trabajar con él.</span><br>
-                            <span>*Se dice que JAVA POO porque practicamente en la programacion todo es un OBJETO(toda
-                                cosa de
-                                nuestro al rededor). En java todo objeto se denomina CLASE y toda clase tiene solo dos
-                                cosas(ATRIBUTOS Y METODOS)</span><br>
-                            <span>*ATRIBUTOS(son las varibles donde se almacenan las caracteristicas o propiedades de
-                                nuestra clase
-                                u objeto)</span><br>
-                            <span>*METODOS(son las funciones o acciones que realizar nuestra clase u objeto)</span><br>
+                            <div class="texto">
+                                <span class="def">
+                                    * Java es un lenguaje de programacion orientado a objetos que nos permite crear
+                                    aplicaciones
+                                    tanto para web o escritorio.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span><b>¿QUE ES POO (Programacion Orientada a Objetos)?</b></span><br>
+                                <span>*Es una PARADIGMA DE PROGRAMACION, es decir un modelo o un estilo de programación
+                                    que
+                                    nos da unas
+                                    guías sobre cómo trabajar con él.</span>
+                            </div>
+                            <div class="texto">
+                                <span>*Se dice que JAVA POO porque practicamente en la programacion todo es un
+                                    OBJETO(toda
+                                    cosa de
+                                    nuestro al rededor). En java todo objeto se denomina CLASE y toda clase tiene solo
+                                    dos
+                                    cosas(ATRIBUTOS Y METODOS)</span>
+                            </div>
+                            <div class="texto">
+                                <span><b>*ATRIBUTOS</b>(son las varibles donde se almacenan las caracteristicas o
+                                    propiedades
+                                    de
+                                    nuestra clase
+                                    u objeto)</span>
+                            </div>
+                            <div class="texto">
+                                <span><b>*METODOS</b>(son las funciones o acciones que realizar nuestra clase u
+                                    objeto)</span>
+                            </div>
+
+                            <div class="texto img-conexion wrapper">
+                                <a rel="POO" href="public/cursos/java/objetos.png" data-fancybox="gallery"
+                                    data-caption="POO">
+                                    <img loading="lazy" src="public/cursos/java/objetos.png" alt="">
+                                </a>
+                            </div>
                         </section>
                     </section>
 
@@ -422,6 +477,13 @@
                                                 /* BOOLEAN-STRING */                
                                                     String cadena = String.valueOf(b);
                                                     String cadena = Boolean.toString(b);
+
+                                                /* DOUBLE-INT */                
+                                                    double precio = 10.5;
+                                                    int a = (int) precio;
+                                                /* FLOAT-INT */
+                                                    float precio = 10.5f;
+                                                    int a = (int) precio;
                                             </code>
                                         </pre>
 
