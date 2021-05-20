@@ -294,9 +294,9 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ol class="d-flex flex-column">
-                                    <!-- <li><a href="#elementosdom" class="class-items d-block" class="p-1">Elementos
-                                            del Documento</a>
-                                    </li> -->
+                                    <li><a href="#eslint" class="class-items d-block" class="p-1">Eliminar eslint de
+                                            VUE-CLI</a>
+                                    </li>
                                 </ol>
                             </div>
                         </div>
@@ -997,36 +997,36 @@
                                     Vue.js</span>
                             </div>
                             <pre rel="CDN">
-            <code class="language-markup line-numbers">
-                &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>
-            </code>
-        </pre>
+                                <code class="language-markup line-numbers">
+                                    &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>
+                                </code>
+                            </pre>
                             <pre rel="HTML">
-            <code class="language-markup line-numbers">
-                &lt;router-link to="/">Go to Home&lt;/router-link>
-                &lt;router-link to="/about">Go to About&lt;/router-link>
-                &lt;router-view>&lt;/router-view>
-            </code>
-        </pre>
+                                <code class="language-markup line-numbers">
+                                    &lt;router-link to="/">Go to Home&lt;/router-link>
+                                    &lt;router-link to="/about">Go to About&lt;/router-link>
+                                    &lt;router-view>&lt;/router-view>
+                                </code>
+                            </pre>
                             <pre rel="JS">
-            <code class="language-js line-numbers">                
-                const Home = { template: '&lt;div>Home&lt;/div>' }
-                const About = { template: '&lt;div>About&lt;/div>' }
+                                <code class="language-js line-numbers">                
+                                    const Home = { template: '&lt;div>Home&lt;/div>' }
+                                    const About = { template: '&lt;div>About&lt;/div>' }
 
-                const misRutas = [
-                    { path: '/', component: Home },
-                    { path: '/about', component: About },
-                ]
+                                    const misRutas = [
+                                        { path: '/', component: Home },
+                                        { path: '/about', component: About },
+                                    ]
 
-                const ruta = VueRouter.createRouter({
-                    history: VueRouter.createWebHashHistory(),
-                    routes:misRutas,
-                })
-                MiApp.use(ruta)
+                                    const ruta = VueRouter.createRouter({
+                                        history: VueRouter.createWebHashHistory(),
+                                        routes:misRutas,
+                                    })
+                                    MiApp.use(ruta)
 
-                MiApp.mount("#app")
-            </code>
-        </pre>
+                                    MiApp.mount("#app")
+                                </code>
+                            </pre>
                         </section>
                     </section>
 
@@ -1035,54 +1035,54 @@
                         <h5 class="programas">VUE ROUTER ANIDADO</h5>
                         <section>
                             <pre rel="JS">
-            <code class="language-markup line-numbers">
-                &lt;router-view>&lt;/router-view>
-                &lt;!-- esta vista tiene un nombre -->
-                &lt;router-view name="b">&lt;/router-view>
+                                <code class="language-markup line-numbers">
+                                    &lt;router-view>&lt;/router-view>
+                                    &lt;!-- esta vista tiene un nombre -->
+                                    &lt;router-view name="b">&lt;/router-view>
 
-                &lt;h3>PAGINA &lcub;{ $route.params.id }}&lt;/h3>
-            </code>
-        </pre>
+                                    &lt;h3>PAGINA &lcub;{ $route.params.id }}&lt;/h3>
+                                </code>
+                            </pre>
                             <pre rel="JS">
-            <code class="language-js line-numbers">
+                                <code class="language-js line-numbers">
 
 
-                const uno = { template: '&lt;div>UNO&lt;/div>' }
-                const dos = { template: '&lt;div>DOS&lt;/div>' }
+                                    const uno = { template: '&lt;div>UNO&lt;/div>' }
+                                    const dos = { template: '&lt;div>DOS&lt;/div>' }
 
-                const misRutas = [
-                    { path: '/', component: Inicio },
-                    { path: '/servicios', component: Servicio },
-                    {
-                        path: '/contacto/:id', component: Contacto,
-                        children: [
-                            {
-                                path: '/contactos/uno',
-                                components: {
-                                    b: uno  /* b es el nombre de la vista */
-                                }
-                            },
-                            {
-                                path: '/contactos/dos',
-                                components: {
-                                    b: dos  /* b es el nombre de la vista */
-                                }
-                            }
-                        ],
-                    },
+                                    const misRutas = [
+                                        { path: '/', component: Inicio },
+                                        { path: '/servicios', component: Servicio },
+                                        {
+                                            path: '/contacto/:id', component: Contacto,
+                                            children: [
+                                                {
+                                                    path: '/contactos/uno',
+                                                    components: {
+                                                        b: uno  /* b es el nombre de la vista */
+                                                    }
+                                                },
+                                                {
+                                                    path: '/contactos/dos',
+                                                    components: {
+                                                        b: dos  /* b es el nombre de la vista */
+                                                    }
+                                                }
+                                            ],
+                                        },
 
-                ]
+                                    ]
 
 
-                const ruta = VueRouter.createRouter({
-                    history: VueRouter.createWebHashHistory(),
-                    routes:misRutas,
-                })
-                MiApp.use(ruta)
+                                    const ruta = VueRouter.createRouter({
+                                        history: VueRouter.createWebHashHistory(),
+                                        routes:misRutas,
+                                    })
+                                    MiApp.use(ruta)
 
-                MiApp.mount("#app")
-            </code>
-        </pre>
+                                    MiApp.mount("#app")
+                                </code>
+                            </pre>
                         </section>
                     </section>
 
@@ -1092,6 +1092,19 @@
 
                     <button style="font-size: 16px"
                         class="btn btn-primary btn-sm container-fluid mb-2 mt-2">AVANZADO</button>
+
+                    <!-- ELIMINAR ESLINT DE VUE-CLI -->
+                    <section id="eslint" class="mb-2">
+                        <h5 class="programas">ELIMINAR ESLINT DE VUE-CLI</h5>
+                        <section>
+                            <pre rel="CDN">
+                                <code class="language-markup line-numbers">
+                                    npm remove @vue/cli-plugin-eslint
+                                    npm install --save clipboard
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
 
                 </div>
             </section>

@@ -80,6 +80,7 @@
                                             avanzadas</a></li>
                                     <li><a href="#atributos" class="class-items d-block" class="p-1">Atributos
                                             avanzados</a></li>
+                                    <li><a href="#pdf" class="class-items d-block" class="p-1">Ver PDF en html</a></li>
                                 </ol>
                             </div>
                         </div>
@@ -179,23 +180,23 @@
                         <h5 class="programas">ETIQUETAS AVANZADAS</h5>
                         <section>
                             <pre rel="JS">
-                <code class="language-markup line-numbers">
-                    &lt;!-- DATALIST -->
-                    &lt;input list="frutas">
-                    &lt;datalist id="frutas">
-                        &lt;option value="uva">&lt;/option>
-                        &lt;option value="mango">&lt;/option>
-                        &lt;option value="péra">&lt;/option>
-                    &lt;/datalist>
+                                <code class="language-markup line-numbers">
+                                    &lt;!-- DATALIST -->
+                                    &lt;input list="frutas">
+                                    &lt;datalist id="frutas">
+                                        &lt;option value="uva">&lt;/option>
+                                        &lt;option value="mango">&lt;/option>
+                                        &lt;option value="péra">&lt;/option>
+                                    &lt;/datalist>
 
-                    &lt;!-- DAR COLOR AL NAVEGADOR EN MOVILES -->
-                    &lt;meta name="theme-color" content="#083756" />
+                                    &lt;!-- DAR COLOR AL NAVEGADOR EN MOVILES -->
+                                    &lt;meta name="theme-color" content="#083756" />
 
-                    &lt;!-- ENLACE DE DESCARGA -->
-                    &lt;a href="CV/Vitae.pdf" download="nombre">Descargar&lt;/a>
+                                    &lt;!-- ENLACE DE DESCARGA -->
+                                    &lt;a href="CV/Vitae.pdf" download="nombre">Descargar&lt;/a>
 
-                </code>
-            </pre>
+                                </code>
+                            </pre>
                         </section>
                     </section>
 
@@ -204,12 +205,30 @@
                         <h5 class="programas">ATRIBUTOS AVANZADOS</h5>
                         <section>
                             <pre rel="JS">
-                <code class="language-markup line-numbers">                    
-                    step="0.01 &lt;!-- Para dar decimales a un input number -->
-                </code>
-            </pre>
+                                <code class="language-markup line-numbers">                    
+                                    step="0.01 &lt;!-- Para dar decimales a un input number -->
+                                </code>
+                            </pre>
                         </section>
                     </section>
+
+                    <!-- VER PDF EN HTML -->
+                    <section id="pdf" class="mb-2">
+                        <h5 class="programas">VER PDF EN HTML</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">                    
+                                    &lt;iframe src="data:application/pdf;base64,&lt;?= base64_encode($i->archivo) ?>"
+                                    width=50% height=200>&lt;/iframe>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+
+
+
+
                 </div>
             </section>
         </section>
