@@ -313,6 +313,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            API REST<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#api" class="class-items d-block" class="p-1">Api rest</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="descripcion">
                     <button style="font-size: 16px"
@@ -1824,6 +1840,139 @@
                             </pre>
                         </section>
                     </section>
+
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">API
+                        REST</button>
+
+                    <!-- API REST -->
+                    <section id="api" class="mb-2">
+                        <h5 class="programas">API REST</h5>
+                        <section class="px-1">
+                            <div class="texto">
+                                <span>CREA TU CONEXION A LA BD</span>
+                            </div>
+                            <div class="texto">
+                                <span>CREA TU CONTROLADOR</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    public function index()
+                                    {
+                                        $sql = DB::select("select * from producto");
+                                        return response()->json($sql, 200);
+                                    }
+
+
+                                    public function store(Request $request)
+                                    {
+                                        $request->validate([
+                                            "nombre" => "required",
+                                            "cantidad" => "required",
+                                            "total" => "required"
+                                        ]);
+                                        $sql = DB::insert("insert into producto(nombre,cantidad,total)values(?,?,?)", [
+                                            $request->nombre,
+                                            $request->cantidad,
+                                            $request->total
+                                        ]);
+                                        if ($sql == 1) {
+                                            return response()->json(["mensaje" => "producto registrado"], 200);
+                                        } else {
+                                            return response()->json(["error" => "error al registrar"], 201);
+                                        }
+                                    }
+
+                                    
+                                    public function show($id)
+                                    {
+                                        $sql = DB::select("select * from producto where id_producto=?", [
+                                            $id
+                                        ]);
+                                        return response()->json($sql, 200);
+                                    }
+
+
+                                    public function update(Request $request, $id)
+                                    {
+                                        $request->validate([
+                                            "nombre" => "required",
+                                            "cantidad" => "required",
+                                            "total" => "required"
+                                        ]);
+
+                                        try {
+                                            $sql = DB::update("update producto set nombre=?, cantidad=?, total=? where id_producto=$id", [
+                                                $request->nombre,
+                                                $request->cantidad,
+                                                $request->total
+                                            ]);
+                                            if ($sql == 0) {
+                                                $sql = 1;
+                                            }
+                                        } catch (\Throwable $th) {
+                                            $sql = 0;
+                                        }
+
+                                        if ($sql == 1) {
+                                            return response()->json(["mensaje" => "producto actualizado"], 200);
+                                        } else {
+                                            return response()->json(["error" => "error al actualizar"], 201);
+                                        }
+                                    }
+
+
+                                    public function destroy($id)
+                                    {
+                                        $sql = DB::delete("delete from producto where id_producto=?", [
+                                            $id
+                                        ]);
+                                        if ($sql == 1) {
+                                            return response()->json(["mensaje" => "producto eliminado"], 200);
+                                        } else {
+                                            return response()->json(["error" => "error al eliminar"], 201);
+                                        }
+                                    }
+                                    ?>
+                                </code>
+                            </pre>
+                            <div class="texto">
+                                <span>CREA TU RUTA</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    Route::get("listar-productos", [ProductoController::class, "index"]);
+                                    Route::get("lista-productos-id-{id}", [ProductoController::class, "show"]);
+                                    Route::post("crear-producto", [ProductoController::class, "store"]);
+                                    Route::post("actualizar-producto-{id}", [ProductoController::class, "update"]);
+                                    Route::get("eliminar-producto-{id}", [ProductoController::class, "destroy"]);
+                                    ?>
+                                </code>
+                            </pre>
+
+                            <div class="texto">
+                                <span>URL</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    http://127.0.0.1:8000/api/lista-productos
+                                    
+                                    http://127.0.0.1:8000/api/crear-producto
+                                    en header:
+                                    Accept  application/json
+
+                                    en  body raw:
+                                    {
+                                        "nombre":"mouse",
+                                        "cantidad":"20",
+                                        "total":"150"
+                                    }
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
                 </div>
             </section>
         </section>

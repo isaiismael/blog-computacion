@@ -143,6 +143,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            API REST<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#api" class="class-items d-block" class="p-1">API REST</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="descripcion">
                     <button style="font-size: 16px"
@@ -1147,53 +1163,53 @@
                                 <span>FILTRAR EL REPORTE DE ERRORES</span>
                             </div>
                             <pre rel="PHP">
-                <code class="language-php line-numbers">
-                    &lt;?php
-                    error_reporting(0);
-                    ?&gt;
-                </code>
-            </pre>
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    error_reporting(0);
+                                    ?&gt;
+                                </code>
+                            </pre>
                             <div class="texto">
                                 <span>FECHA</span>
                             </div>
                             <pre rel="PHP">
-                <code class="language-php line-numbers">
-                    &lt;?php
-                    $date = date('d/m/Y');
-                    ?&gt;
-                </code>
-            </pre>
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    $date = date('d/m/Y');
+                                    ?&gt;
+                                </code>
+                            </pre>
                             <div class="texto">
                                 <span>SELECT AUTOMATICO</span>
                             </div>
                             <pre rel="PHP">
-                <code class="language-php line-numbers">
-                    &lt;select>
-                        &lt;option &lt;?= $datos7->sexo == 'm' ? 'selected' : '' ?> value="m">Varon&lt;/option>
-                        &lt;option &lt;?= $datos7->sexo == 'f' ? 'selected' : '' ?> value="f">Mujer&lt;/option>
-                    &lt;/select>
-                </code>
-            </pre>
+                                <code class="language-php line-numbers">
+                                    &lt;select>
+                                        &lt;option &lt;?= $datos7->sexo == 'm' ? 'selected' : '' ?> value="m">Varon&lt;/option>
+                                        &lt;option &lt;?= $datos7->sexo == 'f' ? 'selected' : '' ?> value="f">Mujer&lt;/option>
+                                    &lt;/select>
+                                </code>
+                            </pre>
                             <pre rel="PHP">
-                <code class="language-php line-numbers">
-                    &lt;select>
-                        &lt;option &lt;?= $datos->id_tipo == $datos7->tipo ? 'selected' : '' ?> value="&lt;?= $datos->id_tipo ?>">&lt;?= $datos->nombre ?>&lt;/option>
-                    &lt;/select>
-                </code>
-            </pre>
+                                <code class="language-php line-numbers">
+                                    &lt;select>
+                                        &lt;option &lt;?= $datos->id_tipo == $datos7->tipo ? 'selected' : '' ?> value="&lt;?= $datos->id_tipo ?>">&lt;?= $datos->nombre ?>&lt;/option>
+                                    &lt;/select>
+                                </code>
+                            </pre>
                             <div class="texto">
                                 <span>BOTON EDITAR Y ELIMINAR</span>
                             </div>
                             <pre rel="PHP">
-                <code class="language-php line-numbers">
-                    &lt;?php
-                    &lt;a href="#editar&lt;?= $datos7->usuario ?>">EDITAR&lt;/a>
-                    &lt;a href="Usuario.php?elimin=&lt;?= $datos7->id_usuario ?>" onclick="return confirmar_eliminar()">ELIMINAR&lt;/a>
-                    MODAL-EDITAR ->
-                    &lt;div id="editar&lt;?= $datos7->usuario ?>">
-                    ?&gt;
-                </code>
-            </pre>
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    &lt;a href="#editar&lt;?= $datos7->usuario ?>">EDITAR&lt;/a>
+                                    &lt;a href="Usuario.php?elimin=&lt;?= $datos7->id_usuario ?>" onclick="return confirmar_eliminar()">ELIMINAR&lt;/a>
+                                    MODAL-EDITAR ->
+                                    &lt;div id="editar&lt;?= $datos7->usuario ?>">
+                                    ?&gt;
+                                </code>
+                            </pre>
                             <div class="texto">
                                 <span>NOTIFICACIONES TOAST</span>
                                 <span>
@@ -1232,6 +1248,208 @@
             </pre>
                         </section>
                     </section>
+
+
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">API
+                        REST</button>
+
+                    <!-- API REST -->
+                    <section id="api" class="mb-2">
+                        <h5 class="programas">API REST</h5>
+                        <section>
+                            <div class="texto">
+                                <span>config/CONEXION BD</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    class Conectar
+                                    {
+                                        protected $dbh;
+                                        protected function Conexion()
+                                        {
+                                            try {
+                                                $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=andercode_webservice", "root", "");
+                                                return $conectar;
+                                            } catch (Exception $e) {
+                                                print "¡Error BD!: " . $e->getMessage() . "&lt;br/>";
+                                                die();
+                                            }
+                                        }
+
+                                        public function set_names()
+                                        {
+                                            return $this->dbh->query("SET NAMES 'utf8'");
+                                        }
+                                    }
+                                    ?&gt;
+                                </code>
+                            </pre>
+                            <div class="texto">
+                                <span>models/Categoria.php</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    class Categoria extends Conectar
+                                    {
+                                        public function get_categoria()
+                                        {
+                                            $conectar = parent::conexion();
+                                            parent::set_names();
+                                            $sql = "SELECT * FROM tm_categoria WHERE est = 1";
+                                            $sql = $conectar->prepare($sql);
+                                            $sql->execute();
+                                            return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+                                        }
+
+                                        public function get_categoria_x_id($cat_id)
+                                        {
+                                            $conectar = parent::conexion();
+                                            parent::set_names();
+                                            $sql = "SELECT * FROM tm_categoria WHERE est=1 AND cat_id = ?";
+                                            $sql = $conectar->prepare($sql);
+                                            $sql->bindValue(1, $cat_id);
+                                            $sql->execute();
+                                            return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+                                        }
+
+                                        public function insert_categoria($cat_nom, $cat_obs)
+                                        {
+                                            $conectar = parent::conexion();
+                                            parent::set_names();
+                                            $sql = "INSERT INTO tm_categoria(cat_id,cat_nom,cat_obs,est) VALUES (NULL,?,?,'1');";
+                                            $sql = $conectar->prepare($sql);
+                                            $sql->bindValue(1, $cat_nom);
+                                            $sql->bindValue(2, $cat_obs);
+                                            $sql->execute();
+                                            return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+                                        }
+
+                                        public function update_categoria($cat_id, $cat_nom, $cat_obs)
+                                        {
+                                            $conectar = parent::conexion();
+                                            parent::set_names();
+                                            $sql = "UPDATE tm_categoria set
+                                                    cat_nom = ?,
+                                                    cat_obs = ?
+                                                    WHERE
+                                                    cat_id = ?";
+                                            $sql = $conectar->prepare($sql);
+                                            $sql->bindValue(1, $cat_nom);
+                                            $sql->bindValue(2, $cat_obs);
+                                            $sql->bindValue(3, $cat_id);
+                                            $sql->execute();
+                                            return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+                                        }
+
+                                        public function delete_categoria($cat_id)
+                                        {
+                                            $conectar = parent::conexion();
+                                            parent::set_names();
+                                            $sql = "UPDATE tm_categoria set
+                                                    est = '0'
+                                                    WHERE
+                                                    cat_id = ?";
+                                            $sql = $conectar->prepare($sql);
+                                            $sql->bindValue(1, $cat_id);
+                                            $sql->execute();
+                                            return $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+                                        }
+                                    }
+                                    ?&gt;
+                                </code>
+                            </pre>
+                            <div class="texto">
+                                <span>controller/categoria.php</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    header('Content-Type: application/json');
+                                    header("Access-Control-Allow-Origin: *");
+
+                                    require_once("../config/conexion.php");
+                                    require_once("../models/Categoria.php");
+                                    $categoria = new Categoria();
+                                    $body = json_decode(file_get_contents("php://input"), true);
+
+
+                                    switch($_GET["data"]){
+
+                                        case "GetAll":
+                                            $datos=$categoria->get_categoria();
+                                            echo json_encode($datos);
+                                        break;
+
+                                        case "GetId":
+                                            $datos=$categoria->get_categoria_x_id($body["cat_id"]);
+                                            echo json_encode($datos);
+                                        break;
+
+                                        case "Insert":
+                                            $datos=$categoria->insert_categoria($body["cat_nom"],$body["cat_obs"]);
+                                            echo json_encode("Insert Correcto");
+                                        break;
+
+                                        case "Update":
+                                            $datos=$categoria->update_categoria($body["cat_id"],$body["cat_nom"],$body["cat_obs"]);
+                                            echo json_encode("Update Correcto");
+                                        break;
+
+                                        case "Delete":
+                                            $datos=$categoria->delete_categoria($body["cat_id"]);
+                                            echo json_encode("Delete Correcto");
+                                        break;
+                                    }
+                                    ?&gt;
+                                </code>
+                            </pre>
+
+                            <div class="texto">
+                                <span>RUTAS</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    http://localhost:8080/PROYECTOS-PHP/WEB-SERVICE/controller/categoria.php?data=GetAll
+
+                                    http://localhost:8080/PROYECTOS-PHP/WEB-SERVICE/controller/categoria.php?data=GetId
+                                    en RAW:
+                                    {
+                                        "cat_id":1
+                                    }
+
+                                    http://localhost:8080/PROYECTOS-PHP/WEB-SERVICE/controller/categoria.php?data=Insert
+                                    en RAW:
+                                    {
+                                        "cat_nom": "Computadoras",
+                                        "cat_obs": "Observación computadoras",
+                                        "est": "1"
+                                    }
+
+                                    http://localhost:8080/PROYECTOS-PHP/WEB-SERVICE/controller/categoria.php?data=Update
+                                    en RAW:
+                                    {
+                                        "cat_id": 13,
+                                        "cat_nom": "laptops",
+                                        "cat_obs": "Observación laptops",
+                                        "est": "1"
+                                    }
+
+                                    http://localhost:8080/PROYECTOS-PHP/WEB-SERVICE/controller/categoria.php?data=Delete
+                                    en RAW:
+                                    {
+                                        "cat_id": 13
+                                    }
+                                </code>
+                            </pre>
+
+                        </section>
+                    </section>
+
+
+
+
                 </div>
             </section>
         </section>
