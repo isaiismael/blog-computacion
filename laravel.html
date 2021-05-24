@@ -248,6 +248,8 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ol class="d-flex flex-column">
+                                    <li><a href="#imprime" class="class-items d-block" class="p-1">Imprimir</a>
+                                    </li>
                                     <li><a href="#dominio-local" class="class-items d-block" class="p-1">Como crear un
                                             dominio
                                             local</a>
@@ -265,6 +267,7 @@
                                     <li><a href="#controladores" class="class-items d-block"
                                             class="p-1">Controladores</a></li>
                                     <li><a href="#request" class="class-items d-block" class="p-1">Request</a></li>
+                                    <li><a href="#rules" class="class-items d-block" class="p-1">Rules</a></li>
                                     <li><a href="#routes" class="class-items d-block" class="p-1">Routes</a></li>
                                     <li><a href="#metodos" class="class-items d-block" class="p-1">Métodos</a></li>
                                     <li><a href="#blade" class="class-items d-block" class="p-1">Cómo funciona BLADE</a>
@@ -435,6 +438,19 @@
 
                     <button style="font-size: 16px"
                         class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- IMPRIMIR -->
+                    <section id="imprime" class="mb-2">
+                        <h5 class="programas">IMPRIMIR</h5>
+                        <section class="px-1">
+                            <pre rel="PHP">
+                                <code class="language-markup line-numbers">
+                                    &lt;h1>&lcub;{$mensaje}}&lt;/h1>
+                                    &lt;!-- VUE agrega el @ -->
+                                    &lt;h1>@&lcub;{mensaje}}&lt;/h1>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
                     <!-- COMO CREAR DOMINIO LOCAL -->
                     <section id="dominio-local" class="mb-2">
                         <h5 class="programas">COMO CREAR DOMINIO LOCAL</h5>
@@ -828,6 +844,67 @@
                                         &lt;/form>
                                     </code>
                                 </pre>
+                        </section>
+                    </section>
+                    <!-- RULES -->
+                    <section id="rules" class="mb-2">
+                        <h5 class="programas">RULES</h5>
+                        <section class="px-1">
+                            <div class="texto">
+                                <span>*Los rules en laravel se utilizan para poder personalizar las validaciones
+                                    REQUEST.</span><br>
+                                <span>*Los rules se encuentran en app/Rules.</span>
+                            </div>
+                            <pre rel="CMD">
+                                    <code class="language-php line-numbers">                            
+                                        php artisan make:rule usuario/registrar/duplicidadUsuario
+                                    </code>
+                                </pre>
+                            <div class="texto">
+                                <span>EL METODO EN RULE</span>
+                            </div>
+                            <pre rel="PHP">
+                                    <code class="language-php line-numbers">                            
+                                        &lt;?php
+                                        public function passes($attribute, $value)
+                                        {
+                                            /* validando duplicidad de usuario */
+                                            $valUsuario = DB::select("select count(*) as total from usuario where usuario=? and estado=1", [
+                                                $value
+                                            ]);
+                                            if ($valUsuario[0]->total > 0) {
+                                                return false;
+                                            }else{
+                                                return true;
+                                            }
+                                        }
+
+                                        public function message()
+                                        {
+                                            return 'Este usuario ya existe';
+                                        }
+                                        ?&gt;
+                                    </code>
+                                </pre>
+                            <div class="texto">
+                                <span>MODIFICAR ESTO EN EL REQUEST</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">                            
+                                    &lt;?php
+                                    use App\Rules\usuario\registrar\duplicidadUsuario;
+
+                                    public function rules()
+                                    {
+                                        return [
+                                            "tipo" => "required",
+                                            "usuario" => ["required","alpha_num",new duplicidadUsuario()],
+                                        ];
+                                    }
+                                    ?&gt;
+                                </code>
+                            </pre>
+
                         </section>
                     </section>
                     <!-- routes -->

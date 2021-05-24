@@ -460,26 +460,28 @@
                         <h5 class="programas">SINTAXIS</h5>
                         <section>
                             <pre rel="JS">
-                <code class="language-markup line-numbers">
-                    &lt;div id="app">
-                        &lt;h1>&lcub;{mensaje}}&lt;/h1>
-                    &lt;/div>
-                
-                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>&lt;!--cdn-->
-                    &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>&lt;!--cdn VUE-ROUTER-->
-                    &lt;script>
-                        const app = {
-                            data() {
-                                return {
-                                    mensaje: "Hola como estas"
-                                }
-                            }
-                        }
-                
-                        const miApp = Vue.createApp(app).mount("#app")//creando un nuevo App y montando
-                    &lt;/script>
-                </code>
-            </pre>
+                                <code class="language-markup line-numbers">
+                                    &lt;div id="app">
+                                        &lt;h1>&lcub;{mensaje}}&lt;/h1>
+                                        &lt;!-- EN LARAVEL agrega el @ -->
+                                        &lt;h1>@&lcub;{mensaje}}&lt;/h1>
+                                    &lt;/div>
+                                
+                                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>&lt;!--cdn-->
+                                    &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>&lt;!--cdn VUE-ROUTER-->
+                                    &lt;script>
+                                        const app = {
+                                            data() {
+                                                return {
+                                                    mensaje: "Hola como estas"
+                                                }
+                                            }
+                                        }
+                                
+                                        const miApp = Vue.createApp(app).mount("#app")//creando un nuevo App y montando
+                                    &lt;/script>
+                                </code>
+                            </pre>
                         </section>
                     </section>
 
