@@ -268,6 +268,8 @@
                                             class="p-1">Controladores</a></li>
                                     <li><a href="#request" class="class-items d-block" class="p-1">Request</a></li>
                                     <li><a href="#rules" class="class-items d-block" class="p-1">Rules</a></li>
+                                    <li><a href="#rulespara" class="class-items d-block" class="p-1">Rules con
+                                            parametros</a></li>
                                     <li><a href="#routes" class="class-items d-block" class="p-1">Routes</a></li>
                                     <li><a href="#metodos" class="class-items d-block" class="p-1">Métodos</a></li>
                                     <li><a href="#blade" class="class-items d-block" class="p-1">Cómo funciona BLADE</a>
@@ -904,6 +906,69 @@
                                     ?&gt;
                                 </code>
                             </pre>
+
+                        </section>
+                    </section>
+                    <!-- RULES CON PARAMETROS -->
+                    <section id="rulespara" class="mb-2">
+                        <h5 class="programas">RULES CON PARAMETROS</h5>
+                        <section class="px-1">
+                            <pre rel="CMD">
+                                    <code class="language-php line-numbers">                            
+                                        php artisan make:rule usuario/registrar/duplicidadUsuario
+                                    </code>
+                                </pre>
+                            <div class="texto">
+                                <span>MODIFICAR ESTO EN EL REQUEST</span>
+                            </div>
+                            <pre rel="PHP">
+                                    <code class="language-php line-numbers">                            
+                                        &lt;?php
+                                        use App\Rules\usuario\registrar\duplicidadUsuario;
+    
+                                        public function rules()
+                                        {
+                                            return [
+                                                "tipo" => "required",
+                                                "usuario" => ["required","alpha_num",new verificarUsuario(request()->id,request()->usuario)],
+                                            ];
+                                        }
+                                        ?&gt;
+                                    </code>
+                                </pre>
+                            <div class="texto">
+                                <span>EL METODO EN RULE</span>
+                            </div>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">                            
+                                    &lt;?php
+                                    public function __construct($id = 0, $usuario="")
+                                    {
+                                        $this->id = $id;
+                                        $this->usuario=$usuario;
+                                    }
+
+                                    public function passes($attribute, $value)
+                                    {
+                                        $verificarUsuario = DB::select("select count(*) as total from usuario where usuario=? and id_usuario!=? and estado=1", [
+                                            $value,
+                                            $this->id
+                                        ]);
+                                        if ($verificarUsuario[0]->total > 0) {
+                                            return false;
+                                        } else {
+                                            return true;
+                                        }
+                                    }
+
+                                    public function message()
+                                    {
+                                        return "El usuario $this->usuario ya existe.";
+                                    }
+                                    ?&gt;
+                                </code>
+                            </pre>
+
 
                         </section>
                     </section>
