@@ -147,7 +147,7 @@
     }
 
     let url = location.pathname;
-    if (url != "/index.html") {
+    if (url != "/index.html" && url != "/") {
         if (localStorage.getItem("login") == "false") {
             location.href = "index.html"
         }
