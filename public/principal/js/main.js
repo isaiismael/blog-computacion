@@ -127,31 +127,31 @@
 
 
 
-    let id = document.querySelector(".id");
-    let bot = document.getElementById("entrar")
-    let login = localStorage.getItem("login")
-    if (login == null) {
-        localStorage.setItem("login", false);
-    }
+    // let id = document.querySelector(".id");
+    // let bot = document.getElementById("entrar")
+    // let login = localStorage.getItem("login")
+    // if (login == null) {
+    //     localStorage.setItem("login", false);
+    // }
 
-    try {
-        bot.addEventListener("click", function () {
-            if (id.value == "0000") {
-                localStorage.setItem("login", true);
-            } else {
-                localStorage.setItem("login", false);
-            }
-        })
-    } catch (error) {
+    // try {
+    //     bot.addEventListener("click", function () {
+    //         if (id.value == "0000") {
+    //             localStorage.setItem("login", true);
+    //         } else {
+    //             localStorage.setItem("login", false);
+    //         }
+    //     })
+    // } catch (error) {
 
-    }
+    // }
 
-    let url = location.pathname;
-    if (url != "/index.html" && url != "/") {
-        if (localStorage.getItem("login") == "false") {
-            location.href = "index.html"
-        }
-    }
+    // let url = location.pathname;
+    // if (url != "/index.html" && url != "/") {
+    //     if (localStorage.getItem("login") == "false") {
+    //         location.href = "index.html"
+    //     }
+    // }
 
 
 
