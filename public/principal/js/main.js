@@ -119,11 +119,40 @@
     // table responsive
     let tabla = document.querySelectorAll("table");
     tabla.forEach(function (el, index) {
-        let responsive=el.classList.contains("table-responsive");
+        let responsive = el.classList.contains("table-responsive");
         if (!responsive) {
             el.classList.add("table-responsive")
         }
     })
+
+
+
+    let id = document.querySelector(".id");
+    let bot = document.getElementById("entrar")
+    let login = localStorage.getItem("login")
+    if (login == null) {
+        localStorage.setItem("login", false);
+    }
+
+    try {
+        bot.addEventListener("click", function () {
+            if (id.value == "0000") {
+                localStorage.setItem("login", true);
+            } else {
+                localStorage.setItem("login", false);
+            }
+        })
+    } catch (error) {
+
+    }
+
+    let url = location.pathname;
+    if (url != "/index.html") {
+        if (localStorage.getItem("login") == "false") {
+            location.href = "index.html"
+        }
+    }
+
 
 
 }())

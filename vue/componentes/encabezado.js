@@ -170,7 +170,7 @@ app.component("encabezado", {
                     Ccaccro</a>
             </h2>
             <div class="div-dark-menu">                
-                <a href="#"><img class="logo" src="public/principal/img/logo.jpg" alt=""></a>
+                <a href="index.html"><img class="logo" src="public/principal/img/logo.jpg" alt=""></a>
                 <!--<router-link to="/"><img class="logo" src="public/principal/img/logo.jpg" alt=""></router-link>-->
                 <i id="menu-icon" class="fas fa-bars menu-icon"></i>
             </div>
