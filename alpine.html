@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE ALPINE JS</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#cdn" class="class-items d-block" class="p-1">CDN</a></li>
+                                    <li><a href="#data" class="class-items d-block" class="p-1">x-data</a></li>
+                                    <li><a href="#init" class="class-items d-block" class="p-1">x-init</a></li>
+                                    <li><a href="#text" class="class-items d-block" class="p-1">x-text</a></li>
+                                    <li><a href="#html" class="class-items d-block" class="p-1">x-html</a></li>
+                                    <li><a href="#show" class="class-items d-block" class="p-1">x-show</a></li>
+                                    <li><a href="#bind" class="class-items d-block" class="p-1">x-bind</a></li>
+                                    <li><a href="#model" class="class-items d-block" class="p-1">x-model</a></li>
+                                    <li><a href="#on" class="class-items d-block" class="p-1">x-on - @</a></li>
+                                    <li><a href="#ref" class="class-items d-block" class="p-1">x-ref</a></li>
+                                    <li><a href="#if" class="class-items d-block" class="p-1">x-if</a></li>
+                                    <li><a href="#for" class="class-items d-block" class="p-1">x-for</a></li>
+                                    <li><a href="#transition" class="class-items d-block" class="p-1">x-transition</a>
+                                    </li>
+                                    <li><a href="#spread" class="class-items d-block" class="p-1">x-spread</a></li>
+                                    <li><a href="#cloak" class="class-items d-block" class="p-1">x-cloak</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
+                                        <span>
+                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
+                                            programa por
+                                            que es más ligero y tiene mas opciones a diferencia de otros
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Alpine.js es una librería javascript creada por Caleb Porzio, también creador del
+                                    componente Livewire para Laravel.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Está inspirada en otros frameworks como AngularJS, VueJS o TailwindCSS que nos
+                                    permite enriquecer nuestro lenguaje HTML con propiedades declarativas y reactivas de
+                                    una manera fácil, rápida y ligera, como alternativa a frameworks como React.js y
+                                    Vue.js que con su crecimiento empiezan a requerir de gestores de tareas para
+                                    facilitarnos su manejo.
+                                </span>
+                            </div>
+
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+
+
+                    <!-- CDN -->
+                    <section id="cdn" class="mb-2">
+                        <h5 class="programas">CDN</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-DATA -->
+                    <section id="data" class="mb-2">
+                        <h5 class="programas">X-DATA</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;!-- OPCION 1 -->
+                                    &lt;div x-data="{usuario:'isai', clave:123}">
+                                        &lt;h1 x-text="usuario">&lt;/h1>
+                                        &lt;h1 x-text="clave">&lt;/h1>
+                                    &lt;/div>
+
+
+                                    &lt;!-- OPCION 2 -->
+                                    &lt;div x-data="main()">
+                                        &lt;h1 x-text="usuario">&lt;/h1>
+                                    &lt;/div>
+                                
+                                    &lt;script>
+                                        function main() {
+                                            return {
+                                                usuario: "isai"
+                                            }
+                                        }
+                                    &lt;/script>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-INIT -->
+                    <section id="init" class="mb-2">
+                        <h5 class="programas">X-INIT</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    La x-init directiva le permitirá ejecutar código javascript cuando un componente esté listo e inicializado.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;div x-data="main()" x-init="des()">
+                                        &lt;h1 x-text="cuenta">&lt;/h1>
+                                    &lt;/div>
+                                
+                                    &lt;script>
+                                        function main() {
+                                            return {
+                                                cuenta: 60,
+                                                des: function () {
+                                                    setInterval(() => {
+                                                        this.cuenta--
+                                                    }, 500);
+                                                }
+                                            }
+                                        }
+                                    &lt;/script>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-TEXT -->
+                    <section id="text" class="mb-2">
+                        <h5 class="programas">X-TEXT</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">                    
+                                    &lt;div x-data="{usuario:'isai'}">
+                                        &lt;h1 x-text="usuario">&lt;/h1>
+                                    &lt;/div>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-HTML -->
+                    <section id="html" class="mb-2">
+                        <h5 class="programas">X-HTML</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">                    
+                                    &lt;div x-data="{code:'&lt;p>hello world&lt;/p>'}">
+                                        &lt;h1 x-html="code">&lt;/h1>
+                                    &lt;/div>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-SHOW -->
+                    <section id="show" class="mb-2">
+                        <h5 class="programas">X-SHOW</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-BIND -->
+                    <section id="bind" class="mb-2">
+                        <h5 class="programas">X-BIND</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-MODEL -->
+                    <section id="model" class="mb-2">
+                        <h5 class="programas">X-MODEL</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-ON - @ -->
+                    <section id="on" class="mb-2">
+                        <h5 class="programas">X-ON - @</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-IF -->
+                    <section id="if" class="mb-2">
+                        <h5 class="programas">X-IF</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- X-FOR -->
+                    <section id="for" class="mb-2">
+                        <h5 class="programas">X-FOR</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+
+
+
+
+
+
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+
+</body>
+
+</html>
