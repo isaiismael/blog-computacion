@@ -311,6 +311,8 @@
                                     </li>
                                     <li><a href="#return" class="class-items d-block" class="p-1">Return</a></li>
                                     <li><a href="#ajax" class="class-items d-block" class="p-1">Ajax en laravel</a></li>
+                                    <li><a href="#ajax2" class="class-items d-block" class="p-1">Ajax en laravel PARTE
+                                            2</a></li>
                                     <li><a href="#imagenBD" class="class-items d-block" class="p-1">Insertar IMG a la
                                             BD</a>
                                     </li>
@@ -1865,6 +1867,73 @@
                         </section>
                     </section>
 
+                    <!-- AJAX EN LARAVEL PARTE 2 -->
+                    <section id="ajax2" class="mb-2">
+                        <h5 class="programas">AJAX EN LARAVEL PARTE 2</h5>
+                        <section class="px-1">
+                            <pre rel="PHP">
+                                <code class="language-markup line-numbers">
+                                    EN EL APP
+                                    &lt!--&lt;meta name="csrf-token" content="{{ csrf_token() }}">-->
+                    
+                                    &lt;script>
+                                        function vender(){
+                                            let cliente=document.getElementById("cliente").value;
+                                            let id=document.getElementById("id").value;
+                                            let total=document.getElementById("pagoTotal").innerHTML;
+                                    
+                                            let tr2=document.querySelectorAll(".tr2")
+                                            let datos=[];
+                                            tr2.forEach(function(el,index){
+                                                datos.push(
+                                                    {
+                                                        "cliente":cliente,
+                                                        "usuario":id,
+                                                        "producto":el.children[0].children[0].value,
+                                                        "precio":el.children[1].children[0].value,
+                                                        "cantidad":el.children[2].children[0].value,
+                                                        "subtotal":el.children[3].children[0].value,
+                                                        "total":total
+                                                    }
+                                                )
+                                            });
+                                            
+                                            console.log(datos)
+                                            
+                                            
+                                            var ruta = "{{ url('registrar-salida') }}";
+                                            $.ajax({
+                                                url: ruta,
+                                                type: "post",
+                                                data:{valores : JSON.stringify(datos)},
+                                                headers: {
+                                                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                                },
+                                                success: function(data) {},
+                                                error: function(data) {}
+                                            })
+                                        }
+                                    &lt;/script>
+                                </code>
+                            </pre>
+                            <pre rel="PHP">
+                                <code class="language-php line-numbers">
+                                    EN LA RUTA
+                                    Route::post("/registrar-salida", [SalidaController::class, "registrarVenta"]);
+
+                                    EN EL CONTROLADOR
+                                    public function registrarVenta(Request $request)
+                                    {
+                                        $valores = $request->valores;
+                                        $valores = json_decode($valores);
+
+                                        return response()->json(['dato2' => $valores, 200]);
+                                    }
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
                     <!-- enviar imagen a la BD desde un formulario -->
                     <section id="imagenBD" class="mb-2">
                         <h5 class="programas">ENVIAR IMAGEN A LA BD DESDE UN FORMULARIO</h5>
@@ -2018,7 +2087,8 @@
                             <ol class="pl-4">
                                 <li class="p-1"><span class="def">Crear xampp en acceso directo</span>
                                 </li>
-                                <li class="p-1"><span class="def">Copiar ese acceso directo en "C:\ ProgramData\ Microsoft\ Windows\ Start Menu\ Programs"</span>
+                                <li class="p-1"><span class="def">Copiar ese acceso directo en "C:\ ProgramData\
+                                        Microsoft\ Windows\ Start Menu\ Programs"</span>
                                 </li>
                                 <li class="p-1"><span class="def">Ejecutar como admin. el acceso directo</span>
                                 </li>
@@ -2029,7 +2099,8 @@
                             </ol>
                             <ol class="pl-4">
                                 <li class="p-1"><span class="def">Copiar ese acceso directo en "
-                                        C:\Users\ I3\ AppData\ Roaming\ Microsoft\ Windows\ Start Menu\ Programs\ Startup
+                                        C:\Users\ I3\ AppData\ Roaming\ Microsoft\ Windows\ Start Menu\ Programs\
+                                        Startup
                                         "</span>
                                 </li>
                                 <li class="p-1"><span class="def">Listo</span>
