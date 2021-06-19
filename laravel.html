@@ -1372,6 +1372,31 @@
                                 </code>
                             </pre>
                         </section>
+                        <section>
+                            <div class="text">
+                                <span class="def">MOSTRANDO DATOS DESDE CONTROLADOR</span>
+                            </div>
+                            <pre rel="HTML">
+                                <code class="language-php line-numbers">
+                                    &lt;?php
+                                    //EN EL CONTROLADOR 
+                                    $venta=DB::select("");
+                                    $data=[0,0,0,0,0,0,0,0,0,0,0,0];//meses
+                                    foreach ($venta as $key => $value) {
+                                        $data[$value->fechaN-1]=$value->tot;//guardando los datos en cada mes correspondiente
+                                    }
+                                    View::share("datas", $data);//enviando los datos a la vista(GRAFICA)
+
+                                    //DECODIFICANDO EL JSON QUE VIENE DESDE EL CONTROLADOR
+                                    let datas = &lt;?php echo json_encode($datas); ?>
+
+                                    //EN LA VISTA-GRAFICA 
+                                    const datosVentas2020 = {
+                                        data: datas,
+                                    };
+                                </code>
+                            </pre>
+                        </section>
                         <section class="px-1">
                             <div class="texto">
                                 <span class="def"><b>GRAFICO DE LINEAS</b></span>
