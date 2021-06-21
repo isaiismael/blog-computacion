@@ -1316,10 +1316,10 @@
                                 <span>IR A config/database.php</span><br>
                             </div>
                             <pre rel="CMD">
-                                    <code class="language-php line-numbers">
-                                        strict=>false //LINEA 59
-                                    </code>
-                                </pre>
+                                <code class="language-php line-numbers">
+                                    strict=>false //LINEA 59
+                                </code>
+                            </pre>
                         </section>
                     </section>
 
@@ -1359,6 +1359,15 @@
                     <!-- GENERAR GRÁFICOS -->
                     <section id="chart" class="mb-2">
                         <h5 class="programas">GENERAR GRÁFICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span>OJO</span>
+                            </div>
+                            <ol class="pl-4">
+                                <li class="p-1"><span class="def">Los saltos de linea y comentarios en el script de
+                                        <b>Chart js</b> es muy importante</span></li>
+                            </ol>
+                        </section>
                         <section class="px-1">
                             <pre rel="CDN">
                                 <code class="language-markup line-numbers">
@@ -1386,6 +1395,17 @@
                                         $data[$value->fechaN-1]=$value->tot;//guardando los datos en cada mes correspondiente
                                     }
                                     View::share("datas", $data);//enviando los datos a la vista(GRAFICA)
+
+                                    //EN EL CONTROLADOR OPCION 2
+                                    $data = [];
+                                    $data2 = [];
+                                    foreach ($sql4 as $key => $value) {
+                                        array_push($data, $value->nombre);
+                                        array_push($data2, $value->tot);
+                                    }
+                                    return view("vistas/reportes_ventas/hoy", compact("sql"))
+                                    ->with("data", $data)
+                                    ->with("data2", $data2);
 
                                     //DECODIFICANDO EL JSON QUE VIENE DESDE EL CONTROLADOR
                                     let datas = &lt;?php echo json_encode($datas); ?>
