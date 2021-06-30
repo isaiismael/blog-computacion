@@ -339,6 +339,12 @@
                     .parrafo::-webkit-scrollbar-thumb:hover {
                         background: rgb(1, 70, 97,0.7);
                     }
+
+                    /* Evitar que un elemento subyacente se desplace */
+                    .menu-ul {
+                        overflow: auto;
+                        overscroll-behavior: contain; /* none auto */
+                    }
                 </code>
             </pre>
                         </section>

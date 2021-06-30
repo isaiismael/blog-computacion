@@ -162,6 +162,8 @@ li:hover > ul.slide {
         display: block;
         height: calc(100vh - 70px);
         bottom: 0;
+        overflow: auto;
+        overscroll-behavior: contain;
     }
     /* ::-webkit-scrollbar {
         width: 7px;

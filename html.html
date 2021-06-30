@@ -168,8 +168,11 @@
                                 <ol class="d-flex flex-column">
                                     <li><a href="#crear-proyecto" class="class-items d-block" class="p-1">Qué es
                                             Html</a></li>
+                                    <li><a href="#meta" class="class-items d-block" class="p-1">Metadatos</a></li>
                                     <li><a href="#etiquetas" class="class-items d-block" class="p-1">Etiquetas
                                             avanzadas</a></li>
+                                    <li><a href="#more" class="class-items d-block" class="p-1">Etiquetas mas
+                                            usadas</a></li>
                                     <li><a href="#atributos" class="class-items d-block" class="p-1">Atributos
                                             avanzados</a></li>
                                     <li><a href="#pdf" class="class-items d-block" class="p-1">Ver PDF en html</a></li>
@@ -267,6 +270,35 @@
                         </section>
                     </section>
 
+                    <!-- METADATOS -->
+                    <section id="meta" class="mb-2">
+                        <h5 class="programas">METADATOS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;!DOCTYPE html>
+                                    &lt;!-- Especifica el idioma -->
+                                    &lt;html lang="es">
+                                    &lt;head>
+                                    &lt;!-- Especifica los caracteres especiales -->
+                                        &lt;meta charset="UTF-8">
+                                    &lt;!-- Especifica la compatibilidad con IE ultima version -->
+                                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                    &lt;!-- Especifica la escala de visualizacion en pantallas grandes y pequeñas -->
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    &lt;!-- Permite poner un favicon(icono pequeño en la pestaña del navegador) -->
+                                        &lt;link rel="shortcut icon" href="icon/img-96.png" type="image/x-icon">
+                                        &lt;title>Document&lt;/title>
+                                    &lt;/head>
+                                    &lt;body>
+
+                                    &lt;/body>
+                                    &lt;/html>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
                     <!-- ETIQUETAS AVANZADAS -->
                     <section id="etiquetas" class="mb-2">
                         <h5 class="programas">ETIQUETAS AVANZADAS</h5>
@@ -287,6 +319,74 @@
                                     &lt;!-- ENLACE DE DESCARGA -->
                                     &lt;a href="CV/Vitae.pdf" download="nombre">Descargar&lt;/a>
 
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- ETIQUETAS MAS USADAS -->
+                    <section id="more" class="mb-2">
+                        <h5 class="programas">ETIQUETAS MAS USADAS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;h1>titulo principal&lt;/h1>
+                                    &lt;h2>titulo&lt;/h2>
+                                    &lt;h3>titulo&lt;/h3>
+                                    &lt;h4>titulo&lt;/h4>
+                                    &lt;h5>titulo&lt;/h5>
+                                    &lt;h6>titulo&lt;/h6>
+
+
+                                    &lt;header>Determina encabezados y pueden estar ubicados en diferentes partes de la pagina&lt;/header>
+
+
+                                    &lt;nav>Determina o engloba un grupo de codigos para un menu de navegación&lt;/nav>
+
+
+                                    &lt;ol>
+                                        &lt;li>Listas ordenadas&lt;/li>
+                                    &lt;/ol>
+                                    &lt;ul>
+                                        &lt;li>Listas desordenadas&lt;/li>
+                                    &lt;/ul>
+
+
+                                    &lt;article>
+                                        &lt;h2>Siempre va tener su titulo&lt;/h2>
+                                        &lt;p>
+                                            Especifica contenido independiente y autónomo.
+                                            Un artículo debe tener sentido por sí mismo.
+
+                                            Su finalidad es almacenar contenido que podría estar solo.
+                                        &lt;/p>
+                                    &lt;/article>
+
+
+                                    &lt;section>
+                                        &lt;h2>titulo&lt;/h2>
+                                        &lt;p>
+                                            Agrupa contenido que esta relacionado
+
+                                            Contiene informacion dependientes.
+                                        &lt;/p>
+                                    &lt;/section>
+
+
+                                    &lt;div>
+                                        Sirve para crear secciones o agrupar contenidos
+                                    &lt;/div>
+
+
+                                    &lt;aside>
+                                        Contiene informacion que se vincula con la informacion principal,
+                                        pero que no es parte de esa informacion
+                                    &lt;/aside>
+
+                                    
+                                    &lt;footer>
+                                        Representa un pie de pagina en nuestro contenido de seccion mas cercano
+                                    &lt;/footer>
                                 </code>
                             </pre>
                         </section>

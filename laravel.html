@@ -285,6 +285,9 @@
                                             vistas</a></li>
                                     <li><a href="#login" class="class-items d-block" class="p-1">Personalizar LOGIN</a>
                                     </li>
+                                    <li><a href="#error" class="class-items d-block" class="p-1">ERROR Acceso denegado
+                                            'forge'</a>
+                                    </li>
                                     <li><a href="#redireccion-login" class="class-items d-block"
                                             class="p-1">Personalizar redireccion LOGIN</a>
                                     </li>
@@ -1318,6 +1321,52 @@
                             <pre rel="CMD">
                                 <code class="language-php line-numbers">
                                     strict=>false //LINEA 59
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- ERROR acceso denegado 'forge' -->
+                    <section id="error" class="mb-2">
+                        <h5 class="programas">ERROR acceso denegado 'forge'</h5>
+                        <section class="px-1">
+                            <div class="texto">
+                                <span class="def">
+                                    Asegúrese de que en config/database.php su nombre de conexión predeterminado
+                                    sea el mismo que en su .env.
+                                </span>
+                            </div>
+                            <pre rel=".ENV">
+                                <code class="language-php line-numbers">
+                                    DB_CONNECTION=mysql
+                                    DB_HOST=127.0.0.1
+                                    DB_PORT=3306
+                                    DB_DATABASE=sisventa
+                                    DB_USERNAME=root
+                                    DB_PASSWORD=
+                                </code>
+                            </pre>
+                            <pre rel="DATABASE.PHP">
+                                <code class="language-php line-numbers">
+                                    'mysql' => [
+                                        'driver' => 'mysql',
+                                        'url' => env('DATABASE_URL'),
+                                        'host' => env('DB_HOST', '127.0.0.1'),
+                                        'port' => env('DB_PORT', '3306'),
+                                        'database' => env('DB_DATABASE', 'sisventa'),
+                                        'username' => env('DB_USERNAME', 'root'),
+                                        'password' => env('DB_PASSWORD', ''),
+                                        'unix_socket' => env('DB_SOCKET', ''),
+                                        'charset' => 'utf8mb4',
+                                        'collation' => 'utf8mb4_unicode_ci',
+                                        'prefix' => '',
+                                        'prefix_indexes' => true,
+                                        'strict' => false,
+                                        'engine' => null,
+                                        'options' => extension_loaded('pdo_mysql') ? array_filter([
+                                            PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+                                        ]) : [],
+                                    ],
                                 </code>
                             </pre>
                         </section>
