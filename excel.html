@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE EXCEL</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Funciones<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#teclas" class="class-items d-block" class="p-1">Teclas más usadas</a>
+                                    </li>
+                                    <li><a href="#vue-cli" class="class-items d-block" class="p-1">Qué son las
+                                            funciones</a></li>
+                                    <li><a href="#vue-cli" class="class-items d-block" class="p-1">Funciones más
+                                            usadas</a></li>
+                                    <li><a href="#comandos" class="class-items d-block" class="p-1">Comandos útiles</a>
+                                    </li>
+                                    <li><a href="#sintaxis-script" class="class-items d-block" class="p-1">Funcion
+                                            SI</a></li>
+                                    <li><a href="#model" class="class-items d-block" class="p-1">Función SI (Y-O)</a>
+                                    </li>
+                                    <li><a href="#text" class="class-items d-block" class="p-1">Función SI.CONJUNTO</a>
+                                    </li>
+                                    <li><a href="#if" class="class-items d-block" class="p-1">Función SI.ERROR</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Otros trabajos<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#vue-cli" class="class-items d-block" class="p-1">Como inmovilizar
+                                            paneles</a></li>
+                                    <li><a href="#sintaxis" class="class-items d-block" class="p-1">Bingo en excel</a>
+                                    </li>
+                                    <li><a href="#sintaxis-script" class="class-items d-block" class="p-1">Sopa de
+                                            letras</a></li>
+                                    <li><a href="#model" class="class-items d-block" class="p-1">Diagrama de Gantt</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://www.microsoft.com/es-es/microsoft-365/excel">Microsoft
+                                            Excel</a>
+                                        <span>
+                                            Es un programa desarrollado por la compañia MICROSOFT y tambien es
+                                            denominado como "hoja de
+                                            calculo". Este programa forma parte de la SUIT de ofimatica junto con otros
+                                            programas como WORD,
+                                            POWER POINT, ETC.
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a target="_blank"
+                                        href="https://www.microsoft.com/es-es/microsoft-365/excel">Excel</a> Excel es un
+                                    programa informático de hojas de cálculo electrónicas creado por la empresa
+                                    Microsoft.
+                                    El nombre Excel viene de la palabra en inglés que se refiere a algo o alguien que
+                                    "se destaca entre los
+                                    demás” o “es mejor que los otros”.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <img loading="lazy" class="container-fluid" src="public/cursos/excel/partes.png" alt="">
+                            </div>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">FUNCIONES</button>
+                    <!-- TECLAS MAS USADAS -->
+                    <section id="teclas" class="mb-2">
+                        <h5 class="programas">TECLAS MAS USADAS</h5>
+                        <section>
+                            <div class="texto">
+                                <table class="table table-sm table-primary table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>TECLADO</td>
+                                            <td>FUNCIÓN</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CTRL + 0</td>
+                                            <td>OCULTAR COLUMNA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + SHIFT + 9</td>
+                                            <td>MOSTRAR COLUMNA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + 9</td>
+                                            <td>OCULTAR FILA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + SHIFT + 8</td>
+                                            <td>MOSTRAR FILA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>F12</td>
+                                            <td>GUARDAR COMO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + A</td>
+                                            <td>ABRIR DOCUMENTO(LIBRO)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + U</td>
+                                            <td>NUEVO DOCUMENTO(LIBRO)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SHIFT + F11</td>
+                                            <td>NUEVA HOJA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + B</td>
+                                            <td>BUSCAR Y REEMPLAZAR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ALT + SHIFT + 0</td>
+                                            <td>SUMAR()</td>
+                                        </tr>
+                                        <tr>
+                                            <td>F4</td>
+                                            <td>REFERENCIAS [R-A-M]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PUNTO Y COMA(;)</td>
+                                            <td>INSERTAR FECHA ACTUAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + SHIFT + .</td>
+                                            <td>INSERTAR HORA ACTUAL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + SHIFT + L</td>
+                                            <td>INSERTAR/OCULTAR FILTRO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CTRL + ESPACIO</td>
+                                            <td>SELECCIONAR TODA LA COLUMNA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SHIFT + ESPACIO</td>
+                                            <td>SELECCIONAR TODA LA FILA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- QUE SON LAS FUNCIONES -->
+                    <section id="que-es" class="mb-2">
+                        <h5 class="programas">QUE SON LAS FORMULAS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Una función es una fórmula predefinida que realiza los cálculos utilizando valores
+                                    específicos en un
+                                    orden particular. Una de las principales ventajas es que ahorran tiempo porque ya no
+                                    es necesario que
+                                    las escribas tú mismo.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- FUNCIONES MÁS USADAS -->
+                    <section id="que-es" class="mb-2">
+                        <h5 class="programas">FUNCIONES MÁS USADAS</h5>
+                        <section>
+                            <div class="texto">
+                                <table class="table table-sm table-primary table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>FUNCIONES Y FORMULAS</td>
+                                            <td>ACCION</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SUMA</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MIN</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MIN.SI.CONJUNTO</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAX</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>MAX.SI.CONJUNTO</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROMEDIO</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROMEDIO.SI</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PRODUCTO</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SUMAR.SI</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SUMAR.SI.CONJUNTO</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SUBTOTALES(num_funcion;ref)</td>
+                                            <td>Se utiliza para sumar segun los filtros</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CONTAR</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CONTAR.SI</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CONTAR.SI.CONJUNTO</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CONTAR.BLANCO(rango)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CONCATENAR</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SIFECHA(inicial;final;"D - M - Y")</td>
+                                            <td>RESTAR FECHAS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FECHA.MES(inicial;-2)</td>
+                                            <td>RESTAR O SUMAR MESES(en el ejemplo (F-2)o(F+2) meses)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TEXTO(fecha;formato)</td>
+                                            <td>EXTRAER D-M-A formatos["dddd mmmm aaaa"]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DIAS.LAB.INTL(inicial;final;finSemana)</td>
+                                            <td>CONTAR DIAS LABORABLES [=DIAS.LAB.INTL(D4;E4;1)]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DIAS.LAB.INTL(inicial;final;finSemana;rango de fechas feriado)</td>
+                                            <td>CONTAR DIAS LABORABLES [=DIAS.LAB.INTL(D4;E4;1;B4:B10)]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HOY()</td>
+                                            <td>FECHA ACTUAL(se actualizar cada vez que abre el documento)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AHORA()</td>
+                                            <td>FECHA Y HORA ACTUAL(se actualizar cada vez que abre el documento)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>DIA() - MES() - AÑO()</td>
+                                            <td>Extrae el [dia-mes-año] en una fecha</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IZQUIERDA() - DERECHA()</td>
+                                            <td>Extrae caracteres de un texto (texto;numCaracterExtraer)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LARGO()</td>
+                                            <td>Devuelve el numero total de caracteres de un texto</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SI(con;V;F)</td>
+                                            <td>=SI(B13&lt;10;"muy bajo";SI(B13>10;"bueno"))</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SI.CONJUNTO(con;V;con;V...)</td>
+                                            <td>=SI.CONJUNTO(B13>17;"MAYOR DE EDAD";B13&lt;=17;"MENOR DE EDAD")</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SI.ERROR(valor;error)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SI(Y(con;con;...))</td>
+                                            <td>=SI(Y(F3>10;G3&lt;8);"aprobado";"Inhabilitado")</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SI(O(con;con;...))</td>
+                                            <td>=SI(O(F3>10;G3&lt;8;H3=3);"todo ok")</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BUSCARV</td>
+                                            <td>BUSCA VERTICAL(FILAS)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BUSCARH</td>
+                                            <td>BUSCA HORIZONTAL(COLUMNAS)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- COMANDOS UTILES -->
+                    <section id="comandos" class="mb-2">
+                        <h5 class="programas">COMANDOS UTILES</h5>
+                        <section>
+                            <div class="texto">
+                                <table class="table table-sm table-primary table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>COMANDO</td>
+                                            <td>FUNCIÓN</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2^3</td>
+                                            <td>POTENCIA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>27^(1/3)</td>
+                                            <td>RAIZ CÚBICA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- SINTAXIS -->
+                    <section id="sintaxis" class="mb-2">
+                        <h5 class="programas">SINTAXIS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">                    
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2 mt-2">OTROS
+                        TRABAJOS</button>
+
+
+
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+</body>
+
+</html>

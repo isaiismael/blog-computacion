@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">TRUCOS INFORMATICOS</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Windows 10<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#desactivar-actualizaciones" class="class-items d-block"
+                                            class="p-1">Cómo
+                                            desactivar actualizaciones automáticas</a>
+                                    </li>
+                                    <li><a href="#compartir-internet" class="class-items d-block" class="p-1">Cómo
+                                            compartir
+                                            internet desde PC a Móvil por
+                                            cable</a></li>
+                                    <li><a href="#icono-red" class="class-items d-block" class="p-1">Cómo
+                                            mostrar/ocultar icono de
+                                            RED</a></li>
+                                    <li><a href="#adaptador-ethernet" class="class-items d-block" class="p-1">Cómo
+                                            mostrar/ocultar
+                                            adaptador ETHERNET</a></li>
+                                    <li><a href="#cmd" class="class-items d-block" class="p-1">Cómo bloquear/desbloquear
+                                            CMD</a>
+                                    </li>
+                                    <li><a href="#regedit" class="class-items d-block" class="p-1">Cómo
+                                            bloquear/desbloquear
+                                            REGEDIT</a></li>
+                                    <li><a href="#numero-red" class="class-items d-block" class="p-1">Cómo cambiar
+                                            número de RED</a>
+                                    </li>
+                                    <li><a href="#archivos-impresoras" class="class-items d-block" class="p-1">Cómo
+                                            compartir
+                                            archivos e impresoras en RED</a></li>
+                                    <li><a href="#clave-wifi" class="class-items d-block" class="p-1">Cómo ocultar clave
+                                            de WIFI</a>
+                                    </li>
+                                    <li><a href="#deep-freeze-1" class="class-items d-block" class="p-1">Cómo
+                                            DESINSTALAR DEEP
+                                            FREEZE</a></li>
+                                    <!--i><a href="#deep-freeze-2" class="class-items d-block" class="p-1">Cómo DESINSTALAR DEEP
+                            FREEZE MET 2</a></li> -->
+                                    <li><a href="#icono-escritorio" class="class-items d-block" class="p-1">Cómo
+                                            mostrar/ocultar
+                                            iconos del escritorio</a>
+                                    </li>
+                                    <li><a href="#administrador-tareas" class="class-items d-block" class="p-1">Cómo
+                                            bloquear/desbloquear ADMINISTRADOR DE
+                                            TAREAS</a></li>
+                                    <li><a href="#barra-tareas" class="class-items d-block" class="p-1">Cómo
+                                            mostrar/ocultar BARRA
+                                            DE TAREAS</a></li>
+                                    <li><a href="#instalar-gpedit" class="class-items d-block" class="p-1">Cómo instalar
+                                            GPEDIT.MSC</a></li>
+                                    <li><a href="#activar-win10" class="class-items d-block" class="p-1">Cómo activar
+                                            WIN-10</a>
+                                    </li>
+                                    <li><a href="#activar-office" class="class-items d-block" class="p-1">Cómo activar
+                                            OFFICE</a>
+                                    </li>
+                                    <li><a href="#compartir-archivos-pc-pc" class="class-items d-block" class="p-1">Cómo
+                                            compartir
+                                            archivos en red PC-PC</a></li>
+                                    <li><a href="#borrar-virus" class="class-items d-block" class="p-1">Borrar virus de
+                                            USB</a></li>
+                                    <li><a href="#sin-virus" class="class-items d-block" class="p-1">USB sin virus para
+                                            siempre</a></li>
+                                    <li><a href="#desfragmentar" class="class-items d-block" class="p-1">Desfragmentar
+                                            un disco</a></li>
+
+                                    <li><a href="#restablecer-clave-usuario" class="class-items d-block"
+                                            class="p-1">Cómo
+                                            restablecer contraseña de usuario********</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            XAMPP<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#error-tablas" class="class-items d-block" class="p-1">No quiere abrir
+                                            las
+                                            tablas</a>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2">WINDOWS
+                        10</button>
+                    <!--sactivar-actualizaciones -->
+                    <section id="desactivar-actualizaciones" class="mb-2">
+                        <h5 class="programas">CÓMO DESACTIVAR ACTUALIZACIONES AUTOMÁTICAS</h5>
+                        <section class="desc">
+                            <ol class="">
+                                <li class="p-1">
+                                    <ul>
+                                        <li>Ir a administrador de tareas.</li>
+                                        <li>Ir a servicios.</li>
+                                        <li>Ir a abrir servicios.</li>
+                                        <li>Ir a Windows Update.</li>
+                                        <li>Tipo de Inicio -> DESACTIVADO.</li>
+                                    </ul>
+                                </li>
+                                <li class="p-1">
+                                    <ul>
+                                        <li>Win + R.</li>
+                                        <li>Ejecutar gpedit.msc</li>
+                                        <li>Configuración del equipo.</li>
+                                        <li>Plantillas administrativas.</li>
+                                        <li>Componentes de windows.</li>
+                                        <li>Windows Update.</li>
+                                        <li>Configurar Actualizaciones Automáticas -> DESHABILITADA.</li>
+                                    </ul>
+                                    <hr>
+                                    <ul>
+                                        <li>Win + R.</li>
+                                        <li>Ejecutar gpedit.msc</li>
+                                        <li>Configuración de usuario.</li>
+                                        <li>Plantillas administrativas.</li>
+                                        <li>Sistema.</li>
+                                        <li>Actualizaciones Automaticas de Windows -> DESHABILITADA.</li>
+                                    </ul>
+                                </li>
+                                <li class="p-1">
+                                    <ul>
+                                        <li>Ir a inicio.</li>
+                                        <li>Ir a configuración.</li>
+                                        <li>Actualización y Seguridad</li>
+                                        <li>Windows Update -> Opciones Avanzadas.</li>
+                                        <li>Desativar todas las opciones.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </section>
+                    </section>
+                    <!--mpartir-internet -->
+                    <section id="compartir-internet" class="mb-2">
+                        <h5 class="programas">CÓMO COMPARTIR INTERNET DESDE PC A MÓVIL POR CABLE</h5>
+                        <section class="pl-4">
+                            <ol>
+                                <li class="p-1"><span class="def">Descargar el siguente archivo. <a target="_blank"
+                                            href="https://drive.google.com/drive/folders/1I714ElM7eKghDv-MwT-2_xOzIvuaYUqd?usp=sharing">ARCHIVO</a></span>
+                                </li>
+                                <li class="p-1">
+                                    <ul>
+                                        <li>Ir a configuración en el movil</li>
+                                        <li>Opciones de desarrollador.
+                                            <ul>
+                                                <li>Ajustes</li>
+                                                <li>Acerca del teléfono</li>
+                                                <li>Toque el campo Número de compilación 7 veces. Verá un mensaje a
+                                                    medida que se
+                                                    aproxime a los 7 toques.</li>
+                                                <li>Toque la flecha hacia atrás una vez haya terminado y aparecerá
+                                                    Opciones de
+                                                    desarrollo en Ajustes.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Activar depuración USB.</li>
+                                        <li>Conectar el teléfono a la PC (mediante el cable).</li>
+                                    </ul>
+                                </li>
+                                <li>Extraer gnirehtet y ADB (platform-tools) en la misma carpeta.</li>
+                                <li>Ejecutar el archivo gnirehtet-run.cmd.</li>
+                                <li><a target="_blank"
+                                        href="https://www.tecnoriales.com/2019/07/compartir-internet-de-pc-con-android.html">Consultas</a>
+                                </li>
+                            </ol>
+                        </section>
+                    </section>
+                    <!--strar/ocultar icono de RED -->
+                    <section id="icono-red" class="mb-2">
+                        <h5 class="programas">CÓMO MOSTRAR/OCULTAR ICONO DE RED</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li class="p-1">
+                                    <ul>
+                                        <strong>Método 1</strong>
+                                        <li>Clik derecho en escritorio</li>
+                                        <li>Ir a personalizar.</li>
+                                        <li>Temas -> config de iconos de escritorio.</li>
+                                        <li>Desmarcar red.</li>
+                                    </ul>
+                                </li>
+                                <li class="p-1">
+                                    <ul>
+                                        <strong>Método 2</strong>
+                                        <li>Win + R.</li>
+                                        <li>Ejecutar regedit</li>
+                                        <li>Buscar esta dirección(
+                                            Equipo\ HKEY_CLASSES_ROOT\ CLSID\ {F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\
+                                            ShellFolder ).
+                                        </li>
+                                        <li>Click en attributes</li>
+                                        <li>Activado(b0040064)</li>
+                                        <li>Desactivado(b0940064)</li>
+                                        <li><strong>Para guardar</strong>.</li>
+                                        <li>-> Ir a admin de tareas.</li>
+                                        <li>-> Reiniciar explrador de windows.</li>
+                                        <li><strong>Si en caso no se puede</strong>.</li>
+                                        <li>-> Dar todos los permisos al usuario en "ShellFolder".</li>
+                                    </ul>
+
+                                </li>
+
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--strar/ocultar ADAPTADOR ETHERNET -->
+                    <section id="adaptador-ethernet" class="mb-2">
+                        <h5 class="programas">CÓMO MOSTRAR/OCULTAR ADAPTADOR ETHERNET</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li>Ir a admin de tareas.</li>
+                                <li>Abrir servicios.</li>
+                                <li>Conexiones de red.</li>
+                                <li>Deshabilitado.</li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--OQUEAR CMD -->
+                    <section id="cmd" class="mb-2">
+                        <h5 class="programas">CÓMO BLOQUEAR/DESBLOQUEAR CMD</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li>Win + R</li>
+                                <li>Gpedit.msc</li>
+                                <li>Configuración de usuario</li>
+                                <li>Plantillas administrativas</li>
+                                <li>Menu inicio y barra de tareas</li>
+                                <li>" Quitar el menú ejecutar del menú de inicio "</li>
+                                <li>Deshabilitada</li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--OQUEAR REGEDIT -->
+                    <section id="regedit" class="mb-2">
+                        <h5 class="programas">CÓMO BLOQUEAR/DESBLOQUEAR REGEDIT</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li>Win + R</li>
+                                <li>Gpedit.msc</li>
+                                <li>Configuración de usuario</li>
+                                <li>Plantillas administrativas</li>
+                                <li>Sistema</li>
+                                <li>" impedir el acceso a herramientas de edicion del Registro "</li>
+                                <li>Deshabilitada</li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--MBIAR NUMERO DE RED -->
+                    <section id="numero-red" class="mb-2">
+                        <h5 class="programas">CÓMO CAMBIAR NUMERO DE RED</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li>Win + R</li>
+                                <li>Regedit</li>
+                                <li>
+                                    Entrar a (Equipo\ HKEY_LOCAL_MACHINE\ SOFTWARE\ Microsoft\ WindowsNT\
+                                    CurrentVersion\
+                                    NetworkList\ Profiles)
+                                </li>
+                                <li>Solo debe existir un archivo llamado <strong>Predeterminado</strong></li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--MPARTIR ARCHIVOS-IMPRESORAS EN RED -->
+                    <section id="archivos-impresoras" class="mb-2">
+                        <h5 class="programas">CÓMO COMPARTIR ARCHIVOS-IMPRESORAS EN RED</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li class="p-1">
+                                    <strong>Grupo de trabajo Win10</strong>
+                                    <ul>
+                                        <li>Cambiar el nombre del grupo de trabajo (*- todos los PCs deben tener el
+                                            mismo grupo de trabajo</li>
+                                        <li>También es necesario cambiar el nombre del equipo, para poder diferenciarlos
+                                        </li>
+                                        <li>Cambiar el tipo de red a privado</li>
+                                        <li>Ir a configuracion de uso compartido avanzado-->privado,publico y todas las
+                                            redes</li>
+                                        <li>Activar la deteccion de redes</li>
+                                        <li>Activar el uso compartido de archivos e impresoras</li>
+                                        <li>Realizar todo este procedimiento en todos los otros PCs</li>
+                                    </ul>
+                                </li>
+
+                                <li class="p-1">
+                                    <strong>Ver los PCs conectados en la red</strong>
+                                    <ul>
+                                        <li>Ir a red</li>
+                                        <li>OJO: En la mayoría de los casos existe un problema en la que no se
+                                            pueden visualizar todos los equipos en la red. para ello has los siguientes:
+                                        </li>
+                                        <li>Win + R</li>
+                                        <li>\\NombreDelEquipo</li>
+                                    </ul>
+                                </li>
+
+                                <li class="p-1">
+                                    <strong>Para compartir una carpeta</strong>
+                                    <ul>
+                                        <li>Crear una carpeta para compartir archivos en ella</li>
+                                        <li>Ir a propiedades de la carpeta</li>
+                                        <li>Ir a compartir</li>
+                                        <li>Ir a uso compatido avanzado</li>
+                                        <li>Activar compartir esta carpeta</li>
+                                        <li>Listo aplicar y aceptar</li>
+                                    </ul>
+                                </li>
+
+                                <li class="p-1">
+                                    <strong>Para compartir una impresora</strong>
+                                    <ul>
+                                        <li>para ello es necesario tener todos los drivers de la impresora.</li>
+                                        <li>Ir a panel de control</li>
+                                        <li>Ir a dispositivos e impresoras</li>
+                                        <li>Ir a propiedades de impresora</li>
+                                        <li>Ir a compartir</li>
+                                        <li>Seleccionar compatir esta impresora</li>
+                                        <li>Listo aplicar y aceptar</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--ULTAR CLAVE DE WIFI-->
+                    <section id="clave-wifi" class="mb-2">
+                        <h5 class="programas">CÓMO OCULTAR CLAVE DE WIFI</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li class="p-1">
+                                    <strong>Deshabilitar</strong>
+                                    <ul>
+                                        <li>Win + R</li>
+                                        <li>Regedit</li>
+                                        <li>Entrar a
+                                            (Equipo\ HKEY_LOCAL_MACHINE\ SOFTWARE\ Classes\ AppID\
+                                            {86F80216-5DD6-4F43-953B-35EF40A35AEE})
+                                        </li>
+                                        <li>Click derecho en {86F80216-5DD6-4F43-953B-35EF40A35AEE}</li>
+                                        <li>Click derecho -> permisos</li>
+                                        <li>Opciones avanzadas -> Cambiar -> Opciones avanzadas</li>
+                                        <li>Buscar ahora</li>
+                                        <li>Seleccionar <strong>Administradores</strong></li>
+                                        <li>Marcar reemplazar propietario en subcontenedores y objetos</li>
+                                        <li>Aceptar -> Aplicar -> Aceptar</li>
+                                        <li>Eliminar todos los usuarios <strong>menos el SYSTEM</strong></li>
+                                        <li>Seleccionar system</li>
+                                        <li>Click en control total</li>
+                                        <li>Aplicar -> Aceptar</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Habilitar</strong>
+                                    <ul>
+                                        <li>Click derecho -> permisos</li>
+                                        <li>Agregar</li>
+                                        <li>Opciones avanzadas</li>
+                                        <li>Buscar ahora</li>
+                                        <li>Seleccionar <strong>Todos</strong></li>
+                                        <li>Click en control total</li>
+                                        <li>Aplicar -> Aceptar</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--INSTALAR DEEP-FREEZE-->
+                    <section id="deep-freeze-1" class="mb-2">
+                        <h5 class="programas">CÓMO DESINSTALAR DEEP-FREEZE</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li class="p-1">
+                                    <strong>WINDOWS 10</strong>
+                                    <ul>
+                                        <li>Mantén presionado la tecla shif y reinicar el equipo(ojo sin soltar la tecla
+                                            chif)</li>
+                                        <li>Solucionar problemas</li>
+                                        <li>Opciones avanzadas</li>
+                                        <li>Simbolo del sistema</li>
+                                        <li>Ingresar con tu usuario</li>
+                                        <li>Ingresar a la carpeta dnd se encuentra el deepfreeze</li>
+                                        <li>En mi caso se encuentra en la C</li>
+                                        <li>Para entrar a ello digo( cd C:)</li>
+                                        <li>Para ver si existen directorios digo( dir )</li>
+                                        <li>Para verificar si se encuentra el usuario escribe( cd users -> dir)</li>
+                                        <li>Volvemos a la C escribe ( cd.. )</li>
+                                        <li>Nos dirigimos a ( cd windows\ System32\ drivers )</li>
+                                        <li>Escribe dir</li>
+                                        <li>Ren DeepFrz.sys Deep56.sys</li>
+                                        <li>Copy cdrom.sys DeepFrz.sys</li>
+                                    </ul>
+                                </li>
+                                <li class="p-1">
+                                    <strong>WINDOWS 7</strong>
+                                    <ul>
+                                        <li>Ir a panel de control</li>
+                                        <li>Sistema y seguridad</li>
+                                        <li>Copias de seguridad y restauracion</li>
+                                        <li>Recuperar la configuracion del sistema del equipo</li>
+                                        <li>Métodos avanzados de recuperacion</li>
+                                        <li>Reinstalar windows ->SI ->OMITIR ->REINICIAR</li>
+                                        <li>Escoger el usuario</li>
+                                        <li>Reparacion de inicio</li>
+                                        <li>Ver detalles del problema</li>
+                                        <li>Click en el link del sistem32 (se te abrirá un bloc de notas)...</li>
+                                        <li>Abrir (equipo-d-windows-sistem32-drivers)buscar en todos los archivos</li>
+                                        <li>Buscar cdrom.sys->copiar este archivo y pegar en el mismo lugar.</li>
+                                        <li>Buscar DeepFrz.sys->cortar el nombre y cambiar nombre ->poner cualquier
+                                            nombre (ejemplo
+                                            "dep")</li>
+                                        <li>Al archivo cdrom.sys copia cambiar nombre a (DeepFrz.sys)</li>
+                                        <li>Cerrar la ventana y reiniciar</li>
+                                        <li>Ejecutar el archivo de instalacion y ahora si ya podras desinstalarlo</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--STRAR/OCULTAR ICONOS DE ESCRITORIO -->
+                    <section id="icono-escritorio" class="mb-2">
+                        <h5 class="programas">CÓMO MOSTRAR/OCULTAR ICONOS DE ESCRITORIO</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li>Click derecho en escritorio</li>
+                                <li>Ver</li>
+                                <li>Desactivar mostrar iconos de escritorio</li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--OQUEAR/DESBLOQUEAR ADMIN DE TAREAS -->
+                    <section id="administrador-tareas" class="mb-2">
+                        <h5 class="programas">CÓMO BLOQUEAR/DESBLOQUEAR ADMIN DE TAREAS</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li>Win + r</li>
+                                <li>Gpedit.msc</li>
+                                <li>Configuración de usuario</li>
+                                <li>Plantillas administrativas</li>
+                                <li>Sistema</li>
+                                <li>Opciones de Ctrl+AltSupr</li>
+                                <li>Click en quitar admin de tareas</li>
+                                <li>No configurada</li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--STRAR/OCULTAR BARRA DE TAREAS -->
+                    <section id="barra-tareas" class="mb-2">
+                        <h5 class="programas">CÓMO MOSTRAR/OCULTAR BARRA DE TAREAS</h5>
+                        <section class="pl-4">
+                            <ol class="">
+
+                                <li>Click derecho en escritorio</li>
+                                <li>Personalizar</li>
+                                <li>Barra de tareas</li>
+                                <li>Activar la 2 opción</li>
+
+                            </ol>
+
+                        </section>
+                    </section>
+
+                    <!--STALAR GPEDIT.MSC -->
+                    <section id="instalar-gpedit" class="mb-2">
+                        <h5 class="programas">CÓMO INSTALAR GPEDIT.MSC</h5>
+                        <section class="pl-4">
+                            <ol class="">
+
+                                <li><a href="https://drive.google.com/file/d/1JCW6_s6qKMiaIvwiyIdNr4pc4mrw_AXf/view?usp=sharing"
+                                        target="_blank">Descargar el archivo</a></li>
+                                <li>Ejecutar como administrador</li>
+                                <li>Reiniciar el equipo *</li>
+
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--TIVAR WINDOWS 10 -->
+                    <section id="activar-win10" class="mb-2">
+                        <h5 class="programas">CÓMO ACTIVAR WINDOWS 10</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li class="p-1">
+                                    <strong>ACTIVAR CON PROGRAMA</strong>
+                                    <ul>
+                                        <li>Debes tener conexión a internet</li>
+                                        <li>Desactivar antivirus de win 10. Sino lo va a eliminar el archivo</li>
+                                        <li><a href="https://drive.google.com/file/d/1EapeEOhYjC_fr3yeENKGBkWxBDQvr7BA/view?usp=sharing"
+                                                target="_blank">Descargar el archivo</a></li>
+                                        <li>Ejecutar como administrador</li>
+                                        <li>Reiniciar el equipo *</li>
+                                    </ul>
+                                </li>
+                                <li class="p-1">
+                                    <strong>ACTIVAR POR CMD</strong>
+                                    <ul>
+                                        <li><a href="https://drive.google.com/file/d/1YZ1miKphMVxaxXtBf77xY5Lc71A5Uwj1/view?usp=sharing"
+                                                target="_blank">Descargar keys</a></li>
+                                        <li>Abrir cmd</li>
+                                        <li>slmgr /ipk *****-*****-*****-*****-*****</li>
+                                        <li>slmgr /skms kms.digiboy.ir o kms.msguides.com</li>
+                                        <li>slmgr /ato</li>
+                                        <li>Esperar hasta que salgue el aviso de confirmacion</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--TIVAR MICROSOFT OFFICE -->
+                    <section id="activar-office" class="mb-2">
+                        <h5 class="programas">CÓMO ACTIVAR MICROSOFT OFFICE </h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li><a href="https://drive.google.com/file/d/1SbqroGsEqnRsDZd50m6pnKaXC31hb9SL/view?usp=sharing"
+                                        target="_blank">Descargar el archivo</a></li>
+                                <li>Ejecutar como administrador</li>
+                                <li>Ir a utilidades</li>
+                                <li>Click Office Retail => VL</li>
+                                <li>Click en Activar Office</li>
+                                <li>Reiniciar el equipo *</li>
+                            </ol>
+                        </section>
+                    </section>
+
+                    <!--MO COMPARTIR ARCHIVOS EN RED PC-PC -->
+                    <section id="compartir-archivos-pc-pc" class="mb-2">
+                        <h5 class="programas">COMO COMPARTIR ARCHIVOS EN RED PC-PC</h5>
+                        <section class="pl-4">
+                            <ol class="">
+                                <li class="p-1">
+                                    <strong>PASO 1</strong>
+                                    <ul>
+                                        <li>Cambiar el tipo de red a privado (opcional)</li>
+                                        <li>Panel de control\Redes e Internet\Centro de redes y recursos
+                                            compartidos\Configuración de uso
+                                            compartido avanzado</li>
+                                        <li>Ir a configuracion de uso compartido avanzado-->privado,publico y todas las
+                                            redes</li>
+                                        <li>Activar la deteccion de redes</li>
+                                        <li>Activar el uso compartido de archivos e impresoras</li>
+                                        <li>Realizar todo este procedimiento en todos los otros PCs</li>
+                                    </ul>
+                                </li>
+
+                                <li class="p-1">
+                                    <strong>Ver los pcs conectados en la red</strong>
+                                    <ul>
+                                        <li>Ir a red</li>
+                                        <li>OJO: En la mayoría de los casos existe un problema en la que no se
+                                            pueden visualizar todos los equipos en la red. para ello has los siguientes:
+                                        </li>
+                                        <li>Win + R</li>
+                                        <li>\\NombreDelEquipo</li>
+                                    </ul>
+                                </li>
+
+                                <li class="p-1">
+                                    <strong>Para compartir una carpeta</strong>
+                                    <ul>
+                                        <li>Crear una carpeta para compartir archivos en ella</li>
+                                        <li>Ir a propiedades de la carpeta</li>
+                                        <li>Ir a compartir</li>
+                                        <li>Ir a uso compatido avanzado</li>
+                                        <li>Activar compartir esta carpeta</li>
+                                        <li>Listo aplicar y aceptar</li>
+                                        <li>Verificar los permisos</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--RRRA VIRUS DE USB -->
+                    <section id="borrar-virus" class="mb-2">
+                        <h5 class="programas">BORRRA VIRUS DE USB</h5>
+                        <section class="pl-4">
+                            <ol>
+                                <li class="p-1">
+                                    <b>PASO 1</b>
+                                    <ul>
+                                        <li>Win + R</li>
+                                        <li>cmd</li>
+                                        <li>E:</li>
+                                        <li>del *.lnk</li>
+                                        <li>attrib -s -r -h *.* /s /d /l</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+                        </section>
+                    </section>
+                    <!--B SIN VIRUS PARA SIEMPRE -->
+                    <section id="sin-virus" class="mb-2">
+                        <h5 class="programas">USB SIN VIRUS PARA SIEMPRE</h5>
+                        <section class="pl-4">
+                            <ol>
+                                <li>Formatear el usb en formato NTFS</li>
+                                <li>Crear una carpeta en el USB</li>
+                                <li><b>Click derecho en el USB</b></li>
+                                <li>Propiedades->seguridad</li>
+                                <li>Selecciona usuario todos->editar</li>
+                                <li>Permitir solo</li>
+                                <li>
+                                    <ul>
+                                        <li>Lectura y ejecucion</li>
+                                        <li>Mostrar el contenido de la carpeta</li>
+                                        <li>Lectura</li>
+                                    </ul>
+                                </li>
+                                <li>Aplicar->aceptar</li>
+                                <li><b>Click derecho en la carpeta</b></li>
+                                <li>Propiedades->seguridad</li>
+                                <li>Selecciona usuario todos->editar</li>
+                                <li>Control total</li>
+                                <li>Aplicar->aceptar</li>
+                            </ol>
+
+                        </section>
+                    </section>
+
+                    <!--DESFRAGMENTAR UN DISCO -->
+                    <section id="desfragmentar" class="mb-2">
+                        <h5 class="programas">DESFRAGMENTAR UN DISCO</h5>
+                        <section class="pl-4">
+                            <ol>
+                                <li>
+                                    <b>Opción 1</b>
+                                    <ul>
+                                        <li><span class="def">Descargar el siguente archivo. <a target="_blank"
+                                                    href="https://www.ccleaner.com/defraggler">ARCHIVO</a></span>
+                                        </li>
+                                        <li>Analizar</li>
+                                        <li>Desframentar</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <b>Opción 2</b>
+                                    <ul>
+                                        <li>Abrir explorador de archivos</li>
+                                        <li>Propiedades del disco</li>
+                                        <li>Herramientas -> optimizar</li>
+                                    </ul>
+                                </li>
+                            </ol>
+
+
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px" class="btn btn-primary btn-sm container-fluid mb-2">XAMPP</button>
+
+                    <!-- no QUIERE ABRIR LAS TABLAS -->
+                    <section id="error-tablas" class="mb-2">
+                        <h5 class="programas">NO QUIERE ABRIR LAS TABLAS</h5>
+
+                        <section class="pl-4">
+                            <ol>
+                                <li>
+                                    <b>Opción 1</b>
+                                    <ul>
+                                        <li>Finalizar tarea de mysqld</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Opción 2</b>
+                                    <ul>
+                                        <li>Instala otro xampp en otra ubicacion</li>
+                                        <li>Detener xampp</li>
+                                        <li>Copiar "solo" las carpetas de mysql->data
+                                            del antiguo->al nuevo
+                                        </li>
+                                        <li>Nunca borrar "ibdata1" del antiguo</li>
+                                        <li>Has la prueba. si persiste el error continue :</li>
+                                        <li>Copiar el archivo "ibdata1" del antiguo->al nuevo</li>
+                                    </ul>
+                                </li>
+
+                            </ol>
+                        </section>
+
+                        <section class="pl-4">
+
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+</body>
+
+</html>

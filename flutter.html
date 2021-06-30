@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE FLUTTER</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                    <li><a href="#extensiones" class="class-items d-block" class="p-1">Extensiones
+                                            vsc</a></li>
+                                    <li><a href="#configuracion" class="class-items d-block"
+                                            class="p-1">Configuración</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#tipos-datos" class="class-items d-block" class="p-1">Tipos de
+                                            datos</a></li>
+                                    <li><a href="#casting" class="class-items d-block" class="p-1">Casting</a></li>
+                                    <li><a href="#sintaxis" class="class-items d-block" class="p-1">Sintaxis</a></li>
+                                    <li><a href="#que-es" class="class-items d-block" class="p-1">Qué es un widget</a>
+                                    </li>
+                                    <li><a href="#material-app" class="class-items d-block" class="p-1">Qué es
+                                            MaterialApp</a></li>
+                                    <li><a href="#scaffold" class="class-items d-block" class="p-1">Qué es Scaffold</a>
+                                    </li>
+                                    <li><a href="#stateles" class="class-items d-block" class="p-1">StatelessWidget</a>
+                                    </li>
+                                    <li><a href="#stateful" class="class-items d-block" class="p-1">StatefulWidget</a>
+                                    </li>
+                                    <li><a href="#appbar" class="class-items d-block" class="p-1">Propiedades en
+                                            APPBAR</a></li>
+                                    <li><a href="#body" class="class-items d-block" class="p-1">Propiedades en BODY</a>
+                                    </li>
+                                    <li><a href="#widgets" class="class-items d-block" class="p-1">Widgets</a></li>
+                                    <li><a href="#botones" class="class-items d-block" class="p-1">Botones</a></li>
+                                    <li><a href="#rutas" class="class-items d-block" class="p-1">Routes</a></li>
+                                    <li><a href="#navi" class="class-items d-block" class="p-1">Navigator</a></li>
+                                    <li><a href="#argumentos" class="class-items d-block" class="p-1">Recibir argumentos
+                                            de rutas</a></li>
+                                    <li><a href="#eventos" class="class-items d-block" class="p-1">Eventos o
+                                            GestureDetector</a></li>
+                                    <li><a href="#validar" class="class-items d-block" class="p-1">Validacion de
+                                            formulario</a></li>
+                                    <li><a href="#tipos-teclado" class="class-items d-block" class="p-1">Tipos de
+                                            teclado</a></li>
+                                    <li><a href="#drawer" class="class-items d-block" class="p-1">Drawer completo</a>
+                                    </li>
+                                    <li><a href="#snackbar" class="class-items d-block" class="p-1">Notificacion
+                                            snackbar</a></li>
+                                    <li><a href="#otros" class="class-items d-block" class="p-1">Otros comandos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm text-light container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <!-- <li><a href="#mails" class="class-items d-block" class="p-1">.....</a></li>
+                                    -->
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
+                                        <span>
+                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
+                                            programa por
+                                            que es más ligero y tiene mas opciones a diferencia de otros
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Lógica de programacion</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a target="_blank"
+                                        href="https://flutter.dev/?gclid=Cj0KCQiAmfmABhCHARIsACwPRABmNmyvmtxpzy64Xfsx2P1unB8Xz5XzihDQw_PohA59tCS3vUskVVoaAsVWEALw_wcB&gclsrc=aw.ds">Flutter</a>
+                                    es un kit de herramientas de UI(interfaz de usuario) de google para realizar
+                                    hermosas aplicaciones
+                                    nativamente, para movil, web y escritorio desde una unica base de codigo
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Rapido desarrollo (android-ios)</span></li>
+                                    <li class="p-1"><span>Interface de usuario expresiva y flexible (widget->control
+                                            total)</span></li>
+                                    <li class="p-1"><span>Alto rendimiento</span></li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- EXTENSIONES -->
+                    <section id="extensiones" class="mb-2">
+                        <h5 class="programas">EXTENSIONES vsc</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Flutter</span>
+                                    </li>
+                                    <li class="p-1"><span>flutter widget snippets</span>
+                                    </li>
+                                    <li class="p-1"><span>awesome flutter snippets</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- CONFIGURACION -->
+                    <section id="configuracion" class="mb-2">
+                        <h5 class="programas">CONFIGURACION</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>Paso 1
+                                    <li class="p-1"><span><a target="_blank"
+                                                href="https://flutter.dev/docs/get-started/install/windows">instalar
+                                                SDK</a></span>
+                                    </li>
+                                    <li class="p-1"><span>descomprimir</span>
+                                    </li>
+                                    <li class="p-1"><span>copiar la carpeta flutter en el disco C:</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol>Paso 2
+                                    <li class="p-1"><span>buscar en inicio (variables de entorno)</span>
+                                    </li>
+                                    <li class="p-1"><span>click en variables de entorno</span>
+                                    </li>
+                                    <li class="p-1"><span>editar en PATH</span>
+                                    </li>
+                                    <li class="p-1"><span>agregar la siguiente (C:\flutter\bin)</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol>Paso 3
+                                    <li class="p-1"><span>probar que flutter funcione</span>
+                                    </li>
+                                    <li class="p-1"><span>ejecuta en CMD (flutter doctor)</span>
+                                    </li>
+                                    <li class="p-1"><span>es necesario que ejecutes desde C:users/I3</span>
+                                    </li>
+                                    <li class="p-1"><span>se descargaran algunos packetes</span>
+                                    </li>
+                                    <li class="p-1"><span>ejecuta para LA LICENCIA (flutter doctor
+                                            --android-licenses)</span>
+                                    </li>
+                                    <li class="p-1"><span>reinicia VSC</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol>Paso 4 <a target="_blank" href="https://www.genymotion.com/download/">Instalar
+                                        Genymotion</a>
+                                    <li class="p-1"><span>Instalar VirtualBox</span>
+                                    </li>
+                                    <li class="p-1"><span>Instalar Genymotion</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="texto">
+                                <ol>Nuevo proyecto
+                                    <li class="p-1"><span>(VSC) click en ver</span>
+                                    </li>
+                                    <li class="p-1"><span>paleta de comandos</span>
+                                    </li>
+                                    <li class="p-1"><span>flutter</span>
+                                    </li>
+                                    <li class="p-1"><span>nuevo proyecto</span>
+                                    </li>
+                                    <li class="p-1"><span>select device(para agregar un dispositivo)</span>
+                                    </li>
+                                    <li class="p-1"><span>si aparece un error de gradle -> por favor elija bien el
+                                            EMULADOR</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTERMEDIO</button>
+
+
+                    <!-- TIPOS DE DATOS -->
+                    <section id="tipos-datos" class="mb-2">
+                        <h5 class="programas">TIPOS DE DATOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>int</span></li>
+                                    <li class="p-1"><span>double</span></li>
+                                    <li class="p-1"><span>String</span></li>
+                                    <li class="p-1"><span>bool</span></li>
+                                    <li class="p-1"><span>dynamic</span></li>
+                                    <li class="p-1"><span>List&lt;String> nombres = ["isai", "juan", "pedro", "maria",
+                                            "jose"];</span></li>
+                                    <li class="p-1"><span><b>var</b></span></li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- CASTING -->
+                    <section id="casting" class="mb-2">
+                        <h5 class="programas">CASTING</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>cadena a int</span></li>
+                                    <li class="p-1"><span>cadena para double</span></li>
+                                    <li class="p-1"><span>int a cadena</span></li>
+                                    <li class="p-1"><span>double a cadena</span></li>
+                                </ol>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    // String to int
+                                    var one = int.parse('1');
+                    
+                                    // String to double
+                                    var onePointOne = double.parse('1.1');
+                    
+                                    // int to String
+                                    String twenty = 20.toString();
+                    
+                                    // double to String
+                                    String pi= 3.14316.toStringAsFixed(2);
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- SINTAXIS -->
+                    <section id="sintaxis" class="mb-2">
+                        <h5 class="programas">SINTAXIS</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    //Nos permite trabajar con los diseños de layouts de Material Design
+                                    import 'package:flutter/material.dart';
+                    
+                                    //Es el primer metodo en ejecutarse al correr(ejecutar) la APK
+                                    void main() {
+                                        runApp(MiApp());
+                                    }
+                    
+                                    class MiApp extends StatelessWidget {
+                                        const MiApp({Key key}) : super(key: key);
+                    
+                                        @override
+                                        Widget build(BuildContext context) {
+                                            return MaterialApp(
+                                                title: "app",
+                                                home: Inicio(),
+                                            );
+                                        }
+                                    }
+                    
+                                    class Inicio extends StatefulWidget {
+                                        Inicio({Key key}) : super(key: key);
+                    
+                                        @override
+                                        _InicioState createState() => _InicioState();
+                                    }
+                    
+                                    class _InicioState extends State&lt;Inicio> {
+                                        @override
+                                        Widget build(BuildContext context) {
+                                            return Scaffold(
+                                                appBar: AppBar(
+                                                    title: Text("Menu de navegacion"),
+                                                ),
+                                                body: Center(
+                                                    child: Text("hola mundo"),
+                                                ),
+                                            );
+                                        }
+                                    }
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- QUE ES UN WIDGET -->
+                    <section id="que-es" class="mb-2">
+                        <h5 class="programas">QUE ES UN WIDGET</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Un widget es un elemento de una interfaz gráfica de usuario.</span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    return MaterialApp(
+                                        title: "App",
+                                        home: Inicio(),
+                                    );
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- QUE ES MaterialApp -->
+                    <section id="material-app" class="mb-2">
+                        <h5 class="programas">QUE ES MaterialApp</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">MaterialApp es un widget que nos proporciona un layout orientado a
+                                    Material Design. Para
+                                    utilizarlo, en la llamada al método runApp creamos una nueva instancia y se lo
+                                    pasamos de la siguiente
+                                    forma. El widget MaterialApp tiene como atributos entre otros: title El título de la
+                                    app.</span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    return MaterialApp(
+                                        title: "App",
+                                        home: Inicio(),
+                                    );
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- QUE ES Scaffold -->
+                    <section id="scaffold" class="mb-2">
+                        <h5 class="programas">QUE ES Scaffold</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Es una estructura que nos permite organizar nuestras pantallas.</span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">Es la parte donde se encuentra todo el contenido que se va a mostrar
+                                    en la pantalla. Un
+                                    Scaffold puede contener las siguientes propiedades</span>
+                            </div>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>appBar</span></li>
+                                    <li class="p-1"><span>backgroundColor</span></li>
+                                    <li class="p-1"><span>body</span></li>
+                                    <li class="p-1"><span>bottomNavigationBar</span></li>
+                                    <li class="p-1"><span>drawer</span></li>
+                                    <li class="p-1"><span>endDrawer</span></li>
+                                    <li class="p-1"><span>floatingActionButtom</span></li>
+                                    <li class="p-1"><span>bottomSheet</span></li>
+                                </ol>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    return Scaffold(
+                                        appBar: AppBar(
+                                            title: Text("Sandoval Apk"),
+                                        ),
+                                        body: Text("Hola mundo"),
+                                        drawer: Drawer(),
+                                        endDrawer: Drawer(),
+                                        backgroundColor: Colors.red,
+                                        floatingActionButton: FloatingActionButton(
+                                            child: Icon(Icons.add),
+                                            onPressed: () {},
+                                        ),
+                                    );
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- StatelessWidget -->
+                    <section id="stateles" class="mb-2">
+                        <h5 class="programas">StatelessWidget</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Es un <b>widget sin estado</b> o tambien llamado constante; Es
+                                    considerado de esa forma
+                                    porque todos los contenidos que están dentro NO pueden cambiar su valor en tiempo de
+                                    ejecucion.</span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    class MiApp extends StatelessWidget {
+                                        const MiApp({Key key}) : super(key: key);
+                                      
+                                        @override
+                                        Widget build(BuildContext context) {
+                                          return MaterialApp(
+                                            title: "App",
+                                            home: Inicio(),
+                                          );
+                                        }
+                                    }
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- StatefulWidget -->
+                    <section id="stateful" class="mb-2">
+                        <h5 class="programas">StatefulWidget</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Es un <b>widget con estado</b> es todo lo contrario del
+                                    StatelessWidget. En este caso los
+                                    contenidos que entán dentro SI pueden cambiar de valor en tiempo de
+                                    ejecucion.</span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    class Inicio extends StatefulWidget {
+                                        Inicio({Key key}) : super(key: key);
+                                      
+                                        @override
+                                        _InicioState createState() => _InicioState();
+                                      }
+                                      
+                                      class _InicioState extends State&lt;Inicio> {
+                                        @override
+                                        Widget build(BuildContext context) {
+                                          return Scaffold(
+                                            appBar: AppBar(
+                                              title: Text("Sandoval Apk"),
+                                            ),
+                                            body: Text("Hola mundo"),
+                                          );
+                                        }
+                    
+                                        @override
+                                        void initState() {
+                                            //TODO code here
+                                            super.initState();
+                                        }
+                                        @override
+                                        void dispose() {
+                                            //TODO code here
+                                            super.dispose();
+                                        }
+                    
+                                    }
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- PROPIEDADES EN APPBAR -->
+                    <section id="appbar" class="mb-2">
+                        <h5 class="programas">PROPIEDADES EN APPBAR</h5>
+                        <section>
+                            <section>
+                                <div class="texto">
+                                    <ol>
+                                        <li class="p-1"><span>LEADING</span></li>
+                                        <li class="p-1"><span>TITLE</span></li>
+                                        <li class="p-1"><span>ACCION</span></li>
+                                        <li class="p-1"><span>BACKGROUNDCOLOR</span></li>
+                                        <li class="p-1"><span>ELEVATION</span></li>
+                                        <li class="p-1"><span>SHAPE</span></li>
+                                    </ol>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>TITLE</b> nos permite agregar un titulo</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        title: Text("Sandoval Apk"),
+                                    </code>
+                                </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>ACCION</b> nos permite agregar botones en la parte
+                                        derecha</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        actions: &lt;Widget>[
+                                            IconButton(
+                                              icon: Icon(Icons.add),
+                                              onPressed: () {
+                                                _agregar();
+                                              },
+                                            ),
+                                            IconButton(
+                                              icon: Icon(Icons.remove),
+                                              onPressed: () {
+                                                _quitar();
+                                              },
+                                            ),
+                                          ],
+                                    </code>
+                                </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>BACKGROUNDCOLOR</b> nos permite agregar color de fondo</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        backgroundColor: Colors.red, //color de fondo
+                                    </code>
+                                </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>LEADING</b> agregar boton de volver atras</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        leading: IconButton(
+                                        //boton volver atras
+                                        icon: Icon(
+                                            Icons.arrow_back,
+                                        ),
+                                        onPressed: () {},
+                                        ),
+                                    </code>
+                                </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>ELEVATION</b> nos permite agregar sombre del appBar</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        elevation: 100, //es la sombra
+                                    </code>
+                                </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>SHAPE</b> nos permite agregar bordes redondeados</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(5),
+                                        ),
+                                    </code>
+                                </pre>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- PROPIEDADES EN BODY -->
+                    <section id="body" class="mb-2">
+                        <h5 class="programas">PROPIEDADES EN BODY</h5>
+                        <section>
+                            <section>
+                                <div class="texto">
+                                    <ol>
+                                        <li class="p-1"><span>ICON</span></li>
+                                        <li class="p-1"><span>TEXT</span></li>
+                                    </ol>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>ICON</b> nos permite agregar iconos</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        body: Icon(
+                                            Icons.close,
+                                            size: 50.0,
+                                            //color: Colors.red,
+                                            //color: Theme.of(context).primaryColor,
+                                            color: Color.fromRGBO(0, 0, 255, 1),
+                                        ),
+                                    </code>
+                                </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def"><b>TEXT</b> nos permite agregar textos</span>
+                                </div>
+                                <pre rel="DART">
+                                    <code class="language-dart line-numbers">
+                                        body: Text(
+                                            "Hola Mundo",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                color: Colors.green,
+                                                backgroundColor: Colors.black,
+                                                fontSize: 25.0,
+                                                fontStyle: FontStyle.italic,
+                                                decoration: TextDecoration.underline,
+                                                fontWeight: FontWeight.bold,
+                                            ),
+                                        ),
+                                    </code>
+                                </pre>
+                            </section>
+                        </section>
+                    </section>
+
+
+
+                    <!-- WIDGETS -->
+                    <section id="widgets" class="mb-2">
+                        <h5 class="programas">WIDGETS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><b>LIST VIEW</b></span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    List&lt;String> nombres = ["isai", "juan", "pedro", "maria", "jose"];
+                    
+                                    body: ListView.builder(
+                                        itemCount: nombres.length,
+                                        itemBuilder: (BuildContext context, int index) {
+                                            return Card(
+                                                child: Text(
+                                                nombres[index],
+                                                ),
+                                            );
+                                        },
+                                    ),
+                                </code>
+                            </pre>
+
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><b>IMAGE</b></span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    assets:
+                                    - assets/img1.png
+                                    // en pubspec.yaml
+                    
+                                    Image.network("https://sm.ign.com/t/ign_latam/screenshot/default/naruto4_st6s.1280.jpg"),
+                                    Image.asset("./assets/img1.png"),
+                                </code>
+                            </pre>
+
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><b>TEXT FIELD</b></span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    //  CAMPO TIPO NUMERICO
+                                    body: TextField(
+                                        keyboardType: TextInputType.number,
+                                        style: Theme.of(context).textTheme.headline6, //tamaño de texto
+                                        decoration: InputDecoration(
+                                            icon: Icon(Icons.account_circle, size: 20),
+                                            labelText: "Ingrese su numero",
+                                            border: const OutlineInputBorder(
+                                                borderRadius: BorderRadius.all(
+                                                Radius.circular(5.0),
+                                            )),
+                                        ),
+                                    ),
+                    
+                    
+                    
+                                    //  CAMPO TIPO TEXT-AREA
+                                    body: TextField(
+                                        maxLines: 10,
+                                        textCapitalization: TextCapitalization.sentences,
+                                        decoration: InputDecoration(
+                                            counterText: "palabras",
+                                            labelText: "Comentarios",
+                                            hintText: "Este es el placeholder",
+                                            border: const OutlineInputBorder(),
+                                        ),
+                                    ),
+                    
+                    
+                                    //  CAMPO TIPO PASSWORD
+                                   
+                                    class _InicioState extends State&lt;Inicio> {
+                                        @override
+                                        bool verClave = false;
+                                        Widget build(BuildContext context) {
+                                        return Scaffold(
+                                            appBar: AppBar(
+                                            title: Text("Menu de navegacion"),
+                                            ),
+                                            body: TextField(
+                                            obscureText: !this.verClave,
+                                            decoration: InputDecoration(
+                                                labelText: "Contraseña",
+                                                prefixIcon: const Icon(
+                                                Icons.security,
+                                                ),
+                                                suffixIcon: IconButton(
+                                                icon: Icon(
+                                                    Icons.remove_red_eye,
+                                                    color: this.verClave ? Colors.blue : Colors.grey,
+                                                ),
+                                                onPressed: () {
+                                                    setState(() {
+                                                    this.verClave = !this.verClave;
+                                                    });
+                                                },
+                                                ),
+                                                hintText: "Este es el placeholder",
+                                                border: const OutlineInputBorder(),
+                                            ),
+                                            ),
+                                        );
+                                        }
+                                    }
+                                      
+                    
+                                </code>
+                            </pre>
+
+                        </section>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><b>TEXT FORM FIELD</b></span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    // NOMBRE DE USUARIO
+                                    body: TextFormField(
+                                        textCapitalization: TextCapitalization.words,
+                                        decoration: const InputDecoration(
+                                            border: UnderlineInputBorder(),
+                                            filled: true,
+                                            icon: Icon(Icons.person),
+                                            hintText: 'Cual es tu nombre',
+                                            labelText: 'Nombre *',
+                                        ),
+                                    ),
+                    
+                    
+                                    // NUMERO DE TELEFONO
+                                    body: TextFormField(
+                                        decoration: const InputDecoration(
+                                            border: UnderlineInputBorder(),
+                                            filled: true,
+                                            icon: Icon(Icons.phone),
+                                            hintText: 'Cual es tu numero',
+                                            labelText: 'Telefono *',
+                                            prefixText: '+51',
+                                        ),
+                                    ),
+                    
+                    
+                                    // CORREO
+                                    body: TextFormField(
+                                        decoration: const InputDecoration(
+                                            border: UnderlineInputBorder(),
+                                            filled: true,
+                                            icon: Icon(Icons.email),
+                                            hintText: 'Cual es tu correo e',
+                                            labelText: 'Correo',
+                                        ),
+                                    ),
+                    
+                    
+                                    // TEXT-AREA
+                                    body: TextFormField(
+                                        decoration: const InputDecoration(
+                                            border: OutlineInputBorder(),
+                                            hintText: 'Cuentame acerca de ti',
+                                            helperText: 'Ingrese una breve historia',
+                                            labelText: 'Historia',
+                                        ),
+                                        maxLines: 3,
+                                    ),
+                    
+                    
+                                    // MONEDA
+                                    body: TextFormField(
+                                        keyboardType: TextInputType.number,
+                                        decoration: const InputDecoration(
+                                            border: OutlineInputBorder(),
+                                            labelText: 'Salario',
+                                            prefixText: '\S/.',
+                                            suffixText: 'SOLES',
+                                            suffixStyle: TextStyle(color: Colors.green),
+                                        ),
+                                    ),
+                    
+                    
+                                    // CONTRASEÑA
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- BOTONES -->
+                    <section id="botones" class="mb-2">
+                        <h5 class="programas">BOTONES</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    RaisedButton(
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(20),
+                                        ),
+                                        color: Colors.green,
+                                        textColor: Colors.white,
+                                        child: Text("presiona"),
+                                        onPressed: () {},
+                                    ),
+                                    FlatButton(
+                                        child: Text("presiona"),
+                                        onPressed: () {},
+                                    ),
+                                    IconButton(
+                                        icon: Icon(Icons.delete),
+                                        onPressed: () {},
+                                    ),
+                                    OutlineButton(
+                                        onPressed: () {},
+                                        child: Text("boton"),
+                                    ),
+                                    FloatingActionButton(
+                                        child: Icon(Icons.add),
+                                        backgroundColor: Colors.red,
+                                        onPressed: () {},
+                                    ),
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- ROUTES -->
+                    <section id="rutas" class="mb-2">
+                        <h5 class="programas">ROUTES</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    //home: Inicio(),
+                                    initialRoute: "/",
+                                    routes: {
+                                        "/":        (BuildContext context) => Inicio(),
+                                        "/pagina2":  (BuildContext context) => Pagina2(),
+                                    },
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- NAVIGATOR -->
+                    <section id="navi" class="mb-2">
+                        <h5 class="programas">NAVIGATOR</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    //primero crea las rutas
+                                    //recibir los argumentos
+                                    onPressed: () {
+                                        //Navigator.of(context).pushNamed("/pagina3");
+                                        Navigator.of(context).pushNamed(
+                                          "/pagina2",
+                                          arguments:
+                                              Pagina2Argumentos(nombre: "isai", apellido: "sandoval"),
+                                        );
+                                    },
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- RECIBIR ARGUMENTOS DE RUTAS -->
+                    <section id="argumentos" class="mb-2">
+                        <h5 class="programas">RECIBIR ARGUMENTOS DE RUTAS</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    class _Pagina2State extends State&lt;Pagina2> {
+                                        @override
+                                        Widget build(BuildContext context) {
+                                          Pagina2Argumentos argumentos = ModalRoute.of(context).settings.arguments;
+                                          return Scaffold(
+                                            appBar: AppBar(),
+                                            body: Center(
+                                              child: Text(argumentos.nombre + " " + argumentos.apellido),
+                                            ),
+                                          );
+                                        }
+                                      }
+                                      
+                                      class Pagina2Argumentos {
+                                        String nombre;
+                                        String apellido;
+                                        Pagina2Argumentos({this.nombre, this.apellido});
+                                      }
+                                      
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- EVENTOS O GestureDetector -->
+                    <section id="eventos" class="mb-2">
+                        <h5 class="programas">EVENTOS O GestureDetector</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Se utiliza para dar acciones cuando el usuario realice cualquier
+                                    cambio.</span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    child: GestureDetector(
+                                        onTap: () {
+                                            print("Diste un click");
+                                        },
+                                        onLongPress: () {
+                                            print("Manteniste presionado");
+                                        },
+                                        child: Text(
+                                            "Hola",
+                                            style: TextStyle(fontSize: 50),
+                                        ),
+                                    ),
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- VALIDACION DE FORMULARIO -->
+                    <section id="validar" class="mb-2">
+                        <h5 class="programas">VALIDACION DE FORMULARIO</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Se utiliza para validar campos de texto.</span>
+                            </div>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    //CREANDO LAS VARIABLES DE RECEPCION
+                                    String txtNombre;
+                                    String txtApellido;
+                                    final formKey = GlobalKey&lt;FormState>();
+                    
+                                    //INICIO DEL FORMULARIO
+                                    Form(
+                                        key: formKey,
+                                        child: Column(
+                                            children: [
+                                                TextFormField(
+                                                    decoration: InputDecoration(labelText: "Nombre"),
+                                                    onSaved: (value) {
+                                                        this.txtNombre = value;
+                                                    },
+                                                    validator: (value) {
+                                                        if (value.isEmpty) {
+                                                            return "Campo vacio";
+                                                        } else {
+                                                            return null;
+                                                        }
+                                                    },
+                                                ),
+                                                TextFormField(
+                                                    decoration: InputDecoration(labelText: "Apellido"),
+                                                    onSaved: (value) {
+                                                        this.txtApellido = value;
+                                                    },
+                                                    validator: (value) {
+                                                        if (value.isEmpty || value.trim() == "") {
+                                                            return "Campo vacio";
+                                                        } else {
+                                                            return null;
+                                                        }
+                                                    },
+                                                ),
+                                            ],
+                                        ),
+                                    ),
+                    
+                                    //GUARDANDO LOS DATOS Y ENVIANDO A LA OTRA PAGINA
+                                    void _showPagina3() {
+                                        if (formKey.currentState.validate()) {
+                                            formKey.currentState.save();
+                                            Navigator.of(context).pushNamed(
+                                                "/pagina3",
+                                                arguments: ArgumentosPagina3(nombre: this.txtNombre, apellido: this.txtApellido),
+                                            );
+                                        }
+                                      }
+                                
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- TIPOS DE TECLADO -->
+                    <section id="tipos-teclado" class="mb-2">
+                        <h5 class="programas">TIPOS DE TECLADO</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    keyboardType: TextInputType.text,
+                                    keyboardType: TextInputType.number,
+                                    keyboardType: TextInputType.phone,
+                                    keyboardType: TextInputType.emailAddress,
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- DRAWER COMPLETO -->
+                    <section id="drawer" class="mb-2">
+                        <h5 class="programas">DRAWER COMPLETO</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    class _InicioState extends State&lt;Inicio> {
+                                        final _scaffKey = GlobalKey&lt;ScaffoldState>();
+                                        @override
+                                        Widget build(BuildContext context) {
+                                          return Scaffold(
+                                            //llave
+                                            key: _scaffKey,                        
+                                            drawer: _getDrawer(context),
+                                            floatingActionButton: FloatingActionButton(
+                                              child: IconButton(
+                                                icon: Icon(Icons.menu),
+                                                onPressed: () {
+                                                  _scaffKey.currentState.openDrawer();
+                                                },
+                                              ),
+                                            ),
+                    
+                                          );
+                                        }
+                                      
+                                        //contenido del drawer
+                                        Widget _getDrawer(BuildContext context) {
+                                          return Drawer(
+                                            child: ListView(
+                                              children: [
+                                                DrawerHeader(
+                                                  decoration: BoxDecoration(color: Colors.black12),
+                                                  child: Row(
+                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                    children: [
+                                                      Image.network(
+                                                          "https://www.logaster.com/blog/wp-content/uploads/2018/05/Canva.png"),
+                                                      Text("Uso de drawer")
+                                                    ],
+                                                  ),
+                                                ),
+                                                ListTile(
+                                                  title: Text("Inicio"),
+                                                  leading: Icon(Icons.home),
+                                                  onTap: () {
+                                                    _showHome(context);
+                                                  },
+                                                )
+                                              ],
+                                            ),
+                                          );
+                                        }
+                                      
+                                        void _showHome(BuildContext context) {
+                                          Navigator.pop(context);
+                                        }
+                                    }                  
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- NOTIFICACION SNACKBAR -->
+                    <section id="snackbar" class="mb-2">
+                        <h5 class="programas">NOTIFICACION SNACKBAR</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    void _mostrarNotificacion() {
+                                        SnackBar snackBar = SnackBar(
+                                            content: Text("Elemento eliinado"),
+                                            backgroundColor: Colors.red[500],
+                                            action: SnackBarAction(
+                                                label: "Cancelar",
+                                                textColor: Colors.white,
+                                                onPressed: () {},
+                                            ),
+                                        );
+                                        _scaffKey.currentState.showSnackBar(snackBar);
+                                    }             
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                    <!-- OTROS COMANDOS -->
+                    <section id="otros" class="mb-2">
+                        <h5 class="programas">OTROS COMANDOS</h5>
+                        <section>
+                            <pre rel="DART">
+                                <code class="language-dart line-numbers">
+                                    //TEXTO SUBRAYADO
+                                    TextStyle(decoration: TextDecoration.underline)
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+</body>
+
+</html>

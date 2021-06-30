@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <header id="header" class="encabezado">
+            <div class="logo-group">
+                <i id="mode" class="fas fa-toggle-on off"></i>
+            </div>
+            <nav class="menu-nav" id="menu-nav">
+
+                <ul class="menu-ul" style="margin-bottom: 0">
+                    <div class="div-cursos">
+                        <h2 class="mis-cursos">Mis Cursos</h2>
+                    </div>
+                    <li class="lista">
+                        <a class="slideContent item" href="#"><i class="fas fa-globe"></i>&nbsp;&nbsp;DESARROLLO
+                            WEB&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <ul class="slide">
+                            <li><a class="slideContent" href="#"><span><i style="color: rgb(0, 143, 43);"
+                                            class="fas fa-code"></i>&nbsp;Back-End&nbsp;<i
+                                            class="fas fa-angle-down"></i></span></a>
+                                <ul class="slide">
+                                    <li>
+                                        <a href="php.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/php.svg" alt="">&nbsp;Php</span></a>
+                                        <!--<router-link to="/cursos/php"><span><img style="width: 15px;margin-bottom: 0px;"
+                                    src="public/principal/img/php.svg" alt="">&nbsp;Php</span></router-link>-->
+                                    </li>
+                                    <li><a href="laravel.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/laravel.png"
+                                                    alt="">&nbsp;Laravel</span></a>
+                                    </li>
+                                    <li><a href="java.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/java.svg" alt="">&nbsp;Java</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="slideContent" href="#"><span><i style="color:rgb(255, 196, 0);"
+                                            class="fas fa-laptop-code"></i>&nbsp;Front-End&nbsp;<i
+                                            class="fas fa-angle-down"></i></span></a>
+                                <ul class="slide">
+                                    <li><a href="html.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/html-5.svg" alt="">&nbsp;Html</span></a>
+                                    </li>
+                                    <li><a href="css.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/css-3.svg" alt="">&nbsp;Css</span></a>
+                                    </li>
+                                    <li><a href="js.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/javascript.svg"
+                                                    alt="">&nbsp;JavaScript</span></a></li>
+                                    <li><a href="sass.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/sass.svg" alt="">&nbsp;Sass
+                                            </span></a></li>
+                                    <li><a href="vue.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                                    src="public/principal/img/vue.svg" alt="">&nbsp;Vue
+                                                JS</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="slideContent" href="git.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;" src="public/principal/img/git.svg"
+                                            alt="">&nbsp;Git-Github</span></a>
+                            </li>
+                            <li><a class="slideContent" href="plugin.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/plugin.svg" alt="">&nbsp;Plugin y Librerías
+                                        JS</span></a>
+                            </li>
+                            <li><a class="slideContent" href="alpine.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/alpinejs.svg" alt="">&nbsp;Alpine
+                                        JS</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="lista">
+                        <a class="slideContent item" href="#"><i class="fas fa-network-wired"></i>&nbsp;&nbsp;BASE DE
+                            DATOS&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <ul class="slide">
+                            <li><a href="mysql.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/mysql.svg" alt="">&nbsp;Mysql</span></a>
+                            </li>
+                            <li><a href="cursos/base-de-datos/postgree/inicio.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/ganesha.svg" alt="">&nbsp;PostGreeSql</span></a>
+                            </li>
+                            <li><a href="cursos/base-de-datos/sql-server/inicio.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/sql-server.svg" alt="">&nbsp;SqlServer</span></a>
+                            </li>
+                            <li><a href="disenioBd.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/modelo-bd.svg" alt="">&nbsp;Diseño de
+                                        BD</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lista">
+                        <a class="slideContent item" href="#"><i class="fab fa-sketch"></i>&nbsp;&nbsp;DISEÑO
+                            GRAFICO&nbsp;<i class="fas fa-angle-down"></i></a>
+                        <ul class="slide">
+                            <li><a href="photoshop.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/photoshop.svg" alt="">&nbsp;Photoshop</span></a>
+                            </li>
+                            <li><a href="corel.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/corel.svg" alt="">&nbsp;Corel
+                                        Draw</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lista"><a class="slideContent item" href="#"><i
+                                class="fas fa-file-powerpoint"></i>&nbsp;&nbsp;OFIMATICA&nbsp;<i
+                                class="fas fa-angle-down"></i></a>
+                        <ul class="slide">
+                            <li><a href="word.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/word.svg" alt="">&nbsp;Word</span></a>
+                            </li>
+                            <li><a href="excel.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/excel.svg" alt="">&nbsp;Excel</span>
+                                </a>
+                            </li>
+                            <li><a href="power.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/powerpoint.svg" alt="">&nbsp;Power
+                                        Point</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="lista"><a class="slideContent item" href="#"><i
+                                class="fas fa-plus-circle"></i>&nbsp;&nbsp;OTROS&nbsp;<i
+                                class="fas fa-angle-down"></i></a>
+                        <ul class="slide">
+                            <li><a href="flutter.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/flutter.svg" alt="">&nbsp;Flutter</span></a>
+                            </li>
+                            <li><a href="cursos/otros/servidores/inicio.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/data-server.svg"
+                                            alt="">&nbsp;Servidores</span></a>
+                            </li>
+                            <li><a href="redes.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/base-de-datos.svg" alt="">&nbsp;Redes</span></a>
+                            </li>
+                            <li><a href=""><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/edicion-de-pelicula.svg" alt="">&nbsp;Edición
+                                        Video</span></a>
+                            </li>
+                            <li><a href="trucos.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/computer-settings.svg" alt="">&nbsp;Trucos
+                                        Informáticos</span></a></li>
+                            <li><a href="cursos/otros/edicion-video/inicio.html"><span><img
+                                            style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/programas.svg" alt="">&nbsp;Programas
+                                        Informáticos</span></a>
+                            </li>
+                            <li><a href="extensiones.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/extensiones.svg"
+                                            alt="">&nbsp;Extensiones</span></a>
+                            </li>
+                            <li>
+                                <a href="paginas.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/paginas.svg" alt="">&nbsp;Páginas</span></a>
+
+                            </li>
+                            <li>
+                                <a href="mas.html"><span><img style="width: 15px;margin-bottom: 0px;"
+                                            src="public/principal/img/mas.png" alt="">&nbsp;Más</span></a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+            <h2 class="name"><a target="_blank" href="https://isaiismael.github.io/portafolio/">Isai Ismael Sandoval
+                    Ccaccro</a>
+            </h2>
+            <div class="div-dark-menu">
+                <a href="index.html"><img class="logo" src="public/principal/img/logo.jpg" alt=""></a>
+                <!--<router-link to="/"><img class="logo" src="public/principal/img/logo.jpg" alt=""></router-link>-->
+                <i id="menu-icon" class="fas fa-bars menu-icon"></i>
+            </div>
+        </header>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE VUE JS 3</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                    <li><a href="#extensiones" class="class-items d-block" class="p-1">Extensiones
+                                            vsc</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#que-es" class="class-items d-block" class="p-1">Qué es Vue js</a>
+                                    </li>
+                                    <li><a href="#vue-cli" class="class-items d-block" class="p-1">Vue CLI</a></li>
+                                    <li><a href="#sintaxis" class="class-items d-block" class="p-1">Sintaxis</a></li>
+                                    <li><a href="#sintaxis-script" class="class-items d-block" class="p-1">Sintaxis de
+                                            scripts</a></li>
+                                    <li><a href="#model" class="class-items d-block" class="p-1">v-model</a></li>
+                                    <li><a href="#text" class="class-items d-block" class="p-1">v-text</a></li>
+                                    <li><a href="#if" class="class-items d-block" class="p-1">v-if</a></li>
+                                    <li><a href="#show" class="class-items d-block" class="p-1">v-show</a></li>
+                                    <li><a href="#for" class="class-items d-block" class="p-1">v-for</a></li>
+                                    <li><a href="#bind" class="class-items d-block" class="p-1">v-bind</a></li>
+                                    <li><a href="#evento" class="class-items d-block" class="p-1">Eventos</a></li>
+                                    <li><a href="#modi-eventos" class="class-items d-block" class="p-1">Modificadores de
+                                            eventos</a></li>
+                                    <li><a href="#modi-teclas" class="class-items d-block" class="p-1">Modificadores de
+                                            teclas</a></li>
+                                    <li><a href="#methods-computed" class="class-items d-block" class="p-1">Diferencias
+                                            entre methods y
+                                            computed</a></li>
+                                    <li><a href="#ciclo-vida" class="class-items d-block" class="p-1">Metodos en el
+                                            ciclo de vida</a></li>
+                                    <li><a href="#componentes" class="class-items d-block" class="p-1">Componentes</a>
+                                    </li>
+                                    <li><a href="#vue-router" class="class-items d-block" class="p-1">Vue router</a>
+                                    </li>
+                                    <li><a href="#vue-router-anidado" class="class-items d-block" class="p-1">Vue router
+                                            ANIDADO</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#eslint" class="class-items d-block" class="p-1">Eliminar eslint de
+                                            VUE-CLI</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
+                                        <span>
+                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
+                                            programa por
+                                            que es más ligero y tiene mas opciones a diferencia de otros
+                                        </span>
+                                    </li>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://nodejs.org/es/download/">NodeJs</a>
+                                        <span class="def">
+                                            Node.js es un entorno en tiempo de ejecución que nos permite ejecutar
+                                            comandos en el
+                                            servidor.
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Conocimiento en Html</span>
+                                    </li>
+                                    <li class="p-1"><span>Conocimiento en Css</span>
+                                    </li>
+                                    <li class="p-1"><span>Conocimiento en Javascript intermedio</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a target="_blank" href="https://v3.vuejs.org/">Vue</a> es un framework de
+                                    Javascript de código abierto
+                                    para la construcción de interfaces de usuario y
+                                    aplicaciones de una sola página(SPA)=>(Single-page application = aplicación de una
+                                    sola página)
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Vue se caracteriza por ser un framework progresivo (No importa si tu proyecto es
+                                    pequeño o grande, Vue
+                                    se integra fácilmente)
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- EXTENSIONES -->
+                    <section id="extensiones" class="mb-2">
+                        <h5 class="programas">EXTENSIONES vsc</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span>Vetur</span>
+                                    </li>
+                                    <li class="p-1"><span>Vue 3 snippets</span>
+                                    </li>
+                                    <li class="p-1"><span>VueVscode snippets</span>
+                                    </li>
+                                    <li class="p-1"><span>Vue peek</span>
+                                    </li>
+                                    <li class="p-1"><span>es6-string-html</span>
+                                    </li>
+                                    <li class="p-1"><a target="_blank"
+                                            href="https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg/related">Vue.js
+                                            devtools</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- QUE ES VUE JS -->
+                    <section id="que-es" class="mb-2">
+                        <h5 class="programas">QUE ES VUE JS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    <a target="_blank" href="https://v3.vuejs.org/">Vue</a> es un framework open source
+                                    de JavaScript, el
+                                    cual nos permite construir interfaces de usuarios de
+                                    una forma muy sencilla. La curva de aprendizaje, desde mi punto de vista, es
+                                    relativamente baja, claro,
+                                    debes conocer muy bien JavaScript, saber trabajar con callbacks, promesas, objetos,
+                                    entre otros temas
+                                    más.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Si queremos hacer uso de Vue no será necesario instalar absolutamente nada en
+                                    nuestra computadora, sí
+                                    así lo deseamos podemos utilizar este framework mediante un CDN.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    Vue fue creado por Evan You ex trabajador de Google, quien, es importante mencionar,
+                                    fue desarrollador
+                                    Angular. Vue fue lanzado en el año 2014. Aunque inicialmente fue pensado para ser un
+                                    biblioteca
+                                    personal, la comunidad hizo que el proyecto creciera a un ritmo impresionante,
+                                    posicionándolo hoy en día
+                                    como uno de los Frameworks web más populares, junto con Angular y React. 🖖
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- VUE CLI -->
+                    <section id="vue-cli" class="mb-2">
+                        <h5 class="programas">VUE CLI</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><span class="def">npm install -g @vue/cli</span></li>
+                                    <li class="p-1"><span class="def">vue --version</span></li>
+                                    <li class="p-1"><span class="def">ubicarse en la carpeta para tus proyectos</span>
+                                    </li>
+                                    <li class="p-1"><span class="def">vue create hello-world</span></li>
+                                    <li class="p-1"><span class="def">SELECCIONAR
+                                            (babel-router-vueEx-sass-linter)</span></li>
+                                    <li class="p-1"><span class="def">Al final pregunta si deseas guardar esta
+                                            configuracion</span></li>
+                                    <li class="p-1"><span class="def">cd hello-world</span></li>
+                                    <li class="p-1"><span class="def">npm run serve</span></li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- SINTAXIS -->
+                    <section id="sintaxis" class="mb-2">
+                        <h5 class="programas">SINTAXIS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;div id="app">
+                                        &lt;h1>&lcub;{mensaje}}&lt;/h1>
+                                        &lt;!-- EN LARAVEL agrega el @ -->
+                                        &lt;h1>@&lcub;{mensaje}}&lt;/h1>
+                                    &lt;/div>
+                                
+                                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>&lt;!--cdn-->
+                                    &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>&lt;!--cdn VUE-ROUTER-->
+                                    &lt;script>
+                                        const app = {
+                                            data() {
+                                                return {
+                                                    mensaje: "Hola como estas"
+                                                }
+                                            }
+                                        }
+                                
+                                        const miApp = Vue.createApp(app).mount("#app")//creando un nuevo App y montando
+                                    &lt;/script>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- SINTAXIS DE SCRIPTS -->
+                    <section id="sintaxis-script" class="mb-2">
+                        <h5 class="programas">SINTAXIS DE SCRIPTS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>&lt!--cdn de vue 3-->
+                    &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>&lt!--cdn de vue router-->
+
+                    &lt;!-- scripts -->
+                    &lt;script src="componentes/main.js">&lt;/script>&lt!--objeto principal-->
+                    &lt;script>const MiApp = Vue.createApp(app)&lt;/script>&lt!--creando nuestra app-->
+                    &lt;script src="componentes/compo.js">&lt;/script>&lt!--llamamos a los componentes-->
+                    &lt;script src="rutas/prueba.js">&lt;/script>&lt!--llamamos a las rutas-->
+
+                    &lt;script>
+                        MiApp.use(ruta)//usamos las rutas
+                        MiApp.mount("#app")//montamos nuestra app en el container("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- V-MODEL -->
+                    <section id="model" class="mb-2">
+                        <h5 class="programas">V-MODEL</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Nos permite manipular los datos de un input en tiempo real.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+            <code class="language-markup line-numbers">
+                &lt;div id="app">
+                    &lt;!-- Input - Textarea - Checkbox - Radio - Select  -->
+                    &lt;!-- .lazy - .number - .trim -->
+                    &lt;input type="text" v-model="mensaje">
+                    &lt;input type="number" v-model.number="mensaje">
+                    &lt;p>Mensaje: &lcub;{mensaje}}&lt;/p>
+                &lt;/div>
+            
+                &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                &lt;script>
+                    const app = {
+                        data() {
+                            return {
+                                mensaje: ""
+                            }
+                        }
+                    }
+            
+                    const vue = Vue.createApp(app).mount("#app")
+                &lt;/script>
+            </code>
+        </pre>
+                        </section>
+                    </section>
+
+
+                    <!-- V-TEXT -->
+                    <section id="text" class="mb-2">
+                        <h5 class="programas">V-TEXT</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Se usa para mejorar el renderizado en la página.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;h1>Hola &lt;span v-text="mensaje">&lt;/span>&lt;/h1>
+                    &lt;/div>
+                
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                    &lt;script>
+                        const app = {
+                            data() {
+                                return {
+                                    mensaje: "como estas"
+                                }
+                            }
+                        }
+                
+                        const vue = Vue.createApp(app).mount("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- V-IF -->
+                    <section id="if" class="mb-2">
+                        <h5 class="programas">V-IF</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Se usa para dar condiciones.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;h1 v-if="mensaje!=''">Hola &lt;span v-text="mensaje">&lt;/span>&lt;/h1>
+                        &lt;h6 v-else>Sin texto&lt;/h6>
+                        &lt;input type="text" v-model="mensaje">
+                    &lt;/div>
+                
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                    &lt;script>
+                        const app = {
+                            data() {
+                                return {
+                                    mensaje: "",
+                                }
+                            }
+                        }
+                
+                        const vue = Vue.createApp(app).mount("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+
+                    <!-- V-SHOW -->
+                    <section id="show" class="mb-2">
+                        <h5 class="programas">V-SHOW</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Es similar a V-IF pero en este caso el V-SHOW solo oculta el elemento, miestras que
+                                    el V-IF borra el
+                                    elemento.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;h1 v-show="mensaje!=''">Hola &lt;span v-text="mensaje">&lt;/span>&lt;/h1>
+                        &lt;input type="text" v-model="mensaje">
+                    &lt;/div>
+                
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                    &lt;script>
+                        const app = {
+                            data() {
+                                return {
+                                    mensaje: "",
+                                }
+                            }
+                        }
+                
+                        const vue = Vue.createApp(app).mount("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- V-FOR -->
+                    <section id="for" class="mb-2">
+                        <h5 class="programas">V-FOR</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Sirve para recorrer elemntos de un array.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;ol>
+                            &lt;li v-for="(lista, index) in semana">&lcub;{lista}}&lt;/li>
+                        &lt;/ol>
+                    &lt;!-- ************************************* -->
+                        &lt;ul>
+                            &lt;li v-for="(fruta, index) in frutas">&lcub;{fruta.nombre}} &lt;span>&lcub;{fruta.cantidad}}&lt;/span>&lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                    &lt;script>
+                        const app = {
+                            data() {
+                                return {
+                                    mensaje: "",
+                                    semana: [
+                                        "lunes", "martes", "miercoles", "jueves", "viernes"
+                                    ],
+                                    frutas: [
+                                        { nombre: "manzana", cantidad: 10 },
+                                        { nombre: "pera", cantidad: 20 },
+                                        { nombre: "platano", cantidad: 100 }
+                                    ]
+                                }
+                            }
+                        }
+                
+                        const vue = Vue.createApp(app).mount("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- V-BIND -->
+                    <section id="bind" class="mb-2">
+                        <h5 class="programas">V-BIND</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Nos permite agregar atributos a nuestra etiqueta de forma
+                                    dinámica.</span>
+                            </div>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <b>1 FORMA: Clases estáticas</b>
+                                    </span>
+                                </div>
+                                <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;div class="bg-dark" :class="'p-4'">
+                            &lt;p :class="'text-dark alert alert-info'">Lorem, ipsum dolor.&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                </code>
+            </pre>
+                            </section>
+                            <section>
+                                <div class="texto">
+                                    <span class="def">
+                                        <b>2 FORMA: Clases dinámicas</b>
+                                    </span>
+                                </div>
+                                <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;div :class="{'bg-info' : fondo == true , 'bg-danger' : fondo == false}">
+                            &lt;p>Lorem, ipsum dolor.&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                    &lt;script>
+                        const app = {
+                            data() {
+                                return {
+                                    fondo: true
+                                }
+                            }
+                        }
+                
+                        const vue = Vue.createApp(app).mount("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- EVENTOS -->
+                    <section id="evento" class="mb-2">
+                        <h5 class="programas">EVENTOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Los eventos sirven para ejecutar una acción.
+                                </span>
+                            </div>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    &lt;div id="app">
+                        &lt;!-- &lt;button v-on:click="saludar">Saludar&lt;/button> -->
+                        &lt;button &commat;click="saludar">Saludar&lt;/button>
+                    &lt;/div>
+                
+                    &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                    &lt;script>
+                        const app = {                            
+                            methods: {
+                                saludar() {
+                                    alert("Hola como estas");
+                                }
+                            },
+                        }
+                
+                        const vue = Vue.createApp(app).mount("#app")
+                    &lt;/script>
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- MODIFICADORES DE EVENTOS -->
+                    <section id="modi-eventos" class="mb-2">
+                        <h5 class="programas">MODIFICADORES DE EVENTOS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    .stop
+                    .prevent
+                    .capture
+                    .self
+                    .once
+                    .passive
+
+                    &lt;!-- Se detendrá la propagación del evento click. -->
+                    &lt;a v-on:click.stop="hasEsto">&lt;/a>
+
+                    &lt;!-- El evento de enviar ya no volverá a cargar la página. -->
+                    &lt;form v-on:submit.prevent="onSubmit">&lt;/form>                    
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- MODIFICADORES DE TECLAS -->
+                    <section id="modi-teclas" class="mb-2">
+                        <h5 class="programas">MODIFICADORES DE TECLAS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-markup line-numbers">
+                    .enter
+                    .tab
+                    .delete (captura ambas teclas “Delete” y “Backspace”)
+                    .esc
+                    .space
+                    .up
+                    .down
+                    .left
+                    .right
+
+                    &lt;input @keyup.enter="agregarFruta()">
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- DIFERENCIAS EN METHODS Y COMPUTED -->
+                    <section id="methods-computed" class="mb-2">
+                        <h5 class="programas">DIFERENCIAS EN METHODS Y COMPUTED</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">La diferencia es sencilla.</span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>METHODS</b> se ejecuta cada vez que se invoca al metodo y <b>siempre</b> lleva
+                                    los (con parametros).
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>COMPUTED</b> se ejecuta solo cuando existen cambios y <b>nunca</b> lleva los (sin
+                                    parametros).
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- METODOS EN EL CICLO DE VIDA -->
+                    <section id="ciclo-vida" class="mb-2">
+                        <h5 class="programas">METODOS EN EL CICLO DE VIDA</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    Los más usados son el <b>método created y el mounted</b>.
+                                    Existen muchos más métodos en el ciclo de un componente de Vue como el beforeMounted
+                                    o el beforeUpdated,
+                                    pero no he querido explicar porque raras veces se utiliza.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>BeforeCreate</b>
+                                    En ese punto Vue todavía no ha cargado el componente, esto quiere decir que no
+                                    puedes acceder a ninguna
+                                    opción, , por ejemplo, puedes comporbar que el usuario esté logueado antes de entrar
+                                    en una ruta para
+                                    que en caso de no estarlo se redirija a la del login.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Created</b>
+                                    Uno de los que más se usan. Se ejecuta después de beforeCreated. En ese punto Vue ya
+                                    ha cargado todas
+                                    las opciones del componente y por tanto ya existe la sección data y los métodos.
+                                    Aquí puedes hacer
+                                    llamadas a variables y puedes ejecutar métodos.
+
+                                    La única pega es que en este punto Vue todavía no ha cargado la vista, no la ha
+                                    renderizado y no puedes
+                                    leer o modificar nada que afecte a ls vista porque todavía no existe. No puedes
+                                    acceder al DOM de ese
+                                    componente.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Mounted</b>
+                                    A diferencia del created, en el mounted si que tenemos acceso al DOM, es decir, el
+                                    computed se ejecuta
+                                    exactamente cuando se termina de pintar la vista en la página web y por tanto desde
+                                    aquí podemos hacer
+                                    cambios en la vista.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Updated</b>
+                                    Con este método hay que tener mucho cuidado. Se ejecuta cada vez que se produce un
+                                    cambio en el
+                                    componente y cambia algo de la vista. Se recomienda aquí no hacer muchos cambios en
+                                    el data o en la
+                                    vista y utilizar propiedades computadas o watchers que veremos más adelante.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    <b>Destroyed</b>
+                                    Como puedes suponer, el destroyed se ejecuta cuando eliminamos un componente, cuando
+                                    ya no esta cargado.
+                                    Esto puede pasar cuando cambias de vista o cuando o cuando se borra un componente
+                                    del DOM porque ha sido
+                                    ocultado con v-if.
+                                </span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- COMPONENTES -->
+                    <section id="componentes" class="mb-2">
+                        <h5 class="programas">COMPONENTES</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">Los componentes se pueden definir como bloques de código que pueden
+                                    ejecutar
+                                    funcionalidades y que pueden ser reutilizables</span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">Ten en cuenta que si utiliza CamelCase en el props; En la vista se
+                                    utiliza el "-"</span>
+                            </div>
+                            <div class="texto img-conexion wrapper">
+                                <a rel="componentes" href="https://i.stack.imgur.com/WRZip.png" data-fancybox="gallery"
+                                    data-caption="componentes">
+                                    <img src="https://i.stack.imgur.com/WRZip.png" alt="">
+                                </a>
+                            </div>
+                            <pre rel="JS">
+            <code class="language-markup line-numbers">
+                &lt;div id="app">
+                    &lt;saludo color-boton="btn-success">&lt;/saludo>
+                    &lt;saludo color-boton="btn-danger">&lt;/saludo>
+                &lt;/div>
+            
+                &lt;script src="https://unpkg.com/vue@next">&lt;/script>
+                &lt;script>
+            
+                    const vue = Vue.createApp(app);
+            
+                    vue.component("saludo", {
+                        data() {
+                            return {
+                                nombre: "ISAI"
+                            }
+                        },
+                        /* props: {
+                            title: String,
+                            likes: Number,
+                            isPublished: Boolean,
+                            commentIds: Array,
+                            author: Object,
+                            callback: Function,
+                            contactsPromise: Promise  or any other constructor
+                         },*/
+                        props: [
+                            "colorBoton"
+                        ],
+            
+                        template: /*html*/
+                            `
+                        &lt;div>
+                            &lt;h1>Hola &lcub;{nombre}} como estas&lt;/h1>
+                            &lt;button class="btn" :class="colorBoton">esto es un saludo&lt;/button>
+                        &lt;/div>
+                        `            
+                    })
+            
+                    vue.mount("#app")
+                &lt;/script>
+            </code>
+        </pre>
+                        </section>
+                    </section>
+
+
+                    <!-- VUE ROUTER -->
+                    <section id="vue-router" class="mb-2">
+                        <h5 class="programas">VUE ROUTER</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def"><a href="https://next.router.vuejs.org/installation.html"
+                                        target="_blank">Vue Router</a>
+                                    se utiliza para facilitar la creación de aplicaciones de una sola página con
+                                    Vue.js</span>
+                            </div>
+                            <pre rel="CDN">
+                                <code class="language-markup line-numbers">
+                                    &lt;script src="https://unpkg.com/vue-router@4">&lt;/script>
+                                </code>
+                            </pre>
+                            <pre rel="HTML">
+                                <code class="language-markup line-numbers">
+                                    &lt;router-link to="/">Go to Home&lt;/router-link>
+                                    &lt;router-link to="/about">Go to About&lt;/router-link>
+                                    &lt;router-view>&lt;/router-view>
+                                </code>
+                            </pre>
+                            <pre rel="JS">
+                                <code class="language-js line-numbers">                
+                                    const Home = { template: '&lt;div>Home&lt;/div>' }
+                                    const About = { template: '&lt;div>About&lt;/div>' }
+
+                                    const misRutas = [
+                                        { path: '/', component: Home },
+                                        { path: '/about', component: About },
+                                    ]
+
+                                    const ruta = VueRouter.createRouter({
+                                        history: VueRouter.createWebHashHistory(),
+                                        routes:misRutas,
+                                    })
+                                    MiApp.use(ruta)
+
+                                    MiApp.mount("#app")
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- VUE ROUTER ANIDADO -->
+                    <section id="vue-router-anidado" class="mb-2">
+                        <h5 class="programas">VUE ROUTER ANIDADO</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;router-view>&lt;/router-view>
+                                    &lt;!-- esta vista tiene un nombre -->
+                                    &lt;router-view name="b">&lt;/router-view>
+
+                                    &lt;h3>PAGINA &lcub;{ $route.params.id }}&lt;/h3>
+                                </code>
+                            </pre>
+                            <pre rel="JS">
+                                <code class="language-js line-numbers">
+
+
+                                    const uno = { template: '&lt;div>UNO&lt;/div>' }
+                                    const dos = { template: '&lt;div>DOS&lt;/div>' }
+
+                                    const misRutas = [
+                                        { path: '/', component: Inicio },
+                                        { path: '/servicios', component: Servicio },
+                                        {
+                                            path: '/contacto/:id', component: Contacto,
+                                            children: [
+                                                {
+                                                    path: '/contactos/uno',
+                                                    components: {
+                                                        b: uno  /* b es el nombre de la vista */
+                                                    }
+                                                },
+                                                {
+                                                    path: '/contactos/dos',
+                                                    components: {
+                                                        b: dos  /* b es el nombre de la vista */
+                                                    }
+                                                }
+                                            ],
+                                        },
+
+                                    ]
+
+
+                                    const ruta = VueRouter.createRouter({
+                                        history: VueRouter.createWebHashHistory(),
+                                        routes:misRutas,
+                                    })
+                                    MiApp.use(ruta)
+
+                                    MiApp.mount("#app")
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+
+
+
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">AVANZADO</button>
+
+                    <!-- ELIMINAR ESLINT DE VUE-CLI -->
+                    <section id="eslint" class="mb-2">
+                        <h5 class="programas">ELIMINAR ESLINT DE VUE-CLI</h5>
+                        <section>
+                            <pre rel="CDN">
+                                <code class="language-markup line-numbers">
+                                    npm remove @vue/cli-plugin-eslint
+                                    npm install --save clipboard
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        //const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+</body>
+
+</html>

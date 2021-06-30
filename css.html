@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE CSS</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTem" aria-expanded="false"
+                            aria-controls="collapseTem">
+                            Temario css-basico<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTem" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">¿Qué es CSS?</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Historia de css</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Unir HTML y CSS</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Sintaxis de CSS</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Tipos de
+                                            selectores</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Especificidad</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Cajas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Propiedades de
+                                            Texto</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Tipografías
+                                            externas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Normalize</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Width y height</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Background</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Margin y
+                                            Padding</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Border</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Border radius</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Box Sizing</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Outline</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Text align</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Text shadow</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Box shadow</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">z index</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Position</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTem2" aria-expanded="false"
+                            aria-controls="collapseTem2">
+                            Temario css-intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTem2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Medidas absolutas y
+                                            relativas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Em vs rem</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Width con % vs
+                                            width auto</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Height con % vs
+                                            height auto</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Display</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Overflow</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Float</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Pseudoelementos</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Pseudoclases</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Objet Fit</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Objet Position</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Cursor</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Responsive Media
+                                            querys</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Flexbox</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Css Grid</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTem3" aria-expanded="false"
+                            aria-controls="collapseTem3">
+                            Temario css-avanzado<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTem3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Transition</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Animaciones</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Cubic Bezier</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Transform</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Clip Path</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Degradados</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Variables</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Filtros</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Letter Spacing</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Scroll Behavior</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">User Selected</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#crear-proyecto" class="class-items d-block" class="p-1">Qué es Css</a>
+                                    </li>
+                                    <li><a href="#estilos" class="class-items d-block" class="p-1">Estilos avanzados</a>
+                                    </li>
+                                    <li><a href="#media" class="class-items d-block" class="p-1">Media query css</a>
+                                    </li>
+                                    <li><a href="#transiciones" class="class-items d-block" class="p-1">Transiciones</a>
+                                    </li>
+                                    <li><a href="#animaciones" class="class-items d-block" class="p-1">Animaciones</a>
+                                    </li>
+                                    <li><a href="#sombras" class="class-items d-block" class="p-1">Sombras</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
+                                        <span>
+                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
+                                            programa por
+                                            que es más ligero y tiene mas opciones a diferencia de otros
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    CSS (Cascading Style Sheets => Hojas de estilos en cascada). Es un lenguaje de
+                                    estilos que es utilizado
+                                    en el diseño web.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    CSS se utiliza para la apariencia de una pagina web. Gracias a este lenguaje podemos
+                                    dar un mejor diseño
+                                    a nuestra pagina.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    OJO CSS NO ES UN LENGUAJE DE PROGRAMACION
+                                </span>
+                            </div>
+
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- QUE ES CSS -->
+                    <section id="crear-proyecto" class="mb-2">
+                        <h5 class="programas">QUE ES CSS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas de
+                                    estilo en cascada y se
+                                    usa para estilizar elementos escritos en un lenguaje de marcado como HTML. CSS
+                                    separa el contenido de la
+                                    representación visual del sitio.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">CSS fue desarrollado por W3C (World Wide Web Consortium) en 1996 por
+                                    una razón muy
+                                    sencilla. HTML no fue
+                                    diseñado para tener etiquetas que ayuden a formatear la página. Está hecho solo para
+                                    escribir el marcado
+                                    para el sitio.</span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- ESTILOS AVANZADOS -->
+                    <section id="estilos" class="mb-2">
+                        <h5 class="programas">ESTILOS AVANZADOS</h5>
+                        <section>
+                            <pre rel="JS">
+                <code class="language-css line-numbers">
+                    /* variables */
+                    :root {
+                        --fondo-texto-negro: rgb(9, 51, 85);
+                        --fondo-texto-blanco: #eff3f5;                       
+                    }
+
+                    /* sirve para dar el efecto de desplazamiento del scroll */
+                    html{
+                        scroll-behavior: smooth;
+                    }
+
+                    /* TARGET dar estilos segun ID en la URL */
+                    section:target h5 {
+                        background: blue;
+                    }
+
+                    /* impedir la seleccion del contenido */
+                    .icono_menu {
+                        user-select: none;
+                    }
+
+                    /* para posicionar una imagen fill|contain|cover|none|scale-down */
+                    img{
+                        object-fit: cover;
+                    }
+
+                    /* ayudar a mejorar los espacios(M-P) cuando tenemos link al mismo documento */
+                    .contacto {
+                        scroll-margin-top: 8ex;
+                    }
+
+                    /* modificar scroll */
+                    .parrafo::-webkit-scrollbar {
+                        width: 10px;
+                    }
+                    .parrafo::-webkit-scrollbar-thumb {
+                        background: rgb(1, 70, 97, 0.1);
+                        border-radius: 20px;
+                    }
+                    .parrafo::-webkit-scrollbar-thumb:hover {
+                        background: rgb(1, 70, 97,0.7);
+                    }
+
+                    /* Evitar que un elemento subyacente se desplace */
+                    .menu-ul {
+                        overflow: auto;
+                        overscroll-behavior: contain; /* none auto */
+                    }
+                </code>
+            </pre>
+                        </section>
+                    </section>
+
+                    <!-- MEDIA QUERY CSS -->
+                    <section id="media" class="mb-2">
+                        <h5 class="programas">MEDIA QUERY CSS</h5>
+                        <section>
+                            <pre rel="JS">
+            <code class="language-css line-numbers">
+                &commat;media screen and (max-width:767px){    
+                    /*
+                
+                    */
+                }
+            </code>
+        </pre>
+                        </section>
+                    </section>
+
+                    <!-- TRANSICIONES -->
+                    <section id="transiciones" class="mb-2">
+                        <h5 class="programas">TRANSICIONES</h5>
+                        <section>
+                            <pre rel="JS">
+            <code class="language-css line-numbers">
+                /* ESPECIFICO */
+                .hijo:hover{
+                    background: skyblue;
+                    width: 500px;
+                }
+                .hijo{
+                    height: 100px;
+                    width: 150px;
+                    background: red;
+                
+                    /* SECUENCIA DE TRANSICIONES */
+                    transition-property: background,width;
+                    transition-duration: 2s;
+                    /* LINEAR EASE EASE-IN EASE-OUT EASE-IN-OUT */
+                    transition-timing-function: linear;
+                    transition-delay: 3s;/*DEMORA*/
+                                
+                }
+
+                /* NO ESPECIFICO */
+                .hijo2{
+                    height: 100px;
+                    width: 150px;
+                    background: yellowgreen;
+                    /* transition: width ease 2s; */
+                    transition: all 2s ease 1s;
+                }
+                .hijo2:hover{
+                    color:white;
+                    background: black;
+                    width: 500px;                
+                    border-radius: 20px;
+                }  
+            </code>
+        </pre>
+                        </section>
+                    </section>
+
+                    <!-- ANIMACIONES -->
+                    <section id="animaciones" class="mb-2">
+                        <h5 class="programas">ANIMACIONES</h5>
+                        <section>
+                            <pre rel="JS">
+            <code class="language-css line-numbers">
+                .padre5{
+                    height: 100px;
+                    width: 150px;
+                    background: blue;
+                    color:white;
+                    animation-name: ejemplo;
+                    animation-duration: 5s;
+                    animation-delay: 0.5s;/*TARDAR*/
+                    animation-iteration-count: 3;/*REPETIR*/
+                }
+                &commat;keyframes ejemplo{
+                    0%{background: green;}
+                    25%{background: red;}
+                    50%{background: yellow;}
+                    75%{width: 100%;font-size:50px;}
+                    100%{background: black;}
+                }
+            </code>
+        </pre>
+                        </section>
+                    </section>
+
+                    <!-- SOMBRAS -->
+                    <section id="sombras" class="mb-2">
+                        <h5 class="programas">SOMBRAS</h5>
+                        <section>
+                            <pre rel="JS">
+            <code class="language-css line-numbers">
+                /* SOMBRAS DE CAJAS */
+                .hijo3{
+                    background: rgba(0,100,200,0.8);
+                    /* R B OPACIDAD COLOR */
+                    box-shadow: 0px 0px 2px blue,
+                                4px 4px 2px green,
+                                10px 10px 5px black;
+                    }
+
+
+                /* SOMBRAS DE TEXTO */
+                .hijo4{
+                    text-shadow: 0 0 2px #B0A501,
+                    1px 1px 2px #093B35,
+                    3px 3px 4px #07A774;
+                }
+            </code>
+        </pre>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+</body>
+
+</html>

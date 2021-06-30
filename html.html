@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#083756" />
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="icon/img-96.png">
+    <link rel="apple-touch-icon" href="icon/img-96.png">
+    <link rel="apple-touch-startup-image" href="icon/img-96.png">
+    <link rel="manifest" href="./manifest.json"> <!-- importante -->
+    <title>Computacion</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://media.istockphoto.com/vectors/trade-symbol-of-2-ways-arrow-with-laptop-logo-designs-vector-design-vector-id1205644424" />
+    <!-- <link rel="stylesheet" href="public/js/app.js"> -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- principal -->
+    <link rel="stylesheet" href="public/principal/css/styles.css">
+    <link rel="stylesheet" href="public/principal/css/mode_dark.css">
+    <link rel="stylesheet" href="public/principal/css/prism.css">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="public/fancybox/jquery.fancybox.min.css">
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="public/principal/js/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <encabezado></encabezado>
+        <section class="content">
+            <h4 class="nombre-curso">CURSO DE HTML</h4>
+            <section class="proceso">
+                <div class="accordion" id="accordionExample">
+                    <h5 class="tabla-contenido">Contenido</h5>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTem" aria-expanded="false"
+                            aria-controls="collapseTem">
+                            Temario<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTem" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">¿Qué es una página
+                                            web?</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">¿Qué es HTML?</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Historia de
+                                            HTML</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Formato HTML &
+                                            Index</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Sintaxis de
+                                            HTML</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Títulos H y
+                                            párrafos</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Header main y
+                                            footer</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Section vs
+                                            article</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Aside</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Introducción a los
+                                            enlaces</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Rutas relativas y
+                                            absolutas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Atributos de los
+                                            enlaces</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Listas
+                                            desordenadas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Listas
+                                            ordenadas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Listas de
+                                            definición</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Listas anidadas</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Divs</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Clases y Ids</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">BR y HR</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Tablas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Atributos de las
+                                            tablas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Selección de
+                                            columnas</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Introducción a
+                                            formularios</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Asociar Inputs y
+                                            Label</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Button vs type
+                                            button</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Tipos de input</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Select</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Datalist</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Fieldset y
+                                            Legend</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Atributos de los
+                                            formularios</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Get vs Post</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Imágenes de bits vs
+                                            imágenes
+                                            vectoriales</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Imágenes en el
+                                            HTML</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Etiqueta
+                                            Picture</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Etiqueta audio</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Etiqueta video</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Iframes</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Etiqueta figure</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Etiquetas meta</a>
+                                    </li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Iconos en la
+                                            pestaña</a></li>
+                                    <li><a href="#temarios" class="class-items d-block" class="p-1">Uso de
+                                            fontawesome</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Introduccion<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#programas" class="class-items d-block" class="p-1">Programas a
+                                            Utilizar</a></li>
+                                    <li><a href="#requisitos" class="class-items d-block" class="p-1">Requisitos
+                                            Básicos</a></li>
+                                    <li><a href="#conceptos" class="class-items d-block" class="p-1">Conceptos
+                                            Básicos</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button style="outline: none!important;color: var(--fondo-texto-blanco);"
+                            class="accordion-button btn-primary btn-sm container-fluid temas" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Intermedio<i class="fas fa-angle-down ml-3"></i>
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol class="d-flex flex-column">
+                                    <li><a href="#crear-proyecto" class="class-items d-block" class="p-1">Qué es
+                                            Html</a></li>
+                                    <li><a href="#meta" class="class-items d-block" class="p-1">Metadatos</a></li>
+                                    <li><a href="#etiquetas" class="class-items d-block" class="p-1">Etiquetas
+                                            avanzadas</a></li>
+                                    <li><a href="#more" class="class-items d-block" class="p-1">Etiquetas mas
+                                            usadas</a></li>
+                                    <li><a href="#atributos" class="class-items d-block" class="p-1">Atributos
+                                            avanzados</a></li>
+                                    <li><a href="#pdf" class="class-items d-block" class="p-1">Ver PDF en html</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2">INTRODUCCION</button>
+
+                    <!-- programas a utilizar -->
+                    <section id="programas" class="mb-2">
+                        <h5 class="programas">PROGRAMAS A UTILIZAR</h5>
+                        <section>
+                            <div class="texto">
+                                <ol>
+                                    <li class="p-1"><a class="text-decoration-none" target="_blank"
+                                            href="https://code.visualstudio.com/">Visual Studio Code</a>
+                                        <span>
+                                            Es un editor de codigo fuente desarrollado por Microsoft. Utilizaremos este
+                                            programa por
+                                            que es más ligero y tiene mas opciones a diferencia de otros
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- requisitos basicos -->
+                    <section id="requisitos" class="mb-2">
+                        <h5 class="programas">REQUISITOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+
+                            </div>
+                        </section>
+                    </section>
+                    <!-- conceptos basicos -->
+                    <section id="conceptos" class="mb-2">
+                        <h5 class="programas">CONCEPTOS BÁSICOS</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    HTML (hyper text markup language -> lenguaje de marcado de hipertexto). Es un
+                                    lenguaje de marcado o
+                                    etiquetas que se utiliza para crear paginas web.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    HTML solo es la estructura; Para dar la apariencia o estilos se utiliza otro
+                                    lenguaje
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">
+                                    OJO HTML NO ES UN LENGUAJE DE PROGRAMACION
+                                </span>
+                            </div>
+
+                        </section>
+                    </section>
+
+                    <button style="font-size: 16px"
+                        class="btn btn-primary btn-sm container-fluid mb-2 mt-2">INTERMEDIO</button>
+                    <!-- QUE ES HTML -->
+                    <section id="crear-proyecto" class="mb-2">
+                        <h5 class="programas">QUE ES HTML</h5>
+                        <section>
+                            <div class="texto">
+                                <span class="def">
+                                    HTML es el lenguaje con el que se define el contenido de las páginas web.
+                                    Básicamente se trata de un
+                                    conjunto de etiquetas que sirven para definir el texto y otros elementos que
+                                    compondrán una página web,
+                                    como imágenes, listas, vídeos, etc.
+                                </span>
+                            </div>
+                            <div class="texto">
+                                <span class="def">El HTML se creó en un principio con objetivos divulgativos de
+                                    información con texto y
+                                    algunas imágenes.
+                                    No se pensó que llegara a ser utilizado para crear área de ocio y consulta con
+                                    carácter multimedia (lo
+                                    que es actualmente la web), de modo que, el HTML se creó sin dar respuesta a todos
+                                    los posibles usos que
+                                    se le iba a dar y a todos los colectivos de gente que lo utilizarían en un futuro.
+                                    Sin embargo, pese a
+                                    esta deficiente planificación, si que se han ido incorporando modificaciones con el
+                                    tiempo, estos son
+                                    los estándares del HTML.</span>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- METADATOS -->
+                    <section id="meta" class="mb-2">
+                        <h5 class="programas">METADATOS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;!DOCTYPE html>
+                                    &lt;!-- Especifica el idioma -->
+                                    &lt;html lang="es">
+                                    &lt;head>
+                                    &lt;!-- Especifica los caracteres especiales -->
+                                        &lt;meta charset="UTF-8">
+                                    &lt;!-- Especifica la compatibilidad con IE ultima version -->
+                                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                    &lt;!-- Especifica la escala de visualizacion en pantallas grandes y pequeñas -->
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    &lt;!-- Permite poner un favicon(icono pequeño en la pestaña del navegador) -->
+                                        &lt;link rel="shortcut icon" href="icon/img-96.png" type="image/x-icon">
+                                        &lt;title>Document&lt;/title>
+                                    &lt;/head>
+                                    &lt;body>
+
+                                    &lt;/body>
+                                    &lt;/html>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- ETIQUETAS AVANZADAS -->
+                    <section id="etiquetas" class="mb-2">
+                        <h5 class="programas">ETIQUETAS AVANZADAS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;!-- DATALIST -->
+                                    &lt;input list="frutas">
+                                    &lt;datalist id="frutas">
+                                        &lt;option value="uva">&lt;/option>
+                                        &lt;option value="mango">&lt;/option>
+                                        &lt;option value="péra">&lt;/option>
+                                    &lt;/datalist>
+
+                                    &lt;!-- DAR COLOR AL NAVEGADOR EN MOVILES -->
+                                    &lt;meta name="theme-color" content="#083756" />
+
+                                    &lt;!-- ENLACE DE DESCARGA -->
+                                    &lt;a href="CV/Vitae.pdf" download="nombre">Descargar&lt;/a>
+
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- ETIQUETAS MAS USADAS -->
+                    <section id="more" class="mb-2">
+                        <h5 class="programas">ETIQUETAS MAS USADAS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">
+                                    &lt;h1>titulo principal&lt;/h1>
+                                    &lt;h2>titulo&lt;/h2>
+                                    &lt;h3>titulo&lt;/h3>
+                                    &lt;h4>titulo&lt;/h4>
+                                    &lt;h5>titulo&lt;/h5>
+                                    &lt;h6>titulo&lt;/h6>
+
+
+                                    &lt;header>Determina encabezados y pueden estar ubicados en diferentes partes de la pagina&lt;/header>
+
+
+                                    &lt;nav>Determina o engloba un grupo de codigos para un menu de navegación&lt;/nav>
+
+
+                                    &lt;ol>
+                                        &lt;li>Listas ordenadas&lt;/li>
+                                    &lt;/ol>
+                                    &lt;ul>
+                                        &lt;li>Listas desordenadas&lt;/li>
+                                    &lt;/ul>
+
+
+                                    &lt;article>
+                                        &lt;h2>Siempre va tener su titulo&lt;/h2>
+                                        &lt;p>
+                                            Especifica contenido independiente y autónomo.
+                                            Un artículo debe tener sentido por sí mismo.
+
+                                            Su finalidad es almacenar contenido que podría estar solo.
+                                        &lt;/p>
+                                    &lt;/article>
+
+
+                                    &lt;section>
+                                        &lt;h2>titulo&lt;/h2>
+                                        &lt;p>
+                                            Agrupa contenido que esta relacionado
+
+                                            Contiene informacion dependientes.
+                                        &lt;/p>
+                                    &lt;/section>
+
+
+                                    &lt;div>
+                                        Sirve para crear secciones o agrupar contenidos
+                                    &lt;/div>
+
+
+                                    &lt;aside>
+                                        Contiene informacion que se vincula con la informacion principal,
+                                        pero que no es parte de esa informacion
+                                    &lt;/aside>
+
+                                    
+                                    &lt;footer>
+                                        Representa un pie de pagina en nuestro contenido de seccion mas cercano
+                                    &lt;/footer>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- ATRIBUTOS AVANZADOS -->
+                    <section id="atributos" class="mb-2">
+                        <h5 class="programas">ATRIBUTOS AVANZADOS</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">                    
+                                    step="0.01 &lt;!-- Para dar decimales a un input number -->
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+                    <!-- VER PDF EN HTML -->
+                    <section id="pdf" class="mb-2">
+                        <h5 class="programas">VER PDF EN HTML</h5>
+                        <section>
+                            <pre rel="JS">
+                                <code class="language-markup line-numbers">                    
+                                    &lt;iframe src="data:application/pdf;base64,&lt;?= base64_encode($i->archivo) ?>"
+                                    width=50% height=200>&lt;/iframe>
+                                </code>
+                            </pre>
+                        </section>
+                    </section>
+
+
+
+
+
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <div id="subir-arriba" class="subir-arriba">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+
+
+
+
+    <!--cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--cdn VUE-ROUTER-->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="vue/componentes/main.js"></script>
+    <script>
+        const app = Vue.createApp(vue);
+    </script>
+    <!-- componentes -->
+    <script src="vue/componentes/encabezado.js"></script>
+    <!-- rutas -->
+    <!-- <script src="vue/rutas/Inicio.js"></script>
+    <script src="vue/rutas/desarrollo-web/php.js"></script>
+    <script src="vue/rutas/main.js"></script> -->
+
+    <script>
+        //app.use(ruta)
+        const mount = app.mount("#app")
+    </script>
+
+    <!-- bootstrap -->
+    <script src="public/principal/js/headroom.min.js"></script>
+    <script src="public/principal/js/main.js"></script>
+    <script src="public/principal/js/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+        </script> -->
+    <!-- fancybox -->
+    <script src="public/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            animationEffect: "slide",
+            transitionEffect: "circular",
+            loop: true,
+            buttons: [
+                "zoom",
+                "share",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ]
+        })
+    </script>
+    <script src="loadSw.js"></script>
+
+
+</body>
+
+</html>
